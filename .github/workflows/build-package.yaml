@@ -1,0 +1,28 @@
+name: Build Package # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Manual Run
+
+jobs:
+  build:
+    name: Swift on ${{ matrix.os }} # Swift ${{ matrix.swift }} on ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest] # [ubuntu-latest, macos-latest]
+        # swift: ["5.5.2"]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      #- uses: fwal/setup-swift@d43a564349d1341cd990cfbd70d94d63b8899475
+      #  with:
+      #    swift-version: ${{ matrix.swift }}
+
+      - uses: actions/checkout@v2
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
