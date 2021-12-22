@@ -1,5 +1,7 @@
 # SwiftUnits
 
+[![Build Package](https://github.com/putridparrot/SwiftUnits/actions/workflows/build-package.yaml/badge.svg)](https://github.com/putridparrot/SwiftUnits/actions/workflows/build-package.yaml)
+
 ## THIS IS A WiP - whilst this line of text exists do not expect anything to work
 
 The main aim for this project is to produce conversion functions for the various units of measurement (listed below). The code and the unit tests
