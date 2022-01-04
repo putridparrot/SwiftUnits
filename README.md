@@ -1,6 +1,9 @@
 # SwiftUnits
 
 [![Build Package](https://github.com/putridparrot/SwiftUnits/actions/workflows/build-package.yaml/badge.svg)](https://github.com/putridparrot/SwiftUnits/actions/workflows/build-package.yaml)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/putridparrot/SwiftUnits/blob/master/LICENSE.md)
+[![GitHub Releases](https://img.shields.io/github/release/putridparrot/SwiftUnits.svg)](https://github.com/putridparrot/SwiftUnits/releases)
+[![GitHub Issues](https://img.shields.io/github/issues/putridparrot/SwiftUnits.svg)](https://github.com/putridparrot/SwiftUnits/issues)
 
 ## THIS IS A WiP - whilst this line of text exists do not expect anything to work
 
