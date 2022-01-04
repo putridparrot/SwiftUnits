@@ -23,7 +23,9 @@ _Note: I am not proficient in the preferred idioms or design paradigms of Swift 
 
 Example of usage:
 
+```
 var fahrenheit = Temperature.Celsius.toFahrenheit(12.0);
+```
 
 Each unit of measure then includes functions to convert to each for example, converting each Temperature unit of measure to each other Temperature.
 
