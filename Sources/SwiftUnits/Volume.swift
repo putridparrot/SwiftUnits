@@ -67,7 +67,7 @@ public final class Volume {
 			return value * 4.546091879;
 		}
 		public static func toKilolitres(_ value : Double) -> Double {
-			return value * 0.004546091879;
+			return value * 0.0045460918799;
 		}
 		public static func toTeaspoons(_ value : Double) -> Double {
 			return value * 768.0;

@@ -17,7 +17,7 @@ public final class Angle {
 			return value * 200.0/180.0;
 		}
 		public static func toMilliradians(_ value : Double) -> Double {
-			return value * 17.4533;
+			return value * (1000.0 * Double.pi)/180.0;
 		}
 		public static func toMinuteOfArc(_ value : Double) -> Double {
 			return value * 60.0;
@@ -37,7 +37,7 @@ public final class Angle {
 			return value * Double.pi/200.0;
 		}
 		public static func toMilliradians(_ value : Double) -> Double {
-			return value * 15.708;
+			return value * (1000.0*Double.pi)/200.0;
 		}
 		public static func toMinuteOfArc(_ value : Double) -> Double {
 			return value * 54.0;

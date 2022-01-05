@@ -109,7 +109,7 @@ public final class Energy {
 			return value / 4184.0;
 		}
 		public static func toBtu(_ value : Double) -> Double {
-			return value / 1055.0;
+			return value / 1055.06;
 		}
 		public static func toCalories(_ value : Double) -> Double {
 			return value / 4.184;

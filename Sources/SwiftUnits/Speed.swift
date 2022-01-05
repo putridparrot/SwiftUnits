@@ -11,16 +11,16 @@ public final class Speed {
 		@available(*, unavailable) private init() {}
 
 		public static func toMilesPerHour(_ value : Double) -> Double {
-			return value * 0.681818;
+			return value / 1.46667;
 		}
 		public static func toKilometresPerHour(_ value : Double) -> Double {
 			return value * 1.09728;
 		}
 		public static func toMetresPerSecond(_ value : Double) -> Double {
-			return value * 0.3048;
+			return value / 3.28084;
 		}
 		public static func toKnots(_ value : Double) -> Double {
-			return value * 0.592484;
+			return value / 1.68781;
 		}
 	}
 
@@ -28,16 +28,16 @@ public final class Speed {
 		@available(*, unavailable) private init() {}
 
 		public static func toMilesPerHour(_ value : Double) -> Double {
-			return value * 0.621371;
+			return value / 1.60934;
 		}
 		public static func toFeetPerSecond(_ value : Double) -> Double {
-			return value * 0.911344;
+			return value / 1.09728;
 		}
 		public static func toMetresPerSecond(_ value : Double) -> Double {
-			return value * 0.277778;
+			return value / 3.6;
 		}
 		public static func toKnots(_ value : Double) -> Double {
-			return value * 0.539957;
+			return value / 1.852;
 		}
 	}
 
@@ -54,7 +54,7 @@ public final class Speed {
 			return value * 1.68781;
 		}
 		public static func toMetresPerSecond(_ value : Double) -> Double {
-			return value * 0.514444;
+			return value / 1.94384;
 		}
 	}
 
@@ -85,10 +85,10 @@ public final class Speed {
 			return value * 1.46667;
 		}
 		public static func toMetresPerSecond(_ value : Double) -> Double {
-			return value * 0.44704;
+			return value / 2.23694;
 		}
 		public static func toKnots(_ value : Double) -> Double {
-			return value * 0.868976;
+			return value / 1.15078;
 		}
 	}
 }

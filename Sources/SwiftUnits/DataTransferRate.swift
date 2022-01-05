@@ -70,7 +70,7 @@ public final class DataTransferRate {
 			return value / 8000.0;
 		}
 		public static func toKibibitsPerSecond(_ value : Double) -> Double {
-			return value * 976563.0;
+			return value * 976562.5;
 		}
 		public static func toMebibitsPerSecond(_ value : Double) -> Double {
 			return value * 954.0;
@@ -125,7 +125,7 @@ public final class DataTransferRate {
 			return value / 976.563;
 		}
 		public static func toGigaBitsPerSecond(_ value : Double) -> Double {
-			return value / 976562.0;
+			return value / 976562.5;
 		}
 		public static func toTeraBitsPerSecond(_ value : Double) -> Double {
 			return value / 976562500.0;
@@ -283,7 +283,7 @@ public final class DataTransferRate {
 			return value * 976.563;
 		}
 		public static func toMebibitsPerSecond(_ value : Double) -> Double {
-			return value * 0.953674;
+			return value / 1.04858;
 		}
 	}
 
