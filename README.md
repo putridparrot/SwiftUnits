@@ -14,10 +14,11 @@ _Note: I am not proficient in the preferred idioms or design paradigms of Swift 
 
 ### Unit conversions also available for 
 
-[F#](https://github.com/putridparrot/FSharp.Units)  
 [C#](https://github.com/putridparrot/PutridParrot.Units)  
+[F#](https://github.com/putridparrot/FSharp.Units)  
+[Java](https://github.com/putridparrot/JavaUnits)   
+[Rust](https://github.com/putridparrot/RustUnits)  
 [TypeScript](https://github.com/putridparrot/unit-conversions)  
-[Java](https://github.com/putridparrot/JavaUnits)
 
 ### Example
 
