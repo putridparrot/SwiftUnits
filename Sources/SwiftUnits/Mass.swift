@@ -7,6 +7,32 @@
 public final class Mass {
 	@available(*, unavailable) private init() {}
 
+	public final class Carats {
+		@available(*, unavailable) private init() {}
+
+		public static func toMilligrams(_ value : Double) -> Double {
+			return value * 200.0;
+		}
+		public static func toGrams(_ value : Double) -> Double {
+			return value / 5.0;
+		}
+		public static func toKilograms(_ value : Double) -> Double {
+			return value / 5000.0;
+		}
+		public static func toTonnes(_ value : Double) -> Double {
+			return value / 5e+6;
+		}
+		public static func toOunces(_ value : Double) -> Double {
+			return value * 0.00705479;
+		}
+		public static func toPounds(_ value : Double) -> Double {
+			return value * 0.000440925;
+		}
+		public static func toStones(_ value : Double) -> Double {
+			return value * 3.1495e-5;
+		}
+	}
+
 	public final class Grams {
 		@available(*, unavailable) private init() {}
 
@@ -27,6 +53,9 @@ public final class Mass {
 		}
 		public static func toStones(_ value : Double) -> Double {
 			return value / 6350.29318;
+		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value * 5.0;
 		}
 	}
 
@@ -51,6 +80,9 @@ public final class Mass {
 		public static func toStones(_ value : Double) -> Double {
 			return value / 6.35029;
 		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value * 5000.0;
+		}
 	}
 
 	public final class Milligrams {
@@ -73,6 +105,9 @@ public final class Mass {
 		}
 		public static func toStones(_ value : Double) -> Double {
 			return value / 6350293.18;
+		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value / 200.0;
 		}
 	}
 
@@ -97,6 +132,9 @@ public final class Mass {
 		public static func toStones(_ value : Double) -> Double {
 			return value / 224.0;
 		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value / 0.00705479;
+		}
 	}
 
 	public final class Pounds {
@@ -119,6 +157,9 @@ public final class Mass {
 		}
 		public static func toStones(_ value : Double) -> Double {
 			return value / 14.0;
+		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value / 0.000440925;
 		}
 	}
 
@@ -143,6 +184,9 @@ public final class Mass {
 		public static func toPounds(_ value : Double) -> Double {
 			return value * 14.0;
 		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value / 3.1495e-5;
+		}
 	}
 
 	public final class Tonnes {
@@ -165,6 +209,9 @@ public final class Mass {
 		}
 		public static func toStones(_ value : Double) -> Double {
 			return value * 157.473;
+		}
+		public static func toCarats(_ value : Double) -> Double {
+			return value * 5e+6;
 		}
 	}
 }
