@@ -43,7 +43,7 @@ public final class Area {
 			return value * 10000.0;
 		}
 		public static func toSquareMiles(_ value : Double) -> Double {
-			return value / 259.0;
+			return value / 258.99881103;
 		}
 		public static func toSquareYards(_ value : Double) -> Double {
 			return value * 11959.900463011;
@@ -66,7 +66,7 @@ public final class Area {
 			return value / 10763910.41671;
 		}
 		public static func toSquareMetres(_ value : Double) -> Double {
-			return value / 10.764;
+			return value / 10.76391042;
 		}
 		public static func toSquareMiles(_ value : Double) -> Double {
 			return value / 27878400.0;
@@ -147,10 +147,10 @@ public final class Area {
 			return value / 2589988.10;
 		}
 		public static func toSquareYards(_ value : Double) -> Double {
-			return value * 1.196;
+			return value * 1.1959900463;
 		}
 		public static func toSquareFeet(_ value : Double) -> Double {
-			return value * 10.764;
+			return value * 10.76391042;
 		}
 		public static func toSquareInches(_ value : Double) -> Double {
 			return value * 1550.0;
@@ -182,7 +182,7 @@ public final class Area {
 			return value * 4014489600.0;
 		}
 		public static func toHectares(_ value : Double) -> Double {
-			return value * 259.0;
+			return value * 258.99881103;
 		}
 		public static func toAcres(_ value : Double) -> Double {
 			return value * 640.0;
@@ -196,7 +196,7 @@ public final class Area {
 			return value / 1195990.05;
 		}
 		public static func toSquareMetres(_ value : Double) -> Double {
-			return value / 1.196;
+			return value / 1.1959900463;
 		}
 		public static func toSquareMiles(_ value : Double) -> Double {
 			return value / 3097600.0;
