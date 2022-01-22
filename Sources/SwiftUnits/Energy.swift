@@ -34,6 +34,9 @@ public final class Energy {
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value * 778.169;
 		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 6585141385224143241216.00;
+		}
 	}
 
 	public final class Calories {
@@ -63,11 +66,41 @@ public final class Energy {
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value * 3.08596;
 		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 2.6131936951817e+19;
+		}
 	}
 
-	public final class ElectronVolts {
+	public final class Electronvolts {
 		@available(*, unavailable) private init() {}
 
+		public static func toKilojoules(_ value : Double) -> Double {
+			return value / 6241509744511500156928.00;
+		}
+		public static func toKilocalories(_ value : Double) -> Double {
+			return value / 26131952998320305078272.00;
+		}
+		public static func toJoules(_ value : Double) -> Double {
+			return value / 6241509343300000000.0;
+		}
+		public static func toBtu(_ value : Double) -> Double {
+			return value / 6585141385224143241216.0;
+		}
+		public static func toCalories(_ value : Double) -> Double {
+			return value / 2.6131936951817e+19;
+		}
+		public static func toUSTherms(_ value : Double) -> Double {
+			return value / 6.5835660010911e+26;
+		}
+		public static func toWattHours(_ value : Double) -> Double {
+			return value / 2.2469422907138e+22;
+		}
+		public static func toKilowattHours(_ value : Double) -> Double {
+			return value / 2.246943e+25;
+		}
+		public static func toFootPounds(_ value : Double) -> Double {
+			return value / 8462350936293971968.00;
+		}
 	}
 
 	public final class FootPounds {
@@ -96,6 +129,9 @@ public final class Energy {
 		}
 		public static func toKilowattHours(_ value : Double) -> Double {
 			return value * 0.00000037662;
+		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 8462350936293971968.00;
 		}
 	}
 
@@ -126,6 +162,9 @@ public final class Energy {
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value / 1.35582;
 		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 6241509343300000000.0;
+		}
 	}
 
 	public final class Kilocalories {
@@ -154,6 +193,9 @@ public final class Energy {
 		}
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value * 3085.96;
+		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 26131952998320305078272.00;
 		}
 	}
 
@@ -184,6 +226,9 @@ public final class Energy {
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value * 737.562;
 		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 6241509744511500156928.00;
+		}
 	}
 
 	public final class KilowattHours {
@@ -212,6 +257,9 @@ public final class Energy {
 		}
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value / 0.00000037662;
+		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 2.246943e+25;
 		}
 	}
 
@@ -242,6 +290,9 @@ public final class Energy {
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value * 77816937.099186;
 		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 6.5835660010911e+26;
+		}
 	}
 
 	public final class WattHours {
@@ -270,6 +321,9 @@ public final class Energy {
 		}
 		public static func toFootPounds(_ value : Double) -> Double {
 			return value * 2655.22;
+		}
+		public static func toElectronvolts(_ value : Double) -> Double {
+			return value * 2.2469422907138e+22;
 		}
 	}
 }

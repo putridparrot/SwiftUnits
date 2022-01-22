@@ -75,7 +75,7 @@ public final class Length {
 			return value * 2.54;
 		}
 		public static func toMetres(_ value : Double) -> Double {
-			return value / 39.3701;
+			return value / 39.37007874;
 		}
 		public static func toKilometres(_ value : Double) -> Double {
 			return value / 39370.07874;
@@ -136,7 +136,7 @@ public final class Length {
 			return value / 1000.0;
 		}
 		public static func toInches(_ value : Double) -> Double {
-			return value * 39.3701;
+			return value * 39.37007874;
 		}
 		public static func toFeet(_ value : Double) -> Double {
 			return value / 0.3048;
