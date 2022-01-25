@@ -14,13 +14,13 @@ public final class Energy {
 			return value * 1.0550559;
 		}
 		public static func toKilocalories(_ value : Double) -> Double {
-			return value / 3.9673727240424;
+			return value * 0.2521644007218;
 		}
 		public static func toJoules(_ value : Double) -> Double {
 			return value * 1055.06;
 		}
 		public static func toCalories(_ value : Double) -> Double {
-			return value * 252.164;
+			return value * 252.1644007218;
 		}
 		public static func toUSTherms(_ value : Double) -> Double {
 			return value / 99976.12448781215;
@@ -52,7 +52,7 @@ public final class Energy {
 			return value * 4.184;
 		}
 		public static func toBtu(_ value : Double) -> Double {
-			return value / 252.164;
+			return value / 252.1644007218;
 		}
 		public static func toUSTherms(_ value : Double) -> Double {
 			return value / 25210420.0;
@@ -177,13 +177,13 @@ public final class Energy {
 			return value * 4184.0;
 		}
 		public static func toBtu(_ value : Double) -> Double {
-			return value * 3.9673727240424;
+			return value / 0.2521644007218;
 		}
 		public static func toCalories(_ value : Double) -> Double {
 			return value * 1000.0;
 		}
 		public static func toUSTherms(_ value : Double) -> Double {
-			return value / 25210.4;
+			return value / 25210.44007218;
 		}
 		public static func toWattHours(_ value : Double) -> Double {
 			return value * 1.16222;
@@ -270,7 +270,7 @@ public final class Energy {
 			return value * 105480.04;
 		}
 		public static func toKilocalories(_ value : Double) -> Double {
-			return value * 25210.4;
+			return value * 25210.44007218;
 		}
 		public static func toJoules(_ value : Double) -> Double {
 			return value * 105480400.0;

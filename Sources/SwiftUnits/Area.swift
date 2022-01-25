@@ -29,7 +29,7 @@ public final class Area {
 			return value * 6272640.0;
 		}
 		public static func toHectares(_ value : Double) -> Double {
-			return value / 2.471;
+			return value / 2.4710538146717;
 		}
 	}
 
@@ -55,7 +55,7 @@ public final class Area {
 			return value * 15500031.0;
 		}
 		public static func toAcres(_ value : Double) -> Double {
-			return value * 2.471;
+			return value * 2.4710538146717;
 		}
 	}
 

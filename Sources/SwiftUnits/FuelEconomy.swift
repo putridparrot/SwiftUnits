@@ -16,6 +16,23 @@ public final class FuelEconomy {
 		public static func toMilesPerGallon(_ value : Double) -> Double {
 			return value * 2.82481;
 		}
+		public static func toLitresper100Kilometres(_ value : Double) -> Double {
+			return 100.0 / value;
+		}
+	}
+
+	public final class Litresper100Kilometres {
+		@available(*, unavailable) private init() {}
+
+		public static func toKilometrePerLitre(_ value : Double) -> Double {
+			return 100.0 / value;
+		}
+		public static func toMilesPerGallon(_ value : Double) -> Double {
+			return 282.481 / value;
+		}
+		public static func toUSMilesPerGallon(_ value : Double) -> Double {
+			return 235.215 / value;
+		}
 	}
 
 	public final class MilesPerGallon {
@@ -27,6 +44,9 @@ public final class FuelEconomy {
 		public static func toUSMilesPerGallon(_ value : Double) -> Double {
 			return value / 1.20095;
 		}
+		public static func toLitresper100Kilometres(_ value : Double) -> Double {
+			return 282.481 / value;
+		}
 	}
 
 	public final class USMilesPerGallon {
@@ -37,6 +57,9 @@ public final class FuelEconomy {
 		}
 		public static func toMilesPerGallon(_ value : Double) -> Double {
 			return value * 1.20095;
+		}
+		public static func toLitresper100Kilometres(_ value : Double) -> Double {
+			return 235.215 / value;
 		}
 	}
 }
