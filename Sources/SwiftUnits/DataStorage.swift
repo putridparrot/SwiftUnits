@@ -73,7 +73,7 @@ public final class DataStorage {
 			return value * 976562.5;
 		}
 		public static func toMebibits(_ value : Double) -> Double {
-			return value * 954.0;
+			return value * 953.67431640625;
 		}
 	}
 
@@ -131,7 +131,7 @@ public final class DataStorage {
 			return value / 976562500.0;
 		}
 		public static func toKilobytes(_ value : Double) -> Double {
-			return value / 7.812;
+			return value / 7.8125;
 		}
 		public static func toMegabytes(_ value : Double) -> Double {
 			return value / 7812.5;
@@ -210,7 +210,7 @@ public final class DataStorage {
 			return value / 1e+9;
 		}
 		public static func toKibibits(_ value : Double) -> Double {
-			return value * 7.812;
+			return value * 7.8125;
 		}
 		public static func toMebibits(_ value : Double) -> Double {
 			return value * 0.00762939;
@@ -230,7 +230,7 @@ public final class DataStorage {
 			return value * 1.04858;
 		}
 		public static func toGigabits(_ value : Double) -> Double {
-			return value / 954.0;
+			return value / 953.67431640625;
 		}
 		public static func toTerabits(_ value : Double) -> Double {
 			return value / 953674.0;

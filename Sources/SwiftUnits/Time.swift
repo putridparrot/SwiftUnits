@@ -81,7 +81,7 @@ public final class Time {
 			return value * 3650.0;
 		}
 		public static func toWeeks(_ value : Double) -> Double {
-			return value * 521.0;
+			return value * 521.429;
 		}
 		public static func toMonths(_ value : Double) -> Double {
 			return value * 120.0;
@@ -232,7 +232,7 @@ public final class Time {
 			return value / 52.143;
 		}
 		public static func toDecades(_ value : Double) -> Double {
-			return value / 521.0;
+			return value / 521.429;
 		}
 		public static func toCenturies(_ value : Double) -> Double {
 			return value / 5214.29;
