@@ -8,192 +8,192 @@ import XCTest
 @testable import SwiftUnits
 
 final class CelsiusTests: XCTestCase {
-	func testConvertKnownCelsiusTofahrenheit_1() throws {
-		let result = Temperature.Celsius.tofahrenheit(32.0)
+	func testConvertKnownCelsiusToFahrenheit_1() throws {
+		let result = Temperature.Celsius.toFahrenheit(32.0)
 		XCTAssertEqual(89.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTofahrenheit_2() throws {
-		let result = Temperature.Celsius.tofahrenheit(0.9)
+	func testConvertKnownCelsiusToFahrenheit_2() throws {
+		let result = Temperature.Celsius.toFahrenheit(0.9)
 		XCTAssertEqual(33.62, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTofahrenheit_3() throws {
-		let result = Temperature.Celsius.tofahrenheit(0.0)
+	func testConvertKnownCelsiusToFahrenheit_3() throws {
+		let result = Temperature.Celsius.toFahrenheit(0.0)
 		XCTAssertEqual(32.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTokelvin_1() throws {
-		let result = Temperature.Celsius.tokelvin(1.0)
+	func testConvertKnownCelsiusToKelvin_1() throws {
+		let result = Temperature.Celsius.toKelvin(1.0)
 		XCTAssertEqual(274.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTokelvin_2() throws {
-		let result = Temperature.Celsius.tokelvin(9.9)
+	func testConvertKnownCelsiusToKelvin_2() throws {
+		let result = Temperature.Celsius.toKelvin(9.9)
 		XCTAssertEqual(283.05, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTokelvin_3() throws {
-		let result = Temperature.Celsius.tokelvin(100.0)
+	func testConvertKnownCelsiusToKelvin_3() throws {
+		let result = Temperature.Celsius.toKelvin(100.0)
 		XCTAssertEqual(373.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTorankine_1() throws {
-		let result = Temperature.Celsius.torankine(900.0)
+	func testConvertKnownCelsiusToRankine_1() throws {
+		let result = Temperature.Celsius.toRankine(900.0)
 		XCTAssertEqual(2111.67, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTorankine_2() throws {
-		let result = Temperature.Celsius.torankine(12.0)
+	func testConvertKnownCelsiusToRankine_2() throws {
+		let result = Temperature.Celsius.toRankine(12.0)
 		XCTAssertEqual(513.27, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCelsiusTorankine_3() throws {
-		let result = Temperature.Celsius.torankine(-3.0)
+	func testConvertKnownCelsiusToRankine_3() throws {
+		let result = Temperature.Celsius.toRankine(-3.0)
 		XCTAssertEqual(486.27, result, accuracy: 0.01)
 	}
 
 }
 
 final class FahrenheitTests: XCTestCase {
-	func testConvertKnownFahrenheitTocelsius_1() throws {
-		let result = Temperature.Fahrenheit.tocelsius(109.0)
+	func testConvertKnownFahrenheitToCelsius_1() throws {
+		let result = Temperature.Fahrenheit.toCelsius(109.0)
 		XCTAssertEqual(42.7778, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTocelsius_2() throws {
-		let result = Temperature.Fahrenheit.tocelsius(56.9)
+	func testConvertKnownFahrenheitToCelsius_2() throws {
+		let result = Temperature.Fahrenheit.toCelsius(56.9)
 		XCTAssertEqual(13.83333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTocelsius_3() throws {
-		let result = Temperature.Fahrenheit.tocelsius(102.0)
+	func testConvertKnownFahrenheitToCelsius_3() throws {
+		let result = Temperature.Fahrenheit.toCelsius(102.0)
 		XCTAssertEqual(38.8889, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTokelvin_1() throws {
-		let result = Temperature.Fahrenheit.tokelvin(34.5)
+	func testConvertKnownFahrenheitToKelvin_1() throws {
+		let result = Temperature.Fahrenheit.toKelvin(34.5)
 		XCTAssertEqual(274.5389, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTokelvin_2() throws {
-		let result = Temperature.Fahrenheit.tokelvin(901.0)
+	func testConvertKnownFahrenheitToKelvin_2() throws {
+		let result = Temperature.Fahrenheit.toKelvin(901.0)
 		XCTAssertEqual(755.928, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTokelvin_3() throws {
-		let result = Temperature.Fahrenheit.tokelvin(23.9)
+	func testConvertKnownFahrenheitToKelvin_3() throws {
+		let result = Temperature.Fahrenheit.toKelvin(23.9)
 		XCTAssertEqual(268.65, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTorankine_1() throws {
-		let result = Temperature.Fahrenheit.torankine(123.0)
+	func testConvertKnownFahrenheitToRankine_1() throws {
+		let result = Temperature.Fahrenheit.toRankine(123.0)
 		XCTAssertEqual(582.67, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTorankine_2() throws {
-		let result = Temperature.Fahrenheit.torankine(9.2)
+	func testConvertKnownFahrenheitToRankine_2() throws {
+		let result = Temperature.Fahrenheit.toRankine(9.2)
 		XCTAssertEqual(468.87, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFahrenheitTorankine_3() throws {
-		let result = Temperature.Fahrenheit.torankine(0.2)
+	func testConvertKnownFahrenheitToRankine_3() throws {
+		let result = Temperature.Fahrenheit.toRankine(0.2)
 		XCTAssertEqual(459.87, result, accuracy: 0.01)
 	}
 
 }
 
 final class KelvinTests: XCTestCase {
-	func testConvertKnownKelvinTocelsius_1() throws {
-		let result = Temperature.Kelvin.tocelsius(80.0)
+	func testConvertKnownKelvinToCelsius_1() throws {
+		let result = Temperature.Kelvin.toCelsius(80.0)
 		XCTAssertEqual(-193.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTocelsius_2() throws {
-		let result = Temperature.Kelvin.tocelsius(0.9)
+	func testConvertKnownKelvinToCelsius_2() throws {
+		let result = Temperature.Kelvin.toCelsius(0.9)
 		XCTAssertEqual(-272.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTocelsius_3() throws {
-		let result = Temperature.Kelvin.tocelsius(305.15)
+	func testConvertKnownKelvinToCelsius_3() throws {
+		let result = Temperature.Kelvin.toCelsius(305.15)
 		XCTAssertEqual(32.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTofahrenheit_1() throws {
-		let result = Temperature.Kelvin.tofahrenheit(123.4)
+	func testConvertKnownKelvinToFahrenheit_1() throws {
+		let result = Temperature.Kelvin.toFahrenheit(123.4)
 		XCTAssertEqual(-237.55, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTofahrenheit_2() throws {
-		let result = Temperature.Kelvin.tofahrenheit(800.0)
+	func testConvertKnownKelvinToFahrenheit_2() throws {
+		let result = Temperature.Kelvin.toFahrenheit(800.0)
 		XCTAssertEqual(980.33, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTofahrenheit_3() throws {
-		let result = Temperature.Kelvin.tofahrenheit(99.999)
+	func testConvertKnownKelvinToFahrenheit_3() throws {
+		let result = Temperature.Kelvin.toFahrenheit(99.999)
 		XCTAssertEqual(-279.6718, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTorankine_1() throws {
-		let result = Temperature.Kelvin.torankine(156.0)
+	func testConvertKnownKelvinToRankine_1() throws {
+		let result = Temperature.Kelvin.toRankine(156.0)
 		XCTAssertEqual(280.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTorankine_2() throws {
-		let result = Temperature.Kelvin.torankine(8.2)
+	func testConvertKnownKelvinToRankine_2() throws {
+		let result = Temperature.Kelvin.toRankine(8.2)
 		XCTAssertEqual(14.76, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKelvinTorankine_3() throws {
-		let result = Temperature.Kelvin.torankine(0.8)
+	func testConvertKnownKelvinToRankine_3() throws {
+		let result = Temperature.Kelvin.toRankine(0.8)
 		XCTAssertEqual(1.44, result, accuracy: 0.01)
 	}
 
 }
 
 final class RankineTests: XCTestCase {
-	func testConvertKnownRankineTocelsius_1() throws {
-		let result = Temperature.Rankine.tocelsius(190.0)
+	func testConvertKnownRankineToCelsius_1() throws {
+		let result = Temperature.Rankine.toCelsius(190.0)
 		XCTAssertEqual(-167.59444444, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTocelsius_2() throws {
-		let result = Temperature.Rankine.tocelsius(0.7)
+	func testConvertKnownRankineToCelsius_2() throws {
+		let result = Temperature.Rankine.toCelsius(0.7)
 		XCTAssertEqual(-272.76111111, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTocelsius_3() throws {
-		let result = Temperature.Rankine.tocelsius(900.0)
+	func testConvertKnownRankineToCelsius_3() throws {
+		let result = Temperature.Rankine.toCelsius(900.0)
 		XCTAssertEqual(226.85, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTofahrenheit_1() throws {
-		let result = Temperature.Rankine.tofahrenheit(109.0)
+	func testConvertKnownRankineToFahrenheit_1() throws {
+		let result = Temperature.Rankine.toFahrenheit(109.0)
 		XCTAssertEqual(-350.67, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTofahrenheit_2() throws {
-		let result = Temperature.Rankine.tofahrenheit(3567.0)
+	func testConvertKnownRankineToFahrenheit_2() throws {
+		let result = Temperature.Rankine.toFahrenheit(3567.0)
 		XCTAssertEqual(3107.33, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTofahrenheit_3() throws {
-		let result = Temperature.Rankine.tofahrenheit(9.0)
+	func testConvertKnownRankineToFahrenheit_3() throws {
+		let result = Temperature.Rankine.toFahrenheit(9.0)
 		XCTAssertEqual(-450.67, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTokelvin_1() throws {
-		let result = Temperature.Rankine.tokelvin(123.0)
+	func testConvertKnownRankineToKelvin_1() throws {
+		let result = Temperature.Rankine.toKelvin(123.0)
 		XCTAssertEqual(68.333333333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTokelvin_2() throws {
-		let result = Temperature.Rankine.tokelvin(0.9)
+	func testConvertKnownRankineToKelvin_2() throws {
+		let result = Temperature.Rankine.toKelvin(0.9)
 		XCTAssertEqual(0.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRankineTokelvin_3() throws {
-		let result = Temperature.Rankine.tokelvin(23.0)
+	func testConvertKnownRankineToKelvin_3() throws {
+		let result = Temperature.Rankine.toKelvin(23.0)
 		XCTAssertEqual(12.777777778, result, accuracy: 0.01)
 	}
 

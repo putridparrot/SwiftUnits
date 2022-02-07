@@ -8,192 +8,192 @@ import XCTest
 @testable import SwiftUnits
 
 final class GigahertzTests: XCTestCase {
-	func testConvertKnownGigahertzTohertz_1() throws {
-		let result = Frequency.Gigahertz.tohertz(0.009)
+	func testConvertKnownGigahertzToHertz_1() throws {
+		let result = Frequency.Gigahertz.toHertz(0.009)
 		XCTAssertEqual(9000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTohertz_2() throws {
-		let result = Frequency.Gigahertz.tohertz(0.000123)
+	func testConvertKnownGigahertzToHertz_2() throws {
+		let result = Frequency.Gigahertz.toHertz(0.000123)
 		XCTAssertEqual(123000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTohertz_3() throws {
-		let result = Frequency.Gigahertz.tohertz(0.0000456)
+	func testConvertKnownGigahertzToHertz_3() throws {
+		let result = Frequency.Gigahertz.toHertz(0.0000456)
 		XCTAssertEqual(45600.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTokilohertz_1() throws {
-		let result = Frequency.Gigahertz.tokilohertz(0.009)
+	func testConvertKnownGigahertzToKilohertz_1() throws {
+		let result = Frequency.Gigahertz.toKilohertz(0.009)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTokilohertz_2() throws {
-		let result = Frequency.Gigahertz.tokilohertz(1e-5)
+	func testConvertKnownGigahertzToKilohertz_2() throws {
+		let result = Frequency.Gigahertz.toKilohertz(1e-5)
 		XCTAssertEqual(10.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTokilohertz_3() throws {
-		let result = Frequency.Gigahertz.tokilohertz(0.000065)
+	func testConvertKnownGigahertzToKilohertz_3() throws {
+		let result = Frequency.Gigahertz.toKilohertz(0.000065)
 		XCTAssertEqual(65.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTomegahertz_1() throws {
-		let result = Frequency.Gigahertz.tomegahertz(0.9)
+	func testConvertKnownGigahertzToMegahertz_1() throws {
+		let result = Frequency.Gigahertz.toMegahertz(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTomegahertz_2() throws {
-		let result = Frequency.Gigahertz.tomegahertz(0.0123)
+	func testConvertKnownGigahertzToMegahertz_2() throws {
+		let result = Frequency.Gigahertz.toMegahertz(0.0123)
 		XCTAssertEqual(12.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigahertzTomegahertz_3() throws {
-		let result = Frequency.Gigahertz.tomegahertz(5.0)
+	func testConvertKnownGigahertzToMegahertz_3() throws {
+		let result = Frequency.Gigahertz.toMegahertz(5.0)
 		XCTAssertEqual(5000.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class HertzTests: XCTestCase {
-	func testConvertKnownHertzTokilohertz_1() throws {
-		let result = Frequency.Hertz.tokilohertz(800.0)
+	func testConvertKnownHertzToKilohertz_1() throws {
+		let result = Frequency.Hertz.toKilohertz(800.0)
 		XCTAssertEqual(0.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTokilohertz_2() throws {
-		let result = Frequency.Hertz.tokilohertz(1506.9)
+	func testConvertKnownHertzToKilohertz_2() throws {
+		let result = Frequency.Hertz.toKilohertz(1506.9)
 		XCTAssertEqual(1.5069, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTokilohertz_3() throws {
-		let result = Frequency.Hertz.tokilohertz(5000.0)
+	func testConvertKnownHertzToKilohertz_3() throws {
+		let result = Frequency.Hertz.toKilohertz(5000.0)
 		XCTAssertEqual(5.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTomegahertz_1() throws {
-		let result = Frequency.Hertz.tomegahertz(900009.0)
+	func testConvertKnownHertzToMegahertz_1() throws {
+		let result = Frequency.Hertz.toMegahertz(900009.0)
 		XCTAssertEqual(0.900009, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTomegahertz_2() throws {
-		let result = Frequency.Hertz.tomegahertz(160000.0)
+	func testConvertKnownHertzToMegahertz_2() throws {
+		let result = Frequency.Hertz.toMegahertz(160000.0)
 		XCTAssertEqual(0.16, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTomegahertz_3() throws {
-		let result = Frequency.Hertz.tomegahertz(888888.0)
+	func testConvertKnownHertzToMegahertz_3() throws {
+		let result = Frequency.Hertz.toMegahertz(888888.0)
 		XCTAssertEqual(0.888888, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTogigahertz_1() throws {
-		let result = Frequency.Hertz.togigahertz(100900900.0)
+	func testConvertKnownHertzToGigahertz_1() throws {
+		let result = Frequency.Hertz.toGigahertz(100900900.0)
 		XCTAssertEqual(0.1009009, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTogigahertz_2() throws {
-		let result = Frequency.Hertz.togigahertz(9.0)
+	func testConvertKnownHertzToGigahertz_2() throws {
+		let result = Frequency.Hertz.toGigahertz(9.0)
 		XCTAssertEqual(9e-9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHertzTogigahertz_3() throws {
-		let result = Frequency.Hertz.togigahertz(90909090.0)
+	func testConvertKnownHertzToGigahertz_3() throws {
+		let result = Frequency.Hertz.toGigahertz(90909090.0)
 		XCTAssertEqual(0.09090909, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilohertzTests: XCTestCase {
-	func testConvertKnownKilohertzTohertz_1() throws {
-		let result = Frequency.Kilohertz.tohertz(90.90909)
+	func testConvertKnownKilohertzToHertz_1() throws {
+		let result = Frequency.Kilohertz.toHertz(90.90909)
 		XCTAssertEqual(90909.09, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTohertz_2() throws {
-		let result = Frequency.Kilohertz.tohertz(0.12345)
+	func testConvertKnownKilohertzToHertz_2() throws {
+		let result = Frequency.Kilohertz.toHertz(0.12345)
 		XCTAssertEqual(123.45, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTohertz_3() throws {
-		let result = Frequency.Kilohertz.tohertz(500.0)
+	func testConvertKnownKilohertzToHertz_3() throws {
+		let result = Frequency.Kilohertz.toHertz(500.0)
 		XCTAssertEqual(500000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTomegahertz_1() throws {
-		let result = Frequency.Kilohertz.tomegahertz(909.0)
+	func testConvertKnownKilohertzToMegahertz_1() throws {
+		let result = Frequency.Kilohertz.toMegahertz(909.0)
 		XCTAssertEqual(0.909, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTomegahertz_2() throws {
-		let result = Frequency.Kilohertz.tomegahertz(123456.0)
+	func testConvertKnownKilohertzToMegahertz_2() throws {
+		let result = Frequency.Kilohertz.toMegahertz(123456.0)
 		XCTAssertEqual(123.456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTomegahertz_3() throws {
-		let result = Frequency.Kilohertz.tomegahertz(900.0)
+	func testConvertKnownKilohertzToMegahertz_3() throws {
+		let result = Frequency.Kilohertz.toMegahertz(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTogigahertz_1() throws {
-		let result = Frequency.Kilohertz.togigahertz(987654.0)
+	func testConvertKnownKilohertzToGigahertz_1() throws {
+		let result = Frequency.Kilohertz.toGigahertz(987654.0)
 		XCTAssertEqual(0.987654, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTogigahertz_2() throws {
-		let result = Frequency.Kilohertz.togigahertz(10000.0)
+	func testConvertKnownKilohertzToGigahertz_2() throws {
+		let result = Frequency.Kilohertz.toGigahertz(10000.0)
 		XCTAssertEqual(0.01, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilohertzTogigahertz_3() throws {
-		let result = Frequency.Kilohertz.togigahertz(90090.0)
+	func testConvertKnownKilohertzToGigahertz_3() throws {
+		let result = Frequency.Kilohertz.toGigahertz(90090.0)
 		XCTAssertEqual(0.09009, result, accuracy: 0.01)
 	}
 
 }
 
 final class MegahertzTests: XCTestCase {
-	func testConvertKnownMegahertzTohertz_1() throws {
-		let result = Frequency.Megahertz.tohertz(0.9)
+	func testConvertKnownMegahertzToHertz_1() throws {
+		let result = Frequency.Megahertz.toHertz(0.9)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTohertz_2() throws {
-		let result = Frequency.Megahertz.tohertz(0.001)
+	func testConvertKnownMegahertzToHertz_2() throws {
+		let result = Frequency.Megahertz.toHertz(0.001)
 		XCTAssertEqual(1000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTohertz_3() throws {
-		let result = Frequency.Megahertz.tohertz(0.091)
+	func testConvertKnownMegahertzToHertz_3() throws {
+		let result = Frequency.Megahertz.toHertz(0.091)
 		XCTAssertEqual(91000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTokilohertz_1() throws {
-		let result = Frequency.Megahertz.tokilohertz(0.87)
+	func testConvertKnownMegahertzToKilohertz_1() throws {
+		let result = Frequency.Megahertz.toKilohertz(0.87)
 		XCTAssertEqual(870.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTokilohertz_2() throws {
-		let result = Frequency.Megahertz.tokilohertz(12.0)
+	func testConvertKnownMegahertzToKilohertz_2() throws {
+		let result = Frequency.Megahertz.toKilohertz(12.0)
 		XCTAssertEqual(12000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTokilohertz_3() throws {
-		let result = Frequency.Megahertz.tokilohertz(88.1)
+	func testConvertKnownMegahertzToKilohertz_3() throws {
+		let result = Frequency.Megahertz.toKilohertz(88.1)
 		XCTAssertEqual(88100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTogigahertz_1() throws {
-		let result = Frequency.Megahertz.togigahertz(798.0)
+	func testConvertKnownMegahertzToGigahertz_1() throws {
+		let result = Frequency.Megahertz.toGigahertz(798.0)
 		XCTAssertEqual(0.798, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTogigahertz_2() throws {
-		let result = Frequency.Megahertz.togigahertz(900.0)
+	func testConvertKnownMegahertzToGigahertz_2() throws {
+		let result = Frequency.Megahertz.toGigahertz(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegahertzTogigahertz_3() throws {
-		let result = Frequency.Megahertz.togigahertz(579.1)
+	func testConvertKnownMegahertzToGigahertz_3() throws {
+		let result = Frequency.Megahertz.toGigahertz(579.1)
 		XCTAssertEqual(0.5791, result, accuracy: 0.01)
 	}
 

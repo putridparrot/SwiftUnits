@@ -8,864 +8,864 @@ import XCTest
 @testable import SwiftUnits
 
 final class CaratsTests: XCTestCase {
-	func testConvertKnownCaratsTomilligrams_1() throws {
-		let result = Mass.Carats.tomilligrams(2.1)
+	func testConvertKnownCaratsToMilligrams_1() throws {
+		let result = Mass.Carats.toMilligrams(2.1)
 		XCTAssertEqual(420.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTomilligrams_2() throws {
-		let result = Mass.Carats.tomilligrams(123.0)
+	func testConvertKnownCaratsToMilligrams_2() throws {
+		let result = Mass.Carats.toMilligrams(123.0)
 		XCTAssertEqual(24600.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTomilligrams_3() throws {
-		let result = Mass.Carats.tomilligrams(0.8)
+	func testConvertKnownCaratsToMilligrams_3() throws {
+		let result = Mass.Carats.toMilligrams(0.8)
 		XCTAssertEqual(160.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTograms_1() throws {
-		let result = Mass.Carats.tograms(0.8)
+	func testConvertKnownCaratsToGrams_1() throws {
+		let result = Mass.Carats.toGrams(0.8)
 		XCTAssertEqual(0.16, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTograms_2() throws {
-		let result = Mass.Carats.tograms(1.5)
+	func testConvertKnownCaratsToGrams_2() throws {
+		let result = Mass.Carats.toGrams(1.5)
 		XCTAssertEqual(0.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTograms_3() throws {
-		let result = Mass.Carats.tograms(12.0)
+	func testConvertKnownCaratsToGrams_3() throws {
+		let result = Mass.Carats.toGrams(12.0)
 		XCTAssertEqual(2.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTokilograms_1() throws {
-		let result = Mass.Carats.tokilograms(1009.0)
+	func testConvertKnownCaratsToKilograms_1() throws {
+		let result = Mass.Carats.toKilograms(1009.0)
 		XCTAssertEqual(0.2018, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTokilograms_2() throws {
-		let result = Mass.Carats.tokilograms(999.0)
+	func testConvertKnownCaratsToKilograms_2() throws {
+		let result = Mass.Carats.toKilograms(999.0)
 		XCTAssertEqual(0.1998, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTokilograms_3() throws {
-		let result = Mass.Carats.tokilograms(1234.5)
+	func testConvertKnownCaratsToKilograms_3() throws {
+		let result = Mass.Carats.toKilograms(1234.5)
 		XCTAssertEqual(0.2469, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTotonnes_1() throws {
-		let result = Mass.Carats.totonnes(1234567.0)
+	func testConvertKnownCaratsToTonnes_1() throws {
+		let result = Mass.Carats.toTonnes(1234567.0)
 		XCTAssertEqual(0.2469134, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTotonnes_2() throws {
-		let result = Mass.Carats.totonnes(9999999.0)
+	func testConvertKnownCaratsToTonnes_2() throws {
+		let result = Mass.Carats.toTonnes(9999999.0)
 		XCTAssertEqual(1.9999998, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTotonnes_3() throws {
-		let result = Mass.Carats.totonnes(998877.99)
+	func testConvertKnownCaratsToTonnes_3() throws {
+		let result = Mass.Carats.toTonnes(998877.99)
 		XCTAssertEqual(0.199775598, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsToounces_1() throws {
-		let result = Mass.Carats.toounces(900.0)
+	func testConvertKnownCaratsToOunces_1() throws {
+		let result = Mass.Carats.toOunces(900.0)
 		XCTAssertEqual(6.34931, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsToounces_2() throws {
-		let result = Mass.Carats.toounces(123.45)
+	func testConvertKnownCaratsToOunces_2() throws {
+		let result = Mass.Carats.toOunces(123.45)
 		XCTAssertEqual(0.870914121, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsToounces_3() throws {
-		let result = Mass.Carats.toounces(800.0)
+	func testConvertKnownCaratsToOunces_3() throws {
+		let result = Mass.Carats.toOunces(800.0)
 		XCTAssertEqual(5.64383, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTopounds_1() throws {
-		let result = Mass.Carats.topounds(1000.0)
+	func testConvertKnownCaratsToPounds_1() throws {
+		let result = Mass.Carats.toPounds(1000.0)
 		XCTAssertEqual(0.440925, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTopounds_2() throws {
-		let result = Mass.Carats.topounds(123456.0)
+	func testConvertKnownCaratsToPounds_2() throws {
+		let result = Mass.Carats.toPounds(123456.0)
 		XCTAssertEqual(54.4347781, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTopounds_3() throws {
-		let result = Mass.Carats.topounds(800.0)
+	func testConvertKnownCaratsToPounds_3() throws {
+		let result = Mass.Carats.toPounds(800.0)
 		XCTAssertEqual(0.35274, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTostones_1() throws {
-		let result = Mass.Carats.tostones(9000.0)
+	func testConvertKnownCaratsToStones_1() throws {
+		let result = Mass.Carats.toStones(9000.0)
 		XCTAssertEqual(0.2834515, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTostones_2() throws {
-		let result = Mass.Carats.tostones(123456.0)
+	func testConvertKnownCaratsToStones_2() throws {
+		let result = Mass.Carats.toStones(123456.0)
 		XCTAssertEqual(3.88819843, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCaratsTostones_3() throws {
-		let result = Mass.Carats.tostones(80000.8)
+	func testConvertKnownCaratsToStones_3() throws {
+		let result = Mass.Carats.toStones(80000.8)
 		XCTAssertEqual(2.519593906, result, accuracy: 0.01)
 	}
 
 }
 
 final class GramsTests: XCTestCase {
-	func testConvertKnownGramsTomilligrams_1() throws {
-		let result = Mass.Grams.tomilligrams(1.2)
+	func testConvertKnownGramsToMilligrams_1() throws {
+		let result = Mass.Grams.toMilligrams(1.2)
 		XCTAssertEqual(1200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTomilligrams_2() throws {
-		let result = Mass.Grams.tomilligrams(0.9)
+	func testConvertKnownGramsToMilligrams_2() throws {
+		let result = Mass.Grams.toMilligrams(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTomilligrams_3() throws {
-		let result = Mass.Grams.tomilligrams(2.0)
+	func testConvertKnownGramsToMilligrams_3() throws {
+		let result = Mass.Grams.toMilligrams(2.0)
 		XCTAssertEqual(2000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTokilograms_1() throws {
-		let result = Mass.Grams.tokilograms(900.0)
+	func testConvertKnownGramsToKilograms_1() throws {
+		let result = Mass.Grams.toKilograms(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTokilograms_2() throws {
-		let result = Mass.Grams.tokilograms(12345.0)
+	func testConvertKnownGramsToKilograms_2() throws {
+		let result = Mass.Grams.toKilograms(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTokilograms_3() throws {
-		let result = Mass.Grams.tokilograms(670.0)
+	func testConvertKnownGramsToKilograms_3() throws {
+		let result = Mass.Grams.toKilograms(670.0)
 		XCTAssertEqual(0.67, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTotonnes_1() throws {
-		let result = Mass.Grams.totonnes(6700000.0)
+	func testConvertKnownGramsToTonnes_1() throws {
+		let result = Mass.Grams.toTonnes(6700000.0)
 		XCTAssertEqual(6.7, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTotonnes_2() throws {
-		let result = Mass.Grams.totonnes(123456.0)
+	func testConvertKnownGramsToTonnes_2() throws {
+		let result = Mass.Grams.toTonnes(123456.0)
 		XCTAssertEqual(0.123456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTotonnes_3() throws {
-		let result = Mass.Grams.totonnes(9809789.0)
+	func testConvertKnownGramsToTonnes_3() throws {
+		let result = Mass.Grams.toTonnes(9809789.0)
 		XCTAssertEqual(9.809789, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsToounces_1() throws {
-		let result = Mass.Grams.toounces(4.3)
+	func testConvertKnownGramsToOunces_1() throws {
+		let result = Mass.Grams.toOunces(4.3)
 		XCTAssertEqual(0.151678, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsToounces_2() throws {
-		let result = Mass.Grams.toounces(170.0)
+	func testConvertKnownGramsToOunces_2() throws {
+		let result = Mass.Grams.toOunces(170.0)
 		XCTAssertEqual(5.99657, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsToounces_3() throws {
-		let result = Mass.Grams.toounces(9.0)
+	func testConvertKnownGramsToOunces_3() throws {
+		let result = Mass.Grams.toOunces(9.0)
 		XCTAssertEqual(0.317466, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTopounds_1() throws {
-		let result = Mass.Grams.topounds(80.0)
+	func testConvertKnownGramsToPounds_1() throws {
+		let result = Mass.Grams.toPounds(80.0)
 		XCTAssertEqual(0.17637, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTopounds_2() throws {
-		let result = Mass.Grams.topounds(190.0)
+	func testConvertKnownGramsToPounds_2() throws {
+		let result = Mass.Grams.toPounds(190.0)
 		XCTAssertEqual(0.418878, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTopounds_3() throws {
-		let result = Mass.Grams.topounds(4500.0)
+	func testConvertKnownGramsToPounds_3() throws {
+		let result = Mass.Grams.toPounds(4500.0)
 		XCTAssertEqual(9.920802, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTostones_1() throws {
-		let result = Mass.Grams.tostones(8000.0)
+	func testConvertKnownGramsToStones_1() throws {
+		let result = Mass.Grams.toStones(8000.0)
 		XCTAssertEqual(1.259784, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTostones_2() throws {
-		let result = Mass.Grams.tostones(12345.0)
+	func testConvertKnownGramsToStones_2() throws {
+		let result = Mass.Grams.toStones(12345.0)
 		XCTAssertEqual(1.9440047, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTostones_3() throws {
-		let result = Mass.Grams.tostones(900.0)
+	func testConvertKnownGramsToStones_3() throws {
+		let result = Mass.Grams.toStones(900.0)
 		XCTAssertEqual(0.141726, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTocarats_1() throws {
-		let result = Mass.Grams.tocarats(123.0)
+	func testConvertKnownGramsToCarats_1() throws {
+		let result = Mass.Grams.toCarats(123.0)
 		XCTAssertEqual(615.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTocarats_2() throws {
-		let result = Mass.Grams.tocarats(90.1)
+	func testConvertKnownGramsToCarats_2() throws {
+		let result = Mass.Grams.toCarats(90.1)
 		XCTAssertEqual(450.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGramsTocarats_3() throws {
-		let result = Mass.Grams.tocarats(5000.0)
+	func testConvertKnownGramsToCarats_3() throws {
+		let result = Mass.Grams.toCarats(5000.0)
 		XCTAssertEqual(25000.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilogramsTests: XCTestCase {
-	func testConvertKnownKilogramsTomilligrams_1() throws {
-		let result = Mass.Kilograms.tomilligrams(0.9)
+	func testConvertKnownKilogramsToMilligrams_1() throws {
+		let result = Mass.Kilograms.toMilligrams(0.9)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTomilligrams_2() throws {
-		let result = Mass.Kilograms.tomilligrams(0.56)
+	func testConvertKnownKilogramsToMilligrams_2() throws {
+		let result = Mass.Kilograms.toMilligrams(0.56)
 		XCTAssertEqual(560000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTomilligrams_3() throws {
-		let result = Mass.Kilograms.tomilligrams(0.007)
+	func testConvertKnownKilogramsToMilligrams_3() throws {
+		let result = Mass.Kilograms.toMilligrams(0.007)
 		XCTAssertEqual(7000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTograms_1() throws {
-		let result = Mass.Kilograms.tograms(0.8)
+	func testConvertKnownKilogramsToGrams_1() throws {
+		let result = Mass.Kilograms.toGrams(0.8)
 		XCTAssertEqual(800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTograms_2() throws {
-		let result = Mass.Kilograms.tograms(12.0)
+	func testConvertKnownKilogramsToGrams_2() throws {
+		let result = Mass.Kilograms.toGrams(12.0)
 		XCTAssertEqual(12000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTograms_3() throws {
-		let result = Mass.Kilograms.tograms(0.2)
+	func testConvertKnownKilogramsToGrams_3() throws {
+		let result = Mass.Kilograms.toGrams(0.2)
 		XCTAssertEqual(200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTotonnes_1() throws {
-		let result = Mass.Kilograms.totonnes(123.0)
+	func testConvertKnownKilogramsToTonnes_1() throws {
+		let result = Mass.Kilograms.toTonnes(123.0)
 		XCTAssertEqual(0.123, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTotonnes_2() throws {
-		let result = Mass.Kilograms.totonnes(9000.0)
+	func testConvertKnownKilogramsToTonnes_2() throws {
+		let result = Mass.Kilograms.toTonnes(9000.0)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTotonnes_3() throws {
-		let result = Mass.Kilograms.totonnes(2300.0)
+	func testConvertKnownKilogramsToTonnes_3() throws {
+		let result = Mass.Kilograms.toTonnes(2300.0)
 		XCTAssertEqual(2.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsToounces_1() throws {
-		let result = Mass.Kilograms.toounces(2300.0)
+	func testConvertKnownKilogramsToOunces_1() throws {
+		let result = Mass.Kilograms.toOunces(2300.0)
 		XCTAssertEqual(81130.19, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsToounces_2() throws {
-		let result = Mass.Kilograms.toounces(12.0)
+	func testConvertKnownKilogramsToOunces_2() throws {
+		let result = Mass.Kilograms.toOunces(12.0)
 		XCTAssertEqual(423.288, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsToounces_3() throws {
-		let result = Mass.Kilograms.toounces(3.4)
+	func testConvertKnownKilogramsToOunces_3() throws {
+		let result = Mass.Kilograms.toOunces(3.4)
 		XCTAssertEqual(119.931, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTopounds_1() throws {
-		let result = Mass.Kilograms.topounds(3.4)
+	func testConvertKnownKilogramsToPounds_1() throws {
+		let result = Mass.Kilograms.toPounds(3.4)
 		XCTAssertEqual(7.49572, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTopounds_2() throws {
-		let result = Mass.Kilograms.topounds(0.9)
+	func testConvertKnownKilogramsToPounds_2() throws {
+		let result = Mass.Kilograms.toPounds(0.9)
 		XCTAssertEqual(1.98416, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTopounds_3() throws {
-		let result = Mass.Kilograms.topounds(3.0)
+	func testConvertKnownKilogramsToPounds_3() throws {
+		let result = Mass.Kilograms.toPounds(3.0)
 		XCTAssertEqual(6.61387, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTostones_1() throws {
-		let result = Mass.Kilograms.tostones(3.0)
+	func testConvertKnownKilogramsToStones_1() throws {
+		let result = Mass.Kilograms.toStones(3.0)
 		XCTAssertEqual(0.472419, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTostones_2() throws {
-		let result = Mass.Kilograms.tostones(98.0)
+	func testConvertKnownKilogramsToStones_2() throws {
+		let result = Mass.Kilograms.toStones(98.0)
 		XCTAssertEqual(15.4324, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTostones_3() throws {
-		let result = Mass.Kilograms.tostones(1.2)
+	func testConvertKnownKilogramsToStones_3() throws {
+		let result = Mass.Kilograms.toStones(1.2)
 		XCTAssertEqual(0.188968, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTocarats_1() throws {
-		let result = Mass.Kilograms.tocarats(0.1)
+	func testConvertKnownKilogramsToCarats_1() throws {
+		let result = Mass.Kilograms.toCarats(0.1)
 		XCTAssertEqual(500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTocarats_2() throws {
-		let result = Mass.Kilograms.tocarats(0.08)
+	func testConvertKnownKilogramsToCarats_2() throws {
+		let result = Mass.Kilograms.toCarats(0.08)
 		XCTAssertEqual(400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilogramsTocarats_3() throws {
-		let result = Mass.Kilograms.tocarats(2.0)
+	func testConvertKnownKilogramsToCarats_3() throws {
+		let result = Mass.Kilograms.toCarats(2.0)
 		XCTAssertEqual(10000.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class MilligramsTests: XCTestCase {
-	func testConvertKnownMilligramsTograms_1() throws {
-		let result = Mass.Milligrams.tograms(190.0)
+	func testConvertKnownMilligramsToGrams_1() throws {
+		let result = Mass.Milligrams.toGrams(190.0)
 		XCTAssertEqual(0.19, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTograms_2() throws {
-		let result = Mass.Milligrams.tograms(2300.0)
+	func testConvertKnownMilligramsToGrams_2() throws {
+		let result = Mass.Milligrams.toGrams(2300.0)
 		XCTAssertEqual(2.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTograms_3() throws {
-		let result = Mass.Milligrams.tograms(19000.0)
+	func testConvertKnownMilligramsToGrams_3() throws {
+		let result = Mass.Milligrams.toGrams(19000.0)
 		XCTAssertEqual(19.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTokilograms_1() throws {
-		let result = Mass.Milligrams.tokilograms(1234567.0)
+	func testConvertKnownMilligramsToKilograms_1() throws {
+		let result = Mass.Milligrams.toKilograms(1234567.0)
 		XCTAssertEqual(1.234567, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTokilograms_2() throws {
-		let result = Mass.Milligrams.tokilograms(900800.0)
+	func testConvertKnownMilligramsToKilograms_2() throws {
+		let result = Mass.Milligrams.toKilograms(900800.0)
 		XCTAssertEqual(0.9008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTokilograms_3() throws {
-		let result = Mass.Milligrams.tokilograms(7800000.0)
+	func testConvertKnownMilligramsToKilograms_3() throws {
+		let result = Mass.Milligrams.toKilograms(7800000.0)
 		XCTAssertEqual(7.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTotonnes_1() throws {
-		let result = Mass.Milligrams.totonnes(900000000.0)
+	func testConvertKnownMilligramsToTonnes_1() throws {
+		let result = Mass.Milligrams.toTonnes(900000000.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTotonnes_2() throws {
-		let result = Mass.Milligrams.totonnes(60000000.0)
+	func testConvertKnownMilligramsToTonnes_2() throws {
+		let result = Mass.Milligrams.toTonnes(60000000.0)
 		XCTAssertEqual(0.06, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTotonnes_3() throws {
-		let result = Mass.Milligrams.totonnes(123456789.0)
+	func testConvertKnownMilligramsToTonnes_3() throws {
+		let result = Mass.Milligrams.toTonnes(123456789.0)
 		XCTAssertEqual(0.123456789, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsToounces_1() throws {
-		let result = Mass.Milligrams.toounces(6000.0)
+	func testConvertKnownMilligramsToOunces_1() throws {
+		let result = Mass.Milligrams.toOunces(6000.0)
 		XCTAssertEqual(0.2116438, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsToounces_2() throws {
-		let result = Mass.Milligrams.toounces(123456.0)
+	func testConvertKnownMilligramsToOunces_2() throws {
+		let result = Mass.Milligrams.toOunces(123456.0)
 		XCTAssertEqual(4.35478225, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsToounces_3() throws {
-		let result = Mass.Milligrams.toounces(8001.0)
+	func testConvertKnownMilligramsToOunces_3() throws {
+		let result = Mass.Milligrams.toOunces(8001.0)
 		XCTAssertEqual(0.282227, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTopounds_1() throws {
-		let result = Mass.Milligrams.topounds(123456.0)
+	func testConvertKnownMilligramsToPounds_1() throws {
+		let result = Mass.Milligrams.toPounds(123456.0)
 		XCTAssertEqual(0.27217389, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTopounds_2() throws {
-		let result = Mass.Milligrams.topounds(800900.0)
+	func testConvertKnownMilligramsToPounds_2() throws {
+		let result = Mass.Milligrams.toPounds(800900.0)
 		XCTAssertEqual(1.76568226, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTopounds_3() throws {
-		let result = Mass.Milligrams.topounds(666666.0)
+	func testConvertKnownMilligramsToPounds_3() throws {
+		let result = Mass.Milligrams.toPounds(666666.0)
 		XCTAssertEqual(1.46974694, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTostones_1() throws {
-		let result = Mass.Milligrams.tostones(900000.0)
+	func testConvertKnownMilligramsToStones_1() throws {
+		let result = Mass.Milligrams.toStones(900000.0)
 		XCTAssertEqual(0.14172574, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTostones_2() throws {
-		let result = Mass.Milligrams.tostones(12345678.0)
+	func testConvertKnownMilligramsToStones_2() throws {
+		let result = Mass.Milligrams.toStones(12345678.0)
 		XCTAssertEqual(1.9441115001, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTostones_3() throws {
-		let result = Mass.Milligrams.tostones(800100.0)
+	func testConvertKnownMilligramsToStones_3() throws {
+		let result = Mass.Milligrams.toStones(800100.0)
 		XCTAssertEqual(0.125994183, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTocarats_1() throws {
-		let result = Mass.Milligrams.tocarats(600.0)
+	func testConvertKnownMilligramsToCarats_1() throws {
+		let result = Mass.Milligrams.toCarats(600.0)
 		XCTAssertEqual(3.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTocarats_2() throws {
-		let result = Mass.Milligrams.tocarats(1234.0)
+	func testConvertKnownMilligramsToCarats_2() throws {
+		let result = Mass.Milligrams.toCarats(1234.0)
 		XCTAssertEqual(6.17, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilligramsTocarats_3() throws {
-		let result = Mass.Milligrams.tocarats(9090.0)
+	func testConvertKnownMilligramsToCarats_3() throws {
+		let result = Mass.Milligrams.toCarats(9090.0)
 		XCTAssertEqual(45.45, result, accuracy: 0.01)
 	}
 
 }
 
 final class OuncesTests: XCTestCase {
-	func testConvertKnownOuncesTomilligrams_1() throws {
-		let result = Mass.Ounces.tomilligrams(0.2)
+	func testConvertKnownOuncesToMilligrams_1() throws {
+		let result = Mass.Ounces.toMilligrams(0.2)
 		XCTAssertEqual(5669.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTomilligrams_2() throws {
-		let result = Mass.Ounces.tomilligrams(12.0)
+	func testConvertKnownOuncesToMilligrams_2() throws {
+		let result = Mass.Ounces.toMilligrams(12.0)
 		XCTAssertEqual(340194.2772, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTomilligrams_3() throws {
-		let result = Mass.Ounces.tomilligrams(1.8)
+	func testConvertKnownOuncesToMilligrams_3() throws {
+		let result = Mass.Ounces.toMilligrams(1.8)
 		XCTAssertEqual(51029.141579, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTograms_1() throws {
-		let result = Mass.Ounces.tograms(2.0)
+	func testConvertKnownOuncesToGrams_1() throws {
+		let result = Mass.Ounces.toGrams(2.0)
 		XCTAssertEqual(56.699, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTograms_2() throws {
-		let result = Mass.Ounces.tograms(0.3)
+	func testConvertKnownOuncesToGrams_2() throws {
+		let result = Mass.Ounces.toGrams(0.3)
 		XCTAssertEqual(8.50486, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTograms_3() throws {
-		let result = Mass.Ounces.tograms(7.0)
+	func testConvertKnownOuncesToGrams_3() throws {
+		let result = Mass.Ounces.toGrams(7.0)
 		XCTAssertEqual(198.447, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTokilograms_1() throws {
-		let result = Mass.Ounces.tokilograms(56.0)
+	func testConvertKnownOuncesToKilograms_1() throws {
+		let result = Mass.Ounces.toKilograms(56.0)
 		XCTAssertEqual(1.58757, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTokilograms_2() throws {
-		let result = Mass.Ounces.tokilograms(123.0)
+	func testConvertKnownOuncesToKilograms_2() throws {
+		let result = Mass.Ounces.toKilograms(123.0)
 		XCTAssertEqual(3.48699, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTokilograms_3() throws {
-		let result = Mass.Ounces.tokilograms(100.9)
+	func testConvertKnownOuncesToKilograms_3() throws {
+		let result = Mass.Ounces.toKilograms(100.9)
 		XCTAssertEqual(2.8604669, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTotonnes_1() throws {
-		let result = Mass.Ounces.totonnes(8000.0)
+	func testConvertKnownOuncesToTonnes_1() throws {
+		let result = Mass.Ounces.toTonnes(8000.0)
 		XCTAssertEqual(0.2267962, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTotonnes_2() throws {
-		let result = Mass.Ounces.totonnes(1234567.0)
+	func testConvertKnownOuncesToTonnes_2() throws {
+		let result = Mass.Ounces.toTonnes(1234567.0)
 		XCTAssertEqual(34.99938572, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTotonnes_3() throws {
-		let result = Mass.Ounces.totonnes(900800.0)
+	func testConvertKnownOuncesToTonnes_3() throws {
+		let result = Mass.Ounces.toTonnes(900800.0)
 		XCTAssertEqual(25.5372504, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTopounds_1() throws {
-		let result = Mass.Ounces.topounds(90.0)
+	func testConvertKnownOuncesToPounds_1() throws {
+		let result = Mass.Ounces.toPounds(90.0)
 		XCTAssertEqual(5.625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTopounds_2() throws {
-		let result = Mass.Ounces.topounds(5.2)
+	func testConvertKnownOuncesToPounds_2() throws {
+		let result = Mass.Ounces.toPounds(5.2)
 		XCTAssertEqual(0.325, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTopounds_3() throws {
-		let result = Mass.Ounces.topounds(12.0)
+	func testConvertKnownOuncesToPounds_3() throws {
+		let result = Mass.Ounces.toPounds(12.0)
 		XCTAssertEqual(0.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTostones_1() throws {
-		let result = Mass.Ounces.tostones(167.0)
+	func testConvertKnownOuncesToStones_1() throws {
+		let result = Mass.Ounces.toStones(167.0)
 		XCTAssertEqual(0.745536, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTostones_2() throws {
-		let result = Mass.Ounces.tostones(800.7)
+	func testConvertKnownOuncesToStones_2() throws {
+		let result = Mass.Ounces.toStones(800.7)
 		XCTAssertEqual(3.5745536, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTostones_3() throws {
-		let result = Mass.Ounces.tostones(1234.5)
+	func testConvertKnownOuncesToStones_3() throws {
+		let result = Mass.Ounces.toStones(1234.5)
 		XCTAssertEqual(5.51116071, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTocarats_1() throws {
-		let result = Mass.Ounces.tocarats(0.0012)
+	func testConvertKnownOuncesToCarats_1() throws {
+		let result = Mass.Ounces.toCarats(0.0012)
 		XCTAssertEqual(0.170097139, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTocarats_2() throws {
-		let result = Mass.Ounces.tocarats(4.0)
+	func testConvertKnownOuncesToCarats_2() throws {
+		let result = Mass.Ounces.toCarats(4.0)
 		XCTAssertEqual(566.99, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownOuncesTocarats_3() throws {
-		let result = Mass.Ounces.tocarats(1.4)
+	func testConvertKnownOuncesToCarats_3() throws {
+		let result = Mass.Ounces.toCarats(1.4)
 		XCTAssertEqual(198.447, result, accuracy: 0.01)
 	}
 
 }
 
 final class PoundsTests: XCTestCase {
-	func testConvertKnownPoundsTomilligrams_1() throws {
-		let result = Mass.Pounds.tomilligrams(2.2)
+	func testConvertKnownPoundsToMilligrams_1() throws {
+		let result = Mass.Pounds.toMilligrams(2.2)
 		XCTAssertEqual(997903.214, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTomilligrams_2() throws {
-		let result = Mass.Pounds.tomilligrams(0.7)
+	func testConvertKnownPoundsToMilligrams_2() throws {
+		let result = Mass.Pounds.toMilligrams(0.7)
 		XCTAssertEqual(317514.6589, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTomilligrams_3() throws {
-		let result = Mass.Pounds.tomilligrams(0.32)
+	func testConvertKnownPoundsToMilligrams_3() throws {
+		let result = Mass.Pounds.toMilligrams(0.32)
 		XCTAssertEqual(145149.5584, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTograms_1() throws {
-		let result = Mass.Pounds.tograms(0.3)
+	func testConvertKnownPoundsToGrams_1() throws {
+		let result = Mass.Pounds.toGrams(0.3)
 		XCTAssertEqual(136.078, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTograms_2() throws {
-		let result = Mass.Pounds.tograms(1.2)
+	func testConvertKnownPoundsToGrams_2() throws {
+		let result = Mass.Pounds.toGrams(1.2)
 		XCTAssertEqual(544.311, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTograms_3() throws {
-		let result = Mass.Pounds.tograms(9.0)
+	func testConvertKnownPoundsToGrams_3() throws {
+		let result = Mass.Pounds.toGrams(9.0)
 		XCTAssertEqual(4082.33, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTokilograms_1() throws {
-		let result = Mass.Pounds.tokilograms(5.0)
+	func testConvertKnownPoundsToKilograms_1() throws {
+		let result = Mass.Pounds.toKilograms(5.0)
 		XCTAssertEqual(2.26796, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTokilograms_2() throws {
-		let result = Mass.Pounds.tokilograms(1.1)
+	func testConvertKnownPoundsToKilograms_2() throws {
+		let result = Mass.Pounds.toKilograms(1.1)
 		XCTAssertEqual(0.498952, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTokilograms_3() throws {
-		let result = Mass.Pounds.tokilograms(0.7)
+	func testConvertKnownPoundsToKilograms_3() throws {
+		let result = Mass.Pounds.toKilograms(0.7)
 		XCTAssertEqual(0.317515, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTotonnes_1() throws {
-		let result = Mass.Pounds.totonnes(1233.0)
+	func testConvertKnownPoundsToTonnes_1() throws {
+		let result = Mass.Pounds.toTonnes(1233.0)
 		XCTAssertEqual(0.5592794, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTotonnes_2() throws {
-		let result = Mass.Pounds.totonnes(656565.0)
+	func testConvertKnownPoundsToTonnes_2() throws {
+		let result = Mass.Pounds.toTonnes(656565.0)
 		XCTAssertEqual(297.812874, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTotonnes_3() throws {
-		let result = Mass.Pounds.totonnes(900.0)
+	func testConvertKnownPoundsToTonnes_3() throws {
+		let result = Mass.Pounds.toTonnes(900.0)
 		XCTAssertEqual(0.408233, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsToounces_1() throws {
-		let result = Mass.Pounds.toounces(45.0)
+	func testConvertKnownPoundsToOunces_1() throws {
+		let result = Mass.Pounds.toOunces(45.0)
 		XCTAssertEqual(720.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsToounces_2() throws {
-		let result = Mass.Pounds.toounces(6.7)
+	func testConvertKnownPoundsToOunces_2() throws {
+		let result = Mass.Pounds.toOunces(6.7)
 		XCTAssertEqual(107.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsToounces_3() throws {
-		let result = Mass.Pounds.toounces(89.1)
+	func testConvertKnownPoundsToOunces_3() throws {
+		let result = Mass.Pounds.toOunces(89.1)
 		XCTAssertEqual(1425.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTostones_1() throws {
-		let result = Mass.Pounds.tostones(89.1)
+	func testConvertKnownPoundsToStones_1() throws {
+		let result = Mass.Pounds.toStones(89.1)
 		XCTAssertEqual(6.364286, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTostones_2() throws {
-		let result = Mass.Pounds.tostones(1.2)
+	func testConvertKnownPoundsToStones_2() throws {
+		let result = Mass.Pounds.toStones(1.2)
 		XCTAssertEqual(0.0857143, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTostones_3() throws {
-		let result = Mass.Pounds.tostones(789.0)
+	func testConvertKnownPoundsToStones_3() throws {
+		let result = Mass.Pounds.toStones(789.0)
 		XCTAssertEqual(56.3571, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTocarats_1() throws {
-		let result = Mass.Pounds.tocarats(80.0)
+	func testConvertKnownPoundsToCarats_1() throws {
+		let result = Mass.Pounds.toCarats(80.0)
 		XCTAssertEqual(181436.7522, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTocarats_2() throws {
-		let result = Mass.Pounds.tocarats(2.34)
+	func testConvertKnownPoundsToCarats_2() throws {
+		let result = Mass.Pounds.toCarats(2.34)
 		XCTAssertEqual(5307.031, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPoundsTocarats_3() throws {
-		let result = Mass.Pounds.tocarats(0.9)
+	func testConvertKnownPoundsToCarats_3() throws {
+		let result = Mass.Pounds.toCarats(0.9)
 		XCTAssertEqual(2041.17, result, accuracy: 0.01)
 	}
 
 }
 
 final class StonesTests: XCTestCase {
-	func testConvertKnownStonesTomilligrams_1() throws {
-		let result = Mass.Stones.tomilligrams(0.009)
+	func testConvertKnownStonesToMilligrams_1() throws {
+		let result = Mass.Stones.toMilligrams(0.009)
 		XCTAssertEqual(57152.63861, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTomilligrams_2() throws {
-		let result = Mass.Stones.tomilligrams(0.002)
+	func testConvertKnownStonesToMilligrams_2() throws {
+		let result = Mass.Stones.toMilligrams(0.002)
 		XCTAssertEqual(12700.586, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTomilligrams_3() throws {
-		let result = Mass.Stones.tomilligrams(0.0006)
+	func testConvertKnownStonesToMilligrams_3() throws {
+		let result = Mass.Stones.toMilligrams(0.0006)
 		XCTAssertEqual(3810.17591, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTograms_1() throws {
-		let result = Mass.Stones.tograms(1.2)
+	func testConvertKnownStonesToGrams_1() throws {
+		let result = Mass.Stones.toGrams(1.2)
 		XCTAssertEqual(7620.35, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTograms_2() throws {
-		let result = Mass.Stones.tograms(8.0)
+	func testConvertKnownStonesToGrams_2() throws {
+		let result = Mass.Stones.toGrams(8.0)
 		XCTAssertEqual(50802.34543, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTograms_3() throws {
-		let result = Mass.Stones.tograms(90.0)
+	func testConvertKnownStonesToGrams_3() throws {
+		let result = Mass.Stones.toGrams(90.0)
 		XCTAssertEqual(571526.38619, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTokilograms_1() throws {
-		let result = Mass.Stones.tokilograms(90.0)
+	func testConvertKnownStonesToKilograms_1() throws {
+		let result = Mass.Stones.toKilograms(90.0)
 		XCTAssertEqual(571.526, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTokilograms_2() throws {
-		let result = Mass.Stones.tokilograms(3.4)
+	func testConvertKnownStonesToKilograms_2() throws {
+		let result = Mass.Stones.toKilograms(3.4)
 		XCTAssertEqual(21.591, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTokilograms_3() throws {
-		let result = Mass.Stones.tokilograms(66.0)
+	func testConvertKnownStonesToKilograms_3() throws {
+		let result = Mass.Stones.toKilograms(66.0)
 		XCTAssertEqual(419.119, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTotonnes_1() throws {
-		let result = Mass.Stones.totonnes(100.0)
+	func testConvertKnownStonesToTonnes_1() throws {
+		let result = Mass.Stones.toTonnes(100.0)
 		XCTAssertEqual(0.635029, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTotonnes_2() throws {
-		let result = Mass.Stones.totonnes(12345.0)
+	func testConvertKnownStonesToTonnes_2() throws {
+		let result = Mass.Stones.toTonnes(12345.0)
 		XCTAssertEqual(78.394369, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTotonnes_3() throws {
-		let result = Mass.Stones.totonnes(10099.0)
+	func testConvertKnownStonesToTonnes_3() throws {
+		let result = Mass.Stones.toTonnes(10099.0)
 		XCTAssertEqual(64.131611, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesToounces_1() throws {
-		let result = Mass.Stones.toounces(34.0)
+	func testConvertKnownStonesToOunces_1() throws {
+		let result = Mass.Stones.toOunces(34.0)
 		XCTAssertEqual(7616.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesToounces_2() throws {
-		let result = Mass.Stones.toounces(1.2)
+	func testConvertKnownStonesToOunces_2() throws {
+		let result = Mass.Stones.toOunces(1.2)
 		XCTAssertEqual(268.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesToounces_3() throws {
-		let result = Mass.Stones.toounces(800.0)
+	func testConvertKnownStonesToOunces_3() throws {
+		let result = Mass.Stones.toOunces(800.0)
 		XCTAssertEqual(179200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTopounds_1() throws {
-		let result = Mass.Stones.topounds(800.0)
+	func testConvertKnownStonesToPounds_1() throws {
+		let result = Mass.Stones.toPounds(800.0)
 		XCTAssertEqual(11200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTopounds_2() throws {
-		let result = Mass.Stones.topounds(0.5)
+	func testConvertKnownStonesToPounds_2() throws {
+		let result = Mass.Stones.toPounds(0.5)
 		XCTAssertEqual(7.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTopounds_3() throws {
-		let result = Mass.Stones.topounds(52.1)
+	func testConvertKnownStonesToPounds_3() throws {
+		let result = Mass.Stones.toPounds(52.1)
 		XCTAssertEqual(729.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTocarats_1() throws {
-		let result = Mass.Stones.tocarats(0.01)
+	func testConvertKnownStonesToCarats_1() throws {
+		let result = Mass.Stones.toCarats(0.01)
 		XCTAssertEqual(317.5147, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTocarats_2() throws {
-		let result = Mass.Stones.tocarats(0.006)
+	func testConvertKnownStonesToCarats_2() throws {
+		let result = Mass.Stones.toCarats(0.006)
 		XCTAssertEqual(190.5088, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownStonesTocarats_3() throws {
-		let result = Mass.Stones.tocarats(2.1)
+	func testConvertKnownStonesToCarats_3() throws {
+		let result = Mass.Stones.toCarats(2.1)
 		XCTAssertEqual(66677.25, result, accuracy: 0.01)
 	}
 
 }
 
 final class TonnesTests: XCTestCase {
-	func testConvertKnownTonnesTomilligrams_1() throws {
-		let result = Mass.Tonnes.tomilligrams(0.009)
+	func testConvertKnownTonnesToMilligrams_1() throws {
+		let result = Mass.Tonnes.toMilligrams(0.009)
 		XCTAssertEqual(9000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTomilligrams_2() throws {
-		let result = Mass.Tonnes.tomilligrams(0.00081)
+	func testConvertKnownTonnesToMilligrams_2() throws {
+		let result = Mass.Tonnes.toMilligrams(0.00081)
 		XCTAssertEqual(810000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTomilligrams_3() throws {
-		let result = Mass.Tonnes.tomilligrams(0.00123)
+	func testConvertKnownTonnesToMilligrams_3() throws {
+		let result = Mass.Tonnes.toMilligrams(0.00123)
 		XCTAssertEqual(1230000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTograms_1() throws {
-		let result = Mass.Tonnes.tograms(0.00123)
+	func testConvertKnownTonnesToGrams_1() throws {
+		let result = Mass.Tonnes.toGrams(0.00123)
 		XCTAssertEqual(1230.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTograms_2() throws {
-		let result = Mass.Tonnes.tograms(0.8)
+	func testConvertKnownTonnesToGrams_2() throws {
+		let result = Mass.Tonnes.toGrams(0.8)
 		XCTAssertEqual(800000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTograms_3() throws {
-		let result = Mass.Tonnes.tograms(0.03)
+	func testConvertKnownTonnesToGrams_3() throws {
+		let result = Mass.Tonnes.toGrams(0.03)
 		XCTAssertEqual(30000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTokilograms_1() throws {
-		let result = Mass.Tonnes.tokilograms(0.03)
+	func testConvertKnownTonnesToKilograms_1() throws {
+		let result = Mass.Tonnes.toKilograms(0.03)
 		XCTAssertEqual(30.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTokilograms_2() throws {
-		let result = Mass.Tonnes.tokilograms(4.0)
+	func testConvertKnownTonnesToKilograms_2() throws {
+		let result = Mass.Tonnes.toKilograms(4.0)
 		XCTAssertEqual(4000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTokilograms_3() throws {
-		let result = Mass.Tonnes.tokilograms(1.2)
+	func testConvertKnownTonnesToKilograms_3() throws {
+		let result = Mass.Tonnes.toKilograms(1.2)
 		XCTAssertEqual(1200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesToounces_1() throws {
-		let result = Mass.Tonnes.toounces(1.2)
+	func testConvertKnownTonnesToOunces_1() throws {
+		let result = Mass.Tonnes.toOunces(1.2)
 		XCTAssertEqual(42328.754376824065, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesToounces_2() throws {
-		let result = Mass.Tonnes.toounces(0.8)
+	func testConvertKnownTonnesToOunces_2() throws {
+		let result = Mass.Tonnes.toOunces(0.8)
 		XCTAssertEqual(28219.169584549378, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesToounces_3() throws {
-		let result = Mass.Tonnes.toounces(0.001)
+	func testConvertKnownTonnesToOunces_3() throws {
+		let result = Mass.Tonnes.toOunces(0.001)
 		XCTAssertEqual(35.273962, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTopounds_1() throws {
-		let result = Mass.Tonnes.topounds(1.2)
+	func testConvertKnownTonnesToPounds_1() throws {
+		let result = Mass.Tonnes.toPounds(1.2)
 		XCTAssertEqual(2645.55, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTopounds_2() throws {
-		let result = Mass.Tonnes.topounds(0.9)
+	func testConvertKnownTonnesToPounds_2() throws {
+		let result = Mass.Tonnes.toPounds(0.9)
 		XCTAssertEqual(1984.16, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTopounds_3() throws {
-		let result = Mass.Tonnes.topounds(34.0)
+	func testConvertKnownTonnesToPounds_3() throws {
+		let result = Mass.Tonnes.toPounds(34.0)
 		XCTAssertEqual(74957.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTostones_1() throws {
-		let result = Mass.Tonnes.tostones(12.0)
+	func testConvertKnownTonnesToStones_1() throws {
+		let result = Mass.Tonnes.toStones(12.0)
 		XCTAssertEqual(1889.68, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTostones_2() throws {
-		let result = Mass.Tonnes.tostones(8.4)
+	func testConvertKnownTonnesToStones_2() throws {
+		let result = Mass.Tonnes.toStones(8.4)
 		XCTAssertEqual(1322.77, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTostones_3() throws {
-		let result = Mass.Tonnes.tostones(0.3)
+	func testConvertKnownTonnesToStones_3() throws {
+		let result = Mass.Tonnes.toStones(0.3)
 		XCTAssertEqual(47.2419, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTocarats_1() throws {
-		let result = Mass.Tonnes.tocarats(0.003)
+	func testConvertKnownTonnesToCarats_1() throws {
+		let result = Mass.Tonnes.toCarats(0.003)
 		XCTAssertEqual(15000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTocarats_2() throws {
-		let result = Mass.Tonnes.tocarats(0.09)
+	func testConvertKnownTonnesToCarats_2() throws {
+		let result = Mass.Tonnes.toCarats(0.09)
 		XCTAssertEqual(450000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTonnesTocarats_3() throws {
-		let result = Mass.Tonnes.tocarats(0.0012)
+	func testConvertKnownTonnesToCarats_3() throws {
+		let result = Mass.Tonnes.toCarats(0.0012)
 		XCTAssertEqual(6000.0, result, accuracy: 0.01)
 	}
 

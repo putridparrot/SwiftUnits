@@ -8,36 +8,36 @@ import XCTest
 @testable import SwiftUnits
 
 final class AmpereturnsTests: XCTestCase {
-	func testConvertKnownAmpereturnsTogilberts_1() throws {
-		let result = MagnetomotiveForce.Ampereturns.togilberts(400.0)
+	func testConvertKnownAmpereturnsToGilberts_1() throws {
+		let result = MagnetomotiveForce.Ampereturns.toGilberts(400.0)
 		XCTAssertEqual(502.6548248, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAmpereturnsTogilberts_2() throws {
-		let result = MagnetomotiveForce.Ampereturns.togilberts(6.7)
+	func testConvertKnownAmpereturnsToGilberts_2() throws {
+		let result = MagnetomotiveForce.Ampereturns.toGilberts(6.7)
 		XCTAssertEqual(8.4194683154, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAmpereturnsTogilberts_3() throws {
-		let result = MagnetomotiveForce.Ampereturns.togilberts(0.8)
+	func testConvertKnownAmpereturnsToGilberts_3() throws {
+		let result = MagnetomotiveForce.Ampereturns.toGilberts(0.8)
 		XCTAssertEqual(1.0053096496, result, accuracy: 0.01)
 	}
 
 }
 
 final class GilbertsTests: XCTestCase {
-	func testConvertKnownGilbertsToampereturns_1() throws {
-		let result = MagnetomotiveForce.Gilberts.toampereturns(0.8)
+	func testConvertKnownGilbertsToAmpereturns_1() throws {
+		let result = MagnetomotiveForce.Gilberts.toAmpereturns(0.8)
 		XCTAssertEqual(0.6366197721, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGilbertsToampereturns_2() throws {
-		let result = MagnetomotiveForce.Gilberts.toampereturns(67.0)
+	func testConvertKnownGilbertsToAmpereturns_2() throws {
+		let result = MagnetomotiveForce.Gilberts.toAmpereturns(67.0)
 		XCTAssertEqual(53.316905912, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGilbertsToampereturns_3() throws {
-		let result = MagnetomotiveForce.Gilberts.toampereturns(2.3)
+	func testConvertKnownGilbertsToAmpereturns_3() throws {
+		let result = MagnetomotiveForce.Gilberts.toAmpereturns(2.3)
 		XCTAssertEqual(1.8302818447, result, accuracy: 0.01)
 	}
 

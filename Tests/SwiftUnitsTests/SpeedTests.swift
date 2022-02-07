@@ -8,315 +8,315 @@ import XCTest
 @testable import SwiftUnits
 
 final class FeetPerSecondTests: XCTestCase {
-	func testConvertKnownFeetPerSecondTomilesPerHour_1() throws {
-		let result = Speed.FeetPerSecond.tomilesPerHour(14.5)
+	func testConvertKnownFeetPerSecondToMilesPerHour_1() throws {
+		let result = Speed.FeetPerSecond.toMilesPerHour(14.5)
 		XCTAssertEqual(9.886364, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTomilesPerHour_2() throws {
-		let result = Speed.FeetPerSecond.tomilesPerHour(100.0)
+	func testConvertKnownFeetPerSecondToMilesPerHour_2() throws {
+		let result = Speed.FeetPerSecond.toMilesPerHour(100.0)
 		XCTAssertEqual(68.1818, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTomilesPerHour_3() throws {
-		let result = Speed.FeetPerSecond.tomilesPerHour(1.6)
+	func testConvertKnownFeetPerSecondToMilesPerHour_3() throws {
+		let result = Speed.FeetPerSecond.toMilesPerHour(1.6)
 		XCTAssertEqual(1.09091, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTokilometresPerHour_1() throws {
-		let result = Speed.FeetPerSecond.tokilometresPerHour(1.5)
+	func testConvertKnownFeetPerSecondToKilometresPerHour_1() throws {
+		let result = Speed.FeetPerSecond.toKilometresPerHour(1.5)
 		XCTAssertEqual(1.64592, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTokilometresPerHour_2() throws {
-		let result = Speed.FeetPerSecond.tokilometresPerHour(67.9)
+	func testConvertKnownFeetPerSecondToKilometresPerHour_2() throws {
+		let result = Speed.FeetPerSecond.toKilometresPerHour(67.9)
 		XCTAssertEqual(74.50531, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTokilometresPerHour_3() throws {
-		let result = Speed.FeetPerSecond.tokilometresPerHour(109.0)
+	func testConvertKnownFeetPerSecondToKilometresPerHour_3() throws {
+		let result = Speed.FeetPerSecond.toKilometresPerHour(109.0)
 		XCTAssertEqual(119.604, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTometresPerSecond_1() throws {
-		let result = Speed.FeetPerSecond.tometresPerSecond(10.8)
+	func testConvertKnownFeetPerSecondToMetresPerSecond_1() throws {
+		let result = Speed.FeetPerSecond.toMetresPerSecond(10.8)
 		XCTAssertEqual(3.29184, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTometresPerSecond_2() throws {
-		let result = Speed.FeetPerSecond.tometresPerSecond(66.0)
+	func testConvertKnownFeetPerSecondToMetresPerSecond_2() throws {
+		let result = Speed.FeetPerSecond.toMetresPerSecond(66.0)
 		XCTAssertEqual(20.1168, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondTometresPerSecond_3() throws {
-		let result = Speed.FeetPerSecond.tometresPerSecond(2.3)
+	func testConvertKnownFeetPerSecondToMetresPerSecond_3() throws {
+		let result = Speed.FeetPerSecond.toMetresPerSecond(2.3)
 		XCTAssertEqual(0.70104, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondToknots_1() throws {
-		let result = Speed.FeetPerSecond.toknots(2.3)
+	func testConvertKnownFeetPerSecondToKnots_1() throws {
+		let result = Speed.FeetPerSecond.toKnots(2.3)
 		XCTAssertEqual(1.36271, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondToknots_2() throws {
-		let result = Speed.FeetPerSecond.toknots(666.0)
+	func testConvertKnownFeetPerSecondToKnots_2() throws {
+		let result = Speed.FeetPerSecond.toKnots(666.0)
 		XCTAssertEqual(394.594, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetPerSecondToknots_3() throws {
-		let result = Speed.FeetPerSecond.toknots(17.1)
+	func testConvertKnownFeetPerSecondToKnots_3() throws {
+		let result = Speed.FeetPerSecond.toKnots(17.1)
 		XCTAssertEqual(10.13147, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilometresPerHourTests: XCTestCase {
-	func testConvertKnownKilometresPerHourTomilesPerHour_1() throws {
-		let result = Speed.KilometresPerHour.tomilesPerHour(67.0)
+	func testConvertKnownKilometresPerHourToMilesPerHour_1() throws {
+		let result = Speed.KilometresPerHour.toMilesPerHour(67.0)
 		XCTAssertEqual(41.6319, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTomilesPerHour_2() throws {
-		let result = Speed.KilometresPerHour.tomilesPerHour(12.0)
+	func testConvertKnownKilometresPerHourToMilesPerHour_2() throws {
+		let result = Speed.KilometresPerHour.toMilesPerHour(12.0)
 		XCTAssertEqual(7.45645, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTomilesPerHour_3() throws {
-		let result = Speed.KilometresPerHour.tomilesPerHour(6.3)
+	func testConvertKnownKilometresPerHourToMilesPerHour_3() throws {
+		let result = Speed.KilometresPerHour.toMilesPerHour(6.3)
 		XCTAssertEqual(3.91464, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTofeetPerSecond_1() throws {
-		let result = Speed.KilometresPerHour.tofeetPerSecond(5.0)
+	func testConvertKnownKilometresPerHourToFeetPerSecond_1() throws {
+		let result = Speed.KilometresPerHour.toFeetPerSecond(5.0)
 		XCTAssertEqual(4.55672, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTofeetPerSecond_2() throws {
-		let result = Speed.KilometresPerHour.tofeetPerSecond(1.5)
+	func testConvertKnownKilometresPerHourToFeetPerSecond_2() throws {
+		let result = Speed.KilometresPerHour.toFeetPerSecond(1.5)
 		XCTAssertEqual(1.36702, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTofeetPerSecond_3() throws {
-		let result = Speed.KilometresPerHour.tofeetPerSecond(89.8)
+	func testConvertKnownKilometresPerHourToFeetPerSecond_3() throws {
+		let result = Speed.KilometresPerHour.toFeetPerSecond(89.8)
 		XCTAssertEqual(81.83873, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTometresPerSecond_1() throws {
-		let result = Speed.KilometresPerHour.tometresPerSecond(67.0)
+	func testConvertKnownKilometresPerHourToMetresPerSecond_1() throws {
+		let result = Speed.KilometresPerHour.toMetresPerSecond(67.0)
 		XCTAssertEqual(18.6111, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTometresPerSecond_2() throws {
-		let result = Speed.KilometresPerHour.tometresPerSecond(5.9)
+	func testConvertKnownKilometresPerHourToMetresPerSecond_2() throws {
+		let result = Speed.KilometresPerHour.toMetresPerSecond(5.9)
 		XCTAssertEqual(1.63889, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourTometresPerSecond_3() throws {
-		let result = Speed.KilometresPerHour.tometresPerSecond(900.0)
+	func testConvertKnownKilometresPerHourToMetresPerSecond_3() throws {
+		let result = Speed.KilometresPerHour.toMetresPerSecond(900.0)
 		XCTAssertEqual(250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourToknots_1() throws {
-		let result = Speed.KilometresPerHour.toknots(900.0)
+	func testConvertKnownKilometresPerHourToKnots_1() throws {
+		let result = Speed.KilometresPerHour.toKnots(900.0)
 		XCTAssertEqual(485.961, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourToknots_2() throws {
-		let result = Speed.KilometresPerHour.toknots(3.9)
+	func testConvertKnownKilometresPerHourToKnots_2() throws {
+		let result = Speed.KilometresPerHour.toKnots(3.9)
 		XCTAssertEqual(2.10583, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresPerHourToknots_3() throws {
-		let result = Speed.KilometresPerHour.toknots(12.0)
+	func testConvertKnownKilometresPerHourToKnots_3() throws {
+		let result = Speed.KilometresPerHour.toKnots(12.0)
 		XCTAssertEqual(6.47948, result, accuracy: 0.01)
 	}
 
 }
 
 final class KnotsTests: XCTestCase {
-	func testConvertKnownKnotsTomilesPerHour_1() throws {
-		let result = Speed.Knots.tomilesPerHour(8.0)
+	func testConvertKnownKnotsToMilesPerHour_1() throws {
+		let result = Speed.Knots.toMilesPerHour(8.0)
 		XCTAssertEqual(9.20624, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTomilesPerHour_2() throws {
-		let result = Speed.Knots.tomilesPerHour(1.2)
+	func testConvertKnownKnotsToMilesPerHour_2() throws {
+		let result = Speed.Knots.toMilesPerHour(1.2)
 		XCTAssertEqual(1.38094, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTomilesPerHour_3() throws {
-		let result = Speed.Knots.tomilesPerHour(670.0)
+	func testConvertKnownKnotsToMilesPerHour_3() throws {
+		let result = Speed.Knots.toMilesPerHour(670.0)
 		XCTAssertEqual(771.022, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTokilometresPerHour_1() throws {
-		let result = Speed.Knots.tokilometresPerHour(678.0)
+	func testConvertKnownKnotsToKilometresPerHour_1() throws {
+		let result = Speed.Knots.toKilometresPerHour(678.0)
 		XCTAssertEqual(1255.66, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTokilometresPerHour_2() throws {
-		let result = Speed.Knots.tokilometresPerHour(1.8)
+	func testConvertKnownKnotsToKilometresPerHour_2() throws {
+		let result = Speed.Knots.toKilometresPerHour(1.8)
 		XCTAssertEqual(3.3336, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTokilometresPerHour_3() throws {
-		let result = Speed.Knots.tokilometresPerHour(56.0)
+	func testConvertKnownKnotsToKilometresPerHour_3() throws {
+		let result = Speed.Knots.toKilometresPerHour(56.0)
 		XCTAssertEqual(103.712, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTofeetPerSecond_1() throws {
-		let result = Speed.Knots.tofeetPerSecond(56.0)
+	func testConvertKnownKnotsToFeetPerSecond_1() throws {
+		let result = Speed.Knots.toFeetPerSecond(56.0)
 		XCTAssertEqual(94.5174, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTofeetPerSecond_2() throws {
-		let result = Speed.Knots.tofeetPerSecond(4.7)
+	func testConvertKnownKnotsToFeetPerSecond_2() throws {
+		let result = Speed.Knots.toFeetPerSecond(4.7)
 		XCTAssertEqual(7.93271, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTofeetPerSecond_3() throws {
-		let result = Speed.Knots.tofeetPerSecond(3.0)
+	func testConvertKnownKnotsToFeetPerSecond_3() throws {
+		let result = Speed.Knots.toFeetPerSecond(3.0)
 		XCTAssertEqual(5.06343, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTometresPerSecond_1() throws {
-		let result = Speed.Knots.tometresPerSecond(5.0)
+	func testConvertKnownKnotsToMetresPerSecond_1() throws {
+		let result = Speed.Knots.toMetresPerSecond(5.0)
 		XCTAssertEqual(2.57222, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTometresPerSecond_2() throws {
-		let result = Speed.Knots.tometresPerSecond(9.1)
+	func testConvertKnownKnotsToMetresPerSecond_2() throws {
+		let result = Speed.Knots.toMetresPerSecond(9.1)
 		XCTAssertEqual(4.68144, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKnotsTometresPerSecond_3() throws {
-		let result = Speed.Knots.tometresPerSecond(190.0)
+	func testConvertKnownKnotsToMetresPerSecond_3() throws {
+		let result = Speed.Knots.toMetresPerSecond(190.0)
 		XCTAssertEqual(97.7444, result, accuracy: 0.01)
 	}
 
 }
 
 final class MetresPerSecondTests: XCTestCase {
-	func testConvertKnownMetresPerSecondTomilesPerHour_1() throws {
-		let result = Speed.MetresPerSecond.tomilesPerHour(13.0)
+	func testConvertKnownMetresPerSecondToMilesPerHour_1() throws {
+		let result = Speed.MetresPerSecond.toMilesPerHour(13.0)
 		XCTAssertEqual(29.0802, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTomilesPerHour_2() throws {
-		let result = Speed.MetresPerSecond.tomilesPerHour(6.7)
+	func testConvertKnownMetresPerSecondToMilesPerHour_2() throws {
+		let result = Speed.MetresPerSecond.toMilesPerHour(6.7)
 		XCTAssertEqual(14.9875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTomilesPerHour_3() throws {
-		let result = Speed.MetresPerSecond.tomilesPerHour(140.0)
+	func testConvertKnownMetresPerSecondToMilesPerHour_3() throws {
+		let result = Speed.MetresPerSecond.toMilesPerHour(140.0)
 		XCTAssertEqual(313.171, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTokilometresPerHour_1() throws {
-		let result = Speed.MetresPerSecond.tokilometresPerHour(800.0)
+	func testConvertKnownMetresPerSecondToKilometresPerHour_1() throws {
+		let result = Speed.MetresPerSecond.toKilometresPerHour(800.0)
 		XCTAssertEqual(2880.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTokilometresPerHour_2() throws {
-		let result = Speed.MetresPerSecond.tokilometresPerHour(7.8)
+	func testConvertKnownMetresPerSecondToKilometresPerHour_2() throws {
+		let result = Speed.MetresPerSecond.toKilometresPerHour(7.8)
 		XCTAssertEqual(28.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTokilometresPerHour_3() throws {
-		let result = Speed.MetresPerSecond.tokilometresPerHour(9000.0)
+	func testConvertKnownMetresPerSecondToKilometresPerHour_3() throws {
+		let result = Speed.MetresPerSecond.toKilometresPerHour(9000.0)
 		XCTAssertEqual(32400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTofeetPerSecond_1() throws {
-		let result = Speed.MetresPerSecond.tofeetPerSecond(9000.0)
+	func testConvertKnownMetresPerSecondToFeetPerSecond_1() throws {
+		let result = Speed.MetresPerSecond.toFeetPerSecond(9000.0)
 		XCTAssertEqual(29527.56, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTofeetPerSecond_2() throws {
-		let result = Speed.MetresPerSecond.tofeetPerSecond(3.4)
+	func testConvertKnownMetresPerSecondToFeetPerSecond_2() throws {
+		let result = Speed.MetresPerSecond.toFeetPerSecond(3.4)
 		XCTAssertEqual(11.1549, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondTofeetPerSecond_3() throws {
-		let result = Speed.MetresPerSecond.tofeetPerSecond(12.0)
+	func testConvertKnownMetresPerSecondToFeetPerSecond_3() throws {
+		let result = Speed.MetresPerSecond.toFeetPerSecond(12.0)
 		XCTAssertEqual(39.3701, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondToknots_1() throws {
-		let result = Speed.MetresPerSecond.toknots(12.0)
+	func testConvertKnownMetresPerSecondToKnots_1() throws {
+		let result = Speed.MetresPerSecond.toKnots(12.0)
 		XCTAssertEqual(23.3261, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondToknots_2() throws {
-		let result = Speed.MetresPerSecond.toknots(6.3)
+	func testConvertKnownMetresPerSecondToKnots_2() throws {
+		let result = Speed.MetresPerSecond.toKnots(6.3)
 		XCTAssertEqual(12.2462, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresPerSecondToknots_3() throws {
-		let result = Speed.MetresPerSecond.toknots(9.0)
+	func testConvertKnownMetresPerSecondToKnots_3() throws {
+		let result = Speed.MetresPerSecond.toKnots(9.0)
 		XCTAssertEqual(17.4946, result, accuracy: 0.01)
 	}
 
 }
 
 final class MilesPerHourTests: XCTestCase {
-	func testConvertKnownMilesPerHourTokilometresPerHour_1() throws {
-		let result = Speed.MilesPerHour.tokilometresPerHour(345.0)
+	func testConvertKnownMilesPerHourToKilometresPerHour_1() throws {
+		let result = Speed.MilesPerHour.toKilometresPerHour(345.0)
 		XCTAssertEqual(555.224, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTokilometresPerHour_2() throws {
-		let result = Speed.MilesPerHour.tokilometresPerHour(1.6)
+	func testConvertKnownMilesPerHourToKilometresPerHour_2() throws {
+		let result = Speed.MilesPerHour.toKilometresPerHour(1.6)
 		XCTAssertEqual(2.57495, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTokilometresPerHour_3() throws {
-		let result = Speed.MilesPerHour.tokilometresPerHour(0.5)
+	func testConvertKnownMilesPerHourToKilometresPerHour_3() throws {
+		let result = Speed.MilesPerHour.toKilometresPerHour(0.5)
 		XCTAssertEqual(0.804672, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTofeetPerSecond_1() throws {
-		let result = Speed.MilesPerHour.tofeetPerSecond(0.5)
+	func testConvertKnownMilesPerHourToFeetPerSecond_1() throws {
+		let result = Speed.MilesPerHour.toFeetPerSecond(0.5)
 		XCTAssertEqual(0.733333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTofeetPerSecond_2() throws {
-		let result = Speed.MilesPerHour.tofeetPerSecond(123.0)
+	func testConvertKnownMilesPerHourToFeetPerSecond_2() throws {
+		let result = Speed.MilesPerHour.toFeetPerSecond(123.0)
 		XCTAssertEqual(180.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTofeetPerSecond_3() throws {
-		let result = Speed.MilesPerHour.tofeetPerSecond(4.5)
+	func testConvertKnownMilesPerHourToFeetPerSecond_3() throws {
+		let result = Speed.MilesPerHour.toFeetPerSecond(4.5)
 		XCTAssertEqual(6.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTometresPerSecond_1() throws {
-		let result = Speed.MilesPerHour.tometresPerSecond(4.5)
+	func testConvertKnownMilesPerHourToMetresPerSecond_1() throws {
+		let result = Speed.MilesPerHour.toMetresPerSecond(4.5)
 		XCTAssertEqual(2.01168, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTometresPerSecond_2() throws {
-		let result = Speed.MilesPerHour.tometresPerSecond(100.0)
+	func testConvertKnownMilesPerHourToMetresPerSecond_2() throws {
+		let result = Speed.MilesPerHour.toMetresPerSecond(100.0)
 		XCTAssertEqual(44.704, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourTometresPerSecond_3() throws {
-		let result = Speed.MilesPerHour.tometresPerSecond(40.0)
+	func testConvertKnownMilesPerHourToMetresPerSecond_3() throws {
+		let result = Speed.MilesPerHour.toMetresPerSecond(40.0)
 		XCTAssertEqual(17.8816, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourToknots_1() throws {
-		let result = Speed.MilesPerHour.toknots(30.0)
+	func testConvertKnownMilesPerHourToKnots_1() throws {
+		let result = Speed.MilesPerHour.toKnots(30.0)
 		XCTAssertEqual(26.0693, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourToknots_2() throws {
-		let result = Speed.MilesPerHour.toknots(4.5)
+	func testConvertKnownMilesPerHourToKnots_2() throws {
+		let result = Speed.MilesPerHour.toKnots(4.5)
 		XCTAssertEqual(3.91039, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerHourToknots_3() throws {
-		let result = Speed.MilesPerHour.toknots(55.0)
+	func testConvertKnownMilesPerHourToKnots_3() throws {
+		let result = Speed.MilesPerHour.toKnots(55.0)
 		XCTAssertEqual(47.7937, result, accuracy: 0.01)
 	}
 

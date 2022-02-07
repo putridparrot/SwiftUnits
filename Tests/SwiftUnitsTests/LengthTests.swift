@@ -8,1107 +8,1107 @@ import XCTest
 @testable import SwiftUnits
 
 final class CentimetresTests: XCTestCase {
-	func testConvertKnownCentimetresTomillimetres_1() throws {
-		let result = Length.Centimetres.tomillimetres(900.0)
+	func testConvertKnownCentimetresToMillimetres_1() throws {
+		let result = Length.Centimetres.toMillimetres(900.0)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTomillimetres_2() throws {
-		let result = Length.Centimetres.tomillimetres(34.9)
+	func testConvertKnownCentimetresToMillimetres_2() throws {
+		let result = Length.Centimetres.toMillimetres(34.9)
 		XCTAssertEqual(349.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTomillimetres_3() throws {
-		let result = Length.Centimetres.tomillimetres(2.0)
+	func testConvertKnownCentimetresToMillimetres_3() throws {
+		let result = Length.Centimetres.toMillimetres(2.0)
 		XCTAssertEqual(20.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTometres_1() throws {
-		let result = Length.Centimetres.tometres(13.0)
+	func testConvertKnownCentimetresToMetres_1() throws {
+		let result = Length.Centimetres.toMetres(13.0)
 		XCTAssertEqual(0.13, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTometres_2() throws {
-		let result = Length.Centimetres.tometres(3900.0)
+	func testConvertKnownCentimetresToMetres_2() throws {
+		let result = Length.Centimetres.toMetres(3900.0)
 		XCTAssertEqual(39.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTometres_3() throws {
-		let result = Length.Centimetres.tometres(1.0)
+	func testConvertKnownCentimetresToMetres_3() throws {
+		let result = Length.Centimetres.toMetres(1.0)
 		XCTAssertEqual(0.01, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTokilometres_1() throws {
-		let result = Length.Centimetres.tokilometres(123456.0)
+	func testConvertKnownCentimetresToKilometres_1() throws {
+		let result = Length.Centimetres.toKilometres(123456.0)
 		XCTAssertEqual(1.23456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTokilometres_2() throws {
-		let result = Length.Centimetres.tokilometres(8900.0)
+	func testConvertKnownCentimetresToKilometres_2() throws {
+		let result = Length.Centimetres.toKilometres(8900.0)
 		XCTAssertEqual(0.089, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTokilometres_3() throws {
-		let result = Length.Centimetres.tokilometres(6009000.0)
+	func testConvertKnownCentimetresToKilometres_3() throws {
+		let result = Length.Centimetres.toKilometres(6009000.0)
 		XCTAssertEqual(60.09, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresToinches_1() throws {
-		let result = Length.Centimetres.toinches(600.0)
+	func testConvertKnownCentimetresToInches_1() throws {
+		let result = Length.Centimetres.toInches(600.0)
 		XCTAssertEqual(236.22, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresToinches_2() throws {
-		let result = Length.Centimetres.toinches(12.0)
+	func testConvertKnownCentimetresToInches_2() throws {
+		let result = Length.Centimetres.toInches(12.0)
 		XCTAssertEqual(4.72441, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresToinches_3() throws {
-		let result = Length.Centimetres.toinches(7.8)
+	func testConvertKnownCentimetresToInches_3() throws {
+		let result = Length.Centimetres.toInches(7.8)
 		XCTAssertEqual(3.07087, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTofeet_1() throws {
-		let result = Length.Centimetres.tofeet(12.3)
+	func testConvertKnownCentimetresToFeet_1() throws {
+		let result = Length.Centimetres.toFeet(12.3)
 		XCTAssertEqual(0.4035433, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTofeet_2() throws {
-		let result = Length.Centimetres.tofeet(89.0)
+	func testConvertKnownCentimetresToFeet_2() throws {
+		let result = Length.Centimetres.toFeet(89.0)
 		XCTAssertEqual(2.91995, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTofeet_3() throws {
-		let result = Length.Centimetres.tofeet(0.7)
+	func testConvertKnownCentimetresToFeet_3() throws {
+		let result = Length.Centimetres.toFeet(0.7)
 		XCTAssertEqual(0.0229659, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresToyards_1() throws {
-		let result = Length.Centimetres.toyards(700.0)
+	func testConvertKnownCentimetresToYards_1() throws {
+		let result = Length.Centimetres.toYards(700.0)
 		XCTAssertEqual(7.65529, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresToyards_2() throws {
-		let result = Length.Centimetres.toyards(56.3)
+	func testConvertKnownCentimetresToYards_2() throws {
+		let result = Length.Centimetres.toYards(56.3)
 		XCTAssertEqual(0.6157043, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresToyards_3() throws {
-		let result = Length.Centimetres.toyards(8.0)
+	func testConvertKnownCentimetresToYards_3() throws {
+		let result = Length.Centimetres.toYards(8.0)
 		XCTAssertEqual(0.0874891, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTomiles_1() throws {
-		let result = Length.Centimetres.tomiles(80000.0)
+	func testConvertKnownCentimetresToMiles_1() throws {
+		let result = Length.Centimetres.toMiles(80000.0)
 		XCTAssertEqual(0.49709695, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTomiles_2() throws {
-		let result = Length.Centimetres.tomiles(123456.0)
+	func testConvertKnownCentimetresToMiles_2() throws {
+		let result = Length.Centimetres.toMiles(123456.0)
 		XCTAssertEqual(0.767120019, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTomiles_3() throws {
-		let result = Length.Centimetres.tomiles(90909090.0)
+	func testConvertKnownCentimetresToMiles_3() throws {
+		let result = Length.Centimetres.toMiles(90909090.0)
 		XCTAssertEqual(564.88289639, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTonauticalMiles_1() throws {
-		let result = Length.Centimetres.tonauticalMiles(30000.0)
+	func testConvertKnownCentimetresToNauticalMiles_1() throws {
+		let result = Length.Centimetres.toNauticalMiles(30000.0)
 		XCTAssertEqual(0.16198704, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTonauticalMiles_2() throws {
-		let result = Length.Centimetres.tonauticalMiles(987654.0)
+	func testConvertKnownCentimetresToNauticalMiles_2() throws {
+		let result = Length.Centimetres.toNauticalMiles(987654.0)
 		XCTAssertEqual(5.33290497, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownCentimetresTonauticalMiles_3() throws {
-		let result = Length.Centimetres.tonauticalMiles(100200.0)
+	func testConvertKnownCentimetresToNauticalMiles_3() throws {
+		let result = Length.Centimetres.toNauticalMiles(100200.0)
 		XCTAssertEqual(0.541036717, result, accuracy: 0.01)
 	}
 
 }
 
 final class FeetTests: XCTestCase {
-	func testConvertKnownFeetTomillimetres_1() throws {
-		let result = Length.Feet.tomillimetres(0.3)
+	func testConvertKnownFeetToMillimetres_1() throws {
+		let result = Length.Feet.toMillimetres(0.3)
 		XCTAssertEqual(91.44, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTomillimetres_2() throws {
-		let result = Length.Feet.tomillimetres(2.0)
+	func testConvertKnownFeetToMillimetres_2() throws {
+		let result = Length.Feet.toMillimetres(2.0)
 		XCTAssertEqual(609.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTomillimetres_3() throws {
-		let result = Length.Feet.tomillimetres(0.06)
+	func testConvertKnownFeetToMillimetres_3() throws {
+		let result = Length.Feet.toMillimetres(0.06)
 		XCTAssertEqual(18.288, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTocentimetres_1() throws {
-		let result = Length.Feet.tocentimetres(0.07)
+	func testConvertKnownFeetToCentimetres_1() throws {
+		let result = Length.Feet.toCentimetres(0.07)
 		XCTAssertEqual(2.1336, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTocentimetres_2() throws {
-		let result = Length.Feet.tocentimetres(3.5)
+	func testConvertKnownFeetToCentimetres_2() throws {
+		let result = Length.Feet.toCentimetres(3.5)
 		XCTAssertEqual(106.68, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTocentimetres_3() throws {
-		let result = Length.Feet.tocentimetres(89.0)
+	func testConvertKnownFeetToCentimetres_3() throws {
+		let result = Length.Feet.toCentimetres(89.0)
 		XCTAssertEqual(2712.72, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTometres_1() throws {
-		let result = Length.Feet.tometres(900.0)
+	func testConvertKnownFeetToMetres_1() throws {
+		let result = Length.Feet.toMetres(900.0)
 		XCTAssertEqual(274.32, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTometres_2() throws {
-		let result = Length.Feet.tometres(1.2)
+	func testConvertKnownFeetToMetres_2() throws {
+		let result = Length.Feet.toMetres(1.2)
 		XCTAssertEqual(0.36576, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTometres_3() throws {
-		let result = Length.Feet.tometres(0.8)
+	func testConvertKnownFeetToMetres_3() throws {
+		let result = Length.Feet.toMetres(0.8)
 		XCTAssertEqual(0.24384, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTokilometres_1() throws {
-		let result = Length.Feet.tokilometres(1999.0)
+	func testConvertKnownFeetToKilometres_1() throws {
+		let result = Length.Feet.toKilometres(1999.0)
 		XCTAssertEqual(0.6092952, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTokilometres_2() throws {
-		let result = Length.Feet.tokilometres(123456.0)
+	func testConvertKnownFeetToKilometres_2() throws {
+		let result = Length.Feet.toKilometres(123456.0)
 		XCTAssertEqual(37.6293888, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTokilometres_3() throws {
-		let result = Length.Feet.tokilometres(800.0)
+	func testConvertKnownFeetToKilometres_3() throws {
+		let result = Length.Feet.toKilometres(800.0)
 		XCTAssertEqual(0.24384, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetToinches_1() throws {
-		let result = Length.Feet.toinches(8.0)
+	func testConvertKnownFeetToInches_1() throws {
+		let result = Length.Feet.toInches(8.0)
 		XCTAssertEqual(96.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetToinches_2() throws {
-		let result = Length.Feet.toinches(1.2)
+	func testConvertKnownFeetToInches_2() throws {
+		let result = Length.Feet.toInches(1.2)
 		XCTAssertEqual(14.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetToinches_3() throws {
-		let result = Length.Feet.toinches(0.4)
+	func testConvertKnownFeetToInches_3() throws {
+		let result = Length.Feet.toInches(0.4)
 		XCTAssertEqual(4.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetToyards_1() throws {
-		let result = Length.Feet.toyards(78.0)
+	func testConvertKnownFeetToYards_1() throws {
+		let result = Length.Feet.toYards(78.0)
 		XCTAssertEqual(26.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetToyards_2() throws {
-		let result = Length.Feet.toyards(0.1)
+	func testConvertKnownFeetToYards_2() throws {
+		let result = Length.Feet.toYards(0.1)
 		XCTAssertEqual(0.0333333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetToyards_3() throws {
-		let result = Length.Feet.toyards(7162.0)
+	func testConvertKnownFeetToYards_3() throws {
+		let result = Length.Feet.toYards(7162.0)
 		XCTAssertEqual(2387.333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTomiles_1() throws {
-		let result = Length.Feet.tomiles(9000.0)
+	func testConvertKnownFeetToMiles_1() throws {
+		let result = Length.Feet.toMiles(9000.0)
 		XCTAssertEqual(1.704545, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTomiles_2() throws {
-		let result = Length.Feet.tomiles(1999.0)
+	func testConvertKnownFeetToMiles_2() throws {
+		let result = Length.Feet.toMiles(1999.0)
 		XCTAssertEqual(0.3785985, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTomiles_3() throws {
-		let result = Length.Feet.tomiles(5020.0)
+	func testConvertKnownFeetToMiles_3() throws {
+		let result = Length.Feet.toMiles(5020.0)
 		XCTAssertEqual(0.9507576, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTonauticalMiles_1() throws {
-		let result = Length.Feet.tonauticalMiles(8765.0)
+	func testConvertKnownFeetToNauticalMiles_1() throws {
+		let result = Length.Feet.toNauticalMiles(8765.0)
 		XCTAssertEqual(1.442533, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTonauticalMiles_2() throws {
-		let result = Length.Feet.tonauticalMiles(19000.0)
+	func testConvertKnownFeetToNauticalMiles_2() throws {
+		let result = Length.Feet.toNauticalMiles(19000.0)
 		XCTAssertEqual(3.1269978, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFeetTonauticalMiles_3() throws {
-		let result = Length.Feet.tonauticalMiles(1000.0)
+	func testConvertKnownFeetToNauticalMiles_3() throws {
+		let result = Length.Feet.toNauticalMiles(1000.0)
 		XCTAssertEqual(0.164579, result, accuracy: 0.01)
 	}
 
 }
 
 final class InchesTests: XCTestCase {
-	func testConvertKnownInchesTomillimetres_1() throws {
-		let result = Length.Inches.tomillimetres(1.0)
+	func testConvertKnownInchesToMillimetres_1() throws {
+		let result = Length.Inches.toMillimetres(1.0)
 		XCTAssertEqual(25.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTomillimetres_2() throws {
-		let result = Length.Inches.tomillimetres(0.6)
+	func testConvertKnownInchesToMillimetres_2() throws {
+		let result = Length.Inches.toMillimetres(0.6)
 		XCTAssertEqual(15.24, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTomillimetres_3() throws {
-		let result = Length.Inches.tomillimetres(456.0)
+	func testConvertKnownInchesToMillimetres_3() throws {
+		let result = Length.Inches.toMillimetres(456.0)
 		XCTAssertEqual(11582.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTocentimetres_1() throws {
-		let result = Length.Inches.tocentimetres(123.0)
+	func testConvertKnownInchesToCentimetres_1() throws {
+		let result = Length.Inches.toCentimetres(123.0)
 		XCTAssertEqual(312.42, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTocentimetres_2() throws {
-		let result = Length.Inches.tocentimetres(0.9)
+	func testConvertKnownInchesToCentimetres_2() throws {
+		let result = Length.Inches.toCentimetres(0.9)
 		XCTAssertEqual(2.286, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTocentimetres_3() throws {
-		let result = Length.Inches.tocentimetres(3.4)
+	func testConvertKnownInchesToCentimetres_3() throws {
+		let result = Length.Inches.toCentimetres(3.4)
 		XCTAssertEqual(8.636, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTometres_1() throws {
-		let result = Length.Inches.tometres(3.4)
+	func testConvertKnownInchesToMetres_1() throws {
+		let result = Length.Inches.toMetres(3.4)
 		XCTAssertEqual(0.08636, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTometres_2() throws {
-		let result = Length.Inches.tometres(1002.0)
+	func testConvertKnownInchesToMetres_2() throws {
+		let result = Length.Inches.toMetres(1002.0)
 		XCTAssertEqual(25.4508, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTometres_3() throws {
-		let result = Length.Inches.tometres(56.0)
+	func testConvertKnownInchesToMetres_3() throws {
+		let result = Length.Inches.toMetres(56.0)
 		XCTAssertEqual(1.4224, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTokilometres_1() throws {
-		let result = Length.Inches.tokilometres(17890.0)
+	func testConvertKnownInchesToKilometres_1() throws {
+		let result = Length.Inches.toKilometres(17890.0)
 		XCTAssertEqual(0.454406, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTokilometres_2() throws {
-		let result = Length.Inches.tokilometres(999000.0)
+	func testConvertKnownInchesToKilometres_2() throws {
+		let result = Length.Inches.toKilometres(999000.0)
 		XCTAssertEqual(25.3746, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTokilometres_3() throws {
-		let result = Length.Inches.tokilometres(100200.0)
+	func testConvertKnownInchesToKilometres_3() throws {
+		let result = Length.Inches.toKilometres(100200.0)
 		XCTAssertEqual(2.54508, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTofeet_1() throws {
-		let result = Length.Inches.tofeet(23.0)
+	func testConvertKnownInchesToFeet_1() throws {
+		let result = Length.Inches.toFeet(23.0)
 		XCTAssertEqual(1.91667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTofeet_2() throws {
-		let result = Length.Inches.tofeet(0.9)
+	func testConvertKnownInchesToFeet_2() throws {
+		let result = Length.Inches.toFeet(0.9)
 		XCTAssertEqual(0.075, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTofeet_3() throws {
-		let result = Length.Inches.tofeet(479.0)
+	func testConvertKnownInchesToFeet_3() throws {
+		let result = Length.Inches.toFeet(479.0)
 		XCTAssertEqual(39.9167, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesToyards_1() throws {
-		let result = Length.Inches.toyards(123.0)
+	func testConvertKnownInchesToYards_1() throws {
+		let result = Length.Inches.toYards(123.0)
 		XCTAssertEqual(3.41667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesToyards_2() throws {
-		let result = Length.Inches.toyards(6.7)
+	func testConvertKnownInchesToYards_2() throws {
+		let result = Length.Inches.toYards(6.7)
 		XCTAssertEqual(0.186111, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesToyards_3() throws {
-		let result = Length.Inches.toyards(9.0)
+	func testConvertKnownInchesToYards_3() throws {
+		let result = Length.Inches.toYards(9.0)
 		XCTAssertEqual(0.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTomiles_1() throws {
-		let result = Length.Inches.tomiles(9000.0)
+	func testConvertKnownInchesToMiles_1() throws {
+		let result = Length.Inches.toMiles(9000.0)
 		XCTAssertEqual(0.1420455, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTomiles_2() throws {
-		let result = Length.Inches.tomiles(123456.0)
+	func testConvertKnownInchesToMiles_2() throws {
+		let result = Length.Inches.toMiles(123456.0)
 		XCTAssertEqual(1.94848485, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTomiles_3() throws {
-		let result = Length.Inches.tomiles(8800.0)
+	func testConvertKnownInchesToMiles_3() throws {
+		let result = Length.Inches.toMiles(8800.0)
 		XCTAssertEqual(0.1388889, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTonauticalMiles_1() throws {
-		let result = Length.Inches.tonauticalMiles(9000.0)
+	func testConvertKnownInchesToNauticalMiles_1() throws {
+		let result = Length.Inches.toNauticalMiles(9000.0)
 		XCTAssertEqual(0.1234341, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTonauticalMiles_2() throws {
-		let result = Length.Inches.tonauticalMiles(123456.0)
+	func testConvertKnownInchesToNauticalMiles_2() throws {
+		let result = Length.Inches.toNauticalMiles(123456.0)
 		XCTAssertEqual(1.69318704, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownInchesTonauticalMiles_3() throws {
-		let result = Length.Inches.tonauticalMiles(100200.0)
+	func testConvertKnownInchesToNauticalMiles_3() throws {
+		let result = Length.Inches.toNauticalMiles(100200.0)
 		XCTAssertEqual(1.37423326, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilometresTests: XCTestCase {
-	func testConvertKnownKilometresTomillimetres_1() throws {
-		let result = Length.Kilometres.tomillimetres(0.09)
+	func testConvertKnownKilometresToMillimetres_1() throws {
+		let result = Length.Kilometres.toMillimetres(0.09)
 		XCTAssertEqual(90000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTomillimetres_2() throws {
-		let result = Length.Kilometres.tomillimetres(0.12)
+	func testConvertKnownKilometresToMillimetres_2() throws {
+		let result = Length.Kilometres.toMillimetres(0.12)
 		XCTAssertEqual(120000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTomillimetres_3() throws {
-		let result = Length.Kilometres.tomillimetres(2.3)
+	func testConvertKnownKilometresToMillimetres_3() throws {
+		let result = Length.Kilometres.toMillimetres(2.3)
 		XCTAssertEqual(2.3e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTocentimetres_1() throws {
-		let result = Length.Kilometres.tocentimetres(7.9)
+	func testConvertKnownKilometresToCentimetres_1() throws {
+		let result = Length.Kilometres.toCentimetres(7.9)
 		XCTAssertEqual(790000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTocentimetres_2() throws {
-		let result = Length.Kilometres.tocentimetres(0.2)
+	func testConvertKnownKilometresToCentimetres_2() throws {
+		let result = Length.Kilometres.toCentimetres(0.2)
 		XCTAssertEqual(20000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTocentimetres_3() throws {
-		let result = Length.Kilometres.tocentimetres(0.09)
+	func testConvertKnownKilometresToCentimetres_3() throws {
+		let result = Length.Kilometres.toCentimetres(0.09)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTometres_1() throws {
-		let result = Length.Kilometres.tometres(0.8)
+	func testConvertKnownKilometresToMetres_1() throws {
+		let result = Length.Kilometres.toMetres(0.8)
 		XCTAssertEqual(800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTometres_2() throws {
-		let result = Length.Kilometres.tometres(45.0)
+	func testConvertKnownKilometresToMetres_2() throws {
+		let result = Length.Kilometres.toMetres(45.0)
 		XCTAssertEqual(45000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTometres_3() throws {
-		let result = Length.Kilometres.tometres(1.2)
+	func testConvertKnownKilometresToMetres_3() throws {
+		let result = Length.Kilometres.toMetres(1.2)
 		XCTAssertEqual(1200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresToinches_1() throws {
-		let result = Length.Kilometres.toinches(1.2)
+	func testConvertKnownKilometresToInches_1() throws {
+		let result = Length.Kilometres.toInches(1.2)
 		XCTAssertEqual(47244.094488, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresToinches_2() throws {
-		let result = Length.Kilometres.toinches(0.65)
+	func testConvertKnownKilometresToInches_2() throws {
+		let result = Length.Kilometres.toInches(0.65)
 		XCTAssertEqual(25590.551181, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresToinches_3() throws {
-		let result = Length.Kilometres.toinches(5.0)
+	func testConvertKnownKilometresToInches_3() throws {
+		let result = Length.Kilometres.toInches(5.0)
 		XCTAssertEqual(196850.3937, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTofeet_1() throws {
-		let result = Length.Kilometres.tofeet(3.8)
+	func testConvertKnownKilometresToFeet_1() throws {
+		let result = Length.Kilometres.toFeet(3.8)
 		XCTAssertEqual(12467.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTofeet_2() throws {
-		let result = Length.Kilometres.tofeet(1.2)
+	func testConvertKnownKilometresToFeet_2() throws {
+		let result = Length.Kilometres.toFeet(1.2)
 		XCTAssertEqual(3937.01, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTofeet_3() throws {
-		let result = Length.Kilometres.tofeet(0.65)
+	func testConvertKnownKilometresToFeet_3() throws {
+		let result = Length.Kilometres.toFeet(0.65)
 		XCTAssertEqual(2132.546, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresToyards_1() throws {
-		let result = Length.Kilometres.toyards(0.08)
+	func testConvertKnownKilometresToYards_1() throws {
+		let result = Length.Kilometres.toYards(0.08)
 		XCTAssertEqual(87.48906, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresToyards_2() throws {
-		let result = Length.Kilometres.toyards(1.2)
+	func testConvertKnownKilometresToYards_2() throws {
+		let result = Length.Kilometres.toYards(1.2)
 		XCTAssertEqual(1312.34, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresToyards_3() throws {
-		let result = Length.Kilometres.toyards(34.0)
+	func testConvertKnownKilometresToYards_3() throws {
+		let result = Length.Kilometres.toYards(34.0)
 		XCTAssertEqual(37182.852143, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTomiles_1() throws {
-		let result = Length.Kilometres.tomiles(12.0)
+	func testConvertKnownKilometresToMiles_1() throws {
+		let result = Length.Kilometres.toMiles(12.0)
 		XCTAssertEqual(7.45645, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTomiles_2() throws {
-		let result = Length.Kilometres.tomiles(0.9)
+	func testConvertKnownKilometresToMiles_2() throws {
+		let result = Length.Kilometres.toMiles(0.9)
 		XCTAssertEqual(0.559234, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTomiles_3() throws {
-		let result = Length.Kilometres.tomiles(3.9)
+	func testConvertKnownKilometresToMiles_3() throws {
+		let result = Length.Kilometres.toMiles(3.9)
 		XCTAssertEqual(2.42335, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTonauticalMiles_1() throws {
-		let result = Length.Kilometres.tonauticalMiles(1.2)
+	func testConvertKnownKilometresToNauticalMiles_1() throws {
+		let result = Length.Kilometres.toNauticalMiles(1.2)
 		XCTAssertEqual(0.647948, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTonauticalMiles_2() throws {
-		let result = Length.Kilometres.tonauticalMiles(0.2)
+	func testConvertKnownKilometresToNauticalMiles_2() throws {
+		let result = Length.Kilometres.toNauticalMiles(0.2)
 		XCTAssertEqual(0.107991, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometresTonauticalMiles_3() throws {
-		let result = Length.Kilometres.tonauticalMiles(99.9)
+	func testConvertKnownKilometresToNauticalMiles_3() throws {
+		let result = Length.Kilometres.toNauticalMiles(99.9)
 		XCTAssertEqual(53.94168, result, accuracy: 0.01)
 	}
 
 }
 
 final class MetresTests: XCTestCase {
-	func testConvertKnownMetresTomillimetres_1() throws {
-		let result = Length.Metres.tomillimetres(123.0)
+	func testConvertKnownMetresToMillimetres_1() throws {
+		let result = Length.Metres.toMillimetres(123.0)
 		XCTAssertEqual(123000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTomillimetres_2() throws {
-		let result = Length.Metres.tomillimetres(0.9)
+	func testConvertKnownMetresToMillimetres_2() throws {
+		let result = Length.Metres.toMillimetres(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTomillimetres_3() throws {
-		let result = Length.Metres.tomillimetres(0.0023)
+	func testConvertKnownMetresToMillimetres_3() throws {
+		let result = Length.Metres.toMillimetres(0.0023)
 		XCTAssertEqual(2.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTocentimetres_1() throws {
-		let result = Length.Metres.tocentimetres(2.3)
+	func testConvertKnownMetresToCentimetres_1() throws {
+		let result = Length.Metres.toCentimetres(2.3)
 		XCTAssertEqual(230.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTocentimetres_2() throws {
-		let result = Length.Metres.tocentimetres(34.0)
+	func testConvertKnownMetresToCentimetres_2() throws {
+		let result = Length.Metres.toCentimetres(34.0)
 		XCTAssertEqual(3400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTocentimetres_3() throws {
-		let result = Length.Metres.tocentimetres(0.9)
+	func testConvertKnownMetresToCentimetres_3() throws {
+		let result = Length.Metres.toCentimetres(0.9)
 		XCTAssertEqual(90.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTokilometres_1() throws {
-		let result = Length.Metres.tokilometres(100.0)
+	func testConvertKnownMetresToKilometres_1() throws {
+		let result = Length.Metres.toKilometres(100.0)
 		XCTAssertEqual(0.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTokilometres_2() throws {
-		let result = Length.Metres.tokilometres(123456.0)
+	func testConvertKnownMetresToKilometres_2() throws {
+		let result = Length.Metres.toKilometres(123456.0)
 		XCTAssertEqual(123.456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTokilometres_3() throws {
-		let result = Length.Metres.tokilometres(91.1)
+	func testConvertKnownMetresToKilometres_3() throws {
+		let result = Length.Metres.toKilometres(91.1)
 		XCTAssertEqual(0.0911, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresToinches_1() throws {
-		let result = Length.Metres.toinches(12.0)
+	func testConvertKnownMetresToInches_1() throws {
+		let result = Length.Metres.toInches(12.0)
 		XCTAssertEqual(472.441, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresToinches_2() throws {
-		let result = Length.Metres.toinches(9.3)
+	func testConvertKnownMetresToInches_2() throws {
+		let result = Length.Metres.toInches(9.3)
 		XCTAssertEqual(366.142, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresToinches_3() throws {
-		let result = Length.Metres.toinches(0.1)
+	func testConvertKnownMetresToInches_3() throws {
+		let result = Length.Metres.toInches(0.1)
 		XCTAssertEqual(3.93701, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTofeet_1() throws {
-		let result = Length.Metres.tofeet(67.0)
+	func testConvertKnownMetresToFeet_1() throws {
+		let result = Length.Metres.toFeet(67.0)
 		XCTAssertEqual(219.816, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTofeet_2() throws {
-		let result = Length.Metres.tofeet(1.2)
+	func testConvertKnownMetresToFeet_2() throws {
+		let result = Length.Metres.toFeet(1.2)
 		XCTAssertEqual(3.93701, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTofeet_3() throws {
-		let result = Length.Metres.tofeet(0.7)
+	func testConvertKnownMetresToFeet_3() throws {
+		let result = Length.Metres.toFeet(0.7)
 		XCTAssertEqual(2.29659, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresToyards_1() throws {
-		let result = Length.Metres.toyards(0.8)
+	func testConvertKnownMetresToYards_1() throws {
+		let result = Length.Metres.toYards(0.8)
 		XCTAssertEqual(0.874891, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresToyards_2() throws {
-		let result = Length.Metres.toyards(34.5)
+	func testConvertKnownMetresToYards_2() throws {
+		let result = Length.Metres.toYards(34.5)
 		XCTAssertEqual(37.72966, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresToyards_3() throws {
-		let result = Length.Metres.toyards(1.23)
+	func testConvertKnownMetresToYards_3() throws {
+		let result = Length.Metres.toYards(1.23)
 		XCTAssertEqual(1.345144, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTomiles_1() throws {
-		let result = Length.Metres.tomiles(7900.0)
+	func testConvertKnownMetresToMiles_1() throws {
+		let result = Length.Metres.toMiles(7900.0)
 		XCTAssertEqual(4.908832, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTomiles_2() throws {
-		let result = Length.Metres.tomiles(123456.0)
+	func testConvertKnownMetresToMiles_2() throws {
+		let result = Length.Metres.toMiles(123456.0)
 		XCTAssertEqual(76.7120019, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTomiles_3() throws {
-		let result = Length.Metres.tomiles(1000.0)
+	func testConvertKnownMetresToMiles_3() throws {
+		let result = Length.Metres.toMiles(1000.0)
 		XCTAssertEqual(0.621371, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTonauticalMiles_1() throws {
-		let result = Length.Metres.tonauticalMiles(900.0)
+	func testConvertKnownMetresToNauticalMiles_1() throws {
+		let result = Length.Metres.toNauticalMiles(900.0)
 		XCTAssertEqual(0.485961, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTonauticalMiles_2() throws {
-		let result = Length.Metres.tonauticalMiles(71819.0)
+	func testConvertKnownMetresToNauticalMiles_2() throws {
+		let result = Length.Metres.toNauticalMiles(71819.0)
 		XCTAssertEqual(38.779158, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMetresTonauticalMiles_3() throws {
-		let result = Length.Metres.tonauticalMiles(123456.0)
+	func testConvertKnownMetresToNauticalMiles_3() throws {
+		let result = Length.Metres.toNauticalMiles(123456.0)
 		XCTAssertEqual(66.6609071, result, accuracy: 0.01)
 	}
 
 }
 
 final class MilesTests: XCTestCase {
-	func testConvertKnownMilesTomillimetres_1() throws {
-		let result = Length.Miles.tomillimetres(0.09)
+	func testConvertKnownMilesToMillimetres_1() throws {
+		let result = Length.Miles.toMillimetres(0.09)
 		XCTAssertEqual(144840.95999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTomillimetres_2() throws {
-		let result = Length.Miles.tomillimetres(0.001)
+	func testConvertKnownMilesToMillimetres_2() throws {
+		let result = Length.Miles.toMillimetres(0.001)
 		XCTAssertEqual(1609.344, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTomillimetres_3() throws {
-		let result = Length.Miles.tomillimetres(0.5)
+	func testConvertKnownMilesToMillimetres_3() throws {
+		let result = Length.Miles.toMillimetres(0.5)
 		XCTAssertEqual(804672.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTocentimetres_1() throws {
-		let result = Length.Miles.tocentimetres(0.23)
+	func testConvertKnownMilesToCentimetres_1() throws {
+		let result = Length.Miles.toCentimetres(0.23)
 		XCTAssertEqual(37014.91, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTocentimetres_2() throws {
-		let result = Length.Miles.tocentimetres(0.01)
+	func testConvertKnownMilesToCentimetres_2() throws {
+		let result = Length.Miles.toCentimetres(0.01)
 		XCTAssertEqual(1609.344, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTocentimetres_3() throws {
-		let result = Length.Miles.tocentimetres(0.8)
+	func testConvertKnownMilesToCentimetres_3() throws {
+		let result = Length.Miles.toCentimetres(0.8)
 		XCTAssertEqual(128747.52, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTometres_1() throws {
-		let result = Length.Miles.tometres(0.1)
+	func testConvertKnownMilesToMetres_1() throws {
+		let result = Length.Miles.toMetres(0.1)
 		XCTAssertEqual(160.934, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTometres_2() throws {
-		let result = Length.Miles.tometres(0.08)
+	func testConvertKnownMilesToMetres_2() throws {
+		let result = Length.Miles.toMetres(0.08)
 		XCTAssertEqual(128.7475, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTometres_3() throws {
-		let result = Length.Miles.tometres(0.002)
+	func testConvertKnownMilesToMetres_3() throws {
+		let result = Length.Miles.toMetres(0.002)
 		XCTAssertEqual(3.218688, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTokilometres_1() throws {
-		let result = Length.Miles.tokilometres(2.0)
+	func testConvertKnownMilesToKilometres_1() throws {
+		let result = Length.Miles.toKilometres(2.0)
 		XCTAssertEqual(3.21869, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTokilometres_2() throws {
-		let result = Length.Miles.tokilometres(0.8)
+	func testConvertKnownMilesToKilometres_2() throws {
+		let result = Length.Miles.toKilometres(0.8)
 		XCTAssertEqual(1.28748, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTokilometres_3() throws {
-		let result = Length.Miles.tokilometres(23.0)
+	func testConvertKnownMilesToKilometres_3() throws {
+		let result = Length.Miles.toKilometres(23.0)
 		XCTAssertEqual(37.0149, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesToinches_1() throws {
-		let result = Length.Miles.toinches(0.7)
+	func testConvertKnownMilesToInches_1() throws {
+		let result = Length.Miles.toInches(0.7)
 		XCTAssertEqual(44352.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesToinches_2() throws {
-		let result = Length.Miles.toinches(0.09)
+	func testConvertKnownMilesToInches_2() throws {
+		let result = Length.Miles.toInches(0.09)
 		XCTAssertEqual(5702.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesToinches_3() throws {
-		let result = Length.Miles.toinches(2.0)
+	func testConvertKnownMilesToInches_3() throws {
+		let result = Length.Miles.toInches(2.0)
 		XCTAssertEqual(126720.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTofeet_1() throws {
-		let result = Length.Miles.tofeet(2.0)
+	func testConvertKnownMilesToFeet_1() throws {
+		let result = Length.Miles.toFeet(2.0)
 		XCTAssertEqual(10560.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTofeet_2() throws {
-		let result = Length.Miles.tofeet(0.6)
+	func testConvertKnownMilesToFeet_2() throws {
+		let result = Length.Miles.toFeet(0.6)
 		XCTAssertEqual(3168.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTofeet_3() throws {
-		let result = Length.Miles.tofeet(0.07)
+	func testConvertKnownMilesToFeet_3() throws {
+		let result = Length.Miles.toFeet(0.07)
 		XCTAssertEqual(369.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesToyards_1() throws {
-		let result = Length.Miles.toyards(0.07)
+	func testConvertKnownMilesToYards_1() throws {
+		let result = Length.Miles.toYards(0.07)
 		XCTAssertEqual(123.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesToyards_2() throws {
-		let result = Length.Miles.toyards(2.0)
+	func testConvertKnownMilesToYards_2() throws {
+		let result = Length.Miles.toYards(2.0)
 		XCTAssertEqual(3520.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesToyards_3() throws {
-		let result = Length.Miles.toyards(8.1)
+	func testConvertKnownMilesToYards_3() throws {
+		let result = Length.Miles.toYards(8.1)
 		XCTAssertEqual(14256.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTonauticalMiles_1() throws {
-		let result = Length.Miles.tonauticalMiles(8.1)
+	func testConvertKnownMilesToNauticalMiles_1() throws {
+		let result = Length.Miles.toNauticalMiles(8.1)
 		XCTAssertEqual(7.03871, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTonauticalMiles_2() throws {
-		let result = Length.Miles.tonauticalMiles(0.8)
+	func testConvertKnownMilesToNauticalMiles_2() throws {
+		let result = Length.Miles.toNauticalMiles(0.8)
 		XCTAssertEqual(0.695181, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesTonauticalMiles_3() throws {
-		let result = Length.Miles.tonauticalMiles(1.2)
+	func testConvertKnownMilesToNauticalMiles_3() throws {
+		let result = Length.Miles.toNauticalMiles(1.2)
 		XCTAssertEqual(1.04277, result, accuracy: 0.01)
 	}
 
 }
 
 final class MillimetresTests: XCTestCase {
-	func testConvertKnownMillimetresTocentimetres_1() throws {
-		let result = Length.Millimetres.tocentimetres(900.0)
+	func testConvertKnownMillimetresToCentimetres_1() throws {
+		let result = Length.Millimetres.toCentimetres(900.0)
 		XCTAssertEqual(90.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTocentimetres_2() throws {
-		let result = Length.Millimetres.tocentimetres(190.0)
+	func testConvertKnownMillimetresToCentimetres_2() throws {
+		let result = Length.Millimetres.toCentimetres(190.0)
 		XCTAssertEqual(19.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTocentimetres_3() throws {
-		let result = Length.Millimetres.tocentimetres(5000.0)
+	func testConvertKnownMillimetresToCentimetres_3() throws {
+		let result = Length.Millimetres.toCentimetres(5000.0)
 		XCTAssertEqual(500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTometres_1() throws {
-		let result = Length.Millimetres.tometres(1090.0)
+	func testConvertKnownMillimetresToMetres_1() throws {
+		let result = Length.Millimetres.toMetres(1090.0)
 		XCTAssertEqual(1.09, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTometres_2() throws {
-		let result = Length.Millimetres.tometres(9000.0)
+	func testConvertKnownMillimetresToMetres_2() throws {
+		let result = Length.Millimetres.toMetres(9000.0)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTometres_3() throws {
-		let result = Length.Millimetres.tometres(12345.0)
+	func testConvertKnownMillimetresToMetres_3() throws {
+		let result = Length.Millimetres.toMetres(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTokilometres_1() throws {
-		let result = Length.Millimetres.tokilometres(109000.0)
+	func testConvertKnownMillimetresToKilometres_1() throws {
+		let result = Length.Millimetres.toKilometres(109000.0)
 		XCTAssertEqual(0.109, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTokilometres_2() throws {
-		let result = Length.Millimetres.tokilometres(9876543.0)
+	func testConvertKnownMillimetresToKilometres_2() throws {
+		let result = Length.Millimetres.toKilometres(9876543.0)
 		XCTAssertEqual(9.876543, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTokilometres_3() throws {
-		let result = Length.Millimetres.tokilometres(900800.0)
+	func testConvertKnownMillimetresToKilometres_3() throws {
+		let result = Length.Millimetres.toKilometres(900800.0)
 		XCTAssertEqual(0.9008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresToinches_1() throws {
-		let result = Length.Millimetres.toinches(900.0)
+	func testConvertKnownMillimetresToInches_1() throws {
+		let result = Length.Millimetres.toInches(900.0)
 		XCTAssertEqual(35.4331, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresToinches_2() throws {
-		let result = Length.Millimetres.toinches(123.0)
+	func testConvertKnownMillimetresToInches_2() throws {
+		let result = Length.Millimetres.toInches(123.0)
 		XCTAssertEqual(4.84252, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresToinches_3() throws {
-		let result = Length.Millimetres.toinches(80.0)
+	func testConvertKnownMillimetresToInches_3() throws {
+		let result = Length.Millimetres.toInches(80.0)
 		XCTAssertEqual(3.14961, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTofeet_1() throws {
-		let result = Length.Millimetres.tofeet(800.0)
+	func testConvertKnownMillimetresToFeet_1() throws {
+		let result = Length.Millimetres.toFeet(800.0)
 		XCTAssertEqual(2.62467, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTofeet_2() throws {
-		let result = Length.Millimetres.tofeet(1234.0)
+	func testConvertKnownMillimetresToFeet_2() throws {
+		let result = Length.Millimetres.toFeet(1234.0)
 		XCTAssertEqual(4.048556, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTofeet_3() throws {
-		let result = Length.Millimetres.tofeet(600.8)
+	func testConvertKnownMillimetresToFeet_3() throws {
+		let result = Length.Millimetres.toFeet(600.8)
 		XCTAssertEqual(1.9711286, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresToyards_1() throws {
-		let result = Length.Millimetres.toyards(800.0)
+	func testConvertKnownMillimetresToYards_1() throws {
+		let result = Length.Millimetres.toYards(800.0)
 		XCTAssertEqual(0.874891, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresToyards_2() throws {
-		let result = Length.Millimetres.toyards(1200.0)
+	func testConvertKnownMillimetresToYards_2() throws {
+		let result = Length.Millimetres.toYards(1200.0)
 		XCTAssertEqual(1.312336, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresToyards_3() throws {
-		let result = Length.Millimetres.toyards(909.0)
+	func testConvertKnownMillimetresToYards_3() throws {
+		let result = Length.Millimetres.toYards(909.0)
 		XCTAssertEqual(0.994094, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTomiles_1() throws {
-		let result = Length.Millimetres.tomiles(900000.0)
+	func testConvertKnownMillimetresToMiles_1() throws {
+		let result = Length.Millimetres.toMiles(900000.0)
 		XCTAssertEqual(0.559234073, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTomiles_2() throws {
-		let result = Length.Millimetres.tomiles(12345678.9)
+	func testConvertKnownMillimetresToMiles_2() throws {
+		let result = Length.Millimetres.toMiles(12345678.9)
 		XCTAssertEqual(7.671249217072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTomiles_3() throws {
-		let result = Length.Millimetres.tomiles(100200300.0)
+	func testConvertKnownMillimetresToMiles_3() throws {
+		let result = Length.Millimetres.toMiles(100200300.0)
 		XCTAssertEqual(62.2615798735, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTonauticalMiles_1() throws {
-		let result = Length.Millimetres.tonauticalMiles(9000000.0)
+	func testConvertKnownMillimetresToNauticalMiles_1() throws {
+		let result = Length.Millimetres.toNauticalMiles(9000000.0)
 		XCTAssertEqual(4.859611231, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTonauticalMiles_2() throws {
-		let result = Length.Millimetres.tonauticalMiles(12345678.0)
+	func testConvertKnownMillimetresToNauticalMiles_2() throws {
+		let result = Length.Millimetres.toNauticalMiles(12345678.0)
 		XCTAssertEqual(6.6661328294, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillimetresTonauticalMiles_3() throws {
-		let result = Length.Millimetres.tonauticalMiles(926000.0)
+	func testConvertKnownMillimetresToNauticalMiles_3() throws {
+		let result = Length.Millimetres.toNauticalMiles(926000.0)
 		XCTAssertEqual(0.5, result, accuracy: 0.01)
 	}
 
 }
 
 final class NauticalMilesTests: XCTestCase {
-	func testConvertKnownNauticalMilesTomillimetres_1() throws {
-		let result = Length.NauticalMiles.tomillimetres(0.08)
+	func testConvertKnownNauticalMilesToMillimetres_1() throws {
+		let result = Length.NauticalMiles.toMillimetres(0.08)
 		XCTAssertEqual(148160.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTomillimetres_2() throws {
-		let result = Length.NauticalMiles.tomillimetres(0.001)
+	func testConvertKnownNauticalMilesToMillimetres_2() throws {
+		let result = Length.NauticalMiles.toMillimetres(0.001)
 		XCTAssertEqual(1852.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTomillimetres_3() throws {
-		let result = Length.NauticalMiles.tomillimetres(0.02)
+	func testConvertKnownNauticalMilesToMillimetres_3() throws {
+		let result = Length.NauticalMiles.toMillimetres(0.02)
 		XCTAssertEqual(37040.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTocentimetres_1() throws {
-		let result = Length.NauticalMiles.tocentimetres(0.9)
+	func testConvertKnownNauticalMilesToCentimetres_1() throws {
+		let result = Length.NauticalMiles.toCentimetres(0.9)
 		XCTAssertEqual(166680.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTocentimetres_2() throws {
-		let result = Length.NauticalMiles.tocentimetres(1.2)
+	func testConvertKnownNauticalMilesToCentimetres_2() throws {
+		let result = Length.NauticalMiles.toCentimetres(1.2)
 		XCTAssertEqual(222240.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTocentimetres_3() throws {
-		let result = Length.NauticalMiles.tocentimetres(0.1)
+	func testConvertKnownNauticalMilesToCentimetres_3() throws {
+		let result = Length.NauticalMiles.toCentimetres(0.1)
 		XCTAssertEqual(18520.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTometres_1() throws {
-		let result = Length.NauticalMiles.tometres(0.1)
+	func testConvertKnownNauticalMilesToMetres_1() throws {
+		let result = Length.NauticalMiles.toMetres(0.1)
 		XCTAssertEqual(185.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTometres_2() throws {
-		let result = Length.NauticalMiles.tometres(1.2)
+	func testConvertKnownNauticalMilesToMetres_2() throws {
+		let result = Length.NauticalMiles.toMetres(1.2)
 		XCTAssertEqual(2222.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTometres_3() throws {
-		let result = Length.NauticalMiles.tometres(89.0)
+	func testConvertKnownNauticalMilesToMetres_3() throws {
+		let result = Length.NauticalMiles.toMetres(89.0)
 		XCTAssertEqual(164828.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTokilometres_1() throws {
-		let result = Length.NauticalMiles.tokilometres(23.0)
+	func testConvertKnownNauticalMilesToKilometres_1() throws {
+		let result = Length.NauticalMiles.toKilometres(23.0)
 		XCTAssertEqual(42.596, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTokilometres_2() throws {
-		let result = Length.NauticalMiles.tokilometres(1.7)
+	func testConvertKnownNauticalMilesToKilometres_2() throws {
+		let result = Length.NauticalMiles.toKilometres(1.7)
 		XCTAssertEqual(3.1484, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTokilometres_3() throws {
-		let result = Length.NauticalMiles.tokilometres(56.0)
+	func testConvertKnownNauticalMilesToKilometres_3() throws {
+		let result = Length.NauticalMiles.toKilometres(56.0)
 		XCTAssertEqual(103.712, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesToinches_1() throws {
-		let result = Length.NauticalMiles.toinches(0.1)
+	func testConvertKnownNauticalMilesToInches_1() throws {
+		let result = Length.NauticalMiles.toInches(0.1)
 		XCTAssertEqual(7291.34, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesToinches_2() throws {
-		let result = Length.NauticalMiles.toinches(2.0)
+	func testConvertKnownNauticalMilesToInches_2() throws {
+		let result = Length.NauticalMiles.toInches(2.0)
 		XCTAssertEqual(145826.7999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesToinches_3() throws {
-		let result = Length.NauticalMiles.toinches(3.5)
+	func testConvertKnownNauticalMilesToInches_3() throws {
+		let result = Length.NauticalMiles.toInches(3.5)
 		XCTAssertEqual(255196.899, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTofeet_1() throws {
-		let result = Length.NauticalMiles.tofeet(1.4)
+	func testConvertKnownNauticalMilesToFeet_1() throws {
+		let result = Length.NauticalMiles.toFeet(1.4)
 		XCTAssertEqual(8506.56, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTofeet_2() throws {
-		let result = Length.NauticalMiles.tofeet(0.1)
+	func testConvertKnownNauticalMilesToFeet_2() throws {
+		let result = Length.NauticalMiles.toFeet(0.1)
 		XCTAssertEqual(607.612, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTofeet_3() throws {
-		let result = Length.NauticalMiles.tofeet(8.9)
+	func testConvertKnownNauticalMilesToFeet_3() throws {
+		let result = Length.NauticalMiles.toFeet(8.9)
 		XCTAssertEqual(54077.4680, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesToyards_1() throws {
-		let result = Length.NauticalMiles.toyards(9.0)
+	func testConvertKnownNauticalMilesToYards_1() throws {
+		let result = Length.NauticalMiles.toYards(9.0)
 		XCTAssertEqual(18228.329, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesToyards_2() throws {
-		let result = Length.NauticalMiles.toyards(1.5)
+	func testConvertKnownNauticalMilesToYards_2() throws {
+		let result = Length.NauticalMiles.toYards(1.5)
 		XCTAssertEqual(3038.06, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesToyards_3() throws {
-		let result = Length.NauticalMiles.toyards(0.8)
+	func testConvertKnownNauticalMilesToYards_3() throws {
+		let result = Length.NauticalMiles.toYards(0.8)
 		XCTAssertEqual(1620.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTomiles_1() throws {
-		let result = Length.NauticalMiles.tomiles(0.5)
+	func testConvertKnownNauticalMilesToMiles_1() throws {
+		let result = Length.NauticalMiles.toMiles(0.5)
 		XCTAssertEqual(0.57539, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTomiles_2() throws {
-		let result = Length.NauticalMiles.tomiles(23.0)
+	func testConvertKnownNauticalMilesToMiles_2() throws {
+		let result = Length.NauticalMiles.toMiles(23.0)
 		XCTAssertEqual(26.4679, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownNauticalMilesTomiles_3() throws {
-		let result = Length.NauticalMiles.tomiles(8.2)
+	func testConvertKnownNauticalMilesToMiles_3() throws {
+		let result = Length.NauticalMiles.toMiles(8.2)
 		XCTAssertEqual(9.43639, result, accuracy: 0.01)
 	}
 
 }
 
 final class YardsTests: XCTestCase {
-	func testConvertKnownYardsTomillimetres_1() throws {
-		let result = Length.Yards.tomillimetres(34.0)
+	func testConvertKnownYardsToMillimetres_1() throws {
+		let result = Length.Yards.toMillimetres(34.0)
 		XCTAssertEqual(31089.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTomillimetres_2() throws {
-		let result = Length.Yards.tomillimetres(0.9)
+	func testConvertKnownYardsToMillimetres_2() throws {
+		let result = Length.Yards.toMillimetres(0.9)
 		XCTAssertEqual(822.96, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTomillimetres_3() throws {
-		let result = Length.Yards.tomillimetres(2.0)
+	func testConvertKnownYardsToMillimetres_3() throws {
+		let result = Length.Yards.toMillimetres(2.0)
 		XCTAssertEqual(1828.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTocentimetres_1() throws {
-		let result = Length.Yards.tocentimetres(9.8)
+	func testConvertKnownYardsToCentimetres_1() throws {
+		let result = Length.Yards.toCentimetres(9.8)
 		XCTAssertEqual(896.112, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTocentimetres_2() throws {
-		let result = Length.Yards.tocentimetres(0.8)
+	func testConvertKnownYardsToCentimetres_2() throws {
+		let result = Length.Yards.toCentimetres(0.8)
 		XCTAssertEqual(73.152, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTocentimetres_3() throws {
-		let result = Length.Yards.tocentimetres(12.0)
+	func testConvertKnownYardsToCentimetres_3() throws {
+		let result = Length.Yards.toCentimetres(12.0)
 		XCTAssertEqual(1097.28, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTometres_1() throws {
-		let result = Length.Yards.tometres(12.0)
+	func testConvertKnownYardsToMetres_1() throws {
+		let result = Length.Yards.toMetres(12.0)
 		XCTAssertEqual(10.9728, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTometres_2() throws {
-		let result = Length.Yards.tometres(0.7)
+	func testConvertKnownYardsToMetres_2() throws {
+		let result = Length.Yards.toMetres(0.7)
 		XCTAssertEqual(0.64008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTometres_3() throws {
-		let result = Length.Yards.tometres(3.0)
+	func testConvertKnownYardsToMetres_3() throws {
+		let result = Length.Yards.toMetres(3.0)
 		XCTAssertEqual(2.7432, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTokilometres_1() throws {
-		let result = Length.Yards.tokilometres(400.0)
+	func testConvertKnownYardsToKilometres_1() throws {
+		let result = Length.Yards.toKilometres(400.0)
 		XCTAssertEqual(0.36576, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTokilometres_2() throws {
-		let result = Length.Yards.tokilometres(1900.0)
+	func testConvertKnownYardsToKilometres_2() throws {
+		let result = Length.Yards.toKilometres(1900.0)
 		XCTAssertEqual(1.73736, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTokilometres_3() throws {
-		let result = Length.Yards.tokilometres(12345.0)
+	func testConvertKnownYardsToKilometres_3() throws {
+		let result = Length.Yards.toKilometres(12345.0)
 		XCTAssertEqual(11.288268, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsToinches_1() throws {
-		let result = Length.Yards.toinches(23.0)
+	func testConvertKnownYardsToInches_1() throws {
+		let result = Length.Yards.toInches(23.0)
 		XCTAssertEqual(828.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsToinches_2() throws {
-		let result = Length.Yards.toinches(0.9)
+	func testConvertKnownYardsToInches_2() throws {
+		let result = Length.Yards.toInches(0.9)
 		XCTAssertEqual(32.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsToinches_3() throws {
-		let result = Length.Yards.toinches(12.0)
+	func testConvertKnownYardsToInches_3() throws {
+		let result = Length.Yards.toInches(12.0)
 		XCTAssertEqual(432.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTofeet_1() throws {
-		let result = Length.Yards.tofeet(12.0)
+	func testConvertKnownYardsToFeet_1() throws {
+		let result = Length.Yards.toFeet(12.0)
 		XCTAssertEqual(36.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTofeet_2() throws {
-		let result = Length.Yards.tofeet(1.8)
+	func testConvertKnownYardsToFeet_2() throws {
+		let result = Length.Yards.toFeet(1.8)
 		XCTAssertEqual(5.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTofeet_3() throws {
-		let result = Length.Yards.tofeet(67.0)
+	func testConvertKnownYardsToFeet_3() throws {
+		let result = Length.Yards.toFeet(67.0)
 		XCTAssertEqual(201.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTomiles_1() throws {
-		let result = Length.Yards.tomiles(8900.0)
+	func testConvertKnownYardsToMiles_1() throws {
+		let result = Length.Yards.toMiles(8900.0)
 		XCTAssertEqual(5.056818, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTomiles_2() throws {
-		let result = Length.Yards.tomiles(5000.0)
+	func testConvertKnownYardsToMiles_2() throws {
+		let result = Length.Yards.toMiles(5000.0)
 		XCTAssertEqual(2.840909, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTomiles_3() throws {
-		let result = Length.Yards.tomiles(123456.0)
+	func testConvertKnownYardsToMiles_3() throws {
+		let result = Length.Yards.toMiles(123456.0)
 		XCTAssertEqual(70.1454545, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTonauticalMiles_1() throws {
-		let result = Length.Yards.tonauticalMiles(1000.0)
+	func testConvertKnownYardsToNauticalMiles_1() throws {
+		let result = Length.Yards.toNauticalMiles(1000.0)
 		XCTAssertEqual(0.493737, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTonauticalMiles_2() throws {
-		let result = Length.Yards.tonauticalMiles(202020.0)
+	func testConvertKnownYardsToNauticalMiles_2() throws {
+		let result = Length.Yards.toNauticalMiles(202020.0)
 		XCTAssertEqual(99.7446479, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownYardsTonauticalMiles_3() throws {
-		let result = Length.Yards.tonauticalMiles(71928.0)
+	func testConvertKnownYardsToNauticalMiles_3() throws {
+		let result = Length.Yards.toNauticalMiles(71928.0)
 		XCTAssertEqual(35.513479, result, accuracy: 0.01)
 	}
 

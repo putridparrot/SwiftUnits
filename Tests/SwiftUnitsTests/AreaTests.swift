@@ -8,864 +8,864 @@ import XCTest
 @testable import SwiftUnits
 
 final class AcresTests: XCTestCase {
-	func testConvertKnownAcresTosquareKilometres_1() throws {
-		let result = Area.Acres.tosquareKilometres(100.0)
+	func testConvertKnownAcresToSquareKilometres_1() throws {
+		let result = Area.Acres.toSquareKilometres(100.0)
 		XCTAssertEqual(0.404686, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareKilometres_2() throws {
-		let result = Area.Acres.tosquareKilometres(90.0)
+	func testConvertKnownAcresToSquareKilometres_2() throws {
+		let result = Area.Acres.toSquareKilometres(90.0)
 		XCTAssertEqual(0.364217, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareKilometres_3() throws {
-		let result = Area.Acres.tosquareKilometres(1800.0)
+	func testConvertKnownAcresToSquareKilometres_3() throws {
+		let result = Area.Acres.toSquareKilometres(1800.0)
 		XCTAssertEqual(7.284342, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareMetres_1() throws {
-		let result = Area.Acres.tosquareMetres(1.2)
+	func testConvertKnownAcresToSquareMetres_1() throws {
+		let result = Area.Acres.toSquareMetres(1.2)
 		XCTAssertEqual(4856.23, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareMetres_2() throws {
-		let result = Area.Acres.tosquareMetres(0.8)
+	func testConvertKnownAcresToSquareMetres_2() throws {
+		let result = Area.Acres.toSquareMetres(0.8)
 		XCTAssertEqual(3237.49, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareMetres_3() throws {
-		let result = Area.Acres.tosquareMetres(5.6)
+	func testConvertKnownAcresToSquareMetres_3() throws {
+		let result = Area.Acres.toSquareMetres(5.6)
 		XCTAssertEqual(22662.416, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareMiles_1() throws {
-		let result = Area.Acres.tosquareMiles(1009.0)
+	func testConvertKnownAcresToSquareMiles_1() throws {
+		let result = Area.Acres.toSquareMiles(1009.0)
 		XCTAssertEqual(1.576562, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareMiles_2() throws {
-		let result = Area.Acres.tosquareMiles(90.0)
+	func testConvertKnownAcresToSquareMiles_2() throws {
+		let result = Area.Acres.toSquareMiles(90.0)
 		XCTAssertEqual(0.140625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareMiles_3() throws {
-		let result = Area.Acres.tosquareMiles(765.0)
+	func testConvertKnownAcresToSquareMiles_3() throws {
+		let result = Area.Acres.toSquareMiles(765.0)
 		XCTAssertEqual(1.19531, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareYards_1() throws {
-		let result = Area.Acres.tosquareYards(3.4)
+	func testConvertKnownAcresToSquareYards_1() throws {
+		let result = Area.Acres.toSquareYards(3.4)
 		XCTAssertEqual(16456.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareYards_2() throws {
-		let result = Area.Acres.tosquareYards(0.7)
+	func testConvertKnownAcresToSquareYards_2() throws {
+		let result = Area.Acres.toSquareYards(0.7)
 		XCTAssertEqual(3388.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareYards_3() throws {
-		let result = Area.Acres.tosquareYards(0.01)
+	func testConvertKnownAcresToSquareYards_3() throws {
+		let result = Area.Acres.toSquareYards(0.01)
 		XCTAssertEqual(48.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareFeet_1() throws {
-		let result = Area.Acres.tosquareFeet(0.01)
+	func testConvertKnownAcresToSquareFeet_1() throws {
+		let result = Area.Acres.toSquareFeet(0.01)
 		XCTAssertEqual(435.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareFeet_2() throws {
-		let result = Area.Acres.tosquareFeet(12.0)
+	func testConvertKnownAcresToSquareFeet_2() throws {
+		let result = Area.Acres.toSquareFeet(12.0)
 		XCTAssertEqual(522720.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareFeet_3() throws {
-		let result = Area.Acres.tosquareFeet(0.67)
+	func testConvertKnownAcresToSquareFeet_3() throws {
+		let result = Area.Acres.toSquareFeet(0.67)
 		XCTAssertEqual(29185.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareInches_1() throws {
-		let result = Area.Acres.tosquareInches(0.09)
+	func testConvertKnownAcresToSquareInches_1() throws {
+		let result = Area.Acres.toSquareInches(0.09)
 		XCTAssertEqual(564537.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareInches_2() throws {
-		let result = Area.Acres.tosquareInches(0.005)
+	func testConvertKnownAcresToSquareInches_2() throws {
+		let result = Area.Acres.toSquareInches(0.005)
 		XCTAssertEqual(31363.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTosquareInches_3() throws {
-		let result = Area.Acres.tosquareInches(0.012)
+	func testConvertKnownAcresToSquareInches_3() throws {
+		let result = Area.Acres.toSquareInches(0.012)
 		XCTAssertEqual(75271.68, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTohectares_1() throws {
-		let result = Area.Acres.tohectares(1109.0)
+	func testConvertKnownAcresToHectares_1() throws {
+		let result = Area.Acres.toHectares(1109.0)
 		XCTAssertEqual(448.7964, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTohectares_2() throws {
-		let result = Area.Acres.tohectares(5.6)
+	func testConvertKnownAcresToHectares_2() throws {
+		let result = Area.Acres.toHectares(5.6)
 		XCTAssertEqual(2.26624, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAcresTohectares_3() throws {
-		let result = Area.Acres.tohectares(1.23)
+	func testConvertKnownAcresToHectares_3() throws {
+		let result = Area.Acres.toHectares(1.23)
 		XCTAssertEqual(0.4977633, result, accuracy: 0.01)
 	}
 
 }
 
 final class HectaresTests: XCTestCase {
-	func testConvertKnownHectaresTosquareKilometres_1() throws {
-		let result = Area.Hectares.tosquareKilometres(15000.0)
+	func testConvertKnownHectaresToSquareKilometres_1() throws {
+		let result = Area.Hectares.toSquareKilometres(15000.0)
 		XCTAssertEqual(150.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareKilometres_2() throws {
-		let result = Area.Hectares.tosquareKilometres(300.0)
+	func testConvertKnownHectaresToSquareKilometres_2() throws {
+		let result = Area.Hectares.toSquareKilometres(300.0)
 		XCTAssertEqual(3.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareKilometres_3() throws {
-		let result = Area.Hectares.tosquareKilometres(45.6)
+	func testConvertKnownHectaresToSquareKilometres_3() throws {
+		let result = Area.Hectares.toSquareKilometres(45.6)
 		XCTAssertEqual(0.456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareMetres_1() throws {
-		let result = Area.Hectares.tosquareMetres(1.4)
+	func testConvertKnownHectaresToSquareMetres_1() throws {
+		let result = Area.Hectares.toSquareMetres(1.4)
 		XCTAssertEqual(14000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareMetres_2() throws {
-		let result = Area.Hectares.tosquareMetres(0.9)
+	func testConvertKnownHectaresToSquareMetres_2() throws {
+		let result = Area.Hectares.toSquareMetres(0.9)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareMetres_3() throws {
-		let result = Area.Hectares.tosquareMetres(0.012)
+	func testConvertKnownHectaresToSquareMetres_3() throws {
+		let result = Area.Hectares.toSquareMetres(0.012)
 		XCTAssertEqual(120.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareMiles_1() throws {
-		let result = Area.Hectares.tosquareMiles(1102.0)
+	func testConvertKnownHectaresToSquareMiles_1() throws {
+		let result = Area.Hectares.toSquareMiles(1102.0)
 		XCTAssertEqual(4.254846, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareMiles_2() throws {
-		let result = Area.Hectares.tosquareMiles(4500.0)
+	func testConvertKnownHectaresToSquareMiles_2() throws {
+		let result = Area.Hectares.toSquareMiles(4500.0)
 		XCTAssertEqual(17.3746, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareMiles_3() throws {
-		let result = Area.Hectares.tosquareMiles(90.0)
+	func testConvertKnownHectaresToSquareMiles_3() throws {
+		let result = Area.Hectares.toSquareMiles(90.0)
 		XCTAssertEqual(0.347492, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareYards_1() throws {
-		let result = Area.Hectares.tosquareYards(1.2)
+	func testConvertKnownHectaresToSquareYards_1() throws {
+		let result = Area.Hectares.toSquareYards(1.2)
 		XCTAssertEqual(14351.8805556, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareYards_2() throws {
-		let result = Area.Hectares.tosquareYards(0.8)
+	func testConvertKnownHectaresToSquareYards_2() throws {
+		let result = Area.Hectares.toSquareYards(0.8)
 		XCTAssertEqual(9567.92, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareYards_3() throws {
-		let result = Area.Hectares.tosquareYards(34.0)
+	func testConvertKnownHectaresToSquareYards_3() throws {
+		let result = Area.Hectares.toSquareYards(34.0)
 		XCTAssertEqual(406636.615, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareFeet_1() throws {
-		let result = Area.Hectares.tosquareFeet(3.4)
+	func testConvertKnownHectaresToSquareFeet_1() throws {
+		let result = Area.Hectares.toSquareFeet(3.4)
 		XCTAssertEqual(365972.599, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareFeet_2() throws {
-		let result = Area.Hectares.tosquareFeet(0.09)
+	func testConvertKnownHectaresToSquareFeet_2() throws {
+		let result = Area.Hectares.toSquareFeet(0.09)
 		XCTAssertEqual(9687.519, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareFeet_3() throws {
-		let result = Area.Hectares.tosquareFeet(1.2)
+	func testConvertKnownHectaresToSquareFeet_3() throws {
+		let result = Area.Hectares.toSquareFeet(1.2)
 		XCTAssertEqual(129166.7999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareInches_1() throws {
-		let result = Area.Hectares.tosquareInches(0.009)
+	func testConvertKnownHectaresToSquareInches_1() throws {
+		let result = Area.Hectares.toSquareInches(0.009)
 		XCTAssertEqual(139500.28, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareInches_2() throws {
-		let result = Area.Hectares.tosquareInches(0.01)
+	func testConvertKnownHectaresToSquareInches_2() throws {
+		let result = Area.Hectares.toSquareInches(0.01)
 		XCTAssertEqual(155000.31, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresTosquareInches_3() throws {
-		let result = Area.Hectares.tosquareInches(0.0061)
+	func testConvertKnownHectaresToSquareInches_3() throws {
+		let result = Area.Hectares.toSquareInches(0.0061)
 		XCTAssertEqual(94550.1891, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresToacres_1() throws {
-		let result = Area.Hectares.toacres(1.2)
+	func testConvertKnownHectaresToAcres_1() throws {
+		let result = Area.Hectares.toAcres(1.2)
 		XCTAssertEqual(2.96526, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresToacres_2() throws {
-		let result = Area.Hectares.toacres(0.8)
+	func testConvertKnownHectaresToAcres_2() throws {
+		let result = Area.Hectares.toAcres(0.8)
 		XCTAssertEqual(1.97684, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownHectaresToacres_3() throws {
-		let result = Area.Hectares.toacres(4.2)
+	func testConvertKnownHectaresToAcres_3() throws {
+		let result = Area.Hectares.toAcres(4.2)
 		XCTAssertEqual(10.3784, result, accuracy: 0.01)
 	}
 
 }
 
 final class SquareFeetTests: XCTestCase {
-	func testConvertKnownSquareFeetTosquareKilometres_1() throws {
-		let result = Area.SquareFeet.tosquareKilometres(88997766.0)
+	func testConvertKnownSquareFeetToSquareKilometres_1() throws {
+		let result = Area.SquareFeet.toSquareKilometres(88997766.0)
 		XCTAssertEqual(8.2681630146, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareKilometres_2() throws {
-		let result = Area.SquareFeet.tosquareKilometres(10009002.0)
+	func testConvertKnownSquareFeetToSquareKilometres_2() throws {
+		let result = Area.SquareFeet.toSquareKilometres(10009002.0)
 		XCTAssertEqual(0.92986671317, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareKilometres_3() throws {
-		let result = Area.SquareFeet.tosquareKilometres(987654321.0)
+	func testConvertKnownSquareFeetToSquareKilometres_3() throws {
+		let result = Area.SquareFeet.toSquareKilometres(987654321.0)
 		XCTAssertEqual(91.75608889, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareMetres_1() throws {
-		let result = Area.SquareFeet.tosquareMetres(900.0)
+	func testConvertKnownSquareFeetToSquareMetres_1() throws {
+		let result = Area.SquareFeet.toSquareMetres(900.0)
 		XCTAssertEqual(83.6127, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareMetres_2() throws {
-		let result = Area.SquareFeet.tosquareMetres(799.123)
+	func testConvertKnownSquareFeetToSquareMetres_2() throws {
+		let result = Area.SquareFeet.toSquareMetres(799.123)
 		XCTAssertEqual(74.24095603, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareMetres_3() throws {
-		let result = Area.SquareFeet.tosquareMetres(500.0)
+	func testConvertKnownSquareFeetToSquareMetres_3() throws {
+		let result = Area.SquareFeet.toSquareMetres(500.0)
 		XCTAssertEqual(46.4515, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareMiles_1() throws {
-		let result = Area.SquareFeet.tosquareMiles(12000000.0)
+	func testConvertKnownSquareFeetToSquareMiles_1() throws {
+		let result = Area.SquareFeet.toSquareMiles(12000000.0)
 		XCTAssertEqual(0.43044077135, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareMiles_2() throws {
-		let result = Area.SquareFeet.tosquareMiles(987654321.0)
+	func testConvertKnownSquareFeetToSquareMiles_2() throws {
+		let result = Area.SquareFeet.toSquareMiles(987654321.0)
 		XCTAssertEqual(35.4272239799, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareMiles_3() throws {
-		let result = Area.SquareFeet.tosquareMiles(900800700.0)
+	func testConvertKnownSquareFeetToSquareMiles_3() throws {
+		let result = Area.SquareFeet.toSquareMiles(900800700.0)
 		XCTAssertEqual(32.3117790117, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareYards_1() throws {
-		let result = Area.SquareFeet.tosquareYards(909.0)
+	func testConvertKnownSquareFeetToSquareYards_1() throws {
+		let result = Area.SquareFeet.toSquareYards(909.0)
 		XCTAssertEqual(101.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareYards_2() throws {
-		let result = Area.SquareFeet.tosquareYards(123.456)
+	func testConvertKnownSquareFeetToSquareYards_2() throws {
+		let result = Area.SquareFeet.toSquareYards(123.456)
 		XCTAssertEqual(13.71733333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareYards_3() throws {
-		let result = Area.SquareFeet.tosquareYards(8009.0)
+	func testConvertKnownSquareFeetToSquareYards_3() throws {
+		let result = Area.SquareFeet.toSquareYards(8009.0)
 		XCTAssertEqual(889.8889, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareInches_1() throws {
-		let result = Area.SquareFeet.tosquareInches(6.7)
+	func testConvertKnownSquareFeetToSquareInches_1() throws {
+		let result = Area.SquareFeet.toSquareInches(6.7)
 		XCTAssertEqual(964.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareInches_2() throws {
-		let result = Area.SquareFeet.tosquareInches(1.5)
+	func testConvertKnownSquareFeetToSquareInches_2() throws {
+		let result = Area.SquareFeet.toSquareInches(1.5)
 		XCTAssertEqual(216.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTosquareInches_3() throws {
-		let result = Area.SquareFeet.tosquareInches(0.9)
+	func testConvertKnownSquareFeetToSquareInches_3() throws {
+		let result = Area.SquareFeet.toSquareInches(0.9)
 		XCTAssertEqual(129.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTohectares_1() throws {
-		let result = Area.SquareFeet.tohectares(90000.0)
+	func testConvertKnownSquareFeetToHectares_1() throws {
+		let result = Area.SquareFeet.toHectares(90000.0)
 		XCTAssertEqual(0.83612736, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTohectares_2() throws {
-		let result = Area.SquareFeet.tohectares(120120.0)
+	func testConvertKnownSquareFeetToHectares_2() throws {
+		let result = Area.SquareFeet.toHectares(120120.0)
 		XCTAssertEqual(1.11595132, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetTohectares_3() throws {
-		let result = Area.SquareFeet.tohectares(90071.0)
+	func testConvertKnownSquareFeetToHectares_3() throws {
+		let result = Area.SquareFeet.toHectares(90071.0)
 		XCTAssertEqual(0.83678697, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetToacres_1() throws {
-		let result = Area.SquareFeet.toacres(90000.0)
+	func testConvertKnownSquareFeetToAcres_1() throws {
+		let result = Area.SquareFeet.toAcres(90000.0)
 		XCTAssertEqual(2.0661157, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetToacres_2() throws {
-		let result = Area.SquareFeet.toacres(123456.0)
+	func testConvertKnownSquareFeetToAcres_2() throws {
+		let result = Area.SquareFeet.toAcres(123456.0)
 		XCTAssertEqual(2.83415978, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareFeetToacres_3() throws {
-		let result = Area.SquareFeet.toacres(8809.0)
+	func testConvertKnownSquareFeetToAcres_3() throws {
+		let result = Area.SquareFeet.toAcres(8809.0)
 		XCTAssertEqual(0.2022268, result, accuracy: 0.01)
 	}
 
 }
 
 final class SquareInchesTests: XCTestCase {
-	func testConvertKnownSquareInchesTosquareKilometres_1() throws {
-		let result = Area.SquareInches.tosquareKilometres(678900000.0)
+	func testConvertKnownSquareInchesToSquareKilometres_1() throws {
+		let result = Area.SquareInches.toSquareKilometres(678900000.0)
 		XCTAssertEqual(0.437999124, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareKilometres_2() throws {
-		let result = Area.SquareInches.tosquareKilometres(10000000000.0)
+	func testConvertKnownSquareInchesToSquareKilometres_2() throws {
+		let result = Area.SquareInches.toSquareKilometres(10000000000.0)
 		XCTAssertEqual(6.4516, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareKilometres_3() throws {
-		let result = Area.SquareInches.tosquareKilometres(9e12)
+	func testConvertKnownSquareInchesToSquareKilometres_3() throws {
+		let result = Area.SquareInches.toSquareKilometres(9e12)
 		XCTAssertEqual(5806.44, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareMetres_1() throws {
-		let result = Area.SquareInches.tosquareMetres(1090.0)
+	func testConvertKnownSquareInchesToSquareMetres_1() throws {
+		let result = Area.SquareInches.toSquareMetres(1090.0)
 		XCTAssertEqual(0.7032244, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareMetres_2() throws {
-		let result = Area.SquareInches.tosquareMetres(1.3e6)
+	func testConvertKnownSquareInchesToSquareMetres_2() throws {
+		let result = Area.SquareInches.toSquareMetres(1.3e6)
 		XCTAssertEqual(838.708, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareMetres_3() throws {
-		let result = Area.SquareInches.tosquareMetres(9988.0)
+	func testConvertKnownSquareInchesToSquareMetres_3() throws {
+		let result = Area.SquareInches.toSquareMetres(9988.0)
 		XCTAssertEqual(6.443858, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareMiles_1() throws {
-		let result = Area.SquareInches.tosquareMiles(1007008000.0)
+	func testConvertKnownSquareInchesToSquareMiles_1() throws {
+		let result = Area.SquareInches.toSquareMiles(1007008000.0)
 		XCTAssertEqual(0.2508433450668, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareMiles_2() throws {
-		let result = Area.SquareInches.tosquareMiles(1.2e12)
+	func testConvertKnownSquareInchesToSquareMiles_2() throws {
+		let result = Area.SquareInches.toSquareMiles(1.2e12)
 		XCTAssertEqual(298.9172023262932, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareMiles_3() throws {
-		let result = Area.SquareInches.tosquareMiles(250e7)
+	func testConvertKnownSquareInchesToSquareMiles_3() throws {
+		let result = Area.SquareInches.toSquareMiles(250e7)
 		XCTAssertEqual(0.6227441715131, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareYards_1() throws {
-		let result = Area.SquareInches.tosquareYards(900.0)
+	func testConvertKnownSquareInchesToSquareYards_1() throws {
+		let result = Area.SquareInches.toSquareYards(900.0)
 		XCTAssertEqual(0.694444, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareYards_2() throws {
-		let result = Area.SquareInches.tosquareYards(15000.0)
+	func testConvertKnownSquareInchesToSquareYards_2() throws {
+		let result = Area.SquareInches.toSquareYards(15000.0)
 		XCTAssertEqual(11.574074, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareYards_3() throws {
-		let result = Area.SquareInches.tosquareYards(3e6)
+	func testConvertKnownSquareInchesToSquareYards_3() throws {
+		let result = Area.SquareInches.toSquareYards(3e6)
 		XCTAssertEqual(2314.814815, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareFeet_1() throws {
-		let result = Area.SquareInches.tosquareFeet(34.0)
+	func testConvertKnownSquareInchesToSquareFeet_1() throws {
+		let result = Area.SquareInches.toSquareFeet(34.0)
 		XCTAssertEqual(0.236111, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareFeet_2() throws {
-		let result = Area.SquareInches.tosquareFeet(1002.0)
+	func testConvertKnownSquareInchesToSquareFeet_2() throws {
+		let result = Area.SquareInches.toSquareFeet(1002.0)
 		XCTAssertEqual(6.958333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTosquareFeet_3() throws {
-		let result = Area.SquareInches.tosquareFeet(890.0)
+	func testConvertKnownSquareInchesToSquareFeet_3() throws {
+		let result = Area.SquareInches.toSquareFeet(890.0)
 		XCTAssertEqual(6.18056, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTohectares_1() throws {
-		let result = Area.SquareInches.tohectares(9000000.0)
+	func testConvertKnownSquareInchesToHectares_1() throws {
+		let result = Area.SquareInches.toHectares(9000000.0)
 		XCTAssertEqual(0.580644, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTohectares_2() throws {
-		let result = Area.SquareInches.tohectares(12345678.0)
+	func testConvertKnownSquareInchesToHectares_2() throws {
+		let result = Area.SquareInches.toHectares(12345678.0)
 		XCTAssertEqual(0.79649376185, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesTohectares_3() throws {
-		let result = Area.SquareInches.tohectares(99887766.0)
+	func testConvertKnownSquareInchesToHectares_3() throws {
+		let result = Area.SquareInches.toHectares(99887766.0)
 		XCTAssertEqual(6.4443591113, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesToacres_1() throws {
-		let result = Area.SquareInches.toacres(900100.0)
+	func testConvertKnownSquareInchesToAcres_1() throws {
+		let result = Area.SquareInches.toAcres(900100.0)
 		XCTAssertEqual(0.143496199, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesToacres_2() throws {
-		let result = Area.SquareInches.toacres(5e6)
+	func testConvertKnownSquareInchesToAcres_2() throws {
+		let result = Area.SquareInches.toAcres(5e6)
 		XCTAssertEqual(0.7971125395, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareInchesToacres_3() throws {
-		let result = Area.SquareInches.toacres(12345678.0)
+	func testConvertKnownSquareInchesToAcres_3() throws {
+		let result = Area.SquareInches.toAcres(12345678.0)
 		XCTAssertEqual(1.9681789486, result, accuracy: 0.01)
 	}
 
 }
 
 final class SquareKilometresTests: XCTestCase {
-	func testConvertKnownSquareKilometresTosquareMetres_1() throws {
-		let result = Area.SquareKilometres.tosquareMetres(0.12)
+	func testConvertKnownSquareKilometresToSquareMetres_1() throws {
+		let result = Area.SquareKilometres.toSquareMetres(0.12)
 		XCTAssertEqual(120000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareMetres_2() throws {
-		let result = Area.SquareKilometres.tosquareMetres(0.9)
+	func testConvertKnownSquareKilometresToSquareMetres_2() throws {
+		let result = Area.SquareKilometres.toSquareMetres(0.9)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareMetres_3() throws {
-		let result = Area.SquareKilometres.tosquareMetres(8.123456)
+	func testConvertKnownSquareKilometresToSquareMetres_3() throws {
+		let result = Area.SquareKilometres.toSquareMetres(8.123456)
 		XCTAssertEqual(8123456.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareMiles_1() throws {
-		let result = Area.SquareKilometres.tosquareMiles(492.098)
+	func testConvertKnownSquareKilometresToSquareMiles_1() throws {
+		let result = Area.SquareKilometres.toSquareMiles(492.098)
 		XCTAssertEqual(190.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareMiles_2() throws {
-		let result = Area.SquareKilometres.tosquareMiles(23.3099)
+	func testConvertKnownSquareKilometresToSquareMiles_2() throws {
+		let result = Area.SquareKilometres.toSquareMiles(23.3099)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareMiles_3() throws {
-		let result = Area.SquareKilometres.tosquareMiles(4661.979)
+	func testConvertKnownSquareKilometresToSquareMiles_3() throws {
+		let result = Area.SquareKilometres.toSquareMiles(4661.979)
 		XCTAssertEqual(1800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareYards_1() throws {
-		let result = Area.SquareKilometres.tosquareYards(0.158028071)
+	func testConvertKnownSquareKilometresToSquareYards_1() throws {
+		let result = Area.SquareKilometres.toSquareYards(0.158028071)
 		XCTAssertEqual(189000.0005, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareYards_2() throws {
-		let result = Area.SquareKilometres.tosquareYards(8.361272764)
+	func testConvertKnownSquareKilometresToSquareYards_2() throws {
+		let result = Area.SquareKilometres.toSquareYards(8.361272764)
 		XCTAssertEqual(9999999.0310, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareYards_3() throws {
-		let result = Area.SquareKilometres.tosquareYards(0.6)
+	func testConvertKnownSquareKilometresToSquareYards_3() throws {
+		let result = Area.SquareKilometres.toSquareYards(0.6)
 		XCTAssertEqual(717594.030, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareFeet_1() throws {
-		let result = Area.SquareKilometres.tosquareFeet(0.009)
+	func testConvertKnownSquareKilometresToSquareFeet_1() throws {
+		let result = Area.SquareKilometres.toSquareFeet(0.009)
 		XCTAssertEqual(96875.194, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareFeet_2() throws {
-		let result = Area.SquareKilometres.tosquareFeet(0.08)
+	func testConvertKnownSquareKilometresToSquareFeet_2() throws {
+		let result = Area.SquareKilometres.toSquareFeet(0.08)
 		XCTAssertEqual(861112.833, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareFeet_3() throws {
-		let result = Area.SquareKilometres.tosquareFeet(0.123)
+	func testConvertKnownSquareKilometresToSquareFeet_3() throws {
+		let result = Area.SquareKilometres.toSquareFeet(0.123)
 		XCTAssertEqual(1323960.9812553, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareInches_1() throws {
-		let result = Area.SquareKilometres.tosquareInches(0.0008)
+	func testConvertKnownSquareKilometresToSquareInches_1() throws {
+		let result = Area.SquareKilometres.toSquareInches(0.0008)
 		XCTAssertEqual(1240002.48, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareInches_2() throws {
-		let result = Area.SquareKilometres.tosquareInches(0.00123)
+	func testConvertKnownSquareKilometresToSquareInches_2() throws {
+		let result = Area.SquareKilometres.toSquareInches(0.00123)
 		XCTAssertEqual(1906503.813, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTosquareInches_3() throws {
-		let result = Area.SquareKilometres.tosquareInches(0.000045)
+	func testConvertKnownSquareKilometresToSquareInches_3() throws {
+		let result = Area.SquareKilometres.toSquareInches(0.000045)
 		XCTAssertEqual(69750.1395, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTohectares_1() throws {
-		let result = Area.SquareKilometres.tohectares(190.0)
+	func testConvertKnownSquareKilometresToHectares_1() throws {
+		let result = Area.SquareKilometres.toHectares(190.0)
 		XCTAssertEqual(19000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTohectares_2() throws {
-		let result = Area.SquareKilometres.tohectares(55.67)
+	func testConvertKnownSquareKilometresToHectares_2() throws {
+		let result = Area.SquareKilometres.toHectares(55.67)
 		XCTAssertEqual(5567.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresTohectares_3() throws {
-		let result = Area.SquareKilometres.tohectares(0.9)
+	func testConvertKnownSquareKilometresToHectares_3() throws {
+		let result = Area.SquareKilometres.toHectares(0.9)
 		XCTAssertEqual(90.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresToacres_1() throws {
-		let result = Area.SquareKilometres.toacres(30.393962)
+	func testConvertKnownSquareKilometresToAcres_1() throws {
+		let result = Area.SquareKilometres.toAcres(30.393962)
 		XCTAssertEqual(7510.4999900100, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresToacres_2() throws {
-		let result = Area.SquareKilometres.toacres(54.1)
+	func testConvertKnownSquareKilometresToAcres_2() throws {
+		let result = Area.SquareKilometres.toAcres(54.1)
 		XCTAssertEqual(13368.3805, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareKilometresToacres_3() throws {
-		let result = Area.SquareKilometres.toacres(90.67)
+	func testConvertKnownSquareKilometresToAcres_3() throws {
+		let result = Area.SquareKilometres.toAcres(90.67)
 		XCTAssertEqual(22405.0103, result, accuracy: 0.01)
 	}
 
 }
 
 final class SquareMetresTests: XCTestCase {
-	func testConvertKnownSquareMetresTosquareKilometres_1() throws {
-		let result = Area.SquareMetres.tosquareKilometres(19000.0)
+	func testConvertKnownSquareMetresToSquareKilometres_1() throws {
+		let result = Area.SquareMetres.toSquareKilometres(19000.0)
 		XCTAssertEqual(0.019, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareKilometres_2() throws {
-		let result = Area.SquareMetres.tosquareKilometres(123456.0)
+	func testConvertKnownSquareMetresToSquareKilometres_2() throws {
+		let result = Area.SquareMetres.toSquareKilometres(123456.0)
 		XCTAssertEqual(0.123456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareKilometres_3() throws {
-		let result = Area.SquareMetres.tosquareKilometres(900100.0)
+	func testConvertKnownSquareMetresToSquareKilometres_3() throws {
+		let result = Area.SquareMetres.toSquareKilometres(900100.0)
 		XCTAssertEqual(0.9001, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareMiles_1() throws {
-		let result = Area.SquareMetres.tosquareMiles(190009.0)
+	func testConvertKnownSquareMetresToSquareMiles_1() throws {
+		let result = Area.SquareMetres.toSquareMiles(190009.0)
 		XCTAssertEqual(0.073362885, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareMiles_2() throws {
-		let result = Area.SquareMetres.tosquareMiles(12345678.0)
+	func testConvertKnownSquareMetresToSquareMiles_2() throws {
+		let result = Area.SquareMetres.toSquareMiles(12345678.0)
 		XCTAssertEqual(4.7666929245, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareMiles_3() throws {
-		let result = Area.SquareMetres.tosquareMiles(777666.0)
+	func testConvertKnownSquareMetresToSquareMiles_3() throws {
+		let result = Area.SquareMetres.toSquareMiles(777666.0)
 		XCTAssertEqual(0.300258521, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareYards_1() throws {
-		let result = Area.SquareMetres.tosquareYards(5.0)
+	func testConvertKnownSquareMetresToSquareYards_1() throws {
+		let result = Area.SquareMetres.toSquareYards(5.0)
 		XCTAssertEqual(5.97995, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareYards_2() throws {
-		let result = Area.SquareMetres.tosquareYards(1.23)
+	func testConvertKnownSquareMetresToSquareYards_2() throws {
+		let result = Area.SquareMetres.toSquareYards(1.23)
 		XCTAssertEqual(1.471068, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareYards_3() throws {
-		let result = Area.SquareMetres.tosquareYards(700.0)
+	func testConvertKnownSquareMetresToSquareYards_3() throws {
+		let result = Area.SquareMetres.toSquareYards(700.0)
 		XCTAssertEqual(837.193, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareFeet_1() throws {
-		let result = Area.SquareMetres.tosquareFeet(90.0)
+	func testConvertKnownSquareMetresToSquareFeet_1() throws {
+		let result = Area.SquareMetres.toSquareFeet(90.0)
 		XCTAssertEqual(968.7519375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareFeet_2() throws {
-		let result = Area.SquareMetres.tosquareFeet(180.0)
+	func testConvertKnownSquareMetresToSquareFeet_2() throws {
+		let result = Area.SquareMetres.toSquareFeet(180.0)
 		XCTAssertEqual(1937.503875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareFeet_3() throws {
-		let result = Area.SquareMetres.tosquareFeet(123.4)
+	func testConvertKnownSquareMetresToSquareFeet_3() throws {
+		let result = Area.SquareMetres.toSquareFeet(123.4)
 		XCTAssertEqual(1328.2665454, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareInches_1() throws {
-		let result = Area.SquareMetres.tosquareInches(8.0)
+	func testConvertKnownSquareMetresToSquareInches_1() throws {
+		let result = Area.SquareMetres.toSquareInches(8.0)
 		XCTAssertEqual(12400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareInches_2() throws {
-		let result = Area.SquareMetres.tosquareInches(1.23)
+	func testConvertKnownSquareMetresToSquareInches_2() throws {
+		let result = Area.SquareMetres.toSquareInches(1.23)
 		XCTAssertEqual(1906.504, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTosquareInches_3() throws {
-		let result = Area.SquareMetres.tosquareInches(0.9)
+	func testConvertKnownSquareMetresToSquareInches_3() throws {
+		let result = Area.SquareMetres.toSquareInches(0.9)
 		XCTAssertEqual(1395.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTohectares_1() throws {
-		let result = Area.SquareMetres.tohectares(1234.0)
+	func testConvertKnownSquareMetresToHectares_1() throws {
+		let result = Area.SquareMetres.toHectares(1234.0)
 		XCTAssertEqual(0.1234, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTohectares_2() throws {
-		let result = Area.SquareMetres.tohectares(560.9)
+	func testConvertKnownSquareMetresToHectares_2() throws {
+		let result = Area.SquareMetres.toHectares(560.9)
 		XCTAssertEqual(0.05609, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresTohectares_3() throws {
-		let result = Area.SquareMetres.tohectares(100900.0)
+	func testConvertKnownSquareMetresToHectares_3() throws {
+		let result = Area.SquareMetres.toHectares(100900.0)
 		XCTAssertEqual(10.09, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresToacres_1() throws {
-		let result = Area.SquareMetres.toacres(986.0)
+	func testConvertKnownSquareMetresToAcres_1() throws {
+		let result = Area.SquareMetres.toAcres(986.0)
 		XCTAssertEqual(0.243646, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresToacres_2() throws {
-		let result = Area.SquareMetres.toacres(1020.0)
+	func testConvertKnownSquareMetresToAcres_2() throws {
+		let result = Area.SquareMetres.toAcres(1020.0)
 		XCTAssertEqual(0.2520475, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMetresToacres_3() throws {
-		let result = Area.SquareMetres.toacres(666111.0)
+	func testConvertKnownSquareMetresToAcres_3() throws {
+		let result = Area.SquareMetres.toAcres(666111.0)
 		XCTAssertEqual(164.599613, result, accuracy: 0.01)
 	}
 
 }
 
 final class SquareMilesTests: XCTestCase {
-	func testConvertKnownSquareMilesTosquareKilometres_1() throws {
-		let result = Area.SquareMiles.tosquareKilometres(3.0)
+	func testConvertKnownSquareMilesToSquareKilometres_1() throws {
+		let result = Area.SquareMiles.toSquareKilometres(3.0)
 		XCTAssertEqual(7.76996, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareKilometres_2() throws {
-		let result = Area.SquareMiles.tosquareKilometres(0.9)
+	func testConvertKnownSquareMilesToSquareKilometres_2() throws {
+		let result = Area.SquareMiles.toSquareKilometres(0.9)
 		XCTAssertEqual(2.33099, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareKilometres_3() throws {
-		let result = Area.SquareMiles.tosquareKilometres(100.0)
+	func testConvertKnownSquareMilesToSquareKilometres_3() throws {
+		let result = Area.SquareMiles.toSquareKilometres(100.0)
 		XCTAssertEqual(258.999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareMetres_1() throws {
-		let result = Area.SquareMiles.tosquareMetres(0.009)
+	func testConvertKnownSquareMilesToSquareMetres_1() throws {
+		let result = Area.SquareMiles.toSquareMetres(0.009)
 		XCTAssertEqual(23309.893, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareMetres_2() throws {
-		let result = Area.SquareMiles.tosquareMetres(0.010)
+	func testConvertKnownSquareMilesToSquareMetres_2() throws {
+		let result = Area.SquareMiles.toSquareMetres(0.010)
 		XCTAssertEqual(25899.88, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareMetres_3() throws {
-		let result = Area.SquareMiles.tosquareMetres(0.0006)
+	func testConvertKnownSquareMilesToSquareMetres_3() throws {
+		let result = Area.SquareMiles.toSquareMetres(0.0006)
 		XCTAssertEqual(1553.99287, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareYards_1() throws {
-		let result = Area.SquareMiles.tosquareYards(0.01)
+	func testConvertKnownSquareMilesToSquareYards_1() throws {
+		let result = Area.SquareMiles.toSquareYards(0.01)
 		XCTAssertEqual(30976.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareYards_2() throws {
-		let result = Area.SquareMiles.tosquareYards(0.00123)
+	func testConvertKnownSquareMilesToSquareYards_2() throws {
+		let result = Area.SquareMiles.toSquareYards(0.00123)
 		XCTAssertEqual(3810.048, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareYards_3() throws {
-		let result = Area.SquareMiles.tosquareYards(0.09)
+	func testConvertKnownSquareMilesToSquareYards_3() throws {
+		let result = Area.SquareMiles.toSquareYards(0.09)
 		XCTAssertEqual(278784.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareFeet_1() throws {
-		let result = Area.SquareMiles.tosquareFeet(0.01)
+	func testConvertKnownSquareMilesToSquareFeet_1() throws {
+		let result = Area.SquareMiles.toSquareFeet(0.01)
 		XCTAssertEqual(278784.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareFeet_2() throws {
-		let result = Area.SquareMiles.tosquareFeet(0.005)
+	func testConvertKnownSquareMilesToSquareFeet_2() throws {
+		let result = Area.SquareMiles.toSquareFeet(0.005)
 		XCTAssertEqual(139392.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareFeet_3() throws {
-		let result = Area.SquareMiles.tosquareFeet(0.08)
+	func testConvertKnownSquareMilesToSquareFeet_3() throws {
+		let result = Area.SquareMiles.toSquareFeet(0.08)
 		XCTAssertEqual(2230272.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareInches_1() throws {
-		let result = Area.SquareMiles.tosquareInches(0.0001)
+	func testConvertKnownSquareMilesToSquareInches_1() throws {
+		let result = Area.SquareMiles.toSquareInches(0.0001)
 		XCTAssertEqual(401448.96, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareInches_2() throws {
-		let result = Area.SquareMiles.tosquareInches(0.00098)
+	func testConvertKnownSquareMilesToSquareInches_2() throws {
+		let result = Area.SquareMiles.toSquareInches(0.00098)
 		XCTAssertEqual(3934199.808, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTosquareInches_3() throws {
-		let result = Area.SquareMiles.tosquareInches(0.000007)
+	func testConvertKnownSquareMilesToSquareInches_3() throws {
+		let result = Area.SquareMiles.toSquareInches(0.000007)
 		XCTAssertEqual(28101.4272, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTohectares_1() throws {
-		let result = Area.SquareMiles.tohectares(100.0)
+	func testConvertKnownSquareMilesToHectares_1() throws {
+		let result = Area.SquareMiles.toHectares(100.0)
 		XCTAssertEqual(25899.881103, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTohectares_2() throws {
-		let result = Area.SquareMiles.tohectares(2.3)
+	func testConvertKnownSquareMilesToHectares_2() throws {
+		let result = Area.SquareMiles.toHectares(2.3)
 		XCTAssertEqual(595.697, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesTohectares_3() throws {
-		let result = Area.SquareMiles.tohectares(0.9)
+	func testConvertKnownSquareMilesToHectares_3() throws {
+		let result = Area.SquareMiles.toHectares(0.9)
 		XCTAssertEqual(233.099, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesToacres_1() throws {
-		let result = Area.SquareMiles.toacres(2.0)
+	func testConvertKnownSquareMilesToAcres_1() throws {
+		let result = Area.SquareMiles.toAcres(2.0)
 		XCTAssertEqual(1280.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesToacres_2() throws {
-		let result = Area.SquareMiles.toacres(0.1)
+	func testConvertKnownSquareMilesToAcres_2() throws {
+		let result = Area.SquareMiles.toAcres(0.1)
 		XCTAssertEqual(64.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareMilesToacres_3() throws {
-		let result = Area.SquareMiles.toacres(4.6)
+	func testConvertKnownSquareMilesToAcres_3() throws {
+		let result = Area.SquareMiles.toAcres(4.6)
 		XCTAssertEqual(2944.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class SquareYardsTests: XCTestCase {
-	func testConvertKnownSquareYardsTosquareKilometres_1() throws {
-		let result = Area.SquareYards.tosquareKilometres(900000.0)
+	func testConvertKnownSquareYardsToSquareKilometres_1() throws {
+		let result = Area.SquareYards.toSquareKilometres(900000.0)
 		XCTAssertEqual(0.752514624, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareKilometres_2() throws {
-		let result = Area.SquareYards.tosquareKilometres(190190.0)
+	func testConvertKnownSquareYardsToSquareKilometres_2() throws {
+		let result = Area.SquareYards.toSquareKilometres(190190.0)
 		XCTAssertEqual(0.159023063, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareKilometres_3() throws {
-		let result = Area.SquareYards.tosquareKilometres(7000000.0)
+	func testConvertKnownSquareYardsToSquareKilometres_3() throws {
+		let result = Area.SquareYards.toSquareKilometres(7000000.0)
 		XCTAssertEqual(5.85289152, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareMetres_1() throws {
-		let result = Area.SquareYards.tosquareMetres(700.0)
+	func testConvertKnownSquareYardsToSquareMetres_1() throws {
+		let result = Area.SquareYards.toSquareMetres(700.0)
 		XCTAssertEqual(585.289, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareMetres_2() throws {
-		let result = Area.SquareYards.tosquareMetres(12.0)
+	func testConvertKnownSquareYardsToSquareMetres_2() throws {
+		let result = Area.SquareYards.toSquareMetres(12.0)
 		XCTAssertEqual(10.0335, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareMetres_3() throws {
-		let result = Area.SquareYards.tosquareMetres(9.1)
+	func testConvertKnownSquareYardsToSquareMetres_3() throws {
+		let result = Area.SquareYards.toSquareMetres(9.1)
 		XCTAssertEqual(7.60876, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareMiles_1() throws {
-		let result = Area.SquareYards.tosquareMiles(98700.0)
+	func testConvertKnownSquareYardsToSquareMiles_1() throws {
+		let result = Area.SquareYards.toSquareMiles(98700.0)
 		XCTAssertEqual(0.031863378, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareMiles_2() throws {
-		let result = Area.SquareYards.tosquareMiles(8888888.0)
+	func testConvertKnownSquareYardsToSquareMiles_2() throws {
+		let result = Area.SquareYards.toSquareMiles(8888888.0)
 		XCTAssertEqual(2.869604855, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareMiles_3() throws {
-		let result = Area.SquareYards.tosquareMiles(100200300.0)
+	func testConvertKnownSquareYardsToSquareMiles_3() throws {
+		let result = Area.SquareYards.toSquareMiles(100200300.0)
 		XCTAssertEqual(32.3477208161, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareFeet_1() throws {
-		let result = Area.SquareYards.tosquareFeet(12.0)
+	func testConvertKnownSquareYardsToSquareFeet_1() throws {
+		let result = Area.SquareYards.toSquareFeet(12.0)
 		XCTAssertEqual(108.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareFeet_2() throws {
-		let result = Area.SquareYards.tosquareFeet(5.6)
+	func testConvertKnownSquareYardsToSquareFeet_2() throws {
+		let result = Area.SquareYards.toSquareFeet(5.6)
 		XCTAssertEqual(50.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareFeet_3() throws {
-		let result = Area.SquareYards.tosquareFeet(102.5)
+	func testConvertKnownSquareYardsToSquareFeet_3() throws {
+		let result = Area.SquareYards.toSquareFeet(102.5)
 		XCTAssertEqual(922.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareInches_1() throws {
-		let result = Area.SquareYards.tosquareInches(56.7)
+	func testConvertKnownSquareYardsToSquareInches_1() throws {
+		let result = Area.SquareYards.toSquareInches(56.7)
 		XCTAssertEqual(73483.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareInches_2() throws {
-		let result = Area.SquareYards.tosquareInches(1.8)
+	func testConvertKnownSquareYardsToSquareInches_2() throws {
+		let result = Area.SquareYards.toSquareInches(1.8)
 		XCTAssertEqual(2332.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTosquareInches_3() throws {
-		let result = Area.SquareYards.tosquareInches(0.2)
+	func testConvertKnownSquareYardsToSquareInches_3() throws {
+		let result = Area.SquareYards.toSquareInches(0.2)
 		XCTAssertEqual(259.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTohectares_1() throws {
-		let result = Area.SquareYards.tohectares(10090.0)
+	func testConvertKnownSquareYardsToHectares_1() throws {
+		let result = Area.SquareYards.toHectares(10090.0)
 		XCTAssertEqual(0.84365251, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTohectares_2() throws {
-		let result = Area.SquareYards.tohectares(98765.0)
+	func testConvertKnownSquareYardsToHectares_2() throws {
+		let result = Area.SquareYards.toHectares(98765.0)
 		XCTAssertEqual(8.2580119, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsTohectares_3() throws {
-		let result = Area.SquareYards.tohectares(3090.09)
+	func testConvertKnownSquareYardsToHectares_3() throws {
+		let result = Area.SquareYards.toHectares(3090.09)
 		XCTAssertEqual(0.2583634, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsToacres_1() throws {
-		let result = Area.SquareYards.toacres(1000.0)
+	func testConvertKnownSquareYardsToAcres_1() throws {
+		let result = Area.SquareYards.toAcres(1000.0)
 		XCTAssertEqual(0.206612, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsToacres_2() throws {
-		let result = Area.SquareYards.toacres(899.0)
+	func testConvertKnownSquareYardsToAcres_2() throws {
+		let result = Area.SquareYards.toAcres(899.0)
 		XCTAssertEqual(0.185744, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSquareYardsToacres_3() throws {
-		let result = Area.SquareYards.toacres(5678.0)
+	func testConvertKnownSquareYardsToAcres_3() throws {
+		let result = Area.SquareYards.toAcres(5678.0)
 		XCTAssertEqual(1.17314, result, accuracy: 0.01)
 	}
 

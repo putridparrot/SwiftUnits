@@ -8,1683 +8,1683 @@ import XCTest
 @testable import SwiftUnits
 
 final class BitsTests: XCTestCase {
-	func testConvertKnownBitsTokilobits_1() throws {
-		let result = DataStorage.Bits.tokilobits(100.0)
+	func testConvertKnownBitsToKilobits_1() throws {
+		let result = DataStorage.Bits.toKilobits(100.0)
 		XCTAssertEqual(0.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokilobits_2() throws {
-		let result = DataStorage.Bits.tokilobits(6021.0)
+	func testConvertKnownBitsToKilobits_2() throws {
+		let result = DataStorage.Bits.toKilobits(6021.0)
 		XCTAssertEqual(6.021, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokilobits_3() throws {
-		let result = DataStorage.Bits.tokilobits(9100.0)
+	func testConvertKnownBitsToKilobits_3() throws {
+		let result = DataStorage.Bits.toKilobits(9100.0)
 		XCTAssertEqual(9.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomegabits_1() throws {
-		let result = DataStorage.Bits.tomegabits(9000000.0)
+	func testConvertKnownBitsToMegabits_1() throws {
+		let result = DataStorage.Bits.toMegabits(9000000.0)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomegabits_2() throws {
-		let result = DataStorage.Bits.tomegabits(123456.0)
+	func testConvertKnownBitsToMegabits_2() throws {
+		let result = DataStorage.Bits.toMegabits(123456.0)
 		XCTAssertEqual(0.123456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomegabits_3() throws {
-		let result = DataStorage.Bits.tomegabits(1900000.0)
+	func testConvertKnownBitsToMegabits_3() throws {
+		let result = DataStorage.Bits.toMegabits(1900000.0)
 		XCTAssertEqual(1.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTogigabits_1() throws {
-		let result = DataStorage.Bits.togigabits(190000000.0)
+	func testConvertKnownBitsToGigabits_1() throws {
+		let result = DataStorage.Bits.toGigabits(190000000.0)
 		XCTAssertEqual(0.19, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTogigabits_2() throws {
-		let result = DataStorage.Bits.togigabits(8009.0)
+	func testConvertKnownBitsToGigabits_2() throws {
+		let result = DataStorage.Bits.toGigabits(8009.0)
 		XCTAssertEqual(8.009e-6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTogigabits_3() throws {
-		let result = DataStorage.Bits.togigabits(987654321.0)
+	func testConvertKnownBitsToGigabits_3() throws {
+		let result = DataStorage.Bits.toGigabits(987654321.0)
 		XCTAssertEqual(0.987654321, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsToterabits_1() throws {
-		let result = DataStorage.Bits.toterabits(987654321234.0)
+	func testConvertKnownBitsToTerabits_1() throws {
+		let result = DataStorage.Bits.toTerabits(987654321234.0)
 		XCTAssertEqual(0.987654321234, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsToterabits_2() throws {
-		let result = DataStorage.Bits.toterabits(1234567890123456.0)
+	func testConvertKnownBitsToTerabits_2() throws {
+		let result = DataStorage.Bits.toTerabits(1234567890123456.0)
 		XCTAssertEqual(1234.567890123455982, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsToterabits_3() throws {
-		let result = DataStorage.Bits.toterabits(999888777666555.0)
+	func testConvertKnownBitsToTerabits_3() throws {
+		let result = DataStorage.Bits.toTerabits(999888777666555.0)
 		XCTAssertEqual(999.888777666555029, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokilobytes_1() throws {
-		let result = DataStorage.Bits.tokilobytes(900.0)
+	func testConvertKnownBitsToKilobytes_1() throws {
+		let result = DataStorage.Bits.toKilobytes(900.0)
 		XCTAssertEqual(0.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokilobytes_2() throws {
-		let result = DataStorage.Bits.tokilobytes(12345.0)
+	func testConvertKnownBitsToKilobytes_2() throws {
+		let result = DataStorage.Bits.toKilobytes(12345.0)
 		XCTAssertEqual(1.543125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokilobytes_3() throws {
-		let result = DataStorage.Bits.tokilobytes(6000.9)
+	func testConvertKnownBitsToKilobytes_3() throws {
+		let result = DataStorage.Bits.toKilobytes(6000.9)
 		XCTAssertEqual(0.7501125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomegabytes_1() throws {
-		let result = DataStorage.Bits.tomegabytes(123456.0)
+	func testConvertKnownBitsToMegabytes_1() throws {
+		let result = DataStorage.Bits.toMegabytes(123456.0)
 		XCTAssertEqual(0.015432, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomegabytes_2() throws {
-		let result = DataStorage.Bits.tomegabytes(900800.0)
+	func testConvertKnownBitsToMegabytes_2() throws {
+		let result = DataStorage.Bits.toMegabytes(900800.0)
 		XCTAssertEqual(0.1126, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomegabytes_3() throws {
-		let result = DataStorage.Bits.tomegabytes(999888777.0)
+	func testConvertKnownBitsToMegabytes_3() throws {
+		let result = DataStorage.Bits.toMegabytes(999888777.0)
 		XCTAssertEqual(124.986097125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTogigabytes_1() throws {
-		let result = DataStorage.Bits.togigabytes(999888777.0)
+	func testConvertKnownBitsToGigabytes_1() throws {
+		let result = DataStorage.Bits.toGigabytes(999888777.0)
 		XCTAssertEqual(0.124986097125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTogigabytes_2() throws {
-		let result = DataStorage.Bits.togigabytes(1.9e+9)
+	func testConvertKnownBitsToGigabytes_2() throws {
+		let result = DataStorage.Bits.toGigabytes(1.9e+9)
 		XCTAssertEqual(0.2375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTogigabytes_3() throws {
-		let result = DataStorage.Bits.togigabytes(80090077.0)
+	func testConvertKnownBitsToGigabytes_3() throws {
+		let result = DataStorage.Bits.toGigabytes(80090077.0)
 		XCTAssertEqual(0.010011259625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsToterabytes_1() throws {
-		let result = DataStorage.Bits.toterabytes(999888777666.0)
+	func testConvertKnownBitsToTerabytes_1() throws {
+		let result = DataStorage.Bits.toTerabytes(999888777666.0)
 		XCTAssertEqual(0.12498609720825, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsToterabytes_2() throws {
-		let result = DataStorage.Bits.toterabytes(12345678912345.0)
+	func testConvertKnownBitsToTerabytes_2() throws {
+		let result = DataStorage.Bits.toTerabytes(12345678912345.0)
 		XCTAssertEqual(1.5432098640431251, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsToterabytes_3() throws {
-		let result = DataStorage.Bits.toterabytes(111999222888333.0)
+	func testConvertKnownBitsToTerabytes_3() throws {
+		let result = DataStorage.Bits.toTerabytes(111999222888333.0)
 		XCTAssertEqual(13.9999028610416243, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokibibits_1() throws {
-		let result = DataStorage.Bits.tokibibits(1800.0)
+	func testConvertKnownBitsToKibibits_1() throws {
+		let result = DataStorage.Bits.toKibibits(1800.0)
 		XCTAssertEqual(1.757813, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokibibits_2() throws {
-		let result = DataStorage.Bits.tokibibits(888.0)
+	func testConvertKnownBitsToKibibits_2() throws {
+		let result = DataStorage.Bits.toKibibits(888.0)
 		XCTAssertEqual(0.867188, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTokibibits_3() throws {
-		let result = DataStorage.Bits.tokibibits(7687.0)
+	func testConvertKnownBitsToKibibits_3() throws {
+		let result = DataStorage.Bits.toKibibits(7687.0)
 		XCTAssertEqual(7.506836, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomebibits_1() throws {
-		let result = DataStorage.Bits.tomebibits(999888.0)
+	func testConvertKnownBitsToMebibits_1() throws {
+		let result = DataStorage.Bits.toMebibits(999888.0)
 		XCTAssertEqual(0.953567505, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomebibits_2() throws {
-		let result = DataStorage.Bits.tomebibits(1234567.0)
+	func testConvertKnownBitsToMebibits_2() throws {
+		let result = DataStorage.Bits.toMebibits(1234567.0)
 		XCTAssertEqual(1.17737484, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsTomebibits_3() throws {
-		let result = DataStorage.Bits.tomebibits(900800.0)
+	func testConvertKnownBitsToMebibits_3() throws {
+		let result = DataStorage.Bits.toMebibits(900800.0)
 		XCTAssertEqual(0.859069824, result, accuracy: 0.01)
 	}
 
 }
 
 final class GigabitsTests: XCTestCase {
-	func testConvertKnownGigabitsTobits_1() throws {
-		let result = DataStorage.Gigabits.tobits(0.0009)
+	func testConvertKnownGigabitsToBits_1() throws {
+		let result = DataStorage.Gigabits.toBits(0.0009)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTobits_2() throws {
-		let result = DataStorage.Gigabits.tobits(0.00007)
+	func testConvertKnownGigabitsToBits_2() throws {
+		let result = DataStorage.Gigabits.toBits(0.00007)
 		XCTAssertEqual(70000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTobits_3() throws {
-		let result = DataStorage.Gigabits.tobits(1.2e-5)
+	func testConvertKnownGigabitsToBits_3() throws {
+		let result = DataStorage.Gigabits.toBits(1.2e-5)
 		XCTAssertEqual(12000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokilobits_1() throws {
-		let result = DataStorage.Gigabits.tokilobits(0.01)
+	func testConvertKnownGigabitsToKilobits_1() throws {
+		let result = DataStorage.Gigabits.toKilobits(0.01)
 		XCTAssertEqual(10000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokilobits_2() throws {
-		let result = DataStorage.Gigabits.tokilobits(0.91)
+	func testConvertKnownGigabitsToKilobits_2() throws {
+		let result = DataStorage.Gigabits.toKilobits(0.91)
 		XCTAssertEqual(910000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokilobits_3() throws {
-		let result = DataStorage.Gigabits.tokilobits(6.1)
+	func testConvertKnownGigabitsToKilobits_3() throws {
+		let result = DataStorage.Gigabits.toKilobits(6.1)
 		XCTAssertEqual(6.1e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomegabits_1() throws {
-		let result = DataStorage.Gigabits.tomegabits(6.1)
+	func testConvertKnownGigabitsToMegabits_1() throws {
+		let result = DataStorage.Gigabits.toMegabits(6.1)
 		XCTAssertEqual(6100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomegabits_2() throws {
-		let result = DataStorage.Gigabits.tomegabits(0.961)
+	func testConvertKnownGigabitsToMegabits_2() throws {
+		let result = DataStorage.Gigabits.toMegabits(0.961)
 		XCTAssertEqual(961.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomegabits_3() throws {
-		let result = DataStorage.Gigabits.tomegabits(1.2e-3)
+	func testConvertKnownGigabitsToMegabits_3() throws {
+		let result = DataStorage.Gigabits.toMegabits(1.2e-3)
 		XCTAssertEqual(1.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsToterabits_1() throws {
-		let result = DataStorage.Gigabits.toterabits(1200.0)
+	func testConvertKnownGigabitsToTerabits_1() throws {
+		let result = DataStorage.Gigabits.toTerabits(1200.0)
 		XCTAssertEqual(1.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsToterabits_2() throws {
-		let result = DataStorage.Gigabits.toterabits(90012.0)
+	func testConvertKnownGigabitsToTerabits_2() throws {
+		let result = DataStorage.Gigabits.toTerabits(90012.0)
 		XCTAssertEqual(90.012, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsToterabits_3() throws {
-		let result = DataStorage.Gigabits.toterabits(8000.0)
+	func testConvertKnownGigabitsToTerabits_3() throws {
+		let result = DataStorage.Gigabits.toTerabits(8000.0)
 		XCTAssertEqual(8.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokilobytes_1() throws {
-		let result = DataStorage.Gigabits.tokilobytes(1.2)
+	func testConvertKnownGigabitsToKilobytes_1() throws {
+		let result = DataStorage.Gigabits.toKilobytes(1.2)
 		XCTAssertEqual(150000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokilobytes_2() throws {
-		let result = DataStorage.Gigabits.tokilobytes(0.9)
+	func testConvertKnownGigabitsToKilobytes_2() throws {
+		let result = DataStorage.Gigabits.toKilobytes(0.9)
 		XCTAssertEqual(112500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokilobytes_3() throws {
-		let result = DataStorage.Gigabits.tokilobytes(0.001)
+	func testConvertKnownGigabitsToKilobytes_3() throws {
+		let result = DataStorage.Gigabits.toKilobytes(0.001)
 		XCTAssertEqual(125.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomegabytes_1() throws {
-		let result = DataStorage.Gigabits.tomegabytes(0.9)
+	func testConvertKnownGigabitsToMegabytes_1() throws {
+		let result = DataStorage.Gigabits.toMegabytes(0.9)
 		XCTAssertEqual(112.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomegabytes_2() throws {
-		let result = DataStorage.Gigabits.tomegabytes(1.2)
+	func testConvertKnownGigabitsToMegabytes_2() throws {
+		let result = DataStorage.Gigabits.toMegabytes(1.2)
 		XCTAssertEqual(150.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomegabytes_3() throws {
-		let result = DataStorage.Gigabits.tomegabytes(80.1)
+	func testConvertKnownGigabitsToMegabytes_3() throws {
+		let result = DataStorage.Gigabits.toMegabytes(80.1)
 		XCTAssertEqual(10012.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTogigabytes_1() throws {
-		let result = DataStorage.Gigabits.togigabytes(99.0)
+	func testConvertKnownGigabitsToGigabytes_1() throws {
+		let result = DataStorage.Gigabits.toGigabytes(99.0)
 		XCTAssertEqual(12.375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTogigabytes_2() throws {
-		let result = DataStorage.Gigabits.togigabytes(123.123)
+	func testConvertKnownGigabitsToGigabytes_2() throws {
+		let result = DataStorage.Gigabits.toGigabytes(123.123)
 		XCTAssertEqual(15.390375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTogigabytes_3() throws {
-		let result = DataStorage.Gigabits.togigabytes(8000.9)
+	func testConvertKnownGigabitsToGigabytes_3() throws {
+		let result = DataStorage.Gigabits.toGigabytes(8000.9)
 		XCTAssertEqual(1000.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsToterabytes_1() throws {
-		let result = DataStorage.Gigabits.toterabytes(9000.0)
+	func testConvertKnownGigabitsToTerabytes_1() throws {
+		let result = DataStorage.Gigabits.toTerabytes(9000.0)
 		XCTAssertEqual(1.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsToterabytes_2() throws {
-		let result = DataStorage.Gigabits.toterabytes(1234567.0)
+	func testConvertKnownGigabitsToTerabytes_2() throws {
+		let result = DataStorage.Gigabits.toTerabytes(1234567.0)
 		XCTAssertEqual(154.320875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsToterabytes_3() throws {
-		let result = DataStorage.Gigabits.toterabytes(613.0)
+	func testConvertKnownGigabitsToTerabytes_3() throws {
+		let result = DataStorage.Gigabits.toTerabytes(613.0)
 		XCTAssertEqual(0.076625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokibibits_1() throws {
-		let result = DataStorage.Gigabits.tokibibits(0.8)
+	func testConvertKnownGigabitsToKibibits_1() throws {
+		let result = DataStorage.Gigabits.toKibibits(0.8)
 		XCTAssertEqual(781250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokibibits_2() throws {
-		let result = DataStorage.Gigabits.tokibibits(0.012)
+	func testConvertKnownGigabitsToKibibits_2() throws {
+		let result = DataStorage.Gigabits.toKibibits(0.012)
 		XCTAssertEqual(11718.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTokibibits_3() throws {
-		let result = DataStorage.Gigabits.tokibibits(0.002)
+	func testConvertKnownGigabitsToKibibits_3() throws {
+		let result = DataStorage.Gigabits.toKibibits(0.002)
 		XCTAssertEqual(1953.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomebibits_1() throws {
-		let result = DataStorage.Gigabits.tomebibits(0.002)
+	func testConvertKnownGigabitsToMebibits_1() throws {
+		let result = DataStorage.Gigabits.toMebibits(0.002)
 		XCTAssertEqual(1.9073486, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomebibits_2() throws {
-		let result = DataStorage.Gigabits.tomebibits(0.9)
+	func testConvertKnownGigabitsToMebibits_2() throws {
+		let result = DataStorage.Gigabits.toMebibits(0.9)
 		XCTAssertEqual(858.30688476562, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabitsTomebibits_3() throws {
-		let result = DataStorage.Gigabits.tomebibits(6.1)
+	func testConvertKnownGigabitsToMebibits_3() throws {
+		let result = DataStorage.Gigabits.toMebibits(6.1)
 		XCTAssertEqual(5817.413330078125, result, accuracy: 0.01)
 	}
 
 }
 
 final class GigabytesTests: XCTestCase {
-	func testConvertKnownGigabytesTobits_1() throws {
-		let result = DataStorage.Gigabytes.tobits(0.004)
+	func testConvertKnownGigabytesToBits_1() throws {
+		let result = DataStorage.Gigabytes.toBits(0.004)
 		XCTAssertEqual(32000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTobits_2() throws {
-		let result = DataStorage.Gigabytes.tobits(0.012)
+	func testConvertKnownGigabytesToBits_2() throws {
+		let result = DataStorage.Gigabytes.toBits(0.012)
 		XCTAssertEqual(96000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTobits_3() throws {
-		let result = DataStorage.Gigabytes.tobits(3e-9)
+	func testConvertKnownGigabytesToBits_3() throws {
+		let result = DataStorage.Gigabytes.toBits(3e-9)
 		XCTAssertEqual(24.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokilobits_1() throws {
-		let result = DataStorage.Gigabytes.tokilobits(0.009)
+	func testConvertKnownGigabytesToKilobits_1() throws {
+		let result = DataStorage.Gigabytes.toKilobits(0.009)
 		XCTAssertEqual(72000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokilobits_2() throws {
-		let result = DataStorage.Gigabytes.tokilobits(1.2e-4)
+	func testConvertKnownGigabytesToKilobits_2() throws {
+		let result = DataStorage.Gigabytes.toKilobits(1.2e-4)
 		XCTAssertEqual(960.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokilobits_3() throws {
-		let result = DataStorage.Gigabytes.tokilobits(0.0078)
+	func testConvertKnownGigabytesToKilobits_3() throws {
+		let result = DataStorage.Gigabytes.toKilobits(0.0078)
 		XCTAssertEqual(62400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomegabits_1() throws {
-		let result = DataStorage.Gigabytes.tomegabits(0.0078)
+	func testConvertKnownGigabytesToMegabits_1() throws {
+		let result = DataStorage.Gigabytes.toMegabits(0.0078)
 		XCTAssertEqual(62.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomegabits_2() throws {
-		let result = DataStorage.Gigabytes.tomegabits(0.01)
+	func testConvertKnownGigabytesToMegabits_2() throws {
+		let result = DataStorage.Gigabytes.toMegabits(0.01)
 		XCTAssertEqual(80.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomegabits_3() throws {
-		let result = DataStorage.Gigabytes.tomegabits(0.001234)
+	func testConvertKnownGigabytesToMegabits_3() throws {
+		let result = DataStorage.Gigabytes.toMegabits(0.001234)
 		XCTAssertEqual(9.872, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTogigabits_1() throws {
-		let result = DataStorage.Gigabytes.togigabits(5.0)
+	func testConvertKnownGigabytesToGigabits_1() throws {
+		let result = DataStorage.Gigabytes.toGigabits(5.0)
 		XCTAssertEqual(40.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTogigabits_2() throws {
-		let result = DataStorage.Gigabytes.togigabits(1.2)
+	func testConvertKnownGigabytesToGigabits_2() throws {
+		let result = DataStorage.Gigabytes.toGigabits(1.2)
 		XCTAssertEqual(9.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTogigabits_3() throws {
-		let result = DataStorage.Gigabytes.togigabits(0.01)
+	func testConvertKnownGigabytesToGigabits_3() throws {
+		let result = DataStorage.Gigabytes.toGigabits(0.01)
 		XCTAssertEqual(0.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesToterabits_1() throws {
-		let result = DataStorage.Gigabytes.toterabits(70.0)
+	func testConvertKnownGigabytesToTerabits_1() throws {
+		let result = DataStorage.Gigabytes.toTerabits(70.0)
 		XCTAssertEqual(0.56, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesToterabits_2() throws {
-		let result = DataStorage.Gigabytes.toterabits(9001.0)
+	func testConvertKnownGigabytesToTerabits_2() throws {
+		let result = DataStorage.Gigabytes.toTerabits(9001.0)
 		XCTAssertEqual(72.008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesToterabits_3() throws {
-		let result = DataStorage.Gigabytes.toterabits(768123.9)
+	func testConvertKnownGigabytesToTerabits_3() throws {
+		let result = DataStorage.Gigabytes.toTerabits(768123.9)
 		XCTAssertEqual(6144.9912, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokilobytes_1() throws {
-		let result = DataStorage.Gigabytes.tokilobytes(0.2)
+	func testConvertKnownGigabytesToKilobytes_1() throws {
+		let result = DataStorage.Gigabytes.toKilobytes(0.2)
 		XCTAssertEqual(200000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokilobytes_2() throws {
-		let result = DataStorage.Gigabytes.tokilobytes(0.009)
+	func testConvertKnownGigabytesToKilobytes_2() throws {
+		let result = DataStorage.Gigabytes.toKilobytes(0.009)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokilobytes_3() throws {
-		let result = DataStorage.Gigabytes.tokilobytes(0.00123)
+	func testConvertKnownGigabytesToKilobytes_3() throws {
+		let result = DataStorage.Gigabytes.toKilobytes(0.00123)
 		XCTAssertEqual(1230.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomegabytes_1() throws {
-		let result = DataStorage.Gigabytes.tomegabytes(0.9)
+	func testConvertKnownGigabytesToMegabytes_1() throws {
+		let result = DataStorage.Gigabytes.toMegabytes(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomegabytes_2() throws {
-		let result = DataStorage.Gigabytes.tomegabytes(12.0)
+	func testConvertKnownGigabytesToMegabytes_2() throws {
+		let result = DataStorage.Gigabytes.toMegabytes(12.0)
 		XCTAssertEqual(12000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomegabytes_3() throws {
-		let result = DataStorage.Gigabytes.tomegabytes(35.6)
+	func testConvertKnownGigabytesToMegabytes_3() throws {
+		let result = DataStorage.Gigabytes.toMegabytes(35.6)
 		XCTAssertEqual(35600.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesToterabytes_1() throws {
-		let result = DataStorage.Gigabytes.toterabytes(35.6)
+	func testConvertKnownGigabytesToTerabytes_1() throws {
+		let result = DataStorage.Gigabytes.toTerabytes(35.6)
 		XCTAssertEqual(0.0356, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesToterabytes_2() throws {
-		let result = DataStorage.Gigabytes.toterabytes(100.23)
+	func testConvertKnownGigabytesToTerabytes_2() throws {
+		let result = DataStorage.Gigabytes.toTerabytes(100.23)
 		XCTAssertEqual(0.10023, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesToterabytes_3() throws {
-		let result = DataStorage.Gigabytes.toterabytes(900100.0)
+	func testConvertKnownGigabytesToTerabytes_3() throws {
+		let result = DataStorage.Gigabytes.toTerabytes(900100.0)
 		XCTAssertEqual(900.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokibibits_1() throws {
-		let result = DataStorage.Gigabytes.tokibibits(0.05)
+	func testConvertKnownGigabytesToKibibits_1() throws {
+		let result = DataStorage.Gigabytes.toKibibits(0.05)
 		XCTAssertEqual(390625.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokibibits_2() throws {
-		let result = DataStorage.Gigabytes.tokibibits(0.008)
+	func testConvertKnownGigabytesToKibibits_2() throws {
+		let result = DataStorage.Gigabytes.toKibibits(0.008)
 		XCTAssertEqual(62500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTokibibits_3() throws {
-		let result = DataStorage.Gigabytes.tokibibits(0.00123)
+	func testConvertKnownGigabytesToKibibits_3() throws {
+		let result = DataStorage.Gigabytes.toKibibits(0.00123)
 		XCTAssertEqual(9609.375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomebibits_1() throws {
-		let result = DataStorage.Gigabytes.tomebibits(0.009)
+	func testConvertKnownGigabytesToMebibits_1() throws {
+		let result = DataStorage.Gigabytes.toMebibits(0.009)
 		XCTAssertEqual(68.66451, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomebibits_2() throws {
-		let result = DataStorage.Gigabytes.tomebibits(1.2)
+	func testConvertKnownGigabytesToMebibits_2() throws {
+		let result = DataStorage.Gigabytes.toMebibits(1.2)
 		XCTAssertEqual(9155.268, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigabytesTomebibits_3() throws {
-		let result = DataStorage.Gigabytes.tomebibits(19.2)
+	func testConvertKnownGigabytesToMebibits_3() throws {
+		let result = DataStorage.Gigabytes.toMebibits(19.2)
 		XCTAssertEqual(146484.288, result, accuracy: 0.01)
 	}
 
 }
 
 final class KibibitsTests: XCTestCase {
-	func testConvertKnownKibibitsTobits_1() throws {
-		let result = DataStorage.Kibibits.tobits(2.0)
+	func testConvertKnownKibibitsToBits_1() throws {
+		let result = DataStorage.Kibibits.toBits(2.0)
 		XCTAssertEqual(2048.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTobits_2() throws {
-		let result = DataStorage.Kibibits.tobits(9.0)
+	func testConvertKnownKibibitsToBits_2() throws {
+		let result = DataStorage.Kibibits.toBits(9.0)
 		XCTAssertEqual(9216.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTobits_3() throws {
-		let result = DataStorage.Kibibits.tobits(17.8)
+	func testConvertKnownKibibitsToBits_3() throws {
+		let result = DataStorage.Kibibits.toBits(17.8)
 		XCTAssertEqual(18227.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTokilobits_1() throws {
-		let result = DataStorage.Kibibits.tokilobits(6.2)
+	func testConvertKnownKibibitsToKilobits_1() throws {
+		let result = DataStorage.Kibibits.toKilobits(6.2)
 		XCTAssertEqual(6.3488, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTokilobits_2() throws {
-		let result = DataStorage.Kibibits.tokilobits(0.9)
+	func testConvertKnownKibibitsToKilobits_2() throws {
+		let result = DataStorage.Kibibits.toKilobits(0.9)
 		XCTAssertEqual(0.9216, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTokilobits_3() throws {
-		let result = DataStorage.Kibibits.tokilobits(87.0)
+	func testConvertKnownKibibitsToKilobits_3() throws {
+		let result = DataStorage.Kibibits.toKilobits(87.0)
 		XCTAssertEqual(89.088, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomegabits_1() throws {
-		let result = DataStorage.Kibibits.tomegabits(87.0)
+	func testConvertKnownKibibitsToMegabits_1() throws {
+		let result = DataStorage.Kibibits.toMegabits(87.0)
 		XCTAssertEqual(0.089088, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomegabits_2() throws {
-		let result = DataStorage.Kibibits.tomegabits(12.34)
+	func testConvertKnownKibibitsToMegabits_2() throws {
+		let result = DataStorage.Kibibits.toMegabits(12.34)
 		XCTAssertEqual(0.01263616, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomegabits_3() throws {
-		let result = DataStorage.Kibibits.tomegabits(123456.0)
+	func testConvertKnownKibibitsToMegabits_3() throws {
+		let result = DataStorage.Kibibits.toMegabits(123456.0)
 		XCTAssertEqual(126.418879, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTogigabits_1() throws {
-		let result = DataStorage.Kibibits.togigabits(123456.0)
+	func testConvertKnownKibibitsToGigabits_1() throws {
+		let result = DataStorage.Kibibits.toGigabits(123456.0)
 		XCTAssertEqual(0.126418944, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTogigabits_2() throws {
-		let result = DataStorage.Kibibits.togigabits(8000000.0)
+	func testConvertKnownKibibitsToGigabits_2() throws {
+		let result = DataStorage.Kibibits.toGigabits(8000000.0)
 		XCTAssertEqual(8.192, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTogigabits_3() throws {
-		let result = DataStorage.Kibibits.togigabits(1276876.0)
+	func testConvertKnownKibibitsToGigabits_3() throws {
+		let result = DataStorage.Kibibits.toGigabits(1276876.0)
 		XCTAssertEqual(1.307521024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsToterabits_1() throws {
-		let result = DataStorage.Kibibits.toterabits(800000000.0)
+	func testConvertKnownKibibitsToTerabits_1() throws {
+		let result = DataStorage.Kibibits.toTerabits(800000000.0)
 		XCTAssertEqual(0.8192, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsToterabits_2() throws {
-		let result = DataStorage.Kibibits.toterabits(1.5e12)
+	func testConvertKnownKibibitsToTerabits_2() throws {
+		let result = DataStorage.Kibibits.toTerabits(1.5e12)
 		XCTAssertEqual(1536.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsToterabits_3() throws {
-		let result = DataStorage.Kibibits.toterabits(9999999.0)
+	func testConvertKnownKibibitsToTerabits_3() throws {
+		let result = DataStorage.Kibibits.toTerabits(9999999.0)
 		XCTAssertEqual(0.01023999898, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTokilobytes_1() throws {
-		let result = DataStorage.Kibibits.tokilobytes(919.0)
+	func testConvertKnownKibibitsToKilobytes_1() throws {
+		let result = DataStorage.Kibibits.toKilobytes(919.0)
 		XCTAssertEqual(117.632, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTokilobytes_2() throws {
-		let result = DataStorage.Kibibits.tokilobytes(77.4)
+	func testConvertKnownKibibitsToKilobytes_2() throws {
+		let result = DataStorage.Kibibits.toKilobytes(77.4)
 		XCTAssertEqual(9.9072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTokilobytes_3() throws {
-		let result = DataStorage.Kibibits.tokilobytes(109.109)
+	func testConvertKnownKibibitsToKilobytes_3() throws {
+		let result = DataStorage.Kibibits.toKilobytes(109.109)
 		XCTAssertEqual(13.965952, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomegabytes_1() throws {
-		let result = DataStorage.Kibibits.tomegabytes(1000.0)
+	func testConvertKnownKibibitsToMegabytes_1() throws {
+		let result = DataStorage.Kibibits.toMegabytes(1000.0)
 		XCTAssertEqual(0.128, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomegabytes_2() throws {
-		let result = DataStorage.Kibibits.tomegabytes(800.123)
+	func testConvertKnownKibibitsToMegabytes_2() throws {
+		let result = DataStorage.Kibibits.toMegabytes(800.123)
 		XCTAssertEqual(0.102415744, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomegabytes_3() throws {
-		let result = DataStorage.Kibibits.tomegabytes(123456.0)
+	func testConvertKnownKibibitsToMegabytes_3() throws {
+		let result = DataStorage.Kibibits.toMegabytes(123456.0)
 		XCTAssertEqual(15.802368, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTogigabytes_1() throws {
-		let result = DataStorage.Kibibits.togigabytes(12345678.0)
+	func testConvertKnownKibibitsToGigabytes_1() throws {
+		let result = DataStorage.Kibibits.toGigabytes(12345678.0)
 		XCTAssertEqual(1.580347926, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTogigabytes_2() throws {
-		let result = DataStorage.Kibibits.togigabytes(8e12)
+	func testConvertKnownKibibitsToGigabytes_2() throws {
+		let result = DataStorage.Kibibits.toGigabytes(8e12)
 		XCTAssertEqual(1024000.00, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTogigabytes_3() throws {
-		let result = DataStorage.Kibibits.togigabytes(1.2e5)
+	func testConvertKnownKibibitsToGigabytes_3() throws {
+		let result = DataStorage.Kibibits.toGigabytes(1.2e5)
 		XCTAssertEqual(0.01536, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsToterabytes_1() throws {
-		let result = DataStorage.Kibibits.toterabytes(120000000.0)
+	func testConvertKnownKibibitsToTerabytes_1() throws {
+		let result = DataStorage.Kibibits.toTerabytes(120000000.0)
 		XCTAssertEqual(0.01536, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsToterabytes_2() throws {
-		let result = DataStorage.Kibibits.toterabytes(88e12)
+	func testConvertKnownKibibitsToTerabytes_2() throws {
+		let result = DataStorage.Kibibits.toTerabytes(88e12)
 		XCTAssertEqual(11264.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsToterabytes_3() throws {
-		let result = DataStorage.Kibibits.toterabytes(9000000.0)
+	func testConvertKnownKibibitsToTerabytes_3() throws {
+		let result = DataStorage.Kibibits.toTerabytes(9000000.0)
 		XCTAssertEqual(0.009216, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomebibits_1() throws {
-		let result = DataStorage.Kibibits.tomebibits(600.0)
+	func testConvertKnownKibibitsToMebibits_1() throws {
+		let result = DataStorage.Kibibits.toMebibits(600.0)
 		XCTAssertEqual(0.5859375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomebibits_2() throws {
-		let result = DataStorage.Kibibits.tomebibits(12345.0)
+	func testConvertKnownKibibitsToMebibits_2() throws {
+		let result = DataStorage.Kibibits.toMebibits(12345.0)
 		XCTAssertEqual(12.055664, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsTomebibits_3() throws {
-		let result = DataStorage.Kibibits.tomebibits(101.0)
+	func testConvertKnownKibibitsToMebibits_3() throws {
+		let result = DataStorage.Kibibits.toMebibits(101.0)
 		XCTAssertEqual(0.0986328, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilobitsTests: XCTestCase {
-	func testConvertKnownKilobitsTobits_1() throws {
-		let result = DataStorage.Kilobits.tobits(9.0)
+	func testConvertKnownKilobitsToBits_1() throws {
+		let result = DataStorage.Kilobits.toBits(9.0)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTobits_2() throws {
-		let result = DataStorage.Kilobits.tobits(6.7)
+	func testConvertKnownKilobitsToBits_2() throws {
+		let result = DataStorage.Kilobits.toBits(6.7)
 		XCTAssertEqual(6700.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTobits_3() throws {
-		let result = DataStorage.Kilobits.tobits(1.2345)
+	func testConvertKnownKilobitsToBits_3() throws {
+		let result = DataStorage.Kilobits.toBits(1.2345)
 		XCTAssertEqual(1234.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomegabits_1() throws {
-		let result = DataStorage.Kilobits.tomegabits(900.0)
+	func testConvertKnownKilobitsToMegabits_1() throws {
+		let result = DataStorage.Kilobits.toMegabits(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomegabits_2() throws {
-		let result = DataStorage.Kilobits.tomegabits(12345.0)
+	func testConvertKnownKilobitsToMegabits_2() throws {
+		let result = DataStorage.Kilobits.toMegabits(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomegabits_3() throws {
-		let result = DataStorage.Kilobits.tomegabits(9988.0)
+	func testConvertKnownKilobitsToMegabits_3() throws {
+		let result = DataStorage.Kilobits.toMegabits(9988.0)
 		XCTAssertEqual(9.988, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTogigabits_1() throws {
-		let result = DataStorage.Kilobits.togigabits(123456.0)
+	func testConvertKnownKilobitsToGigabits_1() throws {
+		let result = DataStorage.Kilobits.toGigabits(123456.0)
 		XCTAssertEqual(0.123456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTogigabits_2() throws {
-		let result = DataStorage.Kilobits.togigabits(8000700.0)
+	func testConvertKnownKilobitsToGigabits_2() throws {
+		let result = DataStorage.Kilobits.toGigabits(8000700.0)
 		XCTAssertEqual(8.0007, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTogigabits_3() throws {
-		let result = DataStorage.Kilobits.togigabits(191987578.0)
+	func testConvertKnownKilobitsToGigabits_3() throws {
+		let result = DataStorage.Kilobits.toGigabits(191987578.0)
 		XCTAssertEqual(191.987578, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsToterabits_1() throws {
-		let result = DataStorage.Kilobits.toterabits(191987578.0)
+	func testConvertKnownKilobitsToTerabits_1() throws {
+		let result = DataStorage.Kilobits.toTerabits(191987578.0)
 		XCTAssertEqual(0.191987578, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsToterabits_2() throws {
-		let result = DataStorage.Kilobits.toterabits(9010081903.0)
+	func testConvertKnownKilobitsToTerabits_2() throws {
+		let result = DataStorage.Kilobits.toTerabits(9010081903.0)
 		XCTAssertEqual(9.010081903, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsToterabits_3() throws {
-		let result = DataStorage.Kilobits.toterabits(123456789.0)
+	func testConvertKnownKilobitsToTerabits_3() throws {
+		let result = DataStorage.Kilobits.toTerabits(123456789.0)
 		XCTAssertEqual(0.123456789, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTokilobytes_1() throws {
-		let result = DataStorage.Kilobits.tokilobytes(80.0)
+	func testConvertKnownKilobitsToKilobytes_1() throws {
+		let result = DataStorage.Kilobits.toKilobytes(80.0)
 		XCTAssertEqual(10.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTokilobytes_2() throws {
-		let result = DataStorage.Kilobits.tokilobytes(15.67)
+	func testConvertKnownKilobitsToKilobytes_2() throws {
+		let result = DataStorage.Kilobits.toKilobytes(15.67)
 		XCTAssertEqual(1.95875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTokilobytes_3() throws {
-		let result = DataStorage.Kilobits.tokilobytes(8007.09)
+	func testConvertKnownKilobitsToKilobytes_3() throws {
+		let result = DataStorage.Kilobits.toKilobytes(8007.09)
 		XCTAssertEqual(1000.88625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomegabytes_1() throws {
-		let result = DataStorage.Kilobits.tomegabytes(123456.0)
+	func testConvertKnownKilobitsToMegabytes_1() throws {
+		let result = DataStorage.Kilobits.toMegabytes(123456.0)
 		XCTAssertEqual(15.432, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomegabytes_2() throws {
-		let result = DataStorage.Kilobits.tomegabytes(998877.0)
+	func testConvertKnownKilobitsToMegabytes_2() throws {
+		let result = DataStorage.Kilobits.toMegabytes(998877.0)
 		XCTAssertEqual(124.859625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomegabytes_3() throws {
-		let result = DataStorage.Kilobits.tomegabytes(10090.0)
+	func testConvertKnownKilobitsToMegabytes_3() throws {
+		let result = DataStorage.Kilobits.toMegabytes(10090.0)
 		XCTAssertEqual(1.26125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTogigabytes_1() throws {
-		let result = DataStorage.Kilobits.togigabytes(1828972.0)
+	func testConvertKnownKilobitsToGigabytes_1() throws {
+		let result = DataStorage.Kilobits.toGigabytes(1828972.0)
 		XCTAssertEqual(0.2286215, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTogigabytes_2() throws {
-		let result = DataStorage.Kilobits.togigabytes(879860.8)
+	func testConvertKnownKilobitsToGigabytes_2() throws {
+		let result = DataStorage.Kilobits.toGigabytes(879860.8)
 		XCTAssertEqual(0.1099826, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTogigabytes_3() throws {
-		let result = DataStorage.Kilobits.togigabytes(78178971.0)
+	func testConvertKnownKilobitsToGigabytes_3() throws {
+		let result = DataStorage.Kilobits.toGigabytes(78178971.0)
 		XCTAssertEqual(9.772371375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsToterabytes_1() throws {
-		let result = DataStorage.Kilobits.toterabytes(1234567891.0)
+	func testConvertKnownKilobitsToTerabytes_1() throws {
+		let result = DataStorage.Kilobits.toTerabytes(1234567891.0)
 		XCTAssertEqual(0.154320986375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsToterabytes_2() throws {
-		let result = DataStorage.Kilobits.toterabytes(999999098.0)
+	func testConvertKnownKilobitsToTerabytes_2() throws {
+		let result = DataStorage.Kilobits.toTerabytes(999999098.0)
 		XCTAssertEqual(0.12499988725, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsToterabytes_3() throws {
-		let result = DataStorage.Kilobits.toterabytes(84618364142.0)
+	func testConvertKnownKilobitsToTerabytes_3() throws {
+		let result = DataStorage.Kilobits.toTerabytes(84618364142.0)
 		XCTAssertEqual(10.57729551775, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTokibibits_1() throws {
-		let result = DataStorage.Kilobits.tokibibits(89.1)
+	func testConvertKnownKilobitsToKibibits_1() throws {
+		let result = DataStorage.Kilobits.toKibibits(89.1)
 		XCTAssertEqual(87.01172, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTokibibits_2() throws {
-		let result = DataStorage.Kilobits.tokibibits(7.1)
+	func testConvertKnownKilobitsToKibibits_2() throws {
+		let result = DataStorage.Kilobits.toKibibits(7.1)
 		XCTAssertEqual(6.93359, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTokibibits_3() throws {
-		let result = DataStorage.Kilobits.tokibibits(438.0)
+	func testConvertKnownKilobitsToKibibits_3() throws {
+		let result = DataStorage.Kilobits.toKibibits(438.0)
 		XCTAssertEqual(427.734, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomebibits_1() throws {
-		let result = DataStorage.Kilobits.tomebibits(77790.0)
+	func testConvertKnownKilobitsToMebibits_1() throws {
+		let result = DataStorage.Kilobits.toMebibits(77790.0)
 		XCTAssertEqual(74.186325, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomebibits_2() throws {
-		let result = DataStorage.Kilobits.tomebibits(123456.0)
+	func testConvertKnownKilobitsToMebibits_2() throws {
+		let result = DataStorage.Kilobits.toMebibits(123456.0)
 		XCTAssertEqual(117.736816, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobitsTomebibits_3() throws {
-		let result = DataStorage.Kilobits.tomebibits(23972.0)
+	func testConvertKnownKilobitsToMebibits_3() throws {
+		let result = DataStorage.Kilobits.toMebibits(23972.0)
 		XCTAssertEqual(22.861481, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilobytesTests: XCTestCase {
-	func testConvertKnownKilobytesTobits_1() throws {
-		let result = DataStorage.Kilobytes.tobits(123.456)
+	func testConvertKnownKilobytesToBits_1() throws {
+		let result = DataStorage.Kilobytes.toBits(123.456)
 		XCTAssertEqual(987648.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTobits_2() throws {
-		let result = DataStorage.Kilobytes.tobits(900.0)
+	func testConvertKnownKilobytesToBits_2() throws {
+		let result = DataStorage.Kilobytes.toBits(900.0)
 		XCTAssertEqual(7.2e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTobits_3() throws {
-		let result = DataStorage.Kilobytes.tobits(100200.0)
+	func testConvertKnownKilobytesToBits_3() throws {
+		let result = DataStorage.Kilobytes.toBits(100200.0)
 		XCTAssertEqual(801600000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTokilobits_1() throws {
-		let result = DataStorage.Kilobytes.tokilobits(4.0)
+	func testConvertKnownKilobytesToKilobits_1() throws {
+		let result = DataStorage.Kilobytes.toKilobits(4.0)
 		XCTAssertEqual(32.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTokilobits_2() throws {
-		let result = DataStorage.Kilobytes.tokilobits(1.2)
+	func testConvertKnownKilobytesToKilobits_2() throws {
+		let result = DataStorage.Kilobytes.toKilobits(1.2)
 		XCTAssertEqual(9.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTokilobits_3() throws {
-		let result = DataStorage.Kilobytes.tokilobits(88.1)
+	func testConvertKnownKilobytesToKilobits_3() throws {
+		let result = DataStorage.Kilobytes.toKilobits(88.1)
 		XCTAssertEqual(704.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomegabits_1() throws {
-		let result = DataStorage.Kilobytes.tomegabits(88.1)
+	func testConvertKnownKilobytesToMegabits_1() throws {
+		let result = DataStorage.Kilobytes.toMegabits(88.1)
 		XCTAssertEqual(0.7048, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomegabits_2() throws {
-		let result = DataStorage.Kilobytes.tomegabits(7.1)
+	func testConvertKnownKilobytesToMegabits_2() throws {
+		let result = DataStorage.Kilobytes.toMegabits(7.1)
 		XCTAssertEqual(0.0568, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomegabits_3() throws {
-		let result = DataStorage.Kilobytes.tomegabits(12.8)
+	func testConvertKnownKilobytesToMegabits_3() throws {
+		let result = DataStorage.Kilobytes.toMegabits(12.8)
 		XCTAssertEqual(0.1024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTogigabits_1() throws {
-		let result = DataStorage.Kilobytes.togigabits(10080.0)
+	func testConvertKnownKilobytesToGigabits_1() throws {
+		let result = DataStorage.Kilobytes.toGigabits(10080.0)
 		XCTAssertEqual(0.08064, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTogigabits_2() throws {
-		let result = DataStorage.Kilobytes.togigabits(4.5e+9)
+	func testConvertKnownKilobytesToGigabits_2() throws {
+		let result = DataStorage.Kilobytes.toGigabits(4.5e+9)
 		XCTAssertEqual(36000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTogigabits_3() throws {
-		let result = DataStorage.Kilobytes.togigabits(271279.0)
+	func testConvertKnownKilobytesToGigabits_3() throws {
+		let result = DataStorage.Kilobytes.toGigabits(271279.0)
 		XCTAssertEqual(2.170232, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesToterabits_1() throws {
-		let result = DataStorage.Kilobytes.toterabits(9009000.0)
+	func testConvertKnownKilobytesToTerabits_1() throws {
+		let result = DataStorage.Kilobytes.toTerabits(9009000.0)
 		XCTAssertEqual(0.072072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesToterabits_2() throws {
-		let result = DataStorage.Kilobytes.toterabits(7.2e9)
+	func testConvertKnownKilobytesToTerabits_2() throws {
+		let result = DataStorage.Kilobytes.toTerabits(7.2e9)
 		XCTAssertEqual(57.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesToterabits_3() throws {
-		let result = DataStorage.Kilobytes.toterabits(100100100900.0)
+	func testConvertKnownKilobytesToTerabits_3() throws {
+		let result = DataStorage.Kilobytes.toTerabits(100100100900.0)
 		XCTAssertEqual(800.8008072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomegabytes_1() throws {
-		let result = DataStorage.Kilobytes.tomegabytes(1009.0)
+	func testConvertKnownKilobytesToMegabytes_1() throws {
+		let result = DataStorage.Kilobytes.toMegabytes(1009.0)
 		XCTAssertEqual(1.009, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomegabytes_2() throws {
-		let result = DataStorage.Kilobytes.tomegabytes(8899.0)
+	func testConvertKnownKilobytesToMegabytes_2() throws {
+		let result = DataStorage.Kilobytes.toMegabytes(8899.0)
 		XCTAssertEqual(8.899, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomegabytes_3() throws {
-		let result = DataStorage.Kilobytes.tomegabytes(619.0)
+	func testConvertKnownKilobytesToMegabytes_3() throws {
+		let result = DataStorage.Kilobytes.toMegabytes(619.0)
 		XCTAssertEqual(0.619, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTogigabytes_1() throws {
-		let result = DataStorage.Kilobytes.togigabytes(900800.0)
+	func testConvertKnownKilobytesToGigabytes_1() throws {
+		let result = DataStorage.Kilobytes.toGigabytes(900800.0)
 		XCTAssertEqual(0.9008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTogigabytes_2() throws {
-		let result = DataStorage.Kilobytes.togigabytes(1234567.0)
+	func testConvertKnownKilobytesToGigabytes_2() throws {
+		let result = DataStorage.Kilobytes.toGigabytes(1234567.0)
 		XCTAssertEqual(1.234567, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTogigabytes_3() throws {
-		let result = DataStorage.Kilobytes.togigabytes(7.9e9)
+	func testConvertKnownKilobytesToGigabytes_3() throws {
+		let result = DataStorage.Kilobytes.toGigabytes(7.9e9)
 		XCTAssertEqual(7900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesToterabytes_1() throws {
-		let result = DataStorage.Kilobytes.toterabytes(0.9)
+	func testConvertKnownKilobytesToTerabytes_1() throws {
+		let result = DataStorage.Kilobytes.toTerabytes(0.9)
 		XCTAssertEqual(9e-10, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesToterabytes_2() throws {
-		let result = DataStorage.Kilobytes.toterabytes(140000000.0)
+	func testConvertKnownKilobytesToTerabytes_2() throws {
+		let result = DataStorage.Kilobytes.toTerabytes(140000000.0)
 		XCTAssertEqual(0.14, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesToterabytes_3() throws {
-		let result = DataStorage.Kilobytes.toterabytes(7.0)
+	func testConvertKnownKilobytesToTerabytes_3() throws {
+		let result = DataStorage.Kilobytes.toTerabytes(7.0)
 		XCTAssertEqual(7e-9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTokibibits_1() throws {
-		let result = DataStorage.Kilobytes.tokibibits(0.009)
+	func testConvertKnownKilobytesToKibibits_1() throws {
+		let result = DataStorage.Kilobytes.toKibibits(0.009)
 		XCTAssertEqual(0.0703125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTokibibits_2() throws {
-		let result = DataStorage.Kilobytes.tokibibits(6e+3)
+	func testConvertKnownKilobytesToKibibits_2() throws {
+		let result = DataStorage.Kilobytes.toKibibits(6e+3)
 		XCTAssertEqual(46875.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTokibibits_3() throws {
-		let result = DataStorage.Kilobytes.tokibibits(1.23)
+	func testConvertKnownKilobytesToKibibits_3() throws {
+		let result = DataStorage.Kilobytes.toKibibits(1.23)
 		XCTAssertEqual(9.609375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomebibits_1() throws {
-		let result = DataStorage.Kilobytes.tomebibits(70.0)
+	func testConvertKnownKilobytesToMebibits_1() throws {
+		let result = DataStorage.Kilobytes.toMebibits(70.0)
 		XCTAssertEqual(0.534058, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomebibits_2() throws {
-		let result = DataStorage.Kilobytes.tomebibits(9.0)
+	func testConvertKnownKilobytesToMebibits_2() throws {
+		let result = DataStorage.Kilobytes.toMebibits(9.0)
 		XCTAssertEqual(0.0686646, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilobytesTomebibits_3() throws {
-		let result = DataStorage.Kilobytes.tomebibits(10022.0)
+	func testConvertKnownKilobytesToMebibits_3() throws {
+		let result = DataStorage.Kilobytes.toMebibits(10022.0)
 		XCTAssertEqual(76.461792, result, accuracy: 0.01)
 	}
 
 }
 
 final class MebibitsTests: XCTestCase {
-	func testConvertKnownMebibitsTobits_1() throws {
-		let result = DataStorage.Mebibits.tobits(0.9)
+	func testConvertKnownMebibitsToBits_1() throws {
+		let result = DataStorage.Mebibits.toBits(0.9)
 		XCTAssertEqual(943718.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTobits_2() throws {
-		let result = DataStorage.Mebibits.tobits(0.006)
+	func testConvertKnownMebibitsToBits_2() throws {
+		let result = DataStorage.Mebibits.toBits(0.006)
 		XCTAssertEqual(6291.456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTobits_3() throws {
-		let result = DataStorage.Mebibits.tobits(2.0)
+	func testConvertKnownMebibitsToBits_3() throws {
+		let result = DataStorage.Mebibits.toBits(2.0)
 		XCTAssertEqual(2097152.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokilobits_1() throws {
-		let result = DataStorage.Mebibits.tokilobits(0.8)
+	func testConvertKnownMebibitsToKilobits_1() throws {
+		let result = DataStorage.Mebibits.toKilobits(0.8)
 		XCTAssertEqual(838.861, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokilobits_2() throws {
-		let result = DataStorage.Mebibits.tokilobits(2.0)
+	func testConvertKnownMebibitsToKilobits_2() throws {
+		let result = DataStorage.Mebibits.toKilobits(2.0)
 		XCTAssertEqual(2097.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokilobits_3() throws {
-		let result = DataStorage.Mebibits.tokilobits(0.23)
+	func testConvertKnownMebibitsToKilobits_3() throws {
+		let result = DataStorage.Mebibits.toKilobits(0.23)
 		XCTAssertEqual(241.1725, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTomegabits_1() throws {
-		let result = DataStorage.Mebibits.tomegabits(0.9)
+	func testConvertKnownMebibitsToMegabits_1() throws {
+		let result = DataStorage.Mebibits.toMegabits(0.9)
 		XCTAssertEqual(0.943718, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTomegabits_2() throws {
-		let result = DataStorage.Mebibits.tomegabits(12.3)
+	func testConvertKnownMebibitsToMegabits_2() throws {
+		let result = DataStorage.Mebibits.toMegabits(12.3)
 		XCTAssertEqual(12.89748, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTomegabits_3() throws {
-		let result = DataStorage.Mebibits.tomegabits(8.1)
+	func testConvertKnownMebibitsToMegabits_3() throws {
+		let result = DataStorage.Mebibits.toMegabits(8.1)
 		XCTAssertEqual(8.49347, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTogigabits_1() throws {
-		let result = DataStorage.Mebibits.togigabits(12345.0)
+	func testConvertKnownMebibitsToGigabits_1() throws {
+		let result = DataStorage.Mebibits.toGigabits(12345.0)
 		XCTAssertEqual(12.944671, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTogigabits_2() throws {
-		let result = DataStorage.Mebibits.togigabits(100.0)
+	func testConvertKnownMebibitsToGigabits_2() throws {
+		let result = DataStorage.Mebibits.toGigabits(100.0)
 		XCTAssertEqual(0.104858, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTogigabits_3() throws {
-		let result = DataStorage.Mebibits.togigabits(999.9)
+	func testConvertKnownMebibitsToGigabits_3() throws {
+		let result = DataStorage.Mebibits.toGigabits(999.9)
 		XCTAssertEqual(1.0484711, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsToterabits_1() throws {
-		let result = DataStorage.Mebibits.toterabits(100009.0)
+	func testConvertKnownMebibitsToTerabits_1() throws {
+		let result = DataStorage.Mebibits.toTerabits(100009.0)
 		XCTAssertEqual(0.104867037, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsToterabits_2() throws {
-		let result = DataStorage.Mebibits.toterabits(9876543.0)
+	func testConvertKnownMebibitsToTerabits_2() throws {
+		let result = DataStorage.Mebibits.toTerabits(9876543.0)
 		XCTAssertEqual(10.35630595, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsToterabits_3() throws {
-		let result = DataStorage.Mebibits.toterabits(1000900.0)
+	func testConvertKnownMebibitsToTerabits_3() throws {
+		let result = DataStorage.Mebibits.toTerabits(1000900.0)
 		XCTAssertEqual(1.049519718, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokilobytes_1() throws {
-		let result = DataStorage.Mebibits.tokilobytes(4.0)
+	func testConvertKnownMebibitsToKilobytes_1() throws {
+		let result = DataStorage.Mebibits.toKilobytes(4.0)
 		XCTAssertEqual(524.288, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokilobytes_2() throws {
-		let result = DataStorage.Mebibits.tokilobytes(1.45)
+	func testConvertKnownMebibitsToKilobytes_2() throws {
+		let result = DataStorage.Mebibits.toKilobytes(1.45)
 		XCTAssertEqual(190.0544, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokilobytes_3() throws {
-		let result = DataStorage.Mebibits.tokilobytes(88.11)
+	func testConvertKnownMebibitsToKilobytes_3() throws {
+		let result = DataStorage.Mebibits.toKilobytes(88.11)
 		XCTAssertEqual(11548.754, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTomegabytes_1() throws {
-		let result = DataStorage.Mebibits.tomegabytes(109.0)
+	func testConvertKnownMebibitsToMegabytes_1() throws {
+		let result = DataStorage.Mebibits.toMegabytes(109.0)
 		XCTAssertEqual(14.2868, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTomegabytes_2() throws {
-		let result = DataStorage.Mebibits.tomegabytes(55.67)
+	func testConvertKnownMebibitsToMegabytes_2() throws {
+		let result = DataStorage.Mebibits.toMegabytes(55.67)
 		XCTAssertEqual(7.2967782, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTomegabytes_3() throws {
-		let result = DataStorage.Mebibits.tomegabytes(45678.0)
+	func testConvertKnownMebibitsToMegabytes_3() throws {
+		let result = DataStorage.Mebibits.toMegabytes(45678.0)
 		XCTAssertEqual(5987.1068, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTogigabytes_1() throws {
-		let result = DataStorage.Mebibits.togigabytes(4000.0)
+	func testConvertKnownMebibitsToGigabytes_1() throws {
+		let result = DataStorage.Mebibits.toGigabytes(4000.0)
 		XCTAssertEqual(0.524288311, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTogigabytes_2() throws {
-		let result = DataStorage.Mebibits.togigabytes(90100.0)
+	func testConvertKnownMebibitsToGigabytes_2() throws {
+		let result = DataStorage.Mebibits.toGigabytes(90100.0)
 		XCTAssertEqual(11.80959421, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTogigabytes_3() throws {
-		let result = DataStorage.Mebibits.togigabytes(1009.0)
+	func testConvertKnownMebibitsToGigabytes_3() throws {
+		let result = DataStorage.Mebibits.toGigabytes(1009.0)
 		XCTAssertEqual(0.132251727, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsToterabytes_1() throws {
-		let result = DataStorage.Mebibits.toterabytes(1000009.0)
+	func testConvertKnownMebibitsToTerabytes_1() throws {
+		let result = DataStorage.Mebibits.toTerabytes(1000009.0)
 		XCTAssertEqual(0.1310731796, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsToterabytes_2() throws {
-		let result = DataStorage.Mebibits.toterabytes(90808080.0)
+	func testConvertKnownMebibitsToTerabytes_2() throws {
+		let result = DataStorage.Mebibits.toTerabytes(90808080.0)
 		XCTAssertEqual(11.902396662, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsToterabytes_3() throws {
-		let result = DataStorage.Mebibits.toterabytes(5.2e12)
+	func testConvertKnownMebibitsToTerabytes_3() throws {
+		let result = DataStorage.Mebibits.toTerabytes(5.2e12)
 		XCTAssertEqual(681574.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokibibits_1() throws {
-		let result = DataStorage.Mebibits.tokibibits(5.0)
+	func testConvertKnownMebibitsToKibibits_1() throws {
+		let result = DataStorage.Mebibits.toKibibits(5.0)
 		XCTAssertEqual(5120.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokibibits_2() throws {
-		let result = DataStorage.Mebibits.tokibibits(1234.56)
+	func testConvertKnownMebibitsToKibibits_2() throws {
+		let result = DataStorage.Mebibits.toKibibits(1234.56)
 		XCTAssertEqual(1264189.44, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsTokibibits_3() throws {
-		let result = DataStorage.Mebibits.tokibibits(505.0)
+	func testConvertKnownMebibitsToKibibits_3() throws {
+		let result = DataStorage.Mebibits.toKibibits(505.0)
 		XCTAssertEqual(517120.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class MegabitsTests: XCTestCase {
-	func testConvertKnownMegabitsTobits_1() throws {
-		let result = DataStorage.Megabits.tobits(0.34)
+	func testConvertKnownMegabitsToBits_1() throws {
+		let result = DataStorage.Megabits.toBits(0.34)
 		XCTAssertEqual(340000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTobits_2() throws {
-		let result = DataStorage.Megabits.tobits(9.12)
+	func testConvertKnownMegabitsToBits_2() throws {
+		let result = DataStorage.Megabits.toBits(9.12)
 		XCTAssertEqual(9120000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTobits_3() throws {
-		let result = DataStorage.Megabits.tobits(0.987)
+	func testConvertKnownMegabitsToBits_3() throws {
+		let result = DataStorage.Megabits.toBits(0.987)
 		XCTAssertEqual(987000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokilobits_1() throws {
-		let result = DataStorage.Megabits.tokilobits(0.77)
+	func testConvertKnownMegabitsToKilobits_1() throws {
+		let result = DataStorage.Megabits.toKilobits(0.77)
 		XCTAssertEqual(770.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokilobits_2() throws {
-		let result = DataStorage.Megabits.tokilobits(5.0)
+	func testConvertKnownMegabitsToKilobits_2() throws {
+		let result = DataStorage.Megabits.toKilobits(5.0)
 		XCTAssertEqual(5000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokilobits_3() throws {
-		let result = DataStorage.Megabits.tokilobits(0.987)
+	func testConvertKnownMegabitsToKilobits_3() throws {
+		let result = DataStorage.Megabits.toKilobits(0.987)
 		XCTAssertEqual(987.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTogigabits_1() throws {
-		let result = DataStorage.Megabits.togigabits(900.0)
+	func testConvertKnownMegabitsToGigabits_1() throws {
+		let result = DataStorage.Megabits.toGigabits(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTogigabits_2() throws {
-		let result = DataStorage.Megabits.togigabits(12345.0)
+	func testConvertKnownMegabitsToGigabits_2() throws {
+		let result = DataStorage.Megabits.toGigabits(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTogigabits_3() throws {
-		let result = DataStorage.Megabits.togigabits(189.1)
+	func testConvertKnownMegabitsToGigabits_3() throws {
+		let result = DataStorage.Megabits.toGigabits(189.1)
 		XCTAssertEqual(0.1891, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsToterabits_1() throws {
-		let result = DataStorage.Megabits.toterabits(100200300.0)
+	func testConvertKnownMegabitsToTerabits_1() throws {
+		let result = DataStorage.Megabits.toTerabits(100200300.0)
 		XCTAssertEqual(100.2003, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsToterabits_2() throws {
-		let result = DataStorage.Megabits.toterabits(99887777.0)
+	func testConvertKnownMegabitsToTerabits_2() throws {
+		let result = DataStorage.Megabits.toTerabits(99887777.0)
 		XCTAssertEqual(99.887777, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsToterabits_3() throws {
-		let result = DataStorage.Megabits.toterabits(80009.0)
+	func testConvertKnownMegabitsToTerabits_3() throws {
+		let result = DataStorage.Megabits.toTerabits(80009.0)
 		XCTAssertEqual(0.080009, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokilobytes_1() throws {
-		let result = DataStorage.Megabits.tokilobytes(9.0)
+	func testConvertKnownMegabitsToKilobytes_1() throws {
+		let result = DataStorage.Megabits.toKilobytes(9.0)
 		XCTAssertEqual(1125.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokilobytes_2() throws {
-		let result = DataStorage.Megabits.tokilobytes(1.23)
+	func testConvertKnownMegabitsToKilobytes_2() throws {
+		let result = DataStorage.Megabits.toKilobytes(1.23)
 		XCTAssertEqual(153.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokilobytes_3() throws {
-		let result = DataStorage.Megabits.tokilobytes(98.1)
+	func testConvertKnownMegabitsToKilobytes_3() throws {
+		let result = DataStorage.Megabits.toKilobytes(98.1)
 		XCTAssertEqual(12262.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTomegabytes_1() throws {
-		let result = DataStorage.Megabits.tomegabytes(98.1)
+	func testConvertKnownMegabitsToMegabytes_1() throws {
+		let result = DataStorage.Megabits.toMegabytes(98.1)
 		XCTAssertEqual(12.2625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTomegabytes_2() throws {
-		let result = DataStorage.Megabits.tomegabytes(10.9)
+	func testConvertKnownMegabitsToMegabytes_2() throws {
+		let result = DataStorage.Megabits.toMegabytes(10.9)
 		XCTAssertEqual(1.3625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTomegabytes_3() throws {
-		let result = DataStorage.Megabits.tomegabytes(888.123)
+	func testConvertKnownMegabitsToMegabytes_3() throws {
+		let result = DataStorage.Megabits.toMegabytes(888.123)
 		XCTAssertEqual(111.015375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTogigabytes_1() throws {
-		let result = DataStorage.Megabits.togigabytes(900.0)
+	func testConvertKnownMegabitsToGigabytes_1() throws {
+		let result = DataStorage.Megabits.toGigabytes(900.0)
 		XCTAssertEqual(0.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTogigabytes_2() throws {
-		let result = DataStorage.Megabits.togigabytes(10123.0)
+	func testConvertKnownMegabitsToGigabytes_2() throws {
+		let result = DataStorage.Megabits.toGigabytes(10123.0)
 		XCTAssertEqual(1.265375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTogigabytes_3() throws {
-		let result = DataStorage.Megabits.togigabytes(9988.0)
+	func testConvertKnownMegabitsToGigabytes_3() throws {
+		let result = DataStorage.Megabits.toGigabytes(9988.0)
 		XCTAssertEqual(1.2485, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsToterabytes_1() throws {
-		let result = DataStorage.Megabits.toterabytes(998877.0)
+	func testConvertKnownMegabitsToTerabytes_1() throws {
+		let result = DataStorage.Megabits.toTerabytes(998877.0)
 		XCTAssertEqual(0.124859625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsToterabytes_2() throws {
-		let result = DataStorage.Megabits.toterabytes(100200400.0)
+	func testConvertKnownMegabitsToTerabytes_2() throws {
+		let result = DataStorage.Megabits.toTerabytes(100200400.0)
 		XCTAssertEqual(12.5250375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsToterabytes_3() throws {
-		let result = DataStorage.Megabits.toterabytes(9008877.0)
+	func testConvertKnownMegabitsToTerabytes_3() throws {
+		let result = DataStorage.Megabits.toTerabytes(9008877.0)
 		XCTAssertEqual(1.126109625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokibibits_1() throws {
-		let result = DataStorage.Megabits.tokibibits(12.0)
+	func testConvertKnownMegabitsToKibibits_1() throws {
+		let result = DataStorage.Megabits.toKibibits(12.0)
 		XCTAssertEqual(11718.756, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokibibits_2() throws {
-		let result = DataStorage.Megabits.tokibibits(0.9)
+	func testConvertKnownMegabitsToKibibits_2() throws {
+		let result = DataStorage.Megabits.toKibibits(0.9)
 		XCTAssertEqual(878.906, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTokibibits_3() throws {
-		let result = DataStorage.Megabits.tokibibits(1.23)
+	func testConvertKnownMegabitsToKibibits_3() throws {
+		let result = DataStorage.Megabits.toKibibits(1.23)
 		XCTAssertEqual(1201.172, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTomebibits_1() throws {
-		let result = DataStorage.Megabits.tomebibits(4.5)
+	func testConvertKnownMegabitsToMebibits_1() throws {
+		let result = DataStorage.Megabits.toMebibits(4.5)
 		XCTAssertEqual(4.29153, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTomebibits_2() throws {
-		let result = DataStorage.Megabits.tomebibits(0.8)
+	func testConvertKnownMegabitsToMebibits_2() throws {
+		let result = DataStorage.Megabits.toMebibits(0.8)
 		XCTAssertEqual(0.762939, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabitsTomebibits_3() throws {
-		let result = DataStorage.Megabits.tomebibits(900.0)
+	func testConvertKnownMegabitsToMebibits_3() throws {
+		let result = DataStorage.Megabits.toMebibits(900.0)
 		XCTAssertEqual(858.307, result, accuracy: 0.01)
 	}
 
 }
 
 final class MegabytesTests: XCTestCase {
-	func testConvertKnownMegabytesTobits_1() throws {
-		let result = DataStorage.Megabytes.tobits(0.04)
+	func testConvertKnownMegabytesToBits_1() throws {
+		let result = DataStorage.Megabytes.toBits(0.04)
 		XCTAssertEqual(320000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTobits_2() throws {
-		let result = DataStorage.Megabytes.tobits(0.0091)
+	func testConvertKnownMegabytesToBits_2() throws {
+		let result = DataStorage.Megabytes.toBits(0.0091)
 		XCTAssertEqual(72800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTobits_3() throws {
-		let result = DataStorage.Megabytes.tobits(3e-5)
+	func testConvertKnownMegabytesToBits_3() throws {
+		let result = DataStorage.Megabytes.toBits(3e-5)
 		XCTAssertEqual(240.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokilobits_1() throws {
-		let result = DataStorage.Megabytes.tokilobits(6.0)
+	func testConvertKnownMegabytesToKilobits_1() throws {
+		let result = DataStorage.Megabytes.toKilobits(6.0)
 		XCTAssertEqual(48000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokilobits_2() throws {
-		let result = DataStorage.Megabytes.tokilobits(0.3)
+	func testConvertKnownMegabytesToKilobits_2() throws {
+		let result = DataStorage.Megabytes.toKilobits(0.3)
 		XCTAssertEqual(2400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokilobits_3() throws {
-		let result = DataStorage.Megabytes.tokilobits(0.009)
+	func testConvertKnownMegabytesToKilobits_3() throws {
+		let result = DataStorage.Megabytes.toKilobits(0.009)
 		XCTAssertEqual(72.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTomegabits_1() throws {
-		let result = DataStorage.Megabytes.tomegabits(3.0)
+	func testConvertKnownMegabytesToMegabits_1() throws {
+		let result = DataStorage.Megabytes.toMegabits(3.0)
 		XCTAssertEqual(24.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTomegabits_2() throws {
-		let result = DataStorage.Megabytes.tomegabits(0.9)
+	func testConvertKnownMegabytesToMegabits_2() throws {
+		let result = DataStorage.Megabytes.toMegabits(0.9)
 		XCTAssertEqual(7.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTomegabits_3() throws {
-		let result = DataStorage.Megabytes.tomegabits(13.0)
+	func testConvertKnownMegabytesToMegabits_3() throws {
+		let result = DataStorage.Megabytes.toMegabits(13.0)
 		XCTAssertEqual(104.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTogigabits_1() throws {
-		let result = DataStorage.Megabytes.togigabits(13.0)
+	func testConvertKnownMegabytesToGigabits_1() throws {
+		let result = DataStorage.Megabytes.toGigabits(13.0)
 		XCTAssertEqual(0.104, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTogigabits_2() throws {
-		let result = DataStorage.Megabytes.togigabits(900.0)
+	func testConvertKnownMegabytesToGigabits_2() throws {
+		let result = DataStorage.Megabytes.toGigabits(900.0)
 		XCTAssertEqual(7.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTogigabits_3() throws {
-		let result = DataStorage.Megabytes.togigabits(18000.0)
+	func testConvertKnownMegabytesToGigabits_3() throws {
+		let result = DataStorage.Megabytes.toGigabits(18000.0)
 		XCTAssertEqual(144.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesToterabits_1() throws {
-		let result = DataStorage.Megabytes.toterabits(18000.0)
+	func testConvertKnownMegabytesToTerabits_1() throws {
+		let result = DataStorage.Megabytes.toTerabits(18000.0)
 		XCTAssertEqual(0.144, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesToterabits_2() throws {
-		let result = DataStorage.Megabytes.toterabits(9718290.0)
+	func testConvertKnownMegabytesToTerabits_2() throws {
+		let result = DataStorage.Megabytes.toTerabits(9718290.0)
 		XCTAssertEqual(77.74632, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesToterabits_3() throws {
-		let result = DataStorage.Megabytes.toterabits(9e12)
+	func testConvertKnownMegabytesToTerabits_3() throws {
+		let result = DataStorage.Megabytes.toTerabits(9e12)
 		XCTAssertEqual(72000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokilobytes_1() throws {
-		let result = DataStorage.Megabytes.tokilobytes(6.0)
+	func testConvertKnownMegabytesToKilobytes_1() throws {
+		let result = DataStorage.Megabytes.toKilobytes(6.0)
 		XCTAssertEqual(6000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokilobytes_2() throws {
-		let result = DataStorage.Megabytes.tokilobytes(0.9)
+	func testConvertKnownMegabytesToKilobytes_2() throws {
+		let result = DataStorage.Megabytes.toKilobytes(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokilobytes_3() throws {
-		let result = DataStorage.Megabytes.tokilobytes(123.4)
+	func testConvertKnownMegabytesToKilobytes_3() throws {
+		let result = DataStorage.Megabytes.toKilobytes(123.4)
 		XCTAssertEqual(123400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTogigabytes_1() throws {
-		let result = DataStorage.Megabytes.togigabytes(123.4)
+	func testConvertKnownMegabytesToGigabytes_1() throws {
+		let result = DataStorage.Megabytes.toGigabytes(123.4)
 		XCTAssertEqual(0.1234, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTogigabytes_2() throws {
-		let result = DataStorage.Megabytes.togigabytes(900.0)
+	func testConvertKnownMegabytesToGigabytes_2() throws {
+		let result = DataStorage.Megabytes.toGigabytes(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTogigabytes_3() throws {
-		let result = DataStorage.Megabytes.togigabytes(8e6)
+	func testConvertKnownMegabytesToGigabytes_3() throws {
+		let result = DataStorage.Megabytes.toGigabytes(8e6)
 		XCTAssertEqual(8000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesToterabytes_1() throws {
-		let result = DataStorage.Megabytes.toterabytes(80000.0)
+	func testConvertKnownMegabytesToTerabytes_1() throws {
+		let result = DataStorage.Megabytes.toTerabytes(80000.0)
 		XCTAssertEqual(0.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesToterabytes_2() throws {
-		let result = DataStorage.Megabytes.toterabytes(12345678.0)
+	func testConvertKnownMegabytesToTerabytes_2() throws {
+		let result = DataStorage.Megabytes.toTerabytes(12345678.0)
 		XCTAssertEqual(12.345678, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesToterabytes_3() throws {
-		let result = DataStorage.Megabytes.toterabytes(900800.0)
+	func testConvertKnownMegabytesToTerabytes_3() throws {
+		let result = DataStorage.Megabytes.toTerabytes(900800.0)
 		XCTAssertEqual(0.9008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokibibits_1() throws {
-		let result = DataStorage.Megabytes.tokibibits(6.0)
+	func testConvertKnownMegabytesToKibibits_1() throws {
+		let result = DataStorage.Megabytes.toKibibits(6.0)
 		XCTAssertEqual(46875.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokibibits_2() throws {
-		let result = DataStorage.Megabytes.tokibibits(0.9)
+	func testConvertKnownMegabytesToKibibits_2() throws {
+		let result = DataStorage.Megabytes.toKibibits(0.9)
 		XCTAssertEqual(7031.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTokibibits_3() throws {
-		let result = DataStorage.Megabytes.tokibibits(0.03)
+	func testConvertKnownMegabytesToKibibits_3() throws {
+		let result = DataStorage.Megabytes.toKibibits(0.03)
 		XCTAssertEqual(234.375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTomebibits_1() throws {
-		let result = DataStorage.Megabytes.tomebibits(0.03)
+	func testConvertKnownMegabytesToMebibits_1() throws {
+		let result = DataStorage.Megabytes.toMebibits(0.03)
 		XCTAssertEqual(0.2288818, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTomebibits_2() throws {
-		let result = DataStorage.Megabytes.tomebibits(4.5)
+	func testConvertKnownMegabytesToMebibits_2() throws {
+		let result = DataStorage.Megabytes.toMebibits(4.5)
 		XCTAssertEqual(34.3323, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegabytesTomebibits_3() throws {
-		let result = DataStorage.Megabytes.tomebibits(80.1)
+	func testConvertKnownMegabytesToMebibits_3() throws {
+		let result = DataStorage.Megabytes.toMebibits(80.1)
 		XCTAssertEqual(611.1145, result, accuracy: 0.01)
 	}
 
 }
 
 final class TerabitsTests: XCTestCase {
-	func testConvertKnownTerabitsTobits_1() throws {
-		let result = DataStorage.Terabits.tobits(0.0007)
+	func testConvertKnownTerabitsToBits_1() throws {
+		let result = DataStorage.Terabits.toBits(0.0007)
 		XCTAssertEqual(700000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTobits_2() throws {
-		let result = DataStorage.Terabits.tobits(1.23e-6)
+	func testConvertKnownTerabitsToBits_2() throws {
+		let result = DataStorage.Terabits.toBits(1.23e-6)
 		XCTAssertEqual(1230000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTobits_3() throws {
-		let result = DataStorage.Terabits.tobits(0.00098)
+	func testConvertKnownTerabitsToBits_3() throws {
+		let result = DataStorage.Terabits.toBits(0.00098)
 		XCTAssertEqual(980000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokilobits_1() throws {
-		let result = DataStorage.Terabits.tokilobits(0.001)
+	func testConvertKnownTerabitsToKilobits_1() throws {
+		let result = DataStorage.Terabits.toKilobits(0.001)
 		XCTAssertEqual(1000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokilobits_2() throws {
-		let result = DataStorage.Terabits.tokilobits(6.1e-6)
+	func testConvertKnownTerabitsToKilobits_2() throws {
+		let result = DataStorage.Terabits.toKilobits(6.1e-6)
 		XCTAssertEqual(6100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokilobits_3() throws {
-		let result = DataStorage.Terabits.tokilobits(0.00009)
+	func testConvertKnownTerabitsToKilobits_3() throws {
+		let result = DataStorage.Terabits.toKilobits(0.00009)
 		XCTAssertEqual(90000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomegabits_1() throws {
-		let result = DataStorage.Terabits.tomegabits(0.09)
+	func testConvertKnownTerabitsToMegabits_1() throws {
+		let result = DataStorage.Terabits.toMegabits(0.09)
 		XCTAssertEqual(90000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomegabits_2() throws {
-		let result = DataStorage.Terabits.tomegabits(3.5e-4)
+	func testConvertKnownTerabitsToMegabits_2() throws {
+		let result = DataStorage.Terabits.toMegabits(3.5e-4)
 		XCTAssertEqual(350.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomegabits_3() throws {
-		let result = DataStorage.Terabits.tomegabits(0.0123)
+	func testConvertKnownTerabitsToMegabits_3() throws {
+		let result = DataStorage.Terabits.toMegabits(0.0123)
 		XCTAssertEqual(12300.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTogigabits_1() throws {
-		let result = DataStorage.Terabits.togigabits(0.9)
+	func testConvertKnownTerabitsToGigabits_1() throws {
+		let result = DataStorage.Terabits.toGigabits(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTogigabits_2() throws {
-		let result = DataStorage.Terabits.togigabits(1.45)
+	func testConvertKnownTerabitsToGigabits_2() throws {
+		let result = DataStorage.Terabits.toGigabits(1.45)
 		XCTAssertEqual(1450.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTogigabits_3() throws {
-		let result = DataStorage.Terabits.togigabits(8.19)
+	func testConvertKnownTerabitsToGigabits_3() throws {
+		let result = DataStorage.Terabits.toGigabits(8.19)
 		XCTAssertEqual(8190.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokilobytes_1() throws {
-		let result = DataStorage.Terabits.tokilobytes(0.0009)
+	func testConvertKnownTerabitsToKilobytes_1() throws {
+		let result = DataStorage.Terabits.toKilobytes(0.0009)
 		XCTAssertEqual(112500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokilobytes_2() throws {
-		let result = DataStorage.Terabits.tokilobytes(3.14e-6)
+	func testConvertKnownTerabitsToKilobytes_2() throws {
+		let result = DataStorage.Terabits.toKilobytes(3.14e-6)
 		XCTAssertEqual(392.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokilobytes_3() throws {
-		let result = DataStorage.Terabits.tokilobytes(0.001)
+	func testConvertKnownTerabitsToKilobytes_3() throws {
+		let result = DataStorage.Terabits.toKilobytes(0.001)
 		XCTAssertEqual(125000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomegabytes_1() throws {
-		let result = DataStorage.Terabits.tomegabytes(0.4)
+	func testConvertKnownTerabitsToMegabytes_1() throws {
+		let result = DataStorage.Terabits.toMegabytes(0.4)
 		XCTAssertEqual(50000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomegabytes_2() throws {
-		let result = DataStorage.Terabits.tomegabytes(3.9e-3)
+	func testConvertKnownTerabitsToMegabytes_2() throws {
+		let result = DataStorage.Terabits.toMegabytes(3.9e-3)
 		XCTAssertEqual(487.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomegabytes_3() throws {
-		let result = DataStorage.Terabits.tomegabytes(0.007)
+	func testConvertKnownTerabitsToMegabytes_3() throws {
+		let result = DataStorage.Terabits.toMegabytes(0.007)
 		XCTAssertEqual(875.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTogigabytes_1() throws {
-		let result = DataStorage.Terabits.togigabytes(0.009)
+	func testConvertKnownTerabitsToGigabytes_1() throws {
+		let result = DataStorage.Terabits.toGigabytes(0.009)
 		XCTAssertEqual(1.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTogigabytes_2() throws {
-		let result = DataStorage.Terabits.togigabytes(0.00123)
+	func testConvertKnownTerabitsToGigabytes_2() throws {
+		let result = DataStorage.Terabits.toGigabytes(0.00123)
 		XCTAssertEqual(0.15375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTogigabytes_3() throws {
-		let result = DataStorage.Terabits.togigabytes(8.1e-3)
+	func testConvertKnownTerabitsToGigabytes_3() throws {
+		let result = DataStorage.Terabits.toGigabytes(8.1e-3)
 		XCTAssertEqual(1.0125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsToterabytes_1() throws {
-		let result = DataStorage.Terabits.toterabytes(0.3)
+	func testConvertKnownTerabitsToTerabytes_1() throws {
+		let result = DataStorage.Terabits.toTerabytes(0.3)
 		XCTAssertEqual(0.0375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsToterabytes_2() throws {
-		let result = DataStorage.Terabits.toterabytes(14.0)
+	func testConvertKnownTerabitsToTerabytes_2() throws {
+		let result = DataStorage.Terabits.toTerabytes(14.0)
 		XCTAssertEqual(1.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsToterabytes_3() throws {
-		let result = DataStorage.Terabits.toterabytes(0.8)
+	func testConvertKnownTerabitsToTerabytes_3() throws {
+		let result = DataStorage.Terabits.toTerabytes(0.8)
 		XCTAssertEqual(0.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokibibits_1() throws {
-		let result = DataStorage.Terabits.tokibibits(0.0009)
+	func testConvertKnownTerabitsToKibibits_1() throws {
+		let result = DataStorage.Terabits.toKibibits(0.0009)
 		XCTAssertEqual(878906.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokibibits_2() throws {
-		let result = DataStorage.Terabits.tokibibits(6.1e-6)
+	func testConvertKnownTerabitsToKibibits_2() throws {
+		let result = DataStorage.Terabits.toKibibits(6.1e-6)
 		XCTAssertEqual(5957.031, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTokibibits_3() throws {
-		let result = DataStorage.Terabits.tokibibits(12e-9)
+	func testConvertKnownTerabitsToKibibits_3() throws {
+		let result = DataStorage.Terabits.toKibibits(12e-9)
 		XCTAssertEqual(11.71875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomebibits_1() throws {
-		let result = DataStorage.Terabits.tomebibits(0.9)
+	func testConvertKnownTerabitsToMebibits_1() throws {
+		let result = DataStorage.Terabits.toMebibits(0.9)
 		XCTAssertEqual(858306.59999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomebibits_2() throws {
-		let result = DataStorage.Terabits.tomebibits(4.6e-3)
+	func testConvertKnownTerabitsToMebibits_2() throws {
+		let result = DataStorage.Terabits.toMebibits(4.6e-3)
 		XCTAssertEqual(4386.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabitsTomebibits_3() throws {
-		let result = DataStorage.Terabits.tomebibits(0.00123)
+	func testConvertKnownTerabitsToMebibits_3() throws {
+		let result = DataStorage.Terabits.toMebibits(0.00123)
 		XCTAssertEqual(1173.0194092, result, accuracy: 0.01)
 	}
 
 }
 
 final class TerabytesTests: XCTestCase {
-	func testConvertKnownTerabytesTobits_1() throws {
-		let result = DataStorage.Terabytes.tobits(0.00008)
+	func testConvertKnownTerabytesToBits_1() throws {
+		let result = DataStorage.Terabytes.toBits(0.00008)
 		XCTAssertEqual(640000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTobits_2() throws {
-		let result = DataStorage.Terabytes.tobits(1.2e-12)
+	func testConvertKnownTerabytesToBits_2() throws {
+		let result = DataStorage.Terabytes.toBits(1.2e-12)
 		XCTAssertEqual(9.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTobits_3() throws {
-		let result = DataStorage.Terabytes.tobits(9.0)
+	func testConvertKnownTerabytesToBits_3() throws {
+		let result = DataStorage.Terabytes.toBits(9.0)
 		XCTAssertEqual(7.2e+13, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokilobits_1() throws {
-		let result = DataStorage.Terabytes.tokilobits(0.009)
+	func testConvertKnownTerabytesToKilobits_1() throws {
+		let result = DataStorage.Terabytes.toKilobits(0.009)
 		XCTAssertEqual(72000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokilobits_2() throws {
-		let result = DataStorage.Terabytes.tokilobits(1.4e-6)
+	func testConvertKnownTerabytesToKilobits_2() throws {
+		let result = DataStorage.Terabytes.toKilobits(1.4e-6)
 		XCTAssertEqual(11200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokilobits_3() throws {
-		let result = DataStorage.Terabytes.tokilobits(6.1e-5)
+	func testConvertKnownTerabytesToKilobits_3() throws {
+		let result = DataStorage.Terabytes.toKilobits(6.1e-5)
 		XCTAssertEqual(488000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomegabits_1() throws {
-		let result = DataStorage.Terabytes.tomegabits(0.005)
+	func testConvertKnownTerabytesToMegabits_1() throws {
+		let result = DataStorage.Terabytes.toMegabits(0.005)
 		XCTAssertEqual(40000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomegabits_2() throws {
-		let result = DataStorage.Terabytes.tomegabits(0.000123)
+	func testConvertKnownTerabytesToMegabits_2() throws {
+		let result = DataStorage.Terabytes.toMegabits(0.000123)
 		XCTAssertEqual(984.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomegabits_3() throws {
-		let result = DataStorage.Terabytes.tomegabits(0.00006)
+	func testConvertKnownTerabytesToMegabits_3() throws {
+		let result = DataStorage.Terabytes.toMegabits(0.00006)
 		XCTAssertEqual(480.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTogigabits_1() throws {
-		let result = DataStorage.Terabytes.togigabits(0.008)
+	func testConvertKnownTerabytesToGigabits_1() throws {
+		let result = DataStorage.Terabytes.toGigabits(0.008)
 		XCTAssertEqual(64.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTogigabits_2() throws {
-		let result = DataStorage.Terabytes.togigabits(3e-7)
+	func testConvertKnownTerabytesToGigabits_2() throws {
+		let result = DataStorage.Terabytes.toGigabits(3e-7)
 		XCTAssertEqual(0.0024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTogigabits_3() throws {
-		let result = DataStorage.Terabytes.togigabits(0.00023)
+	func testConvertKnownTerabytesToGigabits_3() throws {
+		let result = DataStorage.Terabytes.toGigabits(0.00023)
 		XCTAssertEqual(1.84, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesToterabits_1() throws {
-		let result = DataStorage.Terabytes.toterabits(5.0)
+	func testConvertKnownTerabytesToTerabits_1() throws {
+		let result = DataStorage.Terabytes.toTerabits(5.0)
 		XCTAssertEqual(40.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesToterabits_2() throws {
-		let result = DataStorage.Terabytes.toterabits(1.23)
+	func testConvertKnownTerabytesToTerabits_2() throws {
+		let result = DataStorage.Terabytes.toTerabits(1.23)
 		XCTAssertEqual(9.84, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesToterabits_3() throws {
-		let result = DataStorage.Terabytes.toterabits(800.0)
+	func testConvertKnownTerabytesToTerabits_3() throws {
+		let result = DataStorage.Terabytes.toTerabits(800.0)
 		XCTAssertEqual(6400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokilobytes_1() throws {
-		let result = DataStorage.Terabytes.tokilobytes(0.0009)
+	func testConvertKnownTerabytesToKilobytes_1() throws {
+		let result = DataStorage.Terabytes.toKilobytes(0.0009)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokilobytes_2() throws {
-		let result = DataStorage.Terabytes.tokilobytes(3.14e-7)
+	func testConvertKnownTerabytesToKilobytes_2() throws {
+		let result = DataStorage.Terabytes.toKilobytes(3.14e-7)
 		XCTAssertEqual(314.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokilobytes_3() throws {
-		let result = DataStorage.Terabytes.tokilobytes(0.00063)
+	func testConvertKnownTerabytesToKilobytes_3() throws {
+		let result = DataStorage.Terabytes.toKilobytes(0.00063)
 		XCTAssertEqual(630000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomegabytes_1() throws {
-		let result = DataStorage.Terabytes.tomegabytes(0.009)
+	func testConvertKnownTerabytesToMegabytes_1() throws {
+		let result = DataStorage.Terabytes.toMegabytes(0.009)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomegabytes_2() throws {
-		let result = DataStorage.Terabytes.tomegabytes(0.234)
+	func testConvertKnownTerabytesToMegabytes_2() throws {
+		let result = DataStorage.Terabytes.toMegabytes(0.234)
 		XCTAssertEqual(234000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomegabytes_3() throws {
-		let result = DataStorage.Terabytes.tomegabytes(2.0)
+	func testConvertKnownTerabytesToMegabytes_3() throws {
+		let result = DataStorage.Terabytes.toMegabytes(2.0)
 		XCTAssertEqual(2e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTogigabytes_1() throws {
-		let result = DataStorage.Terabytes.togigabytes(2.7)
+	func testConvertKnownTerabytesToGigabytes_1() throws {
+		let result = DataStorage.Terabytes.toGigabytes(2.7)
 		XCTAssertEqual(2700.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTogigabytes_2() throws {
-		let result = DataStorage.Terabytes.togigabytes(0.9)
+	func testConvertKnownTerabytesToGigabytes_2() throws {
+		let result = DataStorage.Terabytes.toGigabytes(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTogigabytes_3() throws {
-		let result = DataStorage.Terabytes.togigabytes(0.0123)
+	func testConvertKnownTerabytesToGigabytes_3() throws {
+		let result = DataStorage.Terabytes.toGigabytes(0.0123)
 		XCTAssertEqual(12.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokibibits_1() throws {
-		let result = DataStorage.Terabytes.tokibibits(0.0009)
+	func testConvertKnownTerabytesToKibibits_1() throws {
+		let result = DataStorage.Terabytes.toKibibits(0.0009)
 		XCTAssertEqual(7031250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokibibits_2() throws {
-		let result = DataStorage.Terabytes.tokibibits(1.23e-5)
+	func testConvertKnownTerabytesToKibibits_2() throws {
+		let result = DataStorage.Terabytes.toKibibits(1.23e-5)
 		XCTAssertEqual(96093.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTokibibits_3() throws {
-		let result = DataStorage.Terabytes.tokibibits(0.0001)
+	func testConvertKnownTerabytesToKibibits_3() throws {
+		let result = DataStorage.Terabytes.toKibibits(0.0001)
 		XCTAssertEqual(781250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomebibits_1() throws {
-		let result = DataStorage.Terabytes.tomebibits(0.01)
+	func testConvertKnownTerabytesToMebibits_1() throws {
+		let result = DataStorage.Terabytes.toMebibits(0.01)
 		XCTAssertEqual(76293.95, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomebibits_2() throws {
-		let result = DataStorage.Terabytes.tomebibits(0.008)
+	func testConvertKnownTerabytesToMebibits_2() throws {
+		let result = DataStorage.Terabytes.toMebibits(0.008)
 		XCTAssertEqual(61035.156, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTerabytesTomebibits_3() throws {
-		let result = DataStorage.Terabytes.tomebibits(2.0)
+	func testConvertKnownTerabytesToMebibits_3() throws {
+		let result = DataStorage.Terabytes.toMebibits(2.0)
 		XCTAssertEqual(15258789.0625, result, accuracy: 0.01)
 	}
 

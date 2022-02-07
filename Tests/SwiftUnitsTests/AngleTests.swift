@@ -8,483 +8,483 @@ import XCTest
 @testable import SwiftUnits
 
 final class DegreesTests: XCTestCase {
-	func testConvertKnownDegreesToradians_1() throws {
-		let result = Angle.Degrees.toradians(98.8)
+	func testConvertKnownDegreesToRadians_1() throws {
+		let result = Angle.Degrees.toRadians(98.8)
 		XCTAssertEqual(1.724385, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesToradians_2() throws {
-		let result = Angle.Degrees.toradians(8000.0)
+	func testConvertKnownDegreesToRadians_2() throws {
+		let result = Angle.Degrees.toRadians(8000.0)
 		XCTAssertEqual(139.6263, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesToradians_3() throws {
-		let result = Angle.Degrees.toradians(8.0)
+	func testConvertKnownDegreesToRadians_3() throws {
+		let result = Angle.Degrees.toRadians(8.0)
 		XCTAssertEqual(0.139626, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTogradians_1() throws {
-		let result = Angle.Degrees.togradians(123.0)
+	func testConvertKnownDegreesToGradians_1() throws {
+		let result = Angle.Degrees.toGradians(123.0)
 		XCTAssertEqual(136.667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTogradians_2() throws {
-		let result = Angle.Degrees.togradians(65.0)
+	func testConvertKnownDegreesToGradians_2() throws {
+		let result = Angle.Degrees.toGradians(65.0)
 		XCTAssertEqual(72.2222, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTogradians_3() throws {
-		let result = Angle.Degrees.togradians(900.0)
+	func testConvertKnownDegreesToGradians_3() throws {
+		let result = Angle.Degrees.toGradians(900.0)
 		XCTAssertEqual(1000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTomilliradians_1() throws {
-		let result = Angle.Degrees.tomilliradians(900.0)
+	func testConvertKnownDegreesToMilliradians_1() throws {
+		let result = Angle.Degrees.toMilliradians(900.0)
 		XCTAssertEqual(15707.969, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTomilliradians_2() throws {
-		let result = Angle.Degrees.tomilliradians(76.0)
+	func testConvertKnownDegreesToMilliradians_2() throws {
+		let result = Angle.Degrees.toMilliradians(76.0)
 		XCTAssertEqual(1326.45, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTomilliradians_3() throws {
-		let result = Angle.Degrees.tomilliradians(4.5)
+	func testConvertKnownDegreesToMilliradians_3() throws {
+		let result = Angle.Degrees.toMilliradians(4.5)
 		XCTAssertEqual(78.5398, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTomilliradians_4() throws {
-		let result = Angle.Degrees.tomilliradians(23333.11)
+	func testConvertKnownDegreesToMilliradians_4() throws {
+		let result = Angle.Degrees.toMilliradians(23333.11)
 		XCTAssertEqual(407239.5873, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTominuteOfArc_1() throws {
-		let result = Angle.Degrees.tominuteOfArc(97.0)
+	func testConvertKnownDegreesToMinuteOfArc_1() throws {
+		let result = Angle.Degrees.toMinuteOfArc(97.0)
 		XCTAssertEqual(5820.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTominuteOfArc_2() throws {
-		let result = Angle.Degrees.tominuteOfArc(8.65)
+	func testConvertKnownDegreesToMinuteOfArc_2() throws {
+		let result = Angle.Degrees.toMinuteOfArc(8.65)
 		XCTAssertEqual(519.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTominuteOfArc_3() throws {
-		let result = Angle.Degrees.tominuteOfArc(12.0)
+	func testConvertKnownDegreesToMinuteOfArc_3() throws {
+		let result = Angle.Degrees.toMinuteOfArc(12.0)
 		XCTAssertEqual(720.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTosecondsOfArc_1() throws {
-		let result = Angle.Degrees.tosecondsOfArc(12.0)
+	func testConvertKnownDegreesToSecondsOfArc_1() throws {
+		let result = Angle.Degrees.toSecondsOfArc(12.0)
 		XCTAssertEqual(43200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTosecondsOfArc_2() throws {
-		let result = Angle.Degrees.tosecondsOfArc(910.4)
+	func testConvertKnownDegreesToSecondsOfArc_2() throws {
+		let result = Angle.Degrees.toSecondsOfArc(910.4)
 		XCTAssertEqual(3277440.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownDegreesTosecondsOfArc_3() throws {
-		let result = Angle.Degrees.tosecondsOfArc(5.6)
+	func testConvertKnownDegreesToSecondsOfArc_3() throws {
+		let result = Angle.Degrees.toSecondsOfArc(5.6)
 		XCTAssertEqual(20160.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class GradiansTests: XCTestCase {
-	func testConvertKnownGradiansTodegrees_1() throws {
-		let result = Angle.Gradians.todegrees(5.6)
+	func testConvertKnownGradiansToDegrees_1() throws {
+		let result = Angle.Gradians.toDegrees(5.6)
 		XCTAssertEqual(5.04, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTodegrees_2() throws {
-		let result = Angle.Gradians.todegrees(167.0)
+	func testConvertKnownGradiansToDegrees_2() throws {
+		let result = Angle.Gradians.toDegrees(167.0)
 		XCTAssertEqual(150.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTodegrees_3() throws {
-		let result = Angle.Gradians.todegrees(0.1)
+	func testConvertKnownGradiansToDegrees_3() throws {
+		let result = Angle.Gradians.toDegrees(0.1)
 		XCTAssertEqual(0.09, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansToradians_1() throws {
-		let result = Angle.Gradians.toradians(67.9)
+	func testConvertKnownGradiansToRadians_1() throws {
+		let result = Angle.Gradians.toRadians(67.9)
 		XCTAssertEqual(1.066571, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansToradians_2() throws {
-		let result = Angle.Gradians.toradians(8000.0)
+	func testConvertKnownGradiansToRadians_2() throws {
+		let result = Angle.Gradians.toRadians(8000.0)
 		XCTAssertEqual(125.6637, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansToradians_3() throws {
-		let result = Angle.Gradians.toradians(6.5)
+	func testConvertKnownGradiansToRadians_3() throws {
+		let result = Angle.Gradians.toRadians(6.5)
 		XCTAssertEqual(0.102102, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTomilliradians_1() throws {
-		let result = Angle.Gradians.tomilliradians(8.1)
+	func testConvertKnownGradiansToMilliradians_1() throws {
+		let result = Angle.Gradians.toMilliradians(8.1)
 		XCTAssertEqual(127.2348, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTomilliradians_2() throws {
-		let result = Angle.Gradians.tomilliradians(900.0)
+	func testConvertKnownGradiansToMilliradians_2() throws {
+		let result = Angle.Gradians.toMilliradians(900.0)
 		XCTAssertEqual(14137.167, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTomilliradians_3() throws {
-		let result = Angle.Gradians.tomilliradians(1902.5)
+	func testConvertKnownGradiansToMilliradians_3() throws {
+		let result = Angle.Gradians.toMilliradians(1902.5)
 		XCTAssertEqual(29884.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTominuteOfArc_1() throws {
-		let result = Angle.Gradians.tominuteOfArc(80.9)
+	func testConvertKnownGradiansToMinuteOfArc_1() throws {
+		let result = Angle.Gradians.toMinuteOfArc(80.9)
 		XCTAssertEqual(4368.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTominuteOfArc_2() throws {
-		let result = Angle.Gradians.tominuteOfArc(1678.0)
+	func testConvertKnownGradiansToMinuteOfArc_2() throws {
+		let result = Angle.Gradians.toMinuteOfArc(1678.0)
 		XCTAssertEqual(90612.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTominuteOfArc_3() throws {
-		let result = Angle.Gradians.tominuteOfArc(900.0)
+	func testConvertKnownGradiansToMinuteOfArc_3() throws {
+		let result = Angle.Gradians.toMinuteOfArc(900.0)
 		XCTAssertEqual(48600.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTosecondsOfArc_1() throws {
-		let result = Angle.Gradians.tosecondsOfArc(0.9)
+	func testConvertKnownGradiansToSecondsOfArc_1() throws {
+		let result = Angle.Gradians.toSecondsOfArc(0.9)
 		XCTAssertEqual(2916.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTosecondsOfArc_2() throws {
-		let result = Angle.Gradians.tosecondsOfArc(12.3)
+	func testConvertKnownGradiansToSecondsOfArc_2() throws {
+		let result = Angle.Gradians.toSecondsOfArc(12.3)
 		XCTAssertEqual(39852.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGradiansTosecondsOfArc_3() throws {
-		let result = Angle.Gradians.tosecondsOfArc(5.1)
+	func testConvertKnownGradiansToSecondsOfArc_3() throws {
+		let result = Angle.Gradians.toSecondsOfArc(5.1)
 		XCTAssertEqual(16524.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class MilliradiansTests: XCTestCase {
-	func testConvertKnownMilliradiansTodegrees_1() throws {
-		let result = Angle.Milliradians.todegrees(5.9)
+	func testConvertKnownMilliradiansToDegrees_1() throws {
+		let result = Angle.Milliradians.toDegrees(5.9)
 		XCTAssertEqual(0.338045, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTodegrees_2() throws {
-		let result = Angle.Milliradians.todegrees(109.0)
+	func testConvertKnownMilliradiansToDegrees_2() throws {
+		let result = Angle.Milliradians.toDegrees(109.0)
 		XCTAssertEqual(6.24524, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTodegrees_3() throws {
-		let result = Angle.Milliradians.todegrees(7009.0)
+	func testConvertKnownMilliradiansToDegrees_3() throws {
+		let result = Angle.Milliradians.toDegrees(7009.0)
 		XCTAssertEqual(401.5861, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTodegrees_4() throws {
-		let result = Angle.Milliradians.todegrees(407239.5873)
+	func testConvertKnownMilliradiansToDegrees_4() throws {
+		let result = Angle.Milliradians.toDegrees(407239.5873)
 		XCTAssertEqual(23333.11, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansToradians_1() throws {
-		let result = Angle.Milliradians.toradians(8011.0)
+	func testConvertKnownMilliradiansToRadians_1() throws {
+		let result = Angle.Milliradians.toRadians(8011.0)
 		XCTAssertEqual(8.011, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansToradians_2() throws {
-		let result = Angle.Milliradians.toradians(7689.0)
+	func testConvertKnownMilliradiansToRadians_2() throws {
+		let result = Angle.Milliradians.toRadians(7689.0)
 		XCTAssertEqual(7.689, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansToradians_3() throws {
-		let result = Angle.Milliradians.toradians(129.0)
+	func testConvertKnownMilliradiansToRadians_3() throws {
+		let result = Angle.Milliradians.toRadians(129.0)
 		XCTAssertEqual(0.129, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTogradians_1() throws {
-		let result = Angle.Milliradians.togradians(129.0)
+	func testConvertKnownMilliradiansToGradians_1() throws {
+		let result = Angle.Milliradians.toGradians(129.0)
 		XCTAssertEqual(8.2124, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTogradians_2() throws {
-		let result = Angle.Milliradians.togradians(800.0)
+	func testConvertKnownMilliradiansToGradians_2() throws {
+		let result = Angle.Milliradians.toGradians(800.0)
 		XCTAssertEqual(50.9296, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTogradians_3() throws {
-		let result = Angle.Milliradians.togradians(12.89)
+	func testConvertKnownMilliradiansToGradians_3() throws {
+		let result = Angle.Milliradians.toGradians(12.89)
 		XCTAssertEqual(0.8206029, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTominuteOfArc_1() throws {
-		let result = Angle.Milliradians.tominuteOfArc(12.0)
+	func testConvertKnownMilliradiansToMinuteOfArc_1() throws {
+		let result = Angle.Milliradians.toMinuteOfArc(12.0)
 		XCTAssertEqual(41.253, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTominuteOfArc_2() throws {
-		let result = Angle.Milliradians.tominuteOfArc(0.9)
+	func testConvertKnownMilliradiansToMinuteOfArc_2() throws {
+		let result = Angle.Milliradians.toMinuteOfArc(0.9)
 		XCTAssertEqual(3.09397, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTominuteOfArc_3() throws {
-		let result = Angle.Milliradians.tominuteOfArc(800.0)
+	func testConvertKnownMilliradiansToMinuteOfArc_3() throws {
+		let result = Angle.Milliradians.toMinuteOfArc(800.0)
 		XCTAssertEqual(2750.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTosecondsOfArc_1() throws {
-		let result = Angle.Milliradians.tosecondsOfArc(67.0)
+	func testConvertKnownMilliradiansToSecondsOfArc_1() throws {
+		let result = Angle.Milliradians.toSecondsOfArc(67.0)
 		XCTAssertEqual(13819.742, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTosecondsOfArc_2() throws {
-		let result = Angle.Milliradians.tosecondsOfArc(900.0)
+	func testConvertKnownMilliradiansToSecondsOfArc_2() throws {
+		let result = Angle.Milliradians.toSecondsOfArc(900.0)
 		XCTAssertEqual(185638.32562238674, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilliradiansTosecondsOfArc_3() throws {
-		let result = Angle.Milliradians.tosecondsOfArc(812.5)
+	func testConvertKnownMilliradiansToSecondsOfArc_3() throws {
+		let result = Angle.Milliradians.toSecondsOfArc(812.5)
 		XCTAssertEqual(167590.16, result, accuracy: 0.01)
 	}
 
 }
 
 final class MinuteOfArcTests: XCTestCase {
-	func testConvertKnownMinuteOfArcTodegrees_1() throws {
-		let result = Angle.MinuteOfArc.todegrees(89.0)
+	func testConvertKnownMinuteOfArcToDegrees_1() throws {
+		let result = Angle.MinuteOfArc.toDegrees(89.0)
 		XCTAssertEqual(1.48333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTodegrees_2() throws {
-		let result = Angle.MinuteOfArc.todegrees(160.5)
+	func testConvertKnownMinuteOfArcToDegrees_2() throws {
+		let result = Angle.MinuteOfArc.toDegrees(160.5)
 		XCTAssertEqual(2.675, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTodegrees_3() throws {
-		let result = Angle.MinuteOfArc.todegrees(0.9)
+	func testConvertKnownMinuteOfArcToDegrees_3() throws {
+		let result = Angle.MinuteOfArc.toDegrees(0.9)
 		XCTAssertEqual(0.015, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcToradians_1() throws {
-		let result = Angle.MinuteOfArc.toradians(1790.0)
+	func testConvertKnownMinuteOfArcToRadians_1() throws {
+		let result = Angle.MinuteOfArc.toRadians(1790.0)
 		XCTAssertEqual(0.5206899, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcToradians_2() throws {
-		let result = Angle.MinuteOfArc.toradians(9999.0)
+	func testConvertKnownMinuteOfArcToRadians_2() throws {
+		let result = Angle.MinuteOfArc.toRadians(9999.0)
 		XCTAssertEqual(2.908591, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcToradians_3() throws {
-		let result = Angle.MinuteOfArc.toradians(12345.0)
+	func testConvertKnownMinuteOfArcToRadians_3() throws {
+		let result = Angle.MinuteOfArc.toRadians(12345.0)
 		XCTAssertEqual(3.5910149, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTogradians_1() throws {
-		let result = Angle.MinuteOfArc.togradians(300.0)
+	func testConvertKnownMinuteOfArcToGradians_1() throws {
+		let result = Angle.MinuteOfArc.toGradians(300.0)
 		XCTAssertEqual(5.55556, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTogradians_2() throws {
-		let result = Angle.MinuteOfArc.togradians(1009.0)
+	func testConvertKnownMinuteOfArcToGradians_2() throws {
+		let result = Angle.MinuteOfArc.toGradians(1009.0)
 		XCTAssertEqual(18.68519, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTogradians_3() throws {
-		let result = Angle.MinuteOfArc.togradians(6700.5)
+	func testConvertKnownMinuteOfArcToGradians_3() throws {
+		let result = Angle.MinuteOfArc.toGradians(6700.5)
 		XCTAssertEqual(124.083335, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTomilliradians_1() throws {
-		let result = Angle.MinuteOfArc.tomilliradians(600.0)
+	func testConvertKnownMinuteOfArcToMilliradians_1() throws {
+		let result = Angle.MinuteOfArc.toMilliradians(600.0)
 		XCTAssertEqual(174.533, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTomilliradians_2() throws {
-		let result = Angle.MinuteOfArc.tomilliradians(90.7)
+	func testConvertKnownMinuteOfArcToMilliradians_2() throws {
+		let result = Angle.MinuteOfArc.toMilliradians(90.7)
 		XCTAssertEqual(26.38356, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTomilliradians_3() throws {
-		let result = Angle.MinuteOfArc.tomilliradians(1700.0)
+	func testConvertKnownMinuteOfArcToMilliradians_3() throws {
+		let result = Angle.MinuteOfArc.toMilliradians(1700.0)
 		XCTAssertEqual(494.51, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTosecondsOfArc_1() throws {
-		let result = Angle.MinuteOfArc.tosecondsOfArc(0.9)
+	func testConvertKnownMinuteOfArcToSecondsOfArc_1() throws {
+		let result = Angle.MinuteOfArc.toSecondsOfArc(0.9)
 		XCTAssertEqual(54.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTosecondsOfArc_2() throws {
-		let result = Angle.MinuteOfArc.tosecondsOfArc(70.0)
+	func testConvertKnownMinuteOfArcToSecondsOfArc_2() throws {
+		let result = Angle.MinuteOfArc.toSecondsOfArc(70.0)
 		XCTAssertEqual(4200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMinuteOfArcTosecondsOfArc_3() throws {
-		let result = Angle.MinuteOfArc.tosecondsOfArc(901.6)
+	func testConvertKnownMinuteOfArcToSecondsOfArc_3() throws {
+		let result = Angle.MinuteOfArc.toSecondsOfArc(901.6)
 		XCTAssertEqual(54096.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class RadiansTests: XCTestCase {
-	func testConvertKnownRadiansTodegrees_1() throws {
-		let result = Angle.Radians.todegrees(4.5)
+	func testConvertKnownRadiansToDegrees_1() throws {
+		let result = Angle.Radians.toDegrees(4.5)
 		XCTAssertEqual(257.831, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTodegrees_2() throws {
-		let result = Angle.Radians.todegrees(0.9)
+	func testConvertKnownRadiansToDegrees_2() throws {
+		let result = Angle.Radians.toDegrees(0.9)
 		XCTAssertEqual(51.5662, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTodegrees_3() throws {
-		let result = Angle.Radians.todegrees(78.9)
+	func testConvertKnownRadiansToDegrees_3() throws {
+		let result = Angle.Radians.toDegrees(78.9)
 		XCTAssertEqual(4520.637, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTogradians_1() throws {
-		let result = Angle.Radians.togradians(5.0)
+	func testConvertKnownRadiansToGradians_1() throws {
+		let result = Angle.Radians.toGradians(5.0)
 		XCTAssertEqual(318.31, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTogradians_2() throws {
-		let result = Angle.Radians.togradians(0.9)
+	func testConvertKnownRadiansToGradians_2() throws {
+		let result = Angle.Radians.toGradians(0.9)
 		XCTAssertEqual(57.2958, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTogradians_3() throws {
-		let result = Angle.Radians.togradians(89.0)
+	func testConvertKnownRadiansToGradians_3() throws {
+		let result = Angle.Radians.toGradians(89.0)
 		XCTAssertEqual(5665.92, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTomilliradians_1() throws {
-		let result = Angle.Radians.tomilliradians(5.0)
+	func testConvertKnownRadiansToMilliradians_1() throws {
+		let result = Angle.Radians.toMilliradians(5.0)
 		XCTAssertEqual(5000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTomilliradians_2() throws {
-		let result = Angle.Radians.tomilliradians(0.13)
+	func testConvertKnownRadiansToMilliradians_2() throws {
+		let result = Angle.Radians.toMilliradians(0.13)
 		XCTAssertEqual(130.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTomilliradians_3() throws {
-		let result = Angle.Radians.tomilliradians(0.13)
+	func testConvertKnownRadiansToMilliradians_3() throws {
+		let result = Angle.Radians.toMilliradians(0.13)
 		XCTAssertEqual(130.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTomilliradians_4() throws {
-		let result = Angle.Radians.tomilliradians(89.1)
+	func testConvertKnownRadiansToMilliradians_4() throws {
+		let result = Angle.Radians.toMilliradians(89.1)
 		XCTAssertEqual(89100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTominuteOfArc_1() throws {
-		let result = Angle.Radians.tominuteOfArc(6.0)
+	func testConvertKnownRadiansToMinuteOfArc_1() throws {
+		let result = Angle.Radians.toMinuteOfArc(6.0)
 		XCTAssertEqual(20626.480624709635, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTominuteOfArc_2() throws {
-		let result = Angle.Radians.tominuteOfArc(0.8)
+	func testConvertKnownRadiansToMinuteOfArc_2() throws {
+		let result = Angle.Radians.toMinuteOfArc(0.8)
 		XCTAssertEqual(2750.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTominuteOfArc_3() throws {
-		let result = Angle.Radians.tominuteOfArc(2.3)
+	func testConvertKnownRadiansToMinuteOfArc_3() throws {
+		let result = Angle.Radians.toMinuteOfArc(2.3)
 		XCTAssertEqual(7906.82, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTosecondsOfArc_1() throws {
-		let result = Angle.Radians.tosecondsOfArc(0.8)
+	func testConvertKnownRadiansToSecondsOfArc_1() throws {
+		let result = Angle.Radians.toSecondsOfArc(0.8)
 		XCTAssertEqual(165011.84499767708, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTosecondsOfArc_2() throws {
-		let result = Angle.Radians.tosecondsOfArc(0.001)
+	func testConvertKnownRadiansToSecondsOfArc_2() throws {
+		let result = Angle.Radians.toSecondsOfArc(0.001)
 		XCTAssertEqual(206.26481, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownRadiansTosecondsOfArc_3() throws {
-		let result = Angle.Radians.tosecondsOfArc(0.9)
+	func testConvertKnownRadiansToSecondsOfArc_3() throws {
+		let result = Angle.Radians.toSecondsOfArc(0.9)
 		XCTAssertEqual(185638.32562238674, result, accuracy: 0.01)
 	}
 
 }
 
 final class SecondsOfArcTests: XCTestCase {
-	func testConvertKnownSecondsOfArcTodegrees_1() throws {
-		let result = Angle.SecondsOfArc.todegrees(900.0)
+	func testConvertKnownSecondsOfArcToDegrees_1() throws {
+		let result = Angle.SecondsOfArc.toDegrees(900.0)
 		XCTAssertEqual(0.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTodegrees_2() throws {
-		let result = Angle.SecondsOfArc.todegrees(123.4)
+	func testConvertKnownSecondsOfArcToDegrees_2() throws {
+		let result = Angle.SecondsOfArc.toDegrees(123.4)
 		XCTAssertEqual(0.034277778, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTodegrees_3() throws {
-		let result = Angle.SecondsOfArc.todegrees(8000.0)
+	func testConvertKnownSecondsOfArcToDegrees_3() throws {
+		let result = Angle.SecondsOfArc.toDegrees(8000.0)
 		XCTAssertEqual(2.222222, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcToradians_1() throws {
-		let result = Angle.SecondsOfArc.toradians(190000.0)
+	func testConvertKnownSecondsOfArcToRadians_1() throws {
+		let result = Angle.SecondsOfArc.toRadians(190000.0)
 		XCTAssertEqual(0.921145994, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcToradians_2() throws {
-		let result = Angle.SecondsOfArc.toradians(88990.0)
+	func testConvertKnownSecondsOfArcToRadians_2() throws {
+		let result = Angle.SecondsOfArc.toRadians(88990.0)
 		XCTAssertEqual(0.43143569, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcToradians_3() throws {
-		let result = Angle.SecondsOfArc.toradians(100000.0)
+	func testConvertKnownSecondsOfArcToRadians_3() throws {
+		let result = Angle.SecondsOfArc.toRadians(100000.0)
 		XCTAssertEqual(0.48481368, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTogradians_1() throws {
-		let result = Angle.SecondsOfArc.togradians(1000.0)
+	func testConvertKnownSecondsOfArcToGradians_1() throws {
+		let result = Angle.SecondsOfArc.toGradians(1000.0)
 		XCTAssertEqual(0.308642, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTogradians_2() throws {
-		let result = Angle.SecondsOfArc.togradians(809.0)
+	func testConvertKnownSecondsOfArcToGradians_2() throws {
+		let result = Angle.SecondsOfArc.toGradians(809.0)
 		XCTAssertEqual(0.249691, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTogradians_3() throws {
-		let result = Angle.SecondsOfArc.togradians(1567.9)
+	func testConvertKnownSecondsOfArcToGradians_3() throws {
+		let result = Angle.SecondsOfArc.toGradians(1567.9)
 		XCTAssertEqual(0.483919761, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTomilliradians_1() throws {
-		let result = Angle.SecondsOfArc.tomilliradians(1234.0)
+	func testConvertKnownSecondsOfArcToMilliradians_1() throws {
+		let result = Angle.SecondsOfArc.toMilliradians(1234.0)
 		XCTAssertEqual(5.982601, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTomilliradians_2() throws {
-		let result = Angle.SecondsOfArc.tomilliradians(909.0)
+	func testConvertKnownSecondsOfArcToMilliradians_2() throws {
+		let result = Angle.SecondsOfArc.toMilliradians(909.0)
 		XCTAssertEqual(4.40696, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTomilliradians_3() throws {
-		let result = Angle.SecondsOfArc.tomilliradians(190009.0)
+	func testConvertKnownSecondsOfArcToMilliradians_3() throws {
+		let result = Angle.SecondsOfArc.toMilliradians(190009.0)
 		XCTAssertEqual(921.189627, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTominuteOfArc_1() throws {
-		let result = Angle.SecondsOfArc.tominuteOfArc(100.0)
+	func testConvertKnownSecondsOfArcToMinuteOfArc_1() throws {
+		let result = Angle.SecondsOfArc.toMinuteOfArc(100.0)
 		XCTAssertEqual(1.66667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTominuteOfArc_2() throws {
-		let result = Angle.SecondsOfArc.tominuteOfArc(908.0)
+	func testConvertKnownSecondsOfArcToMinuteOfArc_2() throws {
+		let result = Angle.SecondsOfArc.toMinuteOfArc(908.0)
 		XCTAssertEqual(15.1333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownSecondsOfArcTominuteOfArc_3() throws {
-		let result = Angle.SecondsOfArc.tominuteOfArc(8091.0)
+	func testConvertKnownSecondsOfArcToMinuteOfArc_3() throws {
+		let result = Angle.SecondsOfArc.toMinuteOfArc(8091.0)
 		XCTAssertEqual(134.85, result, accuracy: 0.01)
 	}
 

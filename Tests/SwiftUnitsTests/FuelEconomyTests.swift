@@ -8,192 +8,192 @@ import XCTest
 @testable import SwiftUnits
 
 final class KilometrePerLitreTests: XCTestCase {
-	func testConvertKnownKilometrePerLitreTouSMilesPerGallon_1() throws {
-		let result = FuelEconomy.KilometrePerLitre.touSMilesPerGallon(109.0)
+	func testConvertKnownKilometrePerLitreToUSMilesPerGallon_1() throws {
+		let result = FuelEconomy.KilometrePerLitre.toUSMilesPerGallon(109.0)
 		XCTAssertEqual(256.384, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTouSMilesPerGallon_2() throws {
-		let result = FuelEconomy.KilometrePerLitre.touSMilesPerGallon(9.4)
+	func testConvertKnownKilometrePerLitreToUSMilesPerGallon_2() throws {
+		let result = FuelEconomy.KilometrePerLitre.toUSMilesPerGallon(9.4)
 		XCTAssertEqual(22.1102, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTouSMilesPerGallon_3() throws {
-		let result = FuelEconomy.KilometrePerLitre.touSMilesPerGallon(1.3)
+	func testConvertKnownKilometrePerLitreToUSMilesPerGallon_3() throws {
+		let result = FuelEconomy.KilometrePerLitre.toUSMilesPerGallon(1.3)
 		XCTAssertEqual(3.05779, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTomilesPerGallon_1() throws {
-		let result = FuelEconomy.KilometrePerLitre.tomilesPerGallon(5.0)
+	func testConvertKnownKilometrePerLitreToMilesPerGallon_1() throws {
+		let result = FuelEconomy.KilometrePerLitre.toMilesPerGallon(5.0)
 		XCTAssertEqual(14.124, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTomilesPerGallon_2() throws {
-		let result = FuelEconomy.KilometrePerLitre.tomilesPerGallon(180.0)
+	func testConvertKnownKilometrePerLitreToMilesPerGallon_2() throws {
+		let result = FuelEconomy.KilometrePerLitre.toMilesPerGallon(180.0)
 		XCTAssertEqual(508.466, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTomilesPerGallon_3() throws {
-		let result = FuelEconomy.KilometrePerLitre.tomilesPerGallon(5.4)
+	func testConvertKnownKilometrePerLitreToMilesPerGallon_3() throws {
+		let result = FuelEconomy.KilometrePerLitre.toMilesPerGallon(5.4)
 		XCTAssertEqual(15.254, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTolitresPer100Kilometres_1() throws {
-		let result = FuelEconomy.KilometrePerLitre.tolitresPer100Kilometres(109.0)
+	func testConvertKnownKilometrePerLitreToLitresPer100Kilometres_1() throws {
+		let result = FuelEconomy.KilometrePerLitre.toLitresPer100Kilometres(109.0)
 		XCTAssertEqual(0.917431, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTolitresPer100Kilometres_2() throws {
-		let result = FuelEconomy.KilometrePerLitre.tolitresPer100Kilometres(0.8)
+	func testConvertKnownKilometrePerLitreToLitresPer100Kilometres_2() throws {
+		let result = FuelEconomy.KilometrePerLitre.toLitresPer100Kilometres(0.8)
 		XCTAssertEqual(125.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilometrePerLitreTolitresPer100Kilometres_3() throws {
-		let result = FuelEconomy.KilometrePerLitre.tolitresPer100Kilometres(2.3)
+	func testConvertKnownKilometrePerLitreToLitresPer100Kilometres_3() throws {
+		let result = FuelEconomy.KilometrePerLitre.toLitresPer100Kilometres(2.3)
 		XCTAssertEqual(43.4783, result, accuracy: 0.01)
 	}
 
 }
 
 final class LitresPer100KilometresTests: XCTestCase {
-	func testConvertKnownLitresPer100KilometresTokilometrePerLitre_1() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.tokilometrePerLitre(0.7)
+	func testConvertKnownLitresPer100KilometresToKilometrePerLitre_1() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toKilometrePerLitre(0.7)
 		XCTAssertEqual(142.857, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTokilometrePerLitre_2() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.tokilometrePerLitre(109.0)
+	func testConvertKnownLitresPer100KilometresToKilometrePerLitre_2() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toKilometrePerLitre(109.0)
 		XCTAssertEqual(0.917431, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTokilometrePerLitre_3() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.tokilometrePerLitre(0.012)
+	func testConvertKnownLitresPer100KilometresToKilometrePerLitre_3() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toKilometrePerLitre(0.012)
 		XCTAssertEqual(8333.3333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTomilesPerGallon_1() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.tomilesPerGallon(107.0)
+	func testConvertKnownLitresPer100KilometresToMilesPerGallon_1() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toMilesPerGallon(107.0)
 		XCTAssertEqual(2.64001, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTomilesPerGallon_2() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.tomilesPerGallon(0.8)
+	func testConvertKnownLitresPer100KilometresToMilesPerGallon_2() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toMilesPerGallon(0.8)
 		XCTAssertEqual(353.101, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTomilesPerGallon_3() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.tomilesPerGallon(0.02)
+	func testConvertKnownLitresPer100KilometresToMilesPerGallon_3() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toMilesPerGallon(0.02)
 		XCTAssertEqual(14124.05, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTouSMilesPerGallon_1() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.touSMilesPerGallon(12.0)
+	func testConvertKnownLitresPer100KilometresToUSMilesPerGallon_1() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toUSMilesPerGallon(12.0)
 		XCTAssertEqual(19.6012, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTouSMilesPerGallon_2() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.touSMilesPerGallon(0.3)
+	func testConvertKnownLitresPer100KilometresToUSMilesPerGallon_2() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toUSMilesPerGallon(0.3)
 		XCTAssertEqual(784.049, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresPer100KilometresTouSMilesPerGallon_3() throws {
-		let result = FuelEconomy.LitresPer100Kilometres.touSMilesPerGallon(1.5)
+	func testConvertKnownLitresPer100KilometresToUSMilesPerGallon_3() throws {
+		let result = FuelEconomy.LitresPer100Kilometres.toUSMilesPerGallon(1.5)
 		XCTAssertEqual(156.81, result, accuracy: 0.01)
 	}
 
 }
 
 final class MilesPerGallonTests: XCTestCase {
-	func testConvertKnownMilesPerGallonTokilometrePerLitre_1() throws {
-		let result = FuelEconomy.MilesPerGallon.tokilometrePerLitre(12.0)
+	func testConvertKnownMilesPerGallonToKilometrePerLitre_1() throws {
+		let result = FuelEconomy.MilesPerGallon.toKilometrePerLitre(12.0)
 		XCTAssertEqual(4.24807, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTokilometrePerLitre_2() throws {
-		let result = FuelEconomy.MilesPerGallon.tokilometrePerLitre(8.2)
+	func testConvertKnownMilesPerGallonToKilometrePerLitre_2() throws {
+		let result = FuelEconomy.MilesPerGallon.toKilometrePerLitre(8.2)
 		XCTAssertEqual(2.90285, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTokilometrePerLitre_3() throws {
-		let result = FuelEconomy.MilesPerGallon.tokilometrePerLitre(0.5)
+	func testConvertKnownMilesPerGallonToKilometrePerLitre_3() throws {
+		let result = FuelEconomy.MilesPerGallon.toKilometrePerLitre(0.5)
 		XCTAssertEqual(0.177003, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTouSMilesPerGallon_1() throws {
-		let result = FuelEconomy.MilesPerGallon.touSMilesPerGallon(1.4)
+	func testConvertKnownMilesPerGallonToUSMilesPerGallon_1() throws {
+		let result = FuelEconomy.MilesPerGallon.toUSMilesPerGallon(1.4)
 		XCTAssertEqual(1.16574, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTouSMilesPerGallon_2() throws {
-		let result = FuelEconomy.MilesPerGallon.touSMilesPerGallon(1008.0)
+	func testConvertKnownMilesPerGallonToUSMilesPerGallon_2() throws {
+		let result = FuelEconomy.MilesPerGallon.toUSMilesPerGallon(1008.0)
 		XCTAssertEqual(839.3356, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTouSMilesPerGallon_3() throws {
-		let result = FuelEconomy.MilesPerGallon.touSMilesPerGallon(0.8)
+	func testConvertKnownMilesPerGallonToUSMilesPerGallon_3() throws {
+		let result = FuelEconomy.MilesPerGallon.toUSMilesPerGallon(0.8)
 		XCTAssertEqual(0.666139, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTolitresPer100Kilometres_1() throws {
-		let result = FuelEconomy.MilesPerGallon.tolitresPer100Kilometres(22.3)
+	func testConvertKnownMilesPerGallonToLitresPer100Kilometres_1() throws {
+		let result = FuelEconomy.MilesPerGallon.toLitresPer100Kilometres(22.3)
 		XCTAssertEqual(12.66731, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTolitresPer100Kilometres_2() throws {
-		let result = FuelEconomy.MilesPerGallon.tolitresPer100Kilometres(0.4)
+	func testConvertKnownMilesPerGallonToLitresPer100Kilometres_2() throws {
+		let result = FuelEconomy.MilesPerGallon.toLitresPer100Kilometres(0.4)
 		XCTAssertEqual(706.202, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMilesPerGallonTolitresPer100Kilometres_3() throws {
-		let result = FuelEconomy.MilesPerGallon.tolitresPer100Kilometres(5.2)
+	func testConvertKnownMilesPerGallonToLitresPer100Kilometres_3() throws {
+		let result = FuelEconomy.MilesPerGallon.toLitresPer100Kilometres(5.2)
 		XCTAssertEqual(54.3233, result, accuracy: 0.01)
 	}
 
 }
 
 final class USMilesPerGallonTests: XCTestCase {
-	func testConvertKnownUSMilesPerGallonTokilometrePerLitre_1() throws {
-		let result = FuelEconomy.USMilesPerGallon.tokilometrePerLitre(23.0)
+	func testConvertKnownUSMilesPerGallonToKilometrePerLitre_1() throws {
+		let result = FuelEconomy.USMilesPerGallon.toKilometrePerLitre(23.0)
 		XCTAssertEqual(9.77831, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTokilometrePerLitre_2() throws {
-		let result = FuelEconomy.USMilesPerGallon.tokilometrePerLitre(7.0)
+	func testConvertKnownUSMilesPerGallonToKilometrePerLitre_2() throws {
+		let result = FuelEconomy.USMilesPerGallon.toKilometrePerLitre(7.0)
 		XCTAssertEqual(2.97601, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTokilometrePerLitre_3() throws {
-		let result = FuelEconomy.USMilesPerGallon.tokilometrePerLitre(0.9)
+	func testConvertKnownUSMilesPerGallonToKilometrePerLitre_3() throws {
+		let result = FuelEconomy.USMilesPerGallon.toKilometrePerLitre(0.9)
 		XCTAssertEqual(0.382629, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTomilesPerGallon_1() throws {
-		let result = FuelEconomy.USMilesPerGallon.tomilesPerGallon(109.0)
+	func testConvertKnownUSMilesPerGallonToMilesPerGallon_1() throws {
+		let result = FuelEconomy.USMilesPerGallon.toMilesPerGallon(109.0)
 		XCTAssertEqual(130.9036, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTomilesPerGallon_2() throws {
-		let result = FuelEconomy.USMilesPerGallon.tomilesPerGallon(78.2)
+	func testConvertKnownUSMilesPerGallonToMilesPerGallon_2() throws {
+		let result = FuelEconomy.USMilesPerGallon.toMilesPerGallon(78.2)
 		XCTAssertEqual(93.91432, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTomilesPerGallon_3() throws {
-		let result = FuelEconomy.USMilesPerGallon.tomilesPerGallon(0.9)
+	func testConvertKnownUSMilesPerGallonToMilesPerGallon_3() throws {
+		let result = FuelEconomy.USMilesPerGallon.toMilesPerGallon(0.9)
 		XCTAssertEqual(1.08086, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTolitresPer100Kilometres_1() throws {
-		let result = FuelEconomy.USMilesPerGallon.tolitresPer100Kilometres(111.0)
+	func testConvertKnownUSMilesPerGallonToLitresPer100Kilometres_1() throws {
+		let result = FuelEconomy.USMilesPerGallon.toLitresPer100Kilometres(111.0)
 		XCTAssertEqual(2.11905, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTolitresPer100Kilometres_2() throws {
-		let result = FuelEconomy.USMilesPerGallon.tolitresPer100Kilometres(0.4)
+	func testConvertKnownUSMilesPerGallonToLitresPer100Kilometres_2() throws {
+		let result = FuelEconomy.USMilesPerGallon.toLitresPer100Kilometres(0.4)
 		XCTAssertEqual(588.036, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSMilesPerGallonTolitresPer100Kilometres_3() throws {
-		let result = FuelEconomy.USMilesPerGallon.tolitresPer100Kilometres(5.2)
+	func testConvertKnownUSMilesPerGallonToLitresPer100Kilometres_3() throws {
+		let result = FuelEconomy.USMilesPerGallon.toLitresPer100Kilometres(5.2)
 		XCTAssertEqual(45.2336, result, accuracy: 0.01)
 	}
 

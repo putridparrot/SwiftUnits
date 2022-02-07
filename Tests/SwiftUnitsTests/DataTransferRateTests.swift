@@ -8,1683 +8,1683 @@ import XCTest
 @testable import SwiftUnits
 
 final class BitsPerSecondTests: XCTestCase {
-	func testConvertKnownBitsPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.tokiloBitsPerSecond(100.0)
+	func testConvertKnownBitsPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toKiloBitsPerSecond(100.0)
 		XCTAssertEqual(0.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.tokiloBitsPerSecond(6021.0)
+	func testConvertKnownBitsPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toKiloBitsPerSecond(6021.0)
 		XCTAssertEqual(6.021, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.tokiloBitsPerSecond(9100.0)
+	func testConvertKnownBitsPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toKiloBitsPerSecond(9100.0)
 		XCTAssertEqual(9.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.tomegaBitsPerSecond(9000000.0)
+	func testConvertKnownBitsPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toMegaBitsPerSecond(9000000.0)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.tomegaBitsPerSecond(123456.0)
+	func testConvertKnownBitsPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toMegaBitsPerSecond(123456.0)
 		XCTAssertEqual(0.123456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.tomegaBitsPerSecond(1900000.0)
+	func testConvertKnownBitsPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toMegaBitsPerSecond(1900000.0)
 		XCTAssertEqual(1.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.togigaBitsPerSecond(190000000.0)
+	func testConvertKnownBitsPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toGigaBitsPerSecond(190000000.0)
 		XCTAssertEqual(0.19, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.togigaBitsPerSecond(8009.0)
+	func testConvertKnownBitsPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toGigaBitsPerSecond(8009.0)
 		XCTAssertEqual(8.009e-6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.togigaBitsPerSecond(987654321.0)
+	func testConvertKnownBitsPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toGigaBitsPerSecond(987654321.0)
 		XCTAssertEqual(0.987654321, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.toteraBitsPerSecond(987654321234.0)
+	func testConvertKnownBitsPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toTeraBitsPerSecond(987654321234.0)
 		XCTAssertEqual(0.987654321234, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.toteraBitsPerSecond(1234567890123456.0)
+	func testConvertKnownBitsPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toTeraBitsPerSecond(1234567890123456.0)
 		XCTAssertEqual(1234.567890123455982, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.toteraBitsPerSecond(999888777666555.0)
+	func testConvertKnownBitsPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toTeraBitsPerSecond(999888777666555.0)
 		XCTAssertEqual(999.888777666555029, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.tokiloBytesPerSecond(900.0)
+	func testConvertKnownBitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toKiloBytesPerSecond(900.0)
 		XCTAssertEqual(0.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.tokiloBytesPerSecond(12345.0)
+	func testConvertKnownBitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toKiloBytesPerSecond(12345.0)
 		XCTAssertEqual(1.543125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.tokiloBytesPerSecond(6000.9)
+	func testConvertKnownBitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toKiloBytesPerSecond(6000.9)
 		XCTAssertEqual(0.7501125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.tomegaBytesPerSecond(123456.0)
+	func testConvertKnownBitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toMegaBytesPerSecond(123456.0)
 		XCTAssertEqual(0.015432, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.tomegaBytesPerSecond(900800.0)
+	func testConvertKnownBitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toMegaBytesPerSecond(900800.0)
 		XCTAssertEqual(0.1126, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.tomegaBytesPerSecond(999888777.0)
+	func testConvertKnownBitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toMegaBytesPerSecond(999888777.0)
 		XCTAssertEqual(124.986097125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.togigaBytesPerSecond(999888777.0)
+	func testConvertKnownBitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toGigaBytesPerSecond(999888777.0)
 		XCTAssertEqual(0.124986097125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.togigaBytesPerSecond(1.9e+9)
+	func testConvertKnownBitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toGigaBytesPerSecond(1.9e+9)
 		XCTAssertEqual(0.2375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.togigaBytesPerSecond(80090077.0)
+	func testConvertKnownBitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toGigaBytesPerSecond(80090077.0)
 		XCTAssertEqual(0.010011259625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.toteraBytesPerSecond(999888777666.0)
+	func testConvertKnownBitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toTeraBytesPerSecond(999888777666.0)
 		XCTAssertEqual(0.12498609720825, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.toteraBytesPerSecond(12345678912345.0)
+	func testConvertKnownBitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toTeraBytesPerSecond(12345678912345.0)
 		XCTAssertEqual(1.5432098640431251, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.toteraBytesPerSecond(111999222888333.0)
+	func testConvertKnownBitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toTeraBytesPerSecond(111999222888333.0)
 		XCTAssertEqual(13.9999028610416243, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.tokibibitsPerSecond(1800.0)
+	func testConvertKnownBitsPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toKibibitsPerSecond(1800.0)
 		XCTAssertEqual(1.757813, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.tokibibitsPerSecond(888.0)
+	func testConvertKnownBitsPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toKibibitsPerSecond(888.0)
 		XCTAssertEqual(0.867188, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.tokibibitsPerSecond(7687.0)
+	func testConvertKnownBitsPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toKibibitsPerSecond(7687.0)
 		XCTAssertEqual(7.506836, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.BitsPerSecond.tomebibitsPerSecond(999888.0)
+	func testConvertKnownBitsPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.BitsPerSecond.toMebibitsPerSecond(999888.0)
 		XCTAssertEqual(0.953567505, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.BitsPerSecond.tomebibitsPerSecond(1234567.0)
+	func testConvertKnownBitsPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.BitsPerSecond.toMebibitsPerSecond(1234567.0)
 		XCTAssertEqual(1.17737484, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBitsPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.BitsPerSecond.tomebibitsPerSecond(900800.0)
+	func testConvertKnownBitsPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.BitsPerSecond.toMebibitsPerSecond(900800.0)
 		XCTAssertEqual(0.859069824, result, accuracy: 0.01)
 	}
 
 }
 
 final class GigaBitsPerSecondTests: XCTestCase {
-	func testConvertKnownGigaBitsPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tobitsPerSecond(0.0009)
+	func testConvertKnownGigaBitsPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toBitsPerSecond(0.0009)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tobitsPerSecond(0.00007)
+	func testConvertKnownGigaBitsPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toBitsPerSecond(0.00007)
 		XCTAssertEqual(70000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tobitsPerSecond(1.2e-5)
+	func testConvertKnownGigaBitsPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toBitsPerSecond(1.2e-5)
 		XCTAssertEqual(12000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokiloBitsPerSecond(0.01)
+	func testConvertKnownGigaBitsPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKiloBitsPerSecond(0.01)
 		XCTAssertEqual(10000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokiloBitsPerSecond(0.91)
+	func testConvertKnownGigaBitsPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKiloBitsPerSecond(0.91)
 		XCTAssertEqual(910000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokiloBitsPerSecond(6.1)
+	func testConvertKnownGigaBitsPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKiloBitsPerSecond(6.1)
 		XCTAssertEqual(6.1e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomegaBitsPerSecond(6.1)
+	func testConvertKnownGigaBitsPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMegaBitsPerSecond(6.1)
 		XCTAssertEqual(6100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomegaBitsPerSecond(0.961)
+	func testConvertKnownGigaBitsPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMegaBitsPerSecond(0.961)
 		XCTAssertEqual(961.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomegaBitsPerSecond(1.2e-3)
+	func testConvertKnownGigaBitsPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMegaBitsPerSecond(1.2e-3)
 		XCTAssertEqual(1.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.toteraBitsPerSecond(1200.0)
+	func testConvertKnownGigaBitsPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toTeraBitsPerSecond(1200.0)
 		XCTAssertEqual(1.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.toteraBitsPerSecond(90012.0)
+	func testConvertKnownGigaBitsPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toTeraBitsPerSecond(90012.0)
 		XCTAssertEqual(90.012, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.toteraBitsPerSecond(8000.0)
+	func testConvertKnownGigaBitsPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toTeraBitsPerSecond(8000.0)
 		XCTAssertEqual(8.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokiloBytesPerSecond(1.2)
+	func testConvertKnownGigaBitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKiloBytesPerSecond(1.2)
 		XCTAssertEqual(150000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokiloBytesPerSecond(0.9)
+	func testConvertKnownGigaBitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKiloBytesPerSecond(0.9)
 		XCTAssertEqual(112500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokiloBytesPerSecond(0.001)
+	func testConvertKnownGigaBitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKiloBytesPerSecond(0.001)
 		XCTAssertEqual(125.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomegaBytesPerSecond(0.9)
+	func testConvertKnownGigaBitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMegaBytesPerSecond(0.9)
 		XCTAssertEqual(112.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomegaBytesPerSecond(1.2)
+	func testConvertKnownGigaBitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMegaBytesPerSecond(1.2)
 		XCTAssertEqual(150.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomegaBytesPerSecond(80.1)
+	func testConvertKnownGigaBitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMegaBytesPerSecond(80.1)
 		XCTAssertEqual(10012.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.togigaBytesPerSecond(99.0)
+	func testConvertKnownGigaBitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toGigaBytesPerSecond(99.0)
 		XCTAssertEqual(12.375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.togigaBytesPerSecond(123.123)
+	func testConvertKnownGigaBitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toGigaBytesPerSecond(123.123)
 		XCTAssertEqual(15.390375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.togigaBytesPerSecond(8000.9)
+	func testConvertKnownGigaBitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toGigaBytesPerSecond(8000.9)
 		XCTAssertEqual(1000.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.toteraBytesPerSecond(9000.0)
+	func testConvertKnownGigaBitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toTeraBytesPerSecond(9000.0)
 		XCTAssertEqual(1.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.toteraBytesPerSecond(1234567.0)
+	func testConvertKnownGigaBitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toTeraBytesPerSecond(1234567.0)
 		XCTAssertEqual(154.320875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.toteraBytesPerSecond(613.0)
+	func testConvertKnownGigaBitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toTeraBytesPerSecond(613.0)
 		XCTAssertEqual(0.076625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokibibitsPerSecond(0.8)
+	func testConvertKnownGigaBitsPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKibibitsPerSecond(0.8)
 		XCTAssertEqual(781250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokibibitsPerSecond(0.012)
+	func testConvertKnownGigaBitsPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKibibitsPerSecond(0.012)
 		XCTAssertEqual(11718.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tokibibitsPerSecond(0.002)
+	func testConvertKnownGigaBitsPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toKibibitsPerSecond(0.002)
 		XCTAssertEqual(1953.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomebibitsPerSecond(0.002)
+	func testConvertKnownGigaBitsPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMebibitsPerSecond(0.002)
 		XCTAssertEqual(1.9073486, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomebibitsPerSecond(0.9)
+	func testConvertKnownGigaBitsPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMebibitsPerSecond(0.9)
 		XCTAssertEqual(858.3068847656, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBitsPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBitsPerSecond.tomebibitsPerSecond(6.1)
+	func testConvertKnownGigaBitsPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBitsPerSecond.toMebibitsPerSecond(6.1)
 		XCTAssertEqual(5817.413330078, result, accuracy: 0.01)
 	}
 
 }
 
 final class GigaBytesPerSecondTests: XCTestCase {
-	func testConvertKnownGigaBytesPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tobitsPerSecond(0.004)
+	func testConvertKnownGigaBytesPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toBitsPerSecond(0.004)
 		XCTAssertEqual(32000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tobitsPerSecond(0.012)
+	func testConvertKnownGigaBytesPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toBitsPerSecond(0.012)
 		XCTAssertEqual(96000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tobitsPerSecond(3e-9)
+	func testConvertKnownGigaBytesPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toBitsPerSecond(3e-9)
 		XCTAssertEqual(24.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokiloBitsPerSecond(0.009)
+	func testConvertKnownGigaBytesPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKiloBitsPerSecond(0.009)
 		XCTAssertEqual(72000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokiloBitsPerSecond(1.2e-4)
+	func testConvertKnownGigaBytesPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKiloBitsPerSecond(1.2e-4)
 		XCTAssertEqual(960.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokiloBitsPerSecond(0.0078)
+	func testConvertKnownGigaBytesPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKiloBitsPerSecond(0.0078)
 		XCTAssertEqual(62400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomegaBitsPerSecond(0.0078)
+	func testConvertKnownGigaBytesPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMegaBitsPerSecond(0.0078)
 		XCTAssertEqual(62.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomegaBitsPerSecond(0.01)
+	func testConvertKnownGigaBytesPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMegaBitsPerSecond(0.01)
 		XCTAssertEqual(80.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomegaBitsPerSecond(0.001234)
+	func testConvertKnownGigaBytesPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMegaBitsPerSecond(0.001234)
 		XCTAssertEqual(9.872, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.togigaBitsPerSecond(5.0)
+	func testConvertKnownGigaBytesPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toGigaBitsPerSecond(5.0)
 		XCTAssertEqual(40.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.togigaBitsPerSecond(1.2)
+	func testConvertKnownGigaBytesPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toGigaBitsPerSecond(1.2)
 		XCTAssertEqual(9.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.togigaBitsPerSecond(0.01)
+	func testConvertKnownGigaBytesPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toGigaBitsPerSecond(0.01)
 		XCTAssertEqual(0.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.toteraBitsPerSecond(70.0)
+	func testConvertKnownGigaBytesPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toTeraBitsPerSecond(70.0)
 		XCTAssertEqual(0.56, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.toteraBitsPerSecond(9001.0)
+	func testConvertKnownGigaBytesPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toTeraBitsPerSecond(9001.0)
 		XCTAssertEqual(72.008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.toteraBitsPerSecond(768123.9)
+	func testConvertKnownGigaBytesPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toTeraBitsPerSecond(768123.9)
 		XCTAssertEqual(6144.9912, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokiloBytesPerSecond(0.2)
+	func testConvertKnownGigaBytesPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKiloBytesPerSecond(0.2)
 		XCTAssertEqual(200000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokiloBytesPerSecond(0.009)
+	func testConvertKnownGigaBytesPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKiloBytesPerSecond(0.009)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokiloBytesPerSecond(0.00123)
+	func testConvertKnownGigaBytesPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKiloBytesPerSecond(0.00123)
 		XCTAssertEqual(1230.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomegaBytesPerSecond(0.9)
+	func testConvertKnownGigaBytesPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMegaBytesPerSecond(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomegaBytesPerSecond(12.0)
+	func testConvertKnownGigaBytesPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMegaBytesPerSecond(12.0)
 		XCTAssertEqual(12000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomegaBytesPerSecond(35.6)
+	func testConvertKnownGigaBytesPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMegaBytesPerSecond(35.6)
 		XCTAssertEqual(35600.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.toteraBytesPerSecond(35.6)
+	func testConvertKnownGigaBytesPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toTeraBytesPerSecond(35.6)
 		XCTAssertEqual(0.0356, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.toteraBytesPerSecond(100.23)
+	func testConvertKnownGigaBytesPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toTeraBytesPerSecond(100.23)
 		XCTAssertEqual(0.10023, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.toteraBytesPerSecond(900100.0)
+	func testConvertKnownGigaBytesPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toTeraBytesPerSecond(900100.0)
 		XCTAssertEqual(900.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokibibitsPerSecond(0.05)
+	func testConvertKnownGigaBytesPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKibibitsPerSecond(0.05)
 		XCTAssertEqual(390625.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokibibitsPerSecond(0.008)
+	func testConvertKnownGigaBytesPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKibibitsPerSecond(0.008)
 		XCTAssertEqual(62500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tokibibitsPerSecond(0.00123)
+	func testConvertKnownGigaBytesPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toKibibitsPerSecond(0.00123)
 		XCTAssertEqual(9609.375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomebibitsPerSecond(0.009)
+	func testConvertKnownGigaBytesPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMebibitsPerSecond(0.009)
 		XCTAssertEqual(68.66451, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomebibitsPerSecond(1.2)
+	func testConvertKnownGigaBytesPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMebibitsPerSecond(1.2)
 		XCTAssertEqual(9155.268, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGigaBytesPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.GigaBytesPerSecond.tomebibitsPerSecond(19.2)
+	func testConvertKnownGigaBytesPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.GigaBytesPerSecond.toMebibitsPerSecond(19.2)
 		XCTAssertEqual(146484.288, result, accuracy: 0.01)
 	}
 
 }
 
 final class KibibitsPerSecondTests: XCTestCase {
-	func testConvertKnownKibibitsPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tobitsPerSecond(2.0)
+	func testConvertKnownKibibitsPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toBitsPerSecond(2.0)
 		XCTAssertEqual(2048.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tobitsPerSecond(9.0)
+	func testConvertKnownKibibitsPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toBitsPerSecond(9.0)
 		XCTAssertEqual(9216.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tobitsPerSecond(17.8)
+	func testConvertKnownKibibitsPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toBitsPerSecond(17.8)
 		XCTAssertEqual(18227.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tokiloBitsPerSecond(6.2)
+	func testConvertKnownKibibitsPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toKiloBitsPerSecond(6.2)
 		XCTAssertEqual(6.3488, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tokiloBitsPerSecond(0.9)
+	func testConvertKnownKibibitsPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toKiloBitsPerSecond(0.9)
 		XCTAssertEqual(0.9216, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tokiloBitsPerSecond(87.0)
+	func testConvertKnownKibibitsPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toKiloBitsPerSecond(87.0)
 		XCTAssertEqual(89.088, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomegaBitsPerSecond(87.0)
+	func testConvertKnownKibibitsPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMegaBitsPerSecond(87.0)
 		XCTAssertEqual(0.089088, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomegaBitsPerSecond(12.34)
+	func testConvertKnownKibibitsPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMegaBitsPerSecond(12.34)
 		XCTAssertEqual(0.01263616, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomegaBitsPerSecond(123456.0)
+	func testConvertKnownKibibitsPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMegaBitsPerSecond(123456.0)
 		XCTAssertEqual(126.418879, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.togigaBitsPerSecond(123456.0)
+	func testConvertKnownKibibitsPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toGigaBitsPerSecond(123456.0)
 		XCTAssertEqual(0.126418944, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.togigaBitsPerSecond(8000000.0)
+	func testConvertKnownKibibitsPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toGigaBitsPerSecond(8000000.0)
 		XCTAssertEqual(8.192, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.togigaBitsPerSecond(1276876.0)
+	func testConvertKnownKibibitsPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toGigaBitsPerSecond(1276876.0)
 		XCTAssertEqual(1.307521024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.toteraBitsPerSecond(800000000.0)
+	func testConvertKnownKibibitsPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toTeraBitsPerSecond(800000000.0)
 		XCTAssertEqual(0.8192, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.toteraBitsPerSecond(1.5e12)
+	func testConvertKnownKibibitsPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toTeraBitsPerSecond(1.5e12)
 		XCTAssertEqual(1536.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.toteraBitsPerSecond(9999999.0)
+	func testConvertKnownKibibitsPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toTeraBitsPerSecond(9999999.0)
 		XCTAssertEqual(0.01023999898, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tokiloBytesPerSecond(919.0)
+	func testConvertKnownKibibitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toKiloBytesPerSecond(919.0)
 		XCTAssertEqual(117.632, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tokiloBytesPerSecond(77.4)
+	func testConvertKnownKibibitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toKiloBytesPerSecond(77.4)
 		XCTAssertEqual(9.9072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tokiloBytesPerSecond(109.109)
+	func testConvertKnownKibibitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toKiloBytesPerSecond(109.109)
 		XCTAssertEqual(13.965952, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomegaBytesPerSecond(1000.0)
+	func testConvertKnownKibibitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMegaBytesPerSecond(1000.0)
 		XCTAssertEqual(0.128, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomegaBytesPerSecond(800.123)
+	func testConvertKnownKibibitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMegaBytesPerSecond(800.123)
 		XCTAssertEqual(0.102415744, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomegaBytesPerSecond(123456.0)
+	func testConvertKnownKibibitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMegaBytesPerSecond(123456.0)
 		XCTAssertEqual(15.802368, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.togigaBytesPerSecond(12345678.0)
+	func testConvertKnownKibibitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toGigaBytesPerSecond(12345678.0)
 		XCTAssertEqual(1.580347926, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.togigaBytesPerSecond(8e12)
+	func testConvertKnownKibibitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toGigaBytesPerSecond(8e12)
 		XCTAssertEqual(1024000.00, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.togigaBytesPerSecond(1.2e5)
+	func testConvertKnownKibibitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toGigaBytesPerSecond(1.2e5)
 		XCTAssertEqual(0.01536, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.toteraBytesPerSecond(120000000.0)
+	func testConvertKnownKibibitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toTeraBytesPerSecond(120000000.0)
 		XCTAssertEqual(0.01536, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.toteraBytesPerSecond(88e12)
+	func testConvertKnownKibibitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toTeraBytesPerSecond(88e12)
 		XCTAssertEqual(11264.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.toteraBytesPerSecond(9000000.0)
+	func testConvertKnownKibibitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toTeraBytesPerSecond(9000000.0)
 		XCTAssertEqual(0.009216, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomebibitsPerSecond(600.0)
+	func testConvertKnownKibibitsPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMebibitsPerSecond(600.0)
 		XCTAssertEqual(0.5859375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomebibitsPerSecond(12345.0)
+	func testConvertKnownKibibitsPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMebibitsPerSecond(12345.0)
 		XCTAssertEqual(12.055664, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKibibitsPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.KibibitsPerSecond.tomebibitsPerSecond(101.0)
+	func testConvertKnownKibibitsPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.KibibitsPerSecond.toMebibitsPerSecond(101.0)
 		XCTAssertEqual(0.0986328, result, accuracy: 0.01)
 	}
 
 }
 
 final class KiloBitsPerSecondTests: XCTestCase {
-	func testConvertKnownKiloBitsPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tobitsPerSecond(9.0)
+	func testConvertKnownKiloBitsPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toBitsPerSecond(9.0)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tobitsPerSecond(6.7)
+	func testConvertKnownKiloBitsPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toBitsPerSecond(6.7)
 		XCTAssertEqual(6700.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tobitsPerSecond(1.2345)
+	func testConvertKnownKiloBitsPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toBitsPerSecond(1.2345)
 		XCTAssertEqual(1234.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomegaBitsPerSecond(900.0)
+	func testConvertKnownKiloBitsPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMegaBitsPerSecond(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomegaBitsPerSecond(12345.0)
+	func testConvertKnownKiloBitsPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMegaBitsPerSecond(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomegaBitsPerSecond(9988.0)
+	func testConvertKnownKiloBitsPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMegaBitsPerSecond(9988.0)
 		XCTAssertEqual(9.988, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.togigaBitsPerSecond(123456.0)
+	func testConvertKnownKiloBitsPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toGigaBitsPerSecond(123456.0)
 		XCTAssertEqual(0.123456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.togigaBitsPerSecond(8000700.0)
+	func testConvertKnownKiloBitsPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toGigaBitsPerSecond(8000700.0)
 		XCTAssertEqual(8.0007, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.togigaBitsPerSecond(191987578.0)
+	func testConvertKnownKiloBitsPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toGigaBitsPerSecond(191987578.0)
 		XCTAssertEqual(191.987578, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.toteraBitsPerSecond(191987578.0)
+	func testConvertKnownKiloBitsPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toTeraBitsPerSecond(191987578.0)
 		XCTAssertEqual(0.191987578, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.toteraBitsPerSecond(9010081903.0)
+	func testConvertKnownKiloBitsPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toTeraBitsPerSecond(9010081903.0)
 		XCTAssertEqual(9.010081903, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.toteraBitsPerSecond(123456789.0)
+	func testConvertKnownKiloBitsPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toTeraBitsPerSecond(123456789.0)
 		XCTAssertEqual(0.123456789, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tokiloBytesPerSecond(80.0)
+	func testConvertKnownKiloBitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toKiloBytesPerSecond(80.0)
 		XCTAssertEqual(10.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tokiloBytesPerSecond(15.67)
+	func testConvertKnownKiloBitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toKiloBytesPerSecond(15.67)
 		XCTAssertEqual(1.95875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tokiloBytesPerSecond(8007.09)
+	func testConvertKnownKiloBitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toKiloBytesPerSecond(8007.09)
 		XCTAssertEqual(1000.88625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomegaBytesPerSecond(123456.0)
+	func testConvertKnownKiloBitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMegaBytesPerSecond(123456.0)
 		XCTAssertEqual(15.432, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomegaBytesPerSecond(998877.0)
+	func testConvertKnownKiloBitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMegaBytesPerSecond(998877.0)
 		XCTAssertEqual(124.859625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomegaBytesPerSecond(10090.0)
+	func testConvertKnownKiloBitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMegaBytesPerSecond(10090.0)
 		XCTAssertEqual(1.26125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.togigaBytesPerSecond(1828972.0)
+	func testConvertKnownKiloBitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toGigaBytesPerSecond(1828972.0)
 		XCTAssertEqual(0.2286215, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.togigaBytesPerSecond(879860.8)
+	func testConvertKnownKiloBitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toGigaBytesPerSecond(879860.8)
 		XCTAssertEqual(0.1099826, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.togigaBytesPerSecond(78178971.0)
+	func testConvertKnownKiloBitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toGigaBytesPerSecond(78178971.0)
 		XCTAssertEqual(9.772371375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.toteraBytesPerSecond(1234567891.0)
+	func testConvertKnownKiloBitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toTeraBytesPerSecond(1234567891.0)
 		XCTAssertEqual(0.154320986375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.toteraBytesPerSecond(999999098.0)
+	func testConvertKnownKiloBitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toTeraBytesPerSecond(999999098.0)
 		XCTAssertEqual(0.12499988725, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.toteraBytesPerSecond(84618364142.0)
+	func testConvertKnownKiloBitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toTeraBytesPerSecond(84618364142.0)
 		XCTAssertEqual(10.57729551775, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tokibibitsPerSecond(89.1)
+	func testConvertKnownKiloBitsPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toKibibitsPerSecond(89.1)
 		XCTAssertEqual(87.01172, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tokibibitsPerSecond(7.1)
+	func testConvertKnownKiloBitsPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toKibibitsPerSecond(7.1)
 		XCTAssertEqual(6.93359, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tokibibitsPerSecond(438.0)
+	func testConvertKnownKiloBitsPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toKibibitsPerSecond(438.0)
 		XCTAssertEqual(427.734, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomebibitsPerSecond(77790.0)
+	func testConvertKnownKiloBitsPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMebibitsPerSecond(77790.0)
 		XCTAssertEqual(74.186325, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomebibitsPerSecond(123456.0)
+	func testConvertKnownKiloBitsPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMebibitsPerSecond(123456.0)
 		XCTAssertEqual(117.736816, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBitsPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBitsPerSecond.tomebibitsPerSecond(23972.0)
+	func testConvertKnownKiloBitsPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBitsPerSecond.toMebibitsPerSecond(23972.0)
 		XCTAssertEqual(22.861481, result, accuracy: 0.01)
 	}
 
 }
 
 final class KiloBytesPerSecondTests: XCTestCase {
-	func testConvertKnownKiloBytesPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tobitsPerSecond(123.456)
+	func testConvertKnownKiloBytesPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toBitsPerSecond(123.456)
 		XCTAssertEqual(987648.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tobitsPerSecond(900.0)
+	func testConvertKnownKiloBytesPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toBitsPerSecond(900.0)
 		XCTAssertEqual(7.2e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tobitsPerSecond(100200.0)
+	func testConvertKnownKiloBytesPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toBitsPerSecond(100200.0)
 		XCTAssertEqual(801600000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tokiloBitsPerSecond(4.0)
+	func testConvertKnownKiloBytesPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toKiloBitsPerSecond(4.0)
 		XCTAssertEqual(32.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tokiloBitsPerSecond(1.2)
+	func testConvertKnownKiloBytesPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toKiloBitsPerSecond(1.2)
 		XCTAssertEqual(9.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tokiloBitsPerSecond(88.1)
+	func testConvertKnownKiloBytesPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toKiloBitsPerSecond(88.1)
 		XCTAssertEqual(704.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomegaBitsPerSecond(88.1)
+	func testConvertKnownKiloBytesPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMegaBitsPerSecond(88.1)
 		XCTAssertEqual(0.7048, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomegaBitsPerSecond(7.1)
+	func testConvertKnownKiloBytesPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMegaBitsPerSecond(7.1)
 		XCTAssertEqual(0.0568, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomegaBitsPerSecond(12.8)
+	func testConvertKnownKiloBytesPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMegaBitsPerSecond(12.8)
 		XCTAssertEqual(0.1024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.togigaBitsPerSecond(10080.0)
+	func testConvertKnownKiloBytesPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toGigaBitsPerSecond(10080.0)
 		XCTAssertEqual(0.08064, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.togigaBitsPerSecond(4.5e+9)
+	func testConvertKnownKiloBytesPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toGigaBitsPerSecond(4.5e+9)
 		XCTAssertEqual(36000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.togigaBitsPerSecond(271279.0)
+	func testConvertKnownKiloBytesPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toGigaBitsPerSecond(271279.0)
 		XCTAssertEqual(2.170232, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.toteraBitsPerSecond(9009000.0)
+	func testConvertKnownKiloBytesPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toTeraBitsPerSecond(9009000.0)
 		XCTAssertEqual(0.072072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.toteraBitsPerSecond(7.2e9)
+	func testConvertKnownKiloBytesPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toTeraBitsPerSecond(7.2e9)
 		XCTAssertEqual(57.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.toteraBitsPerSecond(100100100900.0)
+	func testConvertKnownKiloBytesPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toTeraBitsPerSecond(100100100900.0)
 		XCTAssertEqual(800.8008072, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomegaBytesPerSecond(1009.0)
+	func testConvertKnownKiloBytesPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMegaBytesPerSecond(1009.0)
 		XCTAssertEqual(1.009, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomegaBytesPerSecond(8899.0)
+	func testConvertKnownKiloBytesPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMegaBytesPerSecond(8899.0)
 		XCTAssertEqual(8.899, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomegaBytesPerSecond(619.0)
+	func testConvertKnownKiloBytesPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMegaBytesPerSecond(619.0)
 		XCTAssertEqual(0.619, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.togigaBytesPerSecond(900800.0)
+	func testConvertKnownKiloBytesPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toGigaBytesPerSecond(900800.0)
 		XCTAssertEqual(0.9008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.togigaBytesPerSecond(1234567.0)
+	func testConvertKnownKiloBytesPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toGigaBytesPerSecond(1234567.0)
 		XCTAssertEqual(1.234567, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.togigaBytesPerSecond(7.9e9)
+	func testConvertKnownKiloBytesPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toGigaBytesPerSecond(7.9e9)
 		XCTAssertEqual(7900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.toteraBytesPerSecond(0.9)
+	func testConvertKnownKiloBytesPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toTeraBytesPerSecond(0.9)
 		XCTAssertEqual(9e-10, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.toteraBytesPerSecond(140000000.0)
+	func testConvertKnownKiloBytesPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toTeraBytesPerSecond(140000000.0)
 		XCTAssertEqual(0.14, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.toteraBytesPerSecond(7.0)
+	func testConvertKnownKiloBytesPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toTeraBytesPerSecond(7.0)
 		XCTAssertEqual(7e-9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tokibibitsPerSecond(0.009)
+	func testConvertKnownKiloBytesPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toKibibitsPerSecond(0.009)
 		XCTAssertEqual(0.0703125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tokibibitsPerSecond(6e+3)
+	func testConvertKnownKiloBytesPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toKibibitsPerSecond(6e+3)
 		XCTAssertEqual(46875.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tokibibitsPerSecond(1.23)
+	func testConvertKnownKiloBytesPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toKibibitsPerSecond(1.23)
 		XCTAssertEqual(9.609375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomebibitsPerSecond(70.0)
+	func testConvertKnownKiloBytesPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMebibitsPerSecond(70.0)
 		XCTAssertEqual(0.534058, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomebibitsPerSecond(9.0)
+	func testConvertKnownKiloBytesPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMebibitsPerSecond(9.0)
 		XCTAssertEqual(0.0686646, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKiloBytesPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.KiloBytesPerSecond.tomebibitsPerSecond(10022.0)
+	func testConvertKnownKiloBytesPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.KiloBytesPerSecond.toMebibitsPerSecond(10022.0)
 		XCTAssertEqual(76.461792, result, accuracy: 0.01)
 	}
 
 }
 
 final class MebibitsPerSecondTests: XCTestCase {
-	func testConvertKnownMebibitsPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tobitsPerSecond(0.9)
+	func testConvertKnownMebibitsPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toBitsPerSecond(0.9)
 		XCTAssertEqual(943718.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tobitsPerSecond(0.006)
+	func testConvertKnownMebibitsPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toBitsPerSecond(0.006)
 		XCTAssertEqual(6291.456, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tobitsPerSecond(2.0)
+	func testConvertKnownMebibitsPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toBitsPerSecond(2.0)
 		XCTAssertEqual(2097152.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokiloBitsPerSecond(0.8)
+	func testConvertKnownMebibitsPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKiloBitsPerSecond(0.8)
 		XCTAssertEqual(838.861, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokiloBitsPerSecond(2.0)
+	func testConvertKnownMebibitsPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKiloBitsPerSecond(2.0)
 		XCTAssertEqual(2097.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokiloBitsPerSecond(0.23)
+	func testConvertKnownMebibitsPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKiloBitsPerSecond(0.23)
 		XCTAssertEqual(241.1725, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tomegaBitsPerSecond(0.9)
+	func testConvertKnownMebibitsPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toMegaBitsPerSecond(0.9)
 		XCTAssertEqual(0.943718, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tomegaBitsPerSecond(12.3)
+	func testConvertKnownMebibitsPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toMegaBitsPerSecond(12.3)
 		XCTAssertEqual(12.89748, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tomegaBitsPerSecond(8.1)
+	func testConvertKnownMebibitsPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toMegaBitsPerSecond(8.1)
 		XCTAssertEqual(8.49347, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.togigaBitsPerSecond(12345.0)
+	func testConvertKnownMebibitsPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toGigaBitsPerSecond(12345.0)
 		XCTAssertEqual(12.944671, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.togigaBitsPerSecond(100.0)
+	func testConvertKnownMebibitsPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toGigaBitsPerSecond(100.0)
 		XCTAssertEqual(0.104858, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.togigaBitsPerSecond(999.9)
+	func testConvertKnownMebibitsPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toGigaBitsPerSecond(999.9)
 		XCTAssertEqual(1.0484711, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.toteraBitsPerSecond(100009.0)
+	func testConvertKnownMebibitsPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toTeraBitsPerSecond(100009.0)
 		XCTAssertEqual(0.104867037, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.toteraBitsPerSecond(9876543.0)
+	func testConvertKnownMebibitsPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toTeraBitsPerSecond(9876543.0)
 		XCTAssertEqual(10.35630595, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.toteraBitsPerSecond(1000900.0)
+	func testConvertKnownMebibitsPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toTeraBitsPerSecond(1000900.0)
 		XCTAssertEqual(1.049519718, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokiloBytesPerSecond(4.0)
+	func testConvertKnownMebibitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKiloBytesPerSecond(4.0)
 		XCTAssertEqual(524.288, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokiloBytesPerSecond(1.45)
+	func testConvertKnownMebibitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKiloBytesPerSecond(1.45)
 		XCTAssertEqual(190.0544, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokiloBytesPerSecond(88.11)
+	func testConvertKnownMebibitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKiloBytesPerSecond(88.11)
 		XCTAssertEqual(11548.754, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tomegaBytesPerSecond(109.0)
+	func testConvertKnownMebibitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toMegaBytesPerSecond(109.0)
 		XCTAssertEqual(14.2868, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tomegaBytesPerSecond(55.67)
+	func testConvertKnownMebibitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toMegaBytesPerSecond(55.67)
 		XCTAssertEqual(7.2967782, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tomegaBytesPerSecond(45678.0)
+	func testConvertKnownMebibitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toMegaBytesPerSecond(45678.0)
 		XCTAssertEqual(5987.1068, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.togigaBytesPerSecond(4000.0)
+	func testConvertKnownMebibitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toGigaBytesPerSecond(4000.0)
 		XCTAssertEqual(0.524288311, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.togigaBytesPerSecond(90100.0)
+	func testConvertKnownMebibitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toGigaBytesPerSecond(90100.0)
 		XCTAssertEqual(11.80959421, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.togigaBytesPerSecond(1009.0)
+	func testConvertKnownMebibitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toGigaBytesPerSecond(1009.0)
 		XCTAssertEqual(0.132251727, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.toteraBytesPerSecond(1000009.0)
+	func testConvertKnownMebibitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toTeraBytesPerSecond(1000009.0)
 		XCTAssertEqual(0.1310731796, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.toteraBytesPerSecond(90808080.0)
+	func testConvertKnownMebibitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toTeraBytesPerSecond(90808080.0)
 		XCTAssertEqual(11.902396662, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.toteraBytesPerSecond(5.2e12)
+	func testConvertKnownMebibitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toTeraBytesPerSecond(5.2e12)
 		XCTAssertEqual(681574.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokibibitsPerSecond(5.0)
+	func testConvertKnownMebibitsPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKibibitsPerSecond(5.0)
 		XCTAssertEqual(5120.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokibibitsPerSecond(1234.56)
+	func testConvertKnownMebibitsPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKibibitsPerSecond(1234.56)
 		XCTAssertEqual(1264189.44, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMebibitsPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.MebibitsPerSecond.tokibibitsPerSecond(505.0)
+	func testConvertKnownMebibitsPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.MebibitsPerSecond.toKibibitsPerSecond(505.0)
 		XCTAssertEqual(517120.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class MegaBitsPerSecondTests: XCTestCase {
-	func testConvertKnownMegaBitsPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tobitsPerSecond(0.34)
+	func testConvertKnownMegaBitsPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toBitsPerSecond(0.34)
 		XCTAssertEqual(340000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tobitsPerSecond(9.12)
+	func testConvertKnownMegaBitsPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toBitsPerSecond(9.12)
 		XCTAssertEqual(9120000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tobitsPerSecond(0.987)
+	func testConvertKnownMegaBitsPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toBitsPerSecond(0.987)
 		XCTAssertEqual(987000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokiloBitsPerSecond(0.77)
+	func testConvertKnownMegaBitsPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKiloBitsPerSecond(0.77)
 		XCTAssertEqual(770.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokiloBitsPerSecond(5.0)
+	func testConvertKnownMegaBitsPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKiloBitsPerSecond(5.0)
 		XCTAssertEqual(5000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokiloBitsPerSecond(0.987)
+	func testConvertKnownMegaBitsPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKiloBitsPerSecond(0.987)
 		XCTAssertEqual(987.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.togigaBitsPerSecond(900.0)
+	func testConvertKnownMegaBitsPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toGigaBitsPerSecond(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.togigaBitsPerSecond(12345.0)
+	func testConvertKnownMegaBitsPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toGigaBitsPerSecond(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.togigaBitsPerSecond(189.1)
+	func testConvertKnownMegaBitsPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toGigaBitsPerSecond(189.1)
 		XCTAssertEqual(0.1891, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.toteraBitsPerSecond(100200300.0)
+	func testConvertKnownMegaBitsPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toTeraBitsPerSecond(100200300.0)
 		XCTAssertEqual(100.2003, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.toteraBitsPerSecond(99887777.0)
+	func testConvertKnownMegaBitsPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toTeraBitsPerSecond(99887777.0)
 		XCTAssertEqual(99.887777, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.toteraBitsPerSecond(80009.0)
+	func testConvertKnownMegaBitsPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toTeraBitsPerSecond(80009.0)
 		XCTAssertEqual(0.080009, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokiloBytesPerSecond(9.0)
+	func testConvertKnownMegaBitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKiloBytesPerSecond(9.0)
 		XCTAssertEqual(1125.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokiloBytesPerSecond(1.23)
+	func testConvertKnownMegaBitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKiloBytesPerSecond(1.23)
 		XCTAssertEqual(153.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokiloBytesPerSecond(98.1)
+	func testConvertKnownMegaBitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKiloBytesPerSecond(98.1)
 		XCTAssertEqual(12262.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tomegaBytesPerSecond(98.1)
+	func testConvertKnownMegaBitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toMegaBytesPerSecond(98.1)
 		XCTAssertEqual(12.2625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tomegaBytesPerSecond(10.9)
+	func testConvertKnownMegaBitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toMegaBytesPerSecond(10.9)
 		XCTAssertEqual(1.3625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tomegaBytesPerSecond(888.123)
+	func testConvertKnownMegaBitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toMegaBytesPerSecond(888.123)
 		XCTAssertEqual(111.015375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.togigaBytesPerSecond(900.0)
+	func testConvertKnownMegaBitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toGigaBytesPerSecond(900.0)
 		XCTAssertEqual(0.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.togigaBytesPerSecond(10123.0)
+	func testConvertKnownMegaBitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toGigaBytesPerSecond(10123.0)
 		XCTAssertEqual(1.265375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.togigaBytesPerSecond(9988.0)
+	func testConvertKnownMegaBitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toGigaBytesPerSecond(9988.0)
 		XCTAssertEqual(1.2485, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.toteraBytesPerSecond(998877.0)
+	func testConvertKnownMegaBitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toTeraBytesPerSecond(998877.0)
 		XCTAssertEqual(0.124859625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.toteraBytesPerSecond(100200400.0)
+	func testConvertKnownMegaBitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toTeraBytesPerSecond(100200400.0)
 		XCTAssertEqual(12.5250375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.toteraBytesPerSecond(9008877.0)
+	func testConvertKnownMegaBitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toTeraBytesPerSecond(9008877.0)
 		XCTAssertEqual(1.126109625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokibibitsPerSecond(12.0)
+	func testConvertKnownMegaBitsPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKibibitsPerSecond(12.0)
 		XCTAssertEqual(11718.756, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokibibitsPerSecond(0.9)
+	func testConvertKnownMegaBitsPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKibibitsPerSecond(0.9)
 		XCTAssertEqual(878.906, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tokibibitsPerSecond(1.23)
+	func testConvertKnownMegaBitsPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toKibibitsPerSecond(1.23)
 		XCTAssertEqual(1201.172, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tomebibitsPerSecond(4.5)
+	func testConvertKnownMegaBitsPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toMebibitsPerSecond(4.5)
 		XCTAssertEqual(4.29153, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tomebibitsPerSecond(0.8)
+	func testConvertKnownMegaBitsPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toMebibitsPerSecond(0.8)
 		XCTAssertEqual(0.762939, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBitsPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBitsPerSecond.tomebibitsPerSecond(900.0)
+	func testConvertKnownMegaBitsPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBitsPerSecond.toMebibitsPerSecond(900.0)
 		XCTAssertEqual(858.307, result, accuracy: 0.01)
 	}
 
 }
 
 final class MegaBytesPerSecondTests: XCTestCase {
-	func testConvertKnownMegaBytesPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tobitsPerSecond(0.04)
+	func testConvertKnownMegaBytesPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toBitsPerSecond(0.04)
 		XCTAssertEqual(320000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tobitsPerSecond(0.0091)
+	func testConvertKnownMegaBytesPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toBitsPerSecond(0.0091)
 		XCTAssertEqual(72800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tobitsPerSecond(3e-5)
+	func testConvertKnownMegaBytesPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toBitsPerSecond(3e-5)
 		XCTAssertEqual(240.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokiloBitsPerSecond(6.0)
+	func testConvertKnownMegaBytesPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKiloBitsPerSecond(6.0)
 		XCTAssertEqual(48000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokiloBitsPerSecond(0.3)
+	func testConvertKnownMegaBytesPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKiloBitsPerSecond(0.3)
 		XCTAssertEqual(2400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokiloBitsPerSecond(0.009)
+	func testConvertKnownMegaBytesPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKiloBitsPerSecond(0.009)
 		XCTAssertEqual(72.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tomegaBitsPerSecond(3.0)
+	func testConvertKnownMegaBytesPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toMegaBitsPerSecond(3.0)
 		XCTAssertEqual(24.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tomegaBitsPerSecond(0.9)
+	func testConvertKnownMegaBytesPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toMegaBitsPerSecond(0.9)
 		XCTAssertEqual(7.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tomegaBitsPerSecond(13.0)
+	func testConvertKnownMegaBytesPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toMegaBitsPerSecond(13.0)
 		XCTAssertEqual(104.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.togigaBitsPerSecond(13.0)
+	func testConvertKnownMegaBytesPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toGigaBitsPerSecond(13.0)
 		XCTAssertEqual(0.104, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.togigaBitsPerSecond(900.0)
+	func testConvertKnownMegaBytesPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toGigaBitsPerSecond(900.0)
 		XCTAssertEqual(7.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.togigaBitsPerSecond(18000.0)
+	func testConvertKnownMegaBytesPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toGigaBitsPerSecond(18000.0)
 		XCTAssertEqual(144.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.toteraBitsPerSecond(18000.0)
+	func testConvertKnownMegaBytesPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toTeraBitsPerSecond(18000.0)
 		XCTAssertEqual(0.144, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.toteraBitsPerSecond(9718290.0)
+	func testConvertKnownMegaBytesPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toTeraBitsPerSecond(9718290.0)
 		XCTAssertEqual(77.74632, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.toteraBitsPerSecond(9e12)
+	func testConvertKnownMegaBytesPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toTeraBitsPerSecond(9e12)
 		XCTAssertEqual(72000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokiloBytesPerSecond(6.0)
+	func testConvertKnownMegaBytesPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKiloBytesPerSecond(6.0)
 		XCTAssertEqual(6000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokiloBytesPerSecond(0.9)
+	func testConvertKnownMegaBytesPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKiloBytesPerSecond(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokiloBytesPerSecond(123.4)
+	func testConvertKnownMegaBytesPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKiloBytesPerSecond(123.4)
 		XCTAssertEqual(123400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.togigaBytesPerSecond(123.4)
+	func testConvertKnownMegaBytesPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toGigaBytesPerSecond(123.4)
 		XCTAssertEqual(0.1234, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.togigaBytesPerSecond(900.0)
+	func testConvertKnownMegaBytesPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toGigaBytesPerSecond(900.0)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.togigaBytesPerSecond(8e6)
+	func testConvertKnownMegaBytesPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toGigaBytesPerSecond(8e6)
 		XCTAssertEqual(8000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.toteraBytesPerSecond(80000.0)
+	func testConvertKnownMegaBytesPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toTeraBytesPerSecond(80000.0)
 		XCTAssertEqual(0.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.toteraBytesPerSecond(12345678.0)
+	func testConvertKnownMegaBytesPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toTeraBytesPerSecond(12345678.0)
 		XCTAssertEqual(12.345678, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.toteraBytesPerSecond(900800.0)
+	func testConvertKnownMegaBytesPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toTeraBytesPerSecond(900800.0)
 		XCTAssertEqual(0.9008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokibibitsPerSecond(6.0)
+	func testConvertKnownMegaBytesPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKibibitsPerSecond(6.0)
 		XCTAssertEqual(46875.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokibibitsPerSecond(0.9)
+	func testConvertKnownMegaBytesPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKibibitsPerSecond(0.9)
 		XCTAssertEqual(7031.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tokibibitsPerSecond(0.03)
+	func testConvertKnownMegaBytesPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toKibibitsPerSecond(0.03)
 		XCTAssertEqual(234.375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tomebibitsPerSecond(0.03)
+	func testConvertKnownMegaBytesPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toMebibitsPerSecond(0.03)
 		XCTAssertEqual(0.2288818, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tomebibitsPerSecond(4.5)
+	func testConvertKnownMegaBytesPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toMebibitsPerSecond(4.5)
 		XCTAssertEqual(34.3323, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMegaBytesPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.MegaBytesPerSecond.tomebibitsPerSecond(80.1)
+	func testConvertKnownMegaBytesPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.MegaBytesPerSecond.toMebibitsPerSecond(80.1)
 		XCTAssertEqual(611.1145, result, accuracy: 0.01)
 	}
 
 }
 
 final class TeraBitsPerSecondTests: XCTestCase {
-	func testConvertKnownTeraBitsPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tobitsPerSecond(0.0007)
+	func testConvertKnownTeraBitsPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toBitsPerSecond(0.0007)
 		XCTAssertEqual(700000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tobitsPerSecond(1.23e-6)
+	func testConvertKnownTeraBitsPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toBitsPerSecond(1.23e-6)
 		XCTAssertEqual(1230000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tobitsPerSecond(0.00098)
+	func testConvertKnownTeraBitsPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toBitsPerSecond(0.00098)
 		XCTAssertEqual(980000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokiloBitsPerSecond(0.001)
+	func testConvertKnownTeraBitsPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKiloBitsPerSecond(0.001)
 		XCTAssertEqual(1000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokiloBitsPerSecond(6.1e-6)
+	func testConvertKnownTeraBitsPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKiloBitsPerSecond(6.1e-6)
 		XCTAssertEqual(6100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokiloBitsPerSecond(0.00009)
+	func testConvertKnownTeraBitsPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKiloBitsPerSecond(0.00009)
 		XCTAssertEqual(90000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomegaBitsPerSecond(0.09)
+	func testConvertKnownTeraBitsPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMegaBitsPerSecond(0.09)
 		XCTAssertEqual(90000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomegaBitsPerSecond(3.5e-4)
+	func testConvertKnownTeraBitsPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMegaBitsPerSecond(3.5e-4)
 		XCTAssertEqual(350.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomegaBitsPerSecond(0.0123)
+	func testConvertKnownTeraBitsPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMegaBitsPerSecond(0.0123)
 		XCTAssertEqual(12300.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.togigaBitsPerSecond(0.9)
+	func testConvertKnownTeraBitsPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toGigaBitsPerSecond(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.togigaBitsPerSecond(1.45)
+	func testConvertKnownTeraBitsPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toGigaBitsPerSecond(1.45)
 		XCTAssertEqual(1450.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.togigaBitsPerSecond(8.19)
+	func testConvertKnownTeraBitsPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toGigaBitsPerSecond(8.19)
 		XCTAssertEqual(8190.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokiloBytesPerSecond(0.0009)
+	func testConvertKnownTeraBitsPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKiloBytesPerSecond(0.0009)
 		XCTAssertEqual(112500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokiloBytesPerSecond(3.14e-6)
+	func testConvertKnownTeraBitsPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKiloBytesPerSecond(3.14e-6)
 		XCTAssertEqual(392.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokiloBytesPerSecond(0.001)
+	func testConvertKnownTeraBitsPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKiloBytesPerSecond(0.001)
 		XCTAssertEqual(125000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomegaBytesPerSecond(0.4)
+	func testConvertKnownTeraBitsPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMegaBytesPerSecond(0.4)
 		XCTAssertEqual(50000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomegaBytesPerSecond(3.9e-3)
+	func testConvertKnownTeraBitsPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMegaBytesPerSecond(3.9e-3)
 		XCTAssertEqual(487.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomegaBytesPerSecond(0.007)
+	func testConvertKnownTeraBitsPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMegaBytesPerSecond(0.007)
 		XCTAssertEqual(875.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.togigaBytesPerSecond(0.009)
+	func testConvertKnownTeraBitsPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toGigaBytesPerSecond(0.009)
 		XCTAssertEqual(1.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.togigaBytesPerSecond(0.00123)
+	func testConvertKnownTeraBitsPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toGigaBytesPerSecond(0.00123)
 		XCTAssertEqual(0.15375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.togigaBytesPerSecond(8.1e-3)
+	func testConvertKnownTeraBitsPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toGigaBytesPerSecond(8.1e-3)
 		XCTAssertEqual(1.0125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondToteraBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.toteraBytesPerSecond(0.3)
+	func testConvertKnownTeraBitsPerSecondToTeraBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toTeraBytesPerSecond(0.3)
 		XCTAssertEqual(0.0375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondToteraBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.toteraBytesPerSecond(14.0)
+	func testConvertKnownTeraBitsPerSecondToTeraBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toTeraBytesPerSecond(14.0)
 		XCTAssertEqual(1.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondToteraBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.toteraBytesPerSecond(0.8)
+	func testConvertKnownTeraBitsPerSecondToTeraBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toTeraBytesPerSecond(0.8)
 		XCTAssertEqual(0.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokibibitsPerSecond(0.0009)
+	func testConvertKnownTeraBitsPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKibibitsPerSecond(0.0009)
 		XCTAssertEqual(878906.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokibibitsPerSecond(6.1e-6)
+	func testConvertKnownTeraBitsPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKibibitsPerSecond(6.1e-6)
 		XCTAssertEqual(5957.031, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tokibibitsPerSecond(12e-9)
+	func testConvertKnownTeraBitsPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toKibibitsPerSecond(12e-9)
 		XCTAssertEqual(11.71875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomebibitsPerSecond(0.9)
+	func testConvertKnownTeraBitsPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMebibitsPerSecond(0.9)
 		XCTAssertEqual(858306.59999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomebibitsPerSecond(4.6e-3)
+	func testConvertKnownTeraBitsPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMebibitsPerSecond(4.6e-3)
 		XCTAssertEqual(4386.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBitsPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBitsPerSecond.tomebibitsPerSecond(0.00123)
+	func testConvertKnownTeraBitsPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBitsPerSecond.toMebibitsPerSecond(0.00123)
 		XCTAssertEqual(1173.0194092, result, accuracy: 0.01)
 	}
 
 }
 
 final class TeraBytesPerSecondTests: XCTestCase {
-	func testConvertKnownTeraBytesPerSecondTobitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tobitsPerSecond(0.00008)
+	func testConvertKnownTeraBytesPerSecondToBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toBitsPerSecond(0.00008)
 		XCTAssertEqual(640000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTobitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tobitsPerSecond(1.2e-12)
+	func testConvertKnownTeraBytesPerSecondToBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toBitsPerSecond(1.2e-12)
 		XCTAssertEqual(9.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTobitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tobitsPerSecond(9.0)
+	func testConvertKnownTeraBytesPerSecondToBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toBitsPerSecond(9.0)
 		XCTAssertEqual(7.2e+13, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokiloBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokiloBitsPerSecond(0.009)
+	func testConvertKnownTeraBytesPerSecondToKiloBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKiloBitsPerSecond(0.009)
 		XCTAssertEqual(72000000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokiloBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokiloBitsPerSecond(1.4e-6)
+	func testConvertKnownTeraBytesPerSecondToKiloBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKiloBitsPerSecond(1.4e-6)
 		XCTAssertEqual(11200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokiloBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokiloBitsPerSecond(6.1e-5)
+	func testConvertKnownTeraBytesPerSecondToKiloBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKiloBitsPerSecond(6.1e-5)
 		XCTAssertEqual(488000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomegaBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomegaBitsPerSecond(0.005)
+	func testConvertKnownTeraBytesPerSecondToMegaBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMegaBitsPerSecond(0.005)
 		XCTAssertEqual(40000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomegaBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomegaBitsPerSecond(0.000123)
+	func testConvertKnownTeraBytesPerSecondToMegaBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMegaBitsPerSecond(0.000123)
 		XCTAssertEqual(984.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomegaBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomegaBitsPerSecond(0.00006)
+	func testConvertKnownTeraBytesPerSecondToMegaBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMegaBitsPerSecond(0.00006)
 		XCTAssertEqual(480.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTogigaBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.togigaBitsPerSecond(0.008)
+	func testConvertKnownTeraBytesPerSecondToGigaBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toGigaBitsPerSecond(0.008)
 		XCTAssertEqual(64.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTogigaBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.togigaBitsPerSecond(3e-7)
+	func testConvertKnownTeraBytesPerSecondToGigaBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toGigaBitsPerSecond(3e-7)
 		XCTAssertEqual(0.0024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTogigaBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.togigaBitsPerSecond(0.00023)
+	func testConvertKnownTeraBytesPerSecondToGigaBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toGigaBitsPerSecond(0.00023)
 		XCTAssertEqual(1.84, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondToteraBitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.toteraBitsPerSecond(5.0)
+	func testConvertKnownTeraBytesPerSecondToTeraBitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toTeraBitsPerSecond(5.0)
 		XCTAssertEqual(40.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondToteraBitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.toteraBitsPerSecond(1.23)
+	func testConvertKnownTeraBytesPerSecondToTeraBitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toTeraBitsPerSecond(1.23)
 		XCTAssertEqual(9.84, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondToteraBitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.toteraBitsPerSecond(800.0)
+	func testConvertKnownTeraBytesPerSecondToTeraBitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toTeraBitsPerSecond(800.0)
 		XCTAssertEqual(6400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokiloBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokiloBytesPerSecond(0.0009)
+	func testConvertKnownTeraBytesPerSecondToKiloBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKiloBytesPerSecond(0.0009)
 		XCTAssertEqual(900000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokiloBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokiloBytesPerSecond(3.14e-7)
+	func testConvertKnownTeraBytesPerSecondToKiloBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKiloBytesPerSecond(3.14e-7)
 		XCTAssertEqual(314.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokiloBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokiloBytesPerSecond(0.00063)
+	func testConvertKnownTeraBytesPerSecondToKiloBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKiloBytesPerSecond(0.00063)
 		XCTAssertEqual(630000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomegaBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomegaBytesPerSecond(0.009)
+	func testConvertKnownTeraBytesPerSecondToMegaBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMegaBytesPerSecond(0.009)
 		XCTAssertEqual(9000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomegaBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomegaBytesPerSecond(0.234)
+	func testConvertKnownTeraBytesPerSecondToMegaBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMegaBytesPerSecond(0.234)
 		XCTAssertEqual(234000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomegaBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomegaBytesPerSecond(2.0)
+	func testConvertKnownTeraBytesPerSecondToMegaBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMegaBytesPerSecond(2.0)
 		XCTAssertEqual(2e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTogigaBytesPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.togigaBytesPerSecond(2.7)
+	func testConvertKnownTeraBytesPerSecondToGigaBytesPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toGigaBytesPerSecond(2.7)
 		XCTAssertEqual(2700.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTogigaBytesPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.togigaBytesPerSecond(0.9)
+	func testConvertKnownTeraBytesPerSecondToGigaBytesPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toGigaBytesPerSecond(0.9)
 		XCTAssertEqual(900.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTogigaBytesPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.togigaBytesPerSecond(0.0123)
+	func testConvertKnownTeraBytesPerSecondToGigaBytesPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toGigaBytesPerSecond(0.0123)
 		XCTAssertEqual(12.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokibibitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokibibitsPerSecond(0.0009)
+	func testConvertKnownTeraBytesPerSecondToKibibitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKibibitsPerSecond(0.0009)
 		XCTAssertEqual(7031250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokibibitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokibibitsPerSecond(1.23e-5)
+	func testConvertKnownTeraBytesPerSecondToKibibitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKibibitsPerSecond(1.23e-5)
 		XCTAssertEqual(96093.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTokibibitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tokibibitsPerSecond(0.0001)
+	func testConvertKnownTeraBytesPerSecondToKibibitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toKibibitsPerSecond(0.0001)
 		XCTAssertEqual(781250.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomebibitsPerSecond_1() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomebibitsPerSecond(0.01)
+	func testConvertKnownTeraBytesPerSecondToMebibitsPerSecond_1() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMebibitsPerSecond(0.01)
 		XCTAssertEqual(76293.95, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomebibitsPerSecond_2() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomebibitsPerSecond(0.008)
+	func testConvertKnownTeraBytesPerSecondToMebibitsPerSecond_2() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMebibitsPerSecond(0.008)
 		XCTAssertEqual(61035.156, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeraBytesPerSecondTomebibitsPerSecond_3() throws {
-		let result = DataTransferRate.TeraBytesPerSecond.tomebibitsPerSecond(2.0)
+	func testConvertKnownTeraBytesPerSecondToMebibitsPerSecond_3() throws {
+		let result = DataTransferRate.TeraBytesPerSecond.toMebibitsPerSecond(2.0)
 		XCTAssertEqual(15258789.0625, result, accuracy: 0.01)
 	}
 

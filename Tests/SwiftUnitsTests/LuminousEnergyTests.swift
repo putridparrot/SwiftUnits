@@ -8,192 +8,192 @@ import XCTest
 @testable import SwiftUnits
 
 final class LumenHourTests: XCTestCase {
-	func testConvertKnownLumenHourTotalbot_1() throws {
-		let result = LuminousEnergy.LumenHour.totalbot(9.0)
+	func testConvertKnownLumenHourToTalbot_1() throws {
+		let result = LuminousEnergy.LumenHour.toTalbot(9.0)
 		XCTAssertEqual(32400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTotalbot_2() throws {
-		let result = LuminousEnergy.LumenHour.totalbot(1.2)
+	func testConvertKnownLumenHourToTalbot_2() throws {
+		let result = LuminousEnergy.LumenHour.toTalbot(1.2)
 		XCTAssertEqual(4320.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTotalbot_3() throws {
-		let result = LuminousEnergy.LumenHour.totalbot(4.0)
+	func testConvertKnownLumenHourToTalbot_3() throws {
+		let result = LuminousEnergy.LumenHour.toTalbot(4.0)
 		XCTAssertEqual(14400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTolumenMinute_1() throws {
-		let result = LuminousEnergy.LumenHour.tolumenMinute(1.2)
+	func testConvertKnownLumenHourToLumenMinute_1() throws {
+		let result = LuminousEnergy.LumenHour.toLumenMinute(1.2)
 		XCTAssertEqual(72.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTolumenMinute_2() throws {
-		let result = LuminousEnergy.LumenHour.tolumenMinute(0.8)
+	func testConvertKnownLumenHourToLumenMinute_2() throws {
+		let result = LuminousEnergy.LumenHour.toLumenMinute(0.8)
 		XCTAssertEqual(48.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTolumenMinute_3() throws {
-		let result = LuminousEnergy.LumenHour.tolumenMinute(109.00)
+	func testConvertKnownLumenHourToLumenMinute_3() throws {
+		let result = LuminousEnergy.LumenHour.toLumenMinute(109.00)
 		XCTAssertEqual(6540.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTolumenSecond_1() throws {
-		let result = LuminousEnergy.LumenHour.tolumenSecond(109.0)
+	func testConvertKnownLumenHourToLumenSecond_1() throws {
+		let result = LuminousEnergy.LumenHour.toLumenSecond(109.0)
 		XCTAssertEqual(392400.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTolumenSecond_2() throws {
-		let result = LuminousEnergy.LumenHour.tolumenSecond(6.1)
+	func testConvertKnownLumenHourToLumenSecond_2() throws {
+		let result = LuminousEnergy.LumenHour.toLumenSecond(6.1)
 		XCTAssertEqual(21960.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenHourTolumenSecond_3() throws {
-		let result = LuminousEnergy.LumenHour.tolumenSecond(0.7)
+	func testConvertKnownLumenHourToLumenSecond_3() throws {
+		let result = LuminousEnergy.LumenHour.toLumenSecond(0.7)
 		XCTAssertEqual(2520.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class LumenMinuteTests: XCTestCase {
-	func testConvertKnownLumenMinuteTotalbot_1() throws {
-		let result = LuminousEnergy.LumenMinute.totalbot(0.7)
+	func testConvertKnownLumenMinuteToTalbot_1() throws {
+		let result = LuminousEnergy.LumenMinute.toTalbot(0.7)
 		XCTAssertEqual(42.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTotalbot_2() throws {
-		let result = LuminousEnergy.LumenMinute.totalbot(678.0)
+	func testConvertKnownLumenMinuteToTalbot_2() throws {
+		let result = LuminousEnergy.LumenMinute.toTalbot(678.0)
 		XCTAssertEqual(40680.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTotalbot_3() throws {
-		let result = LuminousEnergy.LumenMinute.totalbot(89.0)
+	func testConvertKnownLumenMinuteToTalbot_3() throws {
+		let result = LuminousEnergy.LumenMinute.toTalbot(89.0)
 		XCTAssertEqual(5340.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTolumenHour_1() throws {
-		let result = LuminousEnergy.LumenMinute.tolumenHour(89.0)
+	func testConvertKnownLumenMinuteToLumenHour_1() throws {
+		let result = LuminousEnergy.LumenMinute.toLumenHour(89.0)
 		XCTAssertEqual(1.4833, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTolumenHour_2() throws {
-		let result = LuminousEnergy.LumenMinute.tolumenHour(9.0)
+	func testConvertKnownLumenMinuteToLumenHour_2() throws {
+		let result = LuminousEnergy.LumenMinute.toLumenHour(9.0)
 		XCTAssertEqual(0.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTolumenHour_3() throws {
-		let result = LuminousEnergy.LumenMinute.tolumenHour(0.123)
+	func testConvertKnownLumenMinuteToLumenHour_3() throws {
+		let result = LuminousEnergy.LumenMinute.toLumenHour(0.123)
 		XCTAssertEqual(0.00205, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTolumenSecond_1() throws {
-		let result = LuminousEnergy.LumenMinute.tolumenSecond(0.123)
+	func testConvertKnownLumenMinuteToLumenSecond_1() throws {
+		let result = LuminousEnergy.LumenMinute.toLumenSecond(0.123)
 		XCTAssertEqual(7.38, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTolumenSecond_2() throws {
-		let result = LuminousEnergy.LumenMinute.tolumenSecond(8000.0)
+	func testConvertKnownLumenMinuteToLumenSecond_2() throws {
+		let result = LuminousEnergy.LumenMinute.toLumenSecond(8000.0)
 		XCTAssertEqual(480000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenMinuteTolumenSecond_3() throws {
-		let result = LuminousEnergy.LumenMinute.tolumenSecond(34.1)
+	func testConvertKnownLumenMinuteToLumenSecond_3() throws {
+		let result = LuminousEnergy.LumenMinute.toLumenSecond(34.1)
 		XCTAssertEqual(2046.0, result, accuracy: 0.01)
 	}
 
 }
 
 final class LumenSecondTests: XCTestCase {
-	func testConvertKnownLumenSecondTotalbot_1() throws {
-		let result = LuminousEnergy.LumenSecond.totalbot(190.0)
+	func testConvertKnownLumenSecondToTalbot_1() throws {
+		let result = LuminousEnergy.LumenSecond.toTalbot(190.0)
 		XCTAssertEqual(190.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTotalbot_2() throws {
-		let result = LuminousEnergy.LumenSecond.totalbot(0.6)
+	func testConvertKnownLumenSecondToTalbot_2() throws {
+		let result = LuminousEnergy.LumenSecond.toTalbot(0.6)
 		XCTAssertEqual(0.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTotalbot_3() throws {
-		let result = LuminousEnergy.LumenSecond.totalbot(5000.0)
+	func testConvertKnownLumenSecondToTalbot_3() throws {
+		let result = LuminousEnergy.LumenSecond.toTalbot(5000.0)
 		XCTAssertEqual(5000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTolumenHour_1() throws {
-		let result = LuminousEnergy.LumenSecond.tolumenHour(190.0)
+	func testConvertKnownLumenSecondToLumenHour_1() throws {
+		let result = LuminousEnergy.LumenSecond.toLumenHour(190.0)
 		XCTAssertEqual(0.052778, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTolumenHour_2() throws {
-		let result = LuminousEnergy.LumenSecond.tolumenHour(200600.0)
+	func testConvertKnownLumenSecondToLumenHour_2() throws {
+		let result = LuminousEnergy.LumenSecond.toLumenHour(200600.0)
 		XCTAssertEqual(55.7222, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTolumenHour_3() throws {
-		let result = LuminousEnergy.LumenSecond.tolumenHour(1234.0)
+	func testConvertKnownLumenSecondToLumenHour_3() throws {
+		let result = LuminousEnergy.LumenSecond.toLumenHour(1234.0)
 		XCTAssertEqual(0.342778, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTolumenMinute_1() throws {
-		let result = LuminousEnergy.LumenSecond.tolumenMinute(10900.0)
+	func testConvertKnownLumenSecondToLumenMinute_1() throws {
+		let result = LuminousEnergy.LumenSecond.toLumenMinute(10900.0)
 		XCTAssertEqual(181.6667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTolumenMinute_2() throws {
-		let result = LuminousEnergy.LumenSecond.tolumenMinute(50.3)
+	func testConvertKnownLumenSecondToLumenMinute_2() throws {
+		let result = LuminousEnergy.LumenSecond.toLumenMinute(50.3)
 		XCTAssertEqual(0.83833, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLumenSecondTolumenMinute_3() throws {
-		let result = LuminousEnergy.LumenSecond.tolumenMinute(276.0)
+	func testConvertKnownLumenSecondToLumenMinute_3() throws {
+		let result = LuminousEnergy.LumenSecond.toLumenMinute(276.0)
 		XCTAssertEqual(4.6, result, accuracy: 0.01)
 	}
 
 }
 
 final class TalbotTests: XCTestCase {
-	func testConvertKnownTalbotTolumenSecond_1() throws {
-		let result = LuminousEnergy.Talbot.tolumenSecond(100.0)
+	func testConvertKnownTalbotToLumenSecond_1() throws {
+		let result = LuminousEnergy.Talbot.toLumenSecond(100.0)
 		XCTAssertEqual(100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenSecond_2() throws {
-		let result = LuminousEnergy.Talbot.tolumenSecond(0.9)
+	func testConvertKnownTalbotToLumenSecond_2() throws {
+		let result = LuminousEnergy.Talbot.toLumenSecond(0.9)
 		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenSecond_3() throws {
-		let result = LuminousEnergy.Talbot.tolumenSecond(23.1)
+	func testConvertKnownTalbotToLumenSecond_3() throws {
+		let result = LuminousEnergy.Talbot.toLumenSecond(23.1)
 		XCTAssertEqual(23.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenHour_1() throws {
-		let result = LuminousEnergy.Talbot.tolumenHour(800.0)
+	func testConvertKnownTalbotToLumenHour_1() throws {
+		let result = LuminousEnergy.Talbot.toLumenHour(800.0)
 		XCTAssertEqual(0.222, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenHour_2() throws {
-		let result = LuminousEnergy.Talbot.tolumenHour(6789.0)
+	func testConvertKnownTalbotToLumenHour_2() throws {
+		let result = LuminousEnergy.Talbot.toLumenHour(6789.0)
 		XCTAssertEqual(1.885833, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenHour_3() throws {
-		let result = LuminousEnergy.Talbot.tolumenHour(10900.0)
+	func testConvertKnownTalbotToLumenHour_3() throws {
+		let result = LuminousEnergy.Talbot.toLumenHour(10900.0)
 		XCTAssertEqual(3.027778, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenMinute_1() throws {
-		let result = LuminousEnergy.Talbot.tolumenMinute(900.0)
+	func testConvertKnownTalbotToLumenMinute_1() throws {
+		let result = LuminousEnergy.Talbot.toLumenMinute(900.0)
 		XCTAssertEqual(15.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenMinute_2() throws {
-		let result = LuminousEnergy.Talbot.tolumenMinute(78.9)
+	func testConvertKnownTalbotToLumenMinute_2() throws {
+		let result = LuminousEnergy.Talbot.toLumenMinute(78.9)
 		XCTAssertEqual(1.315, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTalbotTolumenMinute_3() throws {
-		let result = LuminousEnergy.Talbot.tolumenMinute(1500.0)
+	func testConvertKnownTalbotToLumenMinute_3() throws {
+		let result = LuminousEnergy.Talbot.toLumenMinute(1500.0)
 		XCTAssertEqual(25.0, result, accuracy: 0.01)
 	}
 

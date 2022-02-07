@@ -8,3648 +8,3648 @@ import XCTest
 @testable import SwiftUnits
 
 final class FluidOuncesTests: XCTestCase {
-	func testConvertKnownFluidOuncesTomillilitres_1() throws {
-		let result = Volume.FluidOunces.tomillilitres(12.0)
+	func testConvertKnownFluidOuncesToMillilitres_1() throws {
+		let result = Volume.FluidOunces.toMillilitres(12.0)
 		XCTAssertEqual(340.957, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTomillilitres_2() throws {
-		let result = Volume.FluidOunces.tomillilitres(6.01)
+	func testConvertKnownFluidOuncesToMillilitres_2() throws {
+		let result = Volume.FluidOunces.toMillilitres(6.01)
 		XCTAssertEqual(170.7625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTomillilitres_3() throws {
-		let result = Volume.FluidOunces.tomillilitres(0.78)
+	func testConvertKnownFluidOuncesToMillilitres_3() throws {
+		let result = Volume.FluidOunces.toMillilitres(0.78)
 		XCTAssertEqual(22.16219, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTolitres_1() throws {
-		let result = Volume.FluidOunces.tolitres(800.0)
+	func testConvertKnownFluidOuncesToLitres_1() throws {
+		let result = Volume.FluidOunces.toLitres(800.0)
 		XCTAssertEqual(22.7305, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTolitres_2() throws {
-		let result = Volume.FluidOunces.tolitres(4.5)
+	func testConvertKnownFluidOuncesToLitres_2() throws {
+		let result = Volume.FluidOunces.toLitres(4.5)
 		XCTAssertEqual(0.127859, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTolitres_3() throws {
-		let result = Volume.FluidOunces.tolitres(109.0)
+	func testConvertKnownFluidOuncesToLitres_3() throws {
+		let result = Volume.FluidOunces.toLitres(109.0)
 		XCTAssertEqual(3.09702, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTokilolitres_1() throws {
-		let result = Volume.FluidOunces.tokilolitres(56909.0)
+	func testConvertKnownFluidOuncesToKilolitres_1() throws {
+		let result = Volume.FluidOunces.toKilolitres(56909.0)
 		XCTAssertEqual(1.616959, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTokilolitres_2() throws {
-		let result = Volume.FluidOunces.tokilolitres(9009.0)
+	func testConvertKnownFluidOuncesToKilolitres_2() throws {
+		let result = Volume.FluidOunces.toKilolitres(9009.0)
 		XCTAssertEqual(0.2559733, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTokilolitres_3() throws {
-		let result = Volume.FluidOunces.tokilolitres(123456.0)
+	func testConvertKnownFluidOuncesToKilolitres_3() throws {
+		let result = Volume.FluidOunces.toKilolitres(123456.0)
 		XCTAssertEqual(3.50776304, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesToteaspoons_1() throws {
-		let result = Volume.FluidOunces.toteaspoons(123.0)
+	func testConvertKnownFluidOuncesToTeaspoons_1() throws {
+		let result = Volume.FluidOunces.toTeaspoons(123.0)
 		XCTAssertEqual(590.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesToteaspoons_2() throws {
-		let result = Volume.FluidOunces.toteaspoons(9.12)
+	func testConvertKnownFluidOuncesToTeaspoons_2() throws {
+		let result = Volume.FluidOunces.toTeaspoons(9.12)
 		XCTAssertEqual(43.77598, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesToteaspoons_3() throws {
-		let result = Volume.FluidOunces.toteaspoons(0.2)
+	func testConvertKnownFluidOuncesToTeaspoons_3() throws {
+		let result = Volume.FluidOunces.toTeaspoons(0.2)
 		XCTAssertEqual(0.96, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTotablespoons_1() throws {
-		let result = Volume.FluidOunces.totablespoons(7.0)
+	func testConvertKnownFluidOuncesToTablespoons_1() throws {
+		let result = Volume.FluidOunces.toTablespoons(7.0)
 		XCTAssertEqual(11.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTotablespoons_2() throws {
-		let result = Volume.FluidOunces.totablespoons(165.4)
+	func testConvertKnownFluidOuncesToTablespoons_2() throws {
+		let result = Volume.FluidOunces.toTablespoons(165.4)
 		XCTAssertEqual(264.63989, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTotablespoons_3() throws {
-		let result = Volume.FluidOunces.totablespoons(80.1)
+	func testConvertKnownFluidOuncesToTablespoons_3() throws {
+		let result = Volume.FluidOunces.toTablespoons(80.1)
 		XCTAssertEqual(128.1599, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesToquarts_1() throws {
-		let result = Volume.FluidOunces.toquarts(89.0)
+	func testConvertKnownFluidOuncesToQuarts_1() throws {
+		let result = Volume.FluidOunces.toQuarts(89.0)
 		XCTAssertEqual(2.225, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesToquarts_2() throws {
-		let result = Volume.FluidOunces.toquarts(5.9)
+	func testConvertKnownFluidOuncesToQuarts_2() throws {
+		let result = Volume.FluidOunces.toQuarts(5.9)
 		XCTAssertEqual(0.1475, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesToquarts_3() throws {
-		let result = Volume.FluidOunces.toquarts(1300.0)
+	func testConvertKnownFluidOuncesToQuarts_3() throws {
+		let result = Volume.FluidOunces.toQuarts(1300.0)
 		XCTAssertEqual(32.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTopints_1() throws {
-		let result = Volume.FluidOunces.topints(1300.0)
+	func testConvertKnownFluidOuncesToPints_1() throws {
+		let result = Volume.FluidOunces.toPints(1300.0)
 		XCTAssertEqual(65.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTopints_2() throws {
-		let result = Volume.FluidOunces.topints(5.7)
+	func testConvertKnownFluidOuncesToPints_2() throws {
+		let result = Volume.FluidOunces.toPints(5.7)
 		XCTAssertEqual(0.285, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTopints_3() throws {
-		let result = Volume.FluidOunces.topints(1900.0)
+	func testConvertKnownFluidOuncesToPints_3() throws {
+		let result = Volume.FluidOunces.toPints(1900.0)
 		XCTAssertEqual(95.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTogallons_1() throws {
-		let result = Volume.FluidOunces.togallons(1900.0)
+	func testConvertKnownFluidOuncesToGallons_1() throws {
+		let result = Volume.FluidOunces.toGallons(1900.0)
 		XCTAssertEqual(11.875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTogallons_2() throws {
-		let result = Volume.FluidOunces.togallons(5.6)
+	func testConvertKnownFluidOuncesToGallons_2() throws {
+		let result = Volume.FluidOunces.toGallons(5.6)
 		XCTAssertEqual(0.035, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTogallons_3() throws {
-		let result = Volume.FluidOunces.togallons(12345.0)
+	func testConvertKnownFluidOuncesToGallons_3() throws {
+		let result = Volume.FluidOunces.toGallons(12345.0)
 		XCTAssertEqual(77.15625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSTeaspoons_1() throws {
-		let result = Volume.FluidOunces.touSTeaspoons(12345.0)
+	func testConvertKnownFluidOuncesToUSTeaspoons_1() throws {
+		let result = Volume.FluidOunces.toUSTeaspoons(12345.0)
 		XCTAssertEqual(71163.512, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSTeaspoons_2() throws {
-		let result = Volume.FluidOunces.touSTeaspoons(8.9)
+	func testConvertKnownFluidOuncesToUSTeaspoons_2() throws {
+		let result = Volume.FluidOunces.toUSTeaspoons(8.9)
 		XCTAssertEqual(51.3046, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSTeaspoons_3() throws {
-		let result = Volume.FluidOunces.touSTeaspoons(0.005)
+	func testConvertKnownFluidOuncesToUSTeaspoons_3() throws {
+		let result = Volume.FluidOunces.toUSTeaspoons(0.005)
 		XCTAssertEqual(0.028822808, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSTablespoons_1() throws {
-		let result = Volume.FluidOunces.touSTablespoons(190.0)
+	func testConvertKnownFluidOuncesToUSTablespoons_1() throws {
+		let result = Volume.FluidOunces.toUSTablespoons(190.0)
 		XCTAssertEqual(365.089, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSTablespoons_2() throws {
-		let result = Volume.FluidOunces.touSTablespoons(6.8)
+	func testConvertKnownFluidOuncesToUSTablespoons_2() throws {
+		let result = Volume.FluidOunces.toUSTablespoons(6.8)
 		XCTAssertEqual(13.0663, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSTablespoons_3() throws {
-		let result = Volume.FluidOunces.touSTablespoons(2340.0)
+	func testConvertKnownFluidOuncesToUSTablespoons_3() throws {
+		let result = Volume.FluidOunces.toUSTablespoons(2340.0)
 		XCTAssertEqual(4496.357, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSQuarts_1() throws {
-		let result = Volume.FluidOunces.touSQuarts(45.0)
+	func testConvertKnownFluidOuncesToUSQuarts_1() throws {
+		let result = Volume.FluidOunces.toUSQuarts(45.0)
 		XCTAssertEqual(1.35107, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSQuarts_2() throws {
-		let result = Volume.FluidOunces.touSQuarts(1090.0)
+	func testConvertKnownFluidOuncesToUSQuarts_2() throws {
+		let result = Volume.FluidOunces.toUSQuarts(1090.0)
 		XCTAssertEqual(32.72589, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSQuarts_3() throws {
-		let result = Volume.FluidOunces.touSQuarts(777.0)
+	func testConvertKnownFluidOuncesToUSQuarts_3() throws {
+		let result = Volume.FluidOunces.toUSQuarts(777.0)
 		XCTAssertEqual(23.3285, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSPints_1() throws {
-		let result = Volume.FluidOunces.touSPints(678.0)
+	func testConvertKnownFluidOuncesToUSPints_1() throws {
+		let result = Volume.FluidOunces.toUSPints(678.0)
 		XCTAssertEqual(40.7122, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSPints_2() throws {
-		let result = Volume.FluidOunces.touSPints(4.5)
+	func testConvertKnownFluidOuncesToUSPints_2() throws {
+		let result = Volume.FluidOunces.toUSPints(4.5)
 		XCTAssertEqual(0.270214, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSPints_3() throws {
-		let result = Volume.FluidOunces.touSPints(1900.0)
+	func testConvertKnownFluidOuncesToUSPints_3() throws {
+		let result = Volume.FluidOunces.toUSPints(1900.0)
 		XCTAssertEqual(114.0902, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSGallons_1() throws {
-		let result = Volume.FluidOunces.touSGallons(1890.0)
+	func testConvertKnownFluidOuncesToUSGallons_1() throws {
+		let result = Volume.FluidOunces.toUSGallons(1890.0)
 		XCTAssertEqual(14.18622, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSGallons_2() throws {
-		let result = Volume.FluidOunces.touSGallons(5.8)
+	func testConvertKnownFluidOuncesToUSGallons_2() throws {
+		let result = Volume.FluidOunces.toUSGallons(5.8)
 		XCTAssertEqual(0.0435344, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSGallons_3() throws {
-		let result = Volume.FluidOunces.touSGallons(10090.0)
+	func testConvertKnownFluidOuncesToUSGallons_3() throws {
+		let result = Volume.FluidOunces.toUSGallons(10090.0)
 		XCTAssertEqual(75.734905, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSFluidOunces_1() throws {
-		let result = Volume.FluidOunces.touSFluidOunces(190.0)
+	func testConvertKnownFluidOuncesToUSFluidOunces_1() throws {
+		let result = Volume.FluidOunces.toUSFluidOunces(190.0)
 		XCTAssertEqual(182.544, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSFluidOunces_2() throws {
-		let result = Volume.FluidOunces.touSFluidOunces(54.8)
+	func testConvertKnownFluidOuncesToUSFluidOunces_2() throws {
+		let result = Volume.FluidOunces.toUSFluidOunces(54.8)
 		XCTAssertEqual(52.64964, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSFluidOunces_3() throws {
-		let result = Volume.FluidOunces.touSFluidOunces(1.7)
+	func testConvertKnownFluidOuncesToUSFluidOunces_3() throws {
+		let result = Volume.FluidOunces.toUSFluidOunces(1.7)
 		XCTAssertEqual(1.63329, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSCups_1() throws {
-		let result = Volume.FluidOunces.touSCups(6.0)
+	func testConvertKnownFluidOuncesToUSCups_1() throws {
+		let result = Volume.FluidOunces.toUSCups(6.0)
 		XCTAssertEqual(0.72057, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSCups_2() throws {
-		let result = Volume.FluidOunces.touSCups(1800.0)
+	func testConvertKnownFluidOuncesToUSCups_2() throws {
+		let result = Volume.FluidOunces.toUSCups(1800.0)
 		XCTAssertEqual(216.171, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownFluidOuncesTouSCups_3() throws {
-		let result = Volume.FluidOunces.touSCups(6.9)
+	func testConvertKnownFluidOuncesToUSCups_3() throws {
+		let result = Volume.FluidOunces.toUSCups(6.9)
 		XCTAssertEqual(0.828655, result, accuracy: 0.01)
 	}
 
 }
 
 final class GallonsTests: XCTestCase {
-	func testConvertKnownGallonsTomillilitres_1() throws {
-		let result = Volume.Gallons.tomillilitres(1.3)
+	func testConvertKnownGallonsToMillilitres_1() throws {
+		let result = Volume.Gallons.toMillilitres(1.3)
 		XCTAssertEqual(5909.92, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTomillilitres_2() throws {
-		let result = Volume.Gallons.tomillilitres(0.45)
+	func testConvertKnownGallonsToMillilitres_2() throws {
+		let result = Volume.Gallons.toMillilitres(0.45)
 		XCTAssertEqual(2045.741, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTomillilitres_3() throws {
-		let result = Volume.Gallons.tomillilitres(1.8)
+	func testConvertKnownGallonsToMillilitres_3() throws {
+		let result = Volume.Gallons.toMillilitres(1.8)
 		XCTAssertEqual(8182.96, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTolitres_1() throws {
-		let result = Volume.Gallons.tolitres(123.0)
+	func testConvertKnownGallonsToLitres_1() throws {
+		let result = Volume.Gallons.toLitres(123.0)
 		XCTAssertEqual(559.169, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTolitres_2() throws {
-		let result = Volume.Gallons.tolitres(9.3)
+	func testConvertKnownGallonsToLitres_2() throws {
+		let result = Volume.Gallons.toLitres(9.3)
 		XCTAssertEqual(42.2786, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTolitres_3() throws {
-		let result = Volume.Gallons.tolitres(0.67)
+	func testConvertKnownGallonsToLitres_3() throws {
+		let result = Volume.Gallons.toLitres(0.67)
 		XCTAssertEqual(3.04588, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTokilolitres_1() throws {
-		let result = Volume.Gallons.tokilolitres(1009.0)
+	func testConvertKnownGallonsToKilolitres_1() throws {
+		let result = Volume.Gallons.toKilolitres(1009.0)
 		XCTAssertEqual(4.587005, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTokilolitres_2() throws {
-		let result = Volume.Gallons.tokilolitres(9.6)
+	func testConvertKnownGallonsToKilolitres_2() throws {
+		let result = Volume.Gallons.toKilolitres(9.6)
 		XCTAssertEqual(0.0436425, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTokilolitres_3() throws {
-		let result = Volume.Gallons.tokilolitres(123456.0)
+	func testConvertKnownGallonsToKilolitres_3() throws {
+		let result = Volume.Gallons.toKilolitres(123456.0)
 		XCTAssertEqual(561.242087, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsToteaspoons_1() throws {
-		let result = Volume.Gallons.toteaspoons(6.0)
+	func testConvertKnownGallonsToTeaspoons_1() throws {
+		let result = Volume.Gallons.toTeaspoons(6.0)
 		XCTAssertEqual(4608.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsToteaspoons_2() throws {
-		let result = Volume.Gallons.toteaspoons(78.12)
+	func testConvertKnownGallonsToTeaspoons_2() throws {
+		let result = Volume.Gallons.toTeaspoons(78.12)
 		XCTAssertEqual(59996.16, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsToteaspoons_3() throws {
-		let result = Volume.Gallons.toteaspoons(0.34)
+	func testConvertKnownGallonsToTeaspoons_3() throws {
+		let result = Volume.Gallons.toTeaspoons(0.34)
 		XCTAssertEqual(261.1199, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTotablespoons_1() throws {
-		let result = Volume.Gallons.totablespoons(0.9)
+	func testConvertKnownGallonsToTablespoons_1() throws {
+		let result = Volume.Gallons.toTablespoons(0.9)
 		XCTAssertEqual(230.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTotablespoons_2() throws {
-		let result = Volume.Gallons.totablespoons(1.6)
+	func testConvertKnownGallonsToTablespoons_2() throws {
+		let result = Volume.Gallons.toTablespoons(1.6)
 		XCTAssertEqual(409.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTotablespoons_3() throws {
-		let result = Volume.Gallons.totablespoons(0.33)
+	func testConvertKnownGallonsToTablespoons_3() throws {
+		let result = Volume.Gallons.toTablespoons(0.33)
 		XCTAssertEqual(84.47997, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsToquarts_1() throws {
-		let result = Volume.Gallons.toquarts(109.0)
+	func testConvertKnownGallonsToQuarts_1() throws {
+		let result = Volume.Gallons.toQuarts(109.0)
 		XCTAssertEqual(436.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsToquarts_2() throws {
-		let result = Volume.Gallons.toquarts(5.8)
+	func testConvertKnownGallonsToQuarts_2() throws {
+		let result = Volume.Gallons.toQuarts(5.8)
 		XCTAssertEqual(23.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsToquarts_3() throws {
-		let result = Volume.Gallons.toquarts(0.23)
+	func testConvertKnownGallonsToQuarts_3() throws {
+		let result = Volume.Gallons.toQuarts(0.23)
 		XCTAssertEqual(0.92, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTopints_1() throws {
-		let result = Volume.Gallons.topints(0.23)
+	func testConvertKnownGallonsToPints_1() throws {
+		let result = Volume.Gallons.toPints(0.23)
 		XCTAssertEqual(1.84, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTopints_2() throws {
-		let result = Volume.Gallons.topints(190.0)
+	func testConvertKnownGallonsToPints_2() throws {
+		let result = Volume.Gallons.toPints(190.0)
 		XCTAssertEqual(1520.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTopints_3() throws {
-		let result = Volume.Gallons.topints(24.7)
+	func testConvertKnownGallonsToPints_3() throws {
+		let result = Volume.Gallons.toPints(24.7)
 		XCTAssertEqual(197.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTofluidOunces_1() throws {
-		let result = Volume.Gallons.tofluidOunces(24.7)
+	func testConvertKnownGallonsToFluidOunces_1() throws {
+		let result = Volume.Gallons.toFluidOunces(24.7)
 		XCTAssertEqual(3952.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTofluidOunces_2() throws {
-		let result = Volume.Gallons.tofluidOunces(13.09)
+	func testConvertKnownGallonsToFluidOunces_2() throws {
+		let result = Volume.Gallons.toFluidOunces(13.09)
 		XCTAssertEqual(2094.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTofluidOunces_3() throws {
-		let result = Volume.Gallons.tofluidOunces(5.8)
+	func testConvertKnownGallonsToFluidOunces_3() throws {
+		let result = Volume.Gallons.toFluidOunces(5.8)
 		XCTAssertEqual(928.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSTeaspoons_1() throws {
-		let result = Volume.Gallons.touSTeaspoons(5.8)
+	func testConvertKnownGallonsToUSTeaspoons_1() throws {
+		let result = Volume.Gallons.toUSTeaspoons(5.8)
 		XCTAssertEqual(5349.51, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSTeaspoons_2() throws {
-		let result = Volume.Gallons.touSTeaspoons(0.44)
+	func testConvertKnownGallonsToUSTeaspoons_2() throws {
+		let result = Volume.Gallons.toUSTeaspoons(0.44)
 		XCTAssertEqual(405.8251, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSTeaspoons_3() throws {
-		let result = Volume.Gallons.touSTeaspoons(1.9)
+	func testConvertKnownGallonsToUSTeaspoons_3() throws {
+		let result = Volume.Gallons.toUSTeaspoons(1.9)
 		XCTAssertEqual(1752.43, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSTablespoons_1() throws {
-		let result = Volume.Gallons.touSTablespoons(1.8)
+	func testConvertKnownGallonsToUSTablespoons_1() throws {
+		let result = Volume.Gallons.toUSTablespoons(1.8)
 		XCTAssertEqual(553.398, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSTablespoons_2() throws {
-		let result = Volume.Gallons.touSTablespoons(0.33)
+	func testConvertKnownGallonsToUSTablespoons_2() throws {
+		let result = Volume.Gallons.toUSTablespoons(0.33)
 		XCTAssertEqual(101.4562, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSTablespoons_3() throws {
-		let result = Volume.Gallons.touSTablespoons(100.0)
+	func testConvertKnownGallonsToUSTablespoons_3() throws {
+		let result = Volume.Gallons.toUSTablespoons(100.0)
 		XCTAssertEqual(30744.33080, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSQuarts_1() throws {
-		let result = Volume.Gallons.touSQuarts(78.0)
+	func testConvertKnownGallonsToUSQuarts_1() throws {
+		let result = Volume.Gallons.toUSQuarts(78.0)
 		XCTAssertEqual(374.696, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSQuarts_2() throws {
-		let result = Volume.Gallons.touSQuarts(1.7)
+	func testConvertKnownGallonsToUSQuarts_2() throws {
+		let result = Volume.Gallons.toUSQuarts(1.7)
 		XCTAssertEqual(8.16646, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSQuarts_3() throws {
-		let result = Volume.Gallons.touSQuarts(16.9)
+	func testConvertKnownGallonsToUSQuarts_3() throws {
+		let result = Volume.Gallons.toUSQuarts(16.9)
 		XCTAssertEqual(81.18421, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSPints_1() throws {
-		let result = Volume.Gallons.touSPints(13.4)
+	func testConvertKnownGallonsToUSPints_1() throws {
+		let result = Volume.Gallons.toUSPints(13.4)
 		XCTAssertEqual(128.7418, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSPints_2() throws {
-		let result = Volume.Gallons.touSPints(8.12)
+	func testConvertKnownGallonsToUSPints_2() throws {
+		let result = Volume.Gallons.toUSPints(8.12)
 		XCTAssertEqual(78.01371, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSPints_3() throws {
-		let result = Volume.Gallons.touSPints(0.99)
+	func testConvertKnownGallonsToUSPints_3() throws {
+		let result = Volume.Gallons.toUSPints(0.99)
 		XCTAssertEqual(9.511523, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSGallons_1() throws {
-		let result = Volume.Gallons.touSGallons(1.5)
+	func testConvertKnownGallonsToUSGallons_1() throws {
+		let result = Volume.Gallons.toUSGallons(1.5)
 		XCTAssertEqual(1.80142, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSGallons_2() throws {
-		let result = Volume.Gallons.touSGallons(0.78)
+	func testConvertKnownGallonsToUSGallons_2() throws {
+		let result = Volume.Gallons.toUSGallons(0.78)
 		XCTAssertEqual(0.9367409, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSGallons_3() throws {
-		let result = Volume.Gallons.touSGallons(103.0)
+	func testConvertKnownGallonsToUSGallons_3() throws {
+		let result = Volume.Gallons.toUSGallons(103.0)
 		XCTAssertEqual(123.698, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSFluidOunces_1() throws {
-		let result = Volume.Gallons.touSFluidOunces(111.0)
+	func testConvertKnownGallonsToUSFluidOunces_1() throws {
+		let result = Volume.Gallons.toUSFluidOunces(111.0)
 		XCTAssertEqual(17063.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSFluidOunces_2() throws {
-		let result = Volume.Gallons.touSFluidOunces(89.9)
+	func testConvertKnownGallonsToUSFluidOunces_2() throws {
+		let result = Volume.Gallons.toUSFluidOunces(89.9)
 		XCTAssertEqual(13819.57, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSFluidOunces_3() throws {
-		let result = Volume.Gallons.touSFluidOunces(1.2)
+	func testConvertKnownGallonsToUSFluidOunces_3() throws {
+		let result = Volume.Gallons.toUSFluidOunces(1.2)
 		XCTAssertEqual(184.466, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSCups_1() throws {
-		let result = Volume.Gallons.touSCups(1.2)
+	func testConvertKnownGallonsToUSCups_1() throws {
+		let result = Volume.Gallons.toUSCups(1.2)
 		XCTAssertEqual(23.0582, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSCups_2() throws {
-		let result = Volume.Gallons.touSCups(0.55)
+	func testConvertKnownGallonsToUSCups_2() throws {
+		let result = Volume.Gallons.toUSCups(0.55)
 		XCTAssertEqual(10.56836, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownGallonsTouSCups_3() throws {
-		let result = Volume.Gallons.touSCups(890.0)
+	func testConvertKnownGallonsToUSCups_3() throws {
+		let result = Volume.Gallons.toUSCups(890.0)
 		XCTAssertEqual(17101.534007630, result, accuracy: 0.01)
 	}
 
 }
 
 final class KilolitresTests: XCTestCase {
-	func testConvertKnownKilolitresTomillilitres_1() throws {
-		let result = Volume.Kilolitres.tomillilitres(0.09)
+	func testConvertKnownKilolitresToMillilitres_1() throws {
+		let result = Volume.Kilolitres.toMillilitres(0.09)
 		XCTAssertEqual(90000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTomillilitres_2() throws {
-		let result = Volume.Kilolitres.tomillilitres(0.00123)
+	func testConvertKnownKilolitresToMillilitres_2() throws {
+		let result = Volume.Kilolitres.toMillilitres(0.00123)
 		XCTAssertEqual(1230.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTomillilitres_3() throws {
-		let result = Volume.Kilolitres.tomillilitres(1.2)
+	func testConvertKnownKilolitresToMillilitres_3() throws {
+		let result = Volume.Kilolitres.toMillilitres(1.2)
 		XCTAssertEqual(1.2e+6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTolitres_1() throws {
-		let result = Volume.Kilolitres.tolitres(1.2)
+	func testConvertKnownKilolitresToLitres_1() throws {
+		let result = Volume.Kilolitres.toLitres(1.2)
 		XCTAssertEqual(1200.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTolitres_2() throws {
-		let result = Volume.Kilolitres.tolitres(0.8)
+	func testConvertKnownKilolitresToLitres_2() throws {
+		let result = Volume.Kilolitres.toLitres(0.8)
 		XCTAssertEqual(800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTolitres_3() throws {
-		let result = Volume.Kilolitres.tolitres(456.0)
+	func testConvertKnownKilolitresToLitres_3() throws {
+		let result = Volume.Kilolitres.toLitres(456.0)
 		XCTAssertEqual(456000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresToteaspoons_1() throws {
-		let result = Volume.Kilolitres.toteaspoons(0.7)
+	func testConvertKnownKilolitresToTeaspoons_1() throws {
+		let result = Volume.Kilolitres.toTeaspoons(0.7)
 		XCTAssertEqual(118255.41900799, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresToteaspoons_2() throws {
-		let result = Volume.Kilolitres.toteaspoons(0.01)
+	func testConvertKnownKilolitresToTeaspoons_2() throws {
+		let result = Volume.Kilolitres.toTeaspoons(0.01)
 		XCTAssertEqual(1689.363, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresToteaspoons_3() throws {
-		let result = Volume.Kilolitres.toteaspoons(4.5)
+	func testConvertKnownKilolitresToTeaspoons_3() throws {
+		let result = Volume.Kilolitres.toTeaspoons(4.5)
 		XCTAssertEqual(760213.407908, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTotablespoons_1() throws {
-		let result = Volume.Kilolitres.totablespoons(0.3)
+	func testConvertKnownKilolitresToTablespoons_1() throws {
+		let result = Volume.Kilolitres.toTablespoons(0.3)
 		XCTAssertEqual(16893.631286856, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTotablespoons_2() throws {
-		let result = Volume.Kilolitres.totablespoons(2.9)
+	func testConvertKnownKilolitresToTablespoons_2() throws {
+		let result = Volume.Kilolitres.toTablespoons(2.9)
 		XCTAssertEqual(163305.10243961, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTotablespoons_3() throws {
-		let result = Volume.Kilolitres.totablespoons(0.067)
+	func testConvertKnownKilolitresToTablespoons_3() throws {
+		let result = Volume.Kilolitres.toTablespoons(0.067)
 		XCTAssertEqual(3772.911, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresToquarts_1() throws {
-		let result = Volume.Kilolitres.toquarts(0.09)
+	func testConvertKnownKilolitresToQuarts_1() throws {
+		let result = Volume.Kilolitres.toQuarts(0.09)
 		XCTAssertEqual(79.18893, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresToquarts_2() throws {
-		let result = Volume.Kilolitres.toquarts(2.3)
+	func testConvertKnownKilolitresToQuarts_2() throws {
+		let result = Volume.Kilolitres.toQuarts(2.3)
 		XCTAssertEqual(2023.72, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresToquarts_3() throws {
-		let result = Volume.Kilolitres.toquarts(0.67)
+	func testConvertKnownKilolitresToQuarts_3() throws {
+		let result = Volume.Kilolitres.toQuarts(0.67)
 		XCTAssertEqual(589.5176, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTopints_1() throws {
-		let result = Volume.Kilolitres.topints(0.4)
+	func testConvertKnownKilolitresToPints_1() throws {
+		let result = Volume.Kilolitres.toPints(0.4)
 		XCTAssertEqual(703.902, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTopints_2() throws {
-		let result = Volume.Kilolitres.topints(67.0)
+	func testConvertKnownKilolitresToPints_2() throws {
+		let result = Volume.Kilolitres.toPints(67.0)
 		XCTAssertEqual(117903.46835618, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTopints_3() throws {
-		let result = Volume.Kilolitres.topints(9.3)
+	func testConvertKnownKilolitresToPints_3() throws {
+		let result = Volume.Kilolitres.toPints(9.3)
 		XCTAssertEqual(16365.7, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTogallons_1() throws {
-		let result = Volume.Kilolitres.togallons(109.0)
+	func testConvertKnownKilolitresToGallons_1() throws {
+		let result = Volume.Kilolitres.toGallons(109.0)
 		XCTAssertEqual(23976.638149, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTogallons_2() throws {
-		let result = Volume.Kilolitres.togallons(7.2)
+	func testConvertKnownKilolitresToGallons_2() throws {
+		let result = Volume.Kilolitres.toGallons(7.2)
 		XCTAssertEqual(1583.78, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTogallons_3() throws {
-		let result = Volume.Kilolitres.togallons(0.4)
+	func testConvertKnownKilolitresToGallons_3() throws {
+		let result = Volume.Kilolitres.toGallons(0.4)
 		XCTAssertEqual(87.9877, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTofluidOunces_1() throws {
-		let result = Volume.Kilolitres.tofluidOunces(0.2)
+	func testConvertKnownKilolitresToFluidOunces_1() throws {
+		let result = Volume.Kilolitres.toFluidOunces(0.2)
 		XCTAssertEqual(7039.02, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTofluidOunces_2() throws {
-		let result = Volume.Kilolitres.tofluidOunces(4.8)
+	func testConvertKnownKilolitresToFluidOunces_2() throws {
+		let result = Volume.Kilolitres.toFluidOunces(4.8)
 		XCTAssertEqual(168936.31286856, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTofluidOunces_3() throws {
-		let result = Volume.Kilolitres.tofluidOunces(6.0)
+	func testConvertKnownKilolitresToFluidOunces_3() throws {
+		let result = Volume.Kilolitres.toFluidOunces(6.0)
 		XCTAssertEqual(211170.391085, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSTeaspoons_1() throws {
-		let result = Volume.Kilolitres.touSTeaspoons(4.0)
+	func testConvertKnownKilolitresToUSTeaspoons_1() throws {
+		let result = Volume.Kilolitres.toUSTeaspoons(4.0)
 		XCTAssertEqual(811536.5448442, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSTeaspoons_2() throws {
-		let result = Volume.Kilolitres.touSTeaspoons(0.2)
+	func testConvertKnownKilolitresToUSTeaspoons_2() throws {
+		let result = Volume.Kilolitres.toUSTeaspoons(0.2)
 		XCTAssertEqual(40576.82724221160, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSTeaspoons_3() throws {
-		let result = Volume.Kilolitres.touSTeaspoons(2.4)
+	func testConvertKnownKilolitresToUSTeaspoons_3() throws {
+		let result = Volume.Kilolitres.toUSTeaspoons(2.4)
 		XCTAssertEqual(486921.92690653, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSTablespoons_1() throws {
-		let result = Volume.Kilolitres.touSTablespoons(1.3)
+	func testConvertKnownKilolitresToUSTablespoons_1() throws {
+		let result = Volume.Kilolitres.toUSTablespoons(1.3)
 		XCTAssertEqual(87916.45902479, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSTablespoons_2() throws {
-		let result = Volume.Kilolitres.touSTablespoons(0.6)
+	func testConvertKnownKilolitresToUSTablespoons_2() throws {
+		let result = Volume.Kilolitres.toUSTablespoons(0.6)
 		XCTAssertEqual(40576.82724221, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSTablespoons_3() throws {
-		let result = Volume.Kilolitres.touSTablespoons(0.03)
+	func testConvertKnownKilolitresToUSTablespoons_3() throws {
+		let result = Volume.Kilolitres.toUSTablespoons(0.03)
 		XCTAssertEqual(2028.841, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSQuarts_1() throws {
-		let result = Volume.Kilolitres.touSQuarts(0.09)
+	func testConvertKnownKilolitresToUSQuarts_1() throws {
+		let result = Volume.Kilolitres.toUSQuarts(0.09)
 		XCTAssertEqual(95.10194, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSQuarts_2() throws {
-		let result = Volume.Kilolitres.touSQuarts(2.5)
+	func testConvertKnownKilolitresToUSQuarts_2() throws {
+		let result = Volume.Kilolitres.toUSQuarts(2.5)
 		XCTAssertEqual(2641.72, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSQuarts_3() throws {
-		let result = Volume.Kilolitres.touSQuarts(178.9)
+	func testConvertKnownKilolitresToUSQuarts_3() throws {
+		let result = Volume.Kilolitres.toUSQuarts(178.9)
 		XCTAssertEqual(189041.52, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSPints_1() throws {
-		let result = Volume.Kilolitres.touSPints(67.0)
+	func testConvertKnownKilolitresToUSPints_1() throws {
+		let result = Volume.Kilolitres.toUSPints(67.0)
 		XCTAssertEqual(141596.2200639, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSPints_2() throws {
-		let result = Volume.Kilolitres.touSPints(4.7)
+	func testConvertKnownKilolitresToUSPints_2() throws {
+		let result = Volume.Kilolitres.toUSPints(4.7)
 		XCTAssertEqual(9932.87, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSPints_3() throws {
-		let result = Volume.Kilolitres.touSPints(108.9)
+	func testConvertKnownKilolitresToUSPints_3() throws {
+		let result = Volume.Kilolitres.toUSPints(108.9)
 		XCTAssertEqual(230146.69, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSGallons_1() throws {
-		let result = Volume.Kilolitres.touSGallons(1.6)
+	func testConvertKnownKilolitresToUSGallons_1() throws {
+		let result = Volume.Kilolitres.toUSGallons(1.6)
 		XCTAssertEqual(422.675, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSGallons_2() throws {
-		let result = Volume.Kilolitres.touSGallons(57.0)
+	func testConvertKnownKilolitresToUSGallons_2() throws {
+		let result = Volume.Kilolitres.toUSGallons(57.0)
 		XCTAssertEqual(15057.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSGallons_3() throws {
-		let result = Volume.Kilolitres.touSGallons(0.88)
+	func testConvertKnownKilolitresToUSGallons_3() throws {
+		let result = Volume.Kilolitres.toUSGallons(0.88)
 		XCTAssertEqual(232.4714, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSFluidOunces_1() throws {
-		let result = Volume.Kilolitres.touSFluidOunces(0.07)
+	func testConvertKnownKilolitresToUSFluidOunces_1() throws {
+		let result = Volume.Kilolitres.toUSFluidOunces(0.07)
 		XCTAssertEqual(2366.982, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSFluidOunces_2() throws {
-		let result = Volume.Kilolitres.touSFluidOunces(4.2)
+	func testConvertKnownKilolitresToUSFluidOunces_2() throws {
+		let result = Volume.Kilolitres.toUSFluidOunces(4.2)
 		XCTAssertEqual(142018.89516765, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSFluidOunces_3() throws {
-		let result = Volume.Kilolitres.touSFluidOunces(12.0)
+	func testConvertKnownKilolitresToUSFluidOunces_3() throws {
+		let result = Volume.Kilolitres.toUSFluidOunces(12.0)
 		XCTAssertEqual(405768.27190759, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSCups_1() throws {
-		let result = Volume.Kilolitres.touSCups(12.0)
+	func testConvertKnownKilolitresToUSCups_1() throws {
+		let result = Volume.Kilolitres.toUSCups(12.0)
 		XCTAssertEqual(50721.03405276, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSCups_2() throws {
-		let result = Volume.Kilolitres.touSCups(0.8)
+	func testConvertKnownKilolitresToUSCups_2() throws {
+		let result = Volume.Kilolitres.toUSCups(0.8)
 		XCTAssertEqual(3381.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownKilolitresTouSCups_3() throws {
-		let result = Volume.Kilolitres.touSCups(6.2)
+	func testConvertKnownKilolitresToUSCups_3() throws {
+		let result = Volume.Kilolitres.toUSCups(6.2)
 		XCTAssertEqual(26205.86759392, result, accuracy: 0.01)
 	}
 
 }
 
 final class LitresTests: XCTestCase {
-	func testConvertKnownLitresTomillilitres_1() throws {
-		let result = Volume.Litres.tomillilitres(34.0)
+	func testConvertKnownLitresToMillilitres_1() throws {
+		let result = Volume.Litres.toMillilitres(34.0)
 		XCTAssertEqual(34000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTomillilitres_2() throws {
-		let result = Volume.Litres.tomillilitres(0.67)
+	func testConvertKnownLitresToMillilitres_2() throws {
+		let result = Volume.Litres.toMillilitres(0.67)
 		XCTAssertEqual(670.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTomillilitres_3() throws {
-		let result = Volume.Litres.tomillilitres(1.09)
+	func testConvertKnownLitresToMillilitres_3() throws {
+		let result = Volume.Litres.toMillilitres(1.09)
 		XCTAssertEqual(1090.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTokilolitres_1() throws {
-		let result = Volume.Litres.tokilolitres(200.0)
+	func testConvertKnownLitresToKilolitres_1() throws {
+		let result = Volume.Litres.toKilolitres(200.0)
 		XCTAssertEqual(0.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTokilolitres_2() throws {
-		let result = Volume.Litres.tokilolitres(12345.0)
+	func testConvertKnownLitresToKilolitres_2() throws {
+		let result = Volume.Litres.toKilolitres(12345.0)
 		XCTAssertEqual(12.345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTokilolitres_3() throws {
-		let result = Volume.Litres.tokilolitres(80.0)
+	func testConvertKnownLitresToKilolitres_3() throws {
+		let result = Volume.Litres.toKilolitres(80.0)
 		XCTAssertEqual(0.08, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresToteaspoons_1() throws {
-		let result = Volume.Litres.toteaspoons(3.0)
+	func testConvertKnownLitresToTeaspoons_1() throws {
+		let result = Volume.Litres.toTeaspoons(3.0)
 		XCTAssertEqual(506.809, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresToteaspoons_2() throws {
-		let result = Volume.Litres.toteaspoons(0.2)
+	func testConvertKnownLitresToTeaspoons_2() throws {
+		let result = Volume.Litres.toTeaspoons(0.2)
 		XCTAssertEqual(33.7873, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresToteaspoons_3() throws {
-		let result = Volume.Litres.toteaspoons(4.2)
+	func testConvertKnownLitresToTeaspoons_3() throws {
+		let result = Volume.Litres.toTeaspoons(4.2)
 		XCTAssertEqual(709.533, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTotablespoons_1() throws {
-		let result = Volume.Litres.totablespoons(3.0)
+	func testConvertKnownLitresToTablespoons_1() throws {
+		let result = Volume.Litres.toTablespoons(3.0)
 		XCTAssertEqual(168.936, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTotablespoons_2() throws {
-		let result = Volume.Litres.totablespoons(0.4)
+	func testConvertKnownLitresToTablespoons_2() throws {
+		let result = Volume.Litres.toTablespoons(0.4)
 		XCTAssertEqual(22.5248, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTotablespoons_3() throws {
-		let result = Volume.Litres.totablespoons(67.0)
+	func testConvertKnownLitresToTablespoons_3() throws {
+		let result = Volume.Litres.toTablespoons(67.0)
 		XCTAssertEqual(3772.91, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresToquarts_1() throws {
-		let result = Volume.Litres.toquarts(54.0)
+	func testConvertKnownLitresToQuarts_1() throws {
+		let result = Volume.Litres.toQuarts(54.0)
 		XCTAssertEqual(47.5134, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresToquarts_2() throws {
-		let result = Volume.Litres.toquarts(2.0)
+	func testConvertKnownLitresToQuarts_2() throws {
+		let result = Volume.Litres.toQuarts(2.0)
 		XCTAssertEqual(1.75975, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresToquarts_3() throws {
-		let result = Volume.Litres.toquarts(0.7)
+	func testConvertKnownLitresToQuarts_3() throws {
+		let result = Volume.Litres.toQuarts(0.7)
 		XCTAssertEqual(0.615914, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTopints_1() throws {
-		let result = Volume.Litres.topints(0.5)
+	func testConvertKnownLitresToPints_1() throws {
+		let result = Volume.Litres.toPints(0.5)
 		XCTAssertEqual(0.879877, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTopints_2() throws {
-		let result = Volume.Litres.topints(145.0)
+	func testConvertKnownLitresToPints_2() throws {
+		let result = Volume.Litres.toPints(145.0)
 		XCTAssertEqual(255.164, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTopints_3() throws {
-		let result = Volume.Litres.topints(9.1)
+	func testConvertKnownLitresToPints_3() throws {
+		let result = Volume.Litres.toPints(9.1)
 		XCTAssertEqual(16.0138, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTogallons_1() throws {
-		let result = Volume.Litres.togallons(12.9)
+	func testConvertKnownLitresToGallons_1() throws {
+		let result = Volume.Litres.toGallons(12.9)
 		XCTAssertEqual(2.837603, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTogallons_2() throws {
-		let result = Volume.Litres.togallons(109.0)
+	func testConvertKnownLitresToGallons_2() throws {
+		let result = Volume.Litres.toGallons(109.0)
 		XCTAssertEqual(23.9766, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTogallons_3() throws {
-		let result = Volume.Litres.togallons(67.0)
+	func testConvertKnownLitresToGallons_3() throws {
+		let result = Volume.Litres.toGallons(67.0)
 		XCTAssertEqual(14.7379, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTofluidOunces_1() throws {
-		let result = Volume.Litres.tofluidOunces(5.0)
+	func testConvertKnownLitresToFluidOunces_1() throws {
+		let result = Volume.Litres.toFluidOunces(5.0)
 		XCTAssertEqual(175.975, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTofluidOunces_2() throws {
-		let result = Volume.Litres.tofluidOunces(0.3)
+	func testConvertKnownLitresToFluidOunces_2() throws {
+		let result = Volume.Litres.toFluidOunces(0.3)
 		XCTAssertEqual(10.5585, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTofluidOunces_3() throws {
-		let result = Volume.Litres.tofluidOunces(1.1)
+	func testConvertKnownLitresToFluidOunces_3() throws {
+		let result = Volume.Litres.toFluidOunces(1.1)
 		XCTAssertEqual(38.7146, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSTeaspoons_1() throws {
-		let result = Volume.Litres.touSTeaspoons(12.0)
+	func testConvertKnownLitresToUSTeaspoons_1() throws {
+		let result = Volume.Litres.toUSTeaspoons(12.0)
 		XCTAssertEqual(2434.61, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSTeaspoons_2() throws {
-		let result = Volume.Litres.touSTeaspoons(0.7)
+	func testConvertKnownLitresToUSTeaspoons_2() throws {
+		let result = Volume.Litres.toUSTeaspoons(0.7)
 		XCTAssertEqual(142.019, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSTeaspoons_3() throws {
-		let result = Volume.Litres.touSTeaspoons(89.9)
+	func testConvertKnownLitresToUSTeaspoons_3() throws {
+		let result = Volume.Litres.toUSTeaspoons(89.9)
 		XCTAssertEqual(18239.29, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSTablespoons_1() throws {
-		let result = Volume.Litres.touSTablespoons(12.0)
+	func testConvertKnownLitresToUSTablespoons_1() throws {
+		let result = Volume.Litres.toUSTablespoons(12.0)
 		XCTAssertEqual(811.537, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSTablespoons_2() throws {
-		let result = Volume.Litres.touSTablespoons(5.6)
+	func testConvertKnownLitresToUSTablespoons_2() throws {
+		let result = Volume.Litres.toUSTablespoons(5.6)
 		XCTAssertEqual(378.717, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSTablespoons_3() throws {
-		let result = Volume.Litres.touSTablespoons(0.5)
+	func testConvertKnownLitresToUSTablespoons_3() throws {
+		let result = Volume.Litres.toUSTablespoons(0.5)
 		XCTAssertEqual(33.814, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSQuarts_1() throws {
-		let result = Volume.Litres.touSQuarts(12.0)
+	func testConvertKnownLitresToUSQuarts_1() throws {
+		let result = Volume.Litres.toUSQuarts(12.0)
 		XCTAssertEqual(12.6803, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSQuarts_2() throws {
-		let result = Volume.Litres.touSQuarts(1.09)
+	func testConvertKnownLitresToUSQuarts_2() throws {
+		let result = Volume.Litres.toUSQuarts(1.09)
 		XCTAssertEqual(1.15179, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSQuarts_3() throws {
-		let result = Volume.Litres.touSQuarts(5.5)
+	func testConvertKnownLitresToUSQuarts_3() throws {
+		let result = Volume.Litres.toUSQuarts(5.5)
 		XCTAssertEqual(5.81179, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSPints_1() throws {
-		let result = Volume.Litres.touSPints(3.4)
+	func testConvertKnownLitresToUSPints_1() throws {
+		let result = Volume.Litres.toUSPints(3.4)
 		XCTAssertEqual(7.18548, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSPints_2() throws {
-		let result = Volume.Litres.touSPints(0.8)
+	func testConvertKnownLitresToUSPints_2() throws {
+		let result = Volume.Litres.toUSPints(0.8)
 		XCTAssertEqual(1.6907, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSPints_3() throws {
-		let result = Volume.Litres.touSPints(3000.0)
+	func testConvertKnownLitresToUSPints_3() throws {
+		let result = Volume.Litres.toUSPints(3000.0)
 		XCTAssertEqual(6340.129, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSGallons_1() throws {
-		let result = Volume.Litres.touSGallons(109.1)
+	func testConvertKnownLitresToUSGallons_1() throws {
+		let result = Volume.Litres.toUSGallons(109.1)
 		XCTAssertEqual(28.821171, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSGallons_2() throws {
-		let result = Volume.Litres.touSGallons(41.5)
+	func testConvertKnownLitresToUSGallons_2() throws {
+		let result = Volume.Litres.toUSGallons(41.5)
 		XCTAssertEqual(10.96314, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSGallons_3() throws {
-		let result = Volume.Litres.touSGallons(0.8)
+	func testConvertKnownLitresToUSGallons_3() throws {
+		let result = Volume.Litres.toUSGallons(0.8)
 		XCTAssertEqual(0.211338, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSFluidOunces_1() throws {
-		let result = Volume.Litres.touSFluidOunces(81.0)
+	func testConvertKnownLitresToUSFluidOunces_1() throws {
+		let result = Volume.Litres.toUSFluidOunces(81.0)
 		XCTAssertEqual(2738.94, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSFluidOunces_2() throws {
-		let result = Volume.Litres.touSFluidOunces(7.3)
+	func testConvertKnownLitresToUSFluidOunces_2() throws {
+		let result = Volume.Litres.toUSFluidOunces(7.3)
 		XCTAssertEqual(246.842, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSFluidOunces_3() throws {
-		let result = Volume.Litres.touSFluidOunces(0.65)
+	func testConvertKnownLitresToUSFluidOunces_3() throws {
+		let result = Volume.Litres.toUSFluidOunces(0.65)
 		XCTAssertEqual(21.97911, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSCups_1() throws {
-		let result = Volume.Litres.touSCups(0.9)
+	func testConvertKnownLitresToUSCups_1() throws {
+		let result = Volume.Litres.toUSCups(0.9)
 		XCTAssertEqual(3.80408, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSCups_2() throws {
-		let result = Volume.Litres.touSCups(103.9)
+	func testConvertKnownLitresToUSCups_2() throws {
+		let result = Volume.Litres.toUSCups(103.9)
 		XCTAssertEqual(439.15962, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownLitresTouSCups_3() throws {
-		let result = Volume.Litres.touSCups(71.6)
+	func testConvertKnownLitresToUSCups_3() throws {
+		let result = Volume.Litres.toUSCups(71.6)
 		XCTAssertEqual(302.6355, result, accuracy: 0.01)
 	}
 
 }
 
 final class MillilitresTests: XCTestCase {
-	func testConvertKnownMillilitresTolitres_1() throws {
-		let result = Volume.Millilitres.tolitres(1900.0)
+	func testConvertKnownMillilitresToLitres_1() throws {
+		let result = Volume.Millilitres.toLitres(1900.0)
 		XCTAssertEqual(1.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTolitres_2() throws {
-		let result = Volume.Millilitres.tolitres(56789.0)
+	func testConvertKnownMillilitresToLitres_2() throws {
+		let result = Volume.Millilitres.toLitres(56789.0)
 		XCTAssertEqual(56.789, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTolitres_3() throws {
-		let result = Volume.Millilitres.tolitres(567.0)
+	func testConvertKnownMillilitresToLitres_3() throws {
+		let result = Volume.Millilitres.toLitres(567.0)
 		XCTAssertEqual(0.567, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTokilolitres_1() throws {
-		let result = Volume.Millilitres.tokilolitres(10060000.0)
+	func testConvertKnownMillilitresToKilolitres_1() throws {
+		let result = Volume.Millilitres.toKilolitres(10060000.0)
 		XCTAssertEqual(10.06, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTokilolitres_2() throws {
-		let result = Volume.Millilitres.tokilolitres(987654.0)
+	func testConvertKnownMillilitresToKilolitres_2() throws {
+		let result = Volume.Millilitres.toKilolitres(987654.0)
 		XCTAssertEqual(0.987654, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTokilolitres_3() throws {
-		let result = Volume.Millilitres.tokilolitres(405000.0)
+	func testConvertKnownMillilitresToKilolitres_3() throws {
+		let result = Volume.Millilitres.toKilolitres(405000.0)
 		XCTAssertEqual(0.405, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresToteaspoons_1() throws {
-		let result = Volume.Millilitres.toteaspoons(1.0)
+	func testConvertKnownMillilitresToTeaspoons_1() throws {
+		let result = Volume.Millilitres.toTeaspoons(1.0)
 		XCTAssertEqual(0.168936, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresToteaspoons_2() throws {
-		let result = Volume.Millilitres.toteaspoons(56.0)
+	func testConvertKnownMillilitresToTeaspoons_2() throws {
+		let result = Volume.Millilitres.toTeaspoons(56.0)
 		XCTAssertEqual(9.46043, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresToteaspoons_3() throws {
-		let result = Volume.Millilitres.toteaspoons(12.3)
+	func testConvertKnownMillilitresToTeaspoons_3() throws {
+		let result = Volume.Millilitres.toTeaspoons(12.3)
 		XCTAssertEqual(2.077917, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTotablespoons_1() throws {
-		let result = Volume.Millilitres.totablespoons(109.0)
+	func testConvertKnownMillilitresToTablespoons_1() throws {
+		let result = Volume.Millilitres.toTablespoons(109.0)
 		XCTAssertEqual(6.13802, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTotablespoons_2() throws {
-		let result = Volume.Millilitres.totablespoons(88.0)
+	func testConvertKnownMillilitresToTablespoons_2() throws {
+		let result = Volume.Millilitres.toTablespoons(88.0)
 		XCTAssertEqual(4.95547, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTotablespoons_3() throws {
-		let result = Volume.Millilitres.totablespoons(12.0)
+	func testConvertKnownMillilitresToTablespoons_3() throws {
+		let result = Volume.Millilitres.toTablespoons(12.0)
 		XCTAssertEqual(0.675745, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresToquarts_1() throws {
-		let result = Volume.Millilitres.toquarts(890.0)
+	func testConvertKnownMillilitresToQuarts_1() throws {
+		let result = Volume.Millilitres.toQuarts(890.0)
 		XCTAssertEqual(0.783091, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresToquarts_2() throws {
-		let result = Volume.Millilitres.toquarts(12345.0)
+	func testConvertKnownMillilitresToQuarts_2() throws {
+		let result = Volume.Millilitres.toQuarts(12345.0)
 		XCTAssertEqual(10.862081, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresToquarts_3() throws {
-		let result = Volume.Millilitres.toquarts(129.0)
+	func testConvertKnownMillilitresToQuarts_3() throws {
+		let result = Volume.Millilitres.toQuarts(129.0)
 		XCTAssertEqual(0.113504, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTopints_1() throws {
-		let result = Volume.Millilitres.topints(124.0)
+	func testConvertKnownMillilitresToPints_1() throws {
+		let result = Volume.Millilitres.toPints(124.0)
 		XCTAssertEqual(0.218209, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTopints_2() throws {
-		let result = Volume.Millilitres.topints(99.0)
+	func testConvertKnownMillilitresToPints_2() throws {
+		let result = Volume.Millilitres.toPints(99.0)
 		XCTAssertEqual(0.174216, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTopints_3() throws {
-		let result = Volume.Millilitres.topints(607.3)
+	func testConvertKnownMillilitresToPints_3() throws {
+		let result = Volume.Millilitres.toPints(607.3)
 		XCTAssertEqual(1.0686986, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTogallons_1() throws {
-		let result = Volume.Millilitres.togallons(1234.0)
+	func testConvertKnownMillilitresToGallons_1() throws {
+		let result = Volume.Millilitres.toGallons(1234.0)
 		XCTAssertEqual(0.2714421, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTogallons_2() throws {
-		let result = Volume.Millilitres.togallons(9000.0)
+	func testConvertKnownMillilitresToGallons_2() throws {
+		let result = Volume.Millilitres.toGallons(9000.0)
 		XCTAssertEqual(1.979723, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTogallons_3() throws {
-		let result = Volume.Millilitres.togallons(10209.98)
+	func testConvertKnownMillilitresToGallons_3() throws {
+		let result = Volume.Millilitres.toGallons(10209.98)
 		XCTAssertEqual(2.2458816257, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTofluidOunces_1() throws {
-		let result = Volume.Millilitres.tofluidOunces(78.0)
+	func testConvertKnownMillilitresToFluidOunces_1() throws {
+		let result = Volume.Millilitres.toFluidOunces(78.0)
 		XCTAssertEqual(2.74522, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTofluidOunces_2() throws {
-		let result = Volume.Millilitres.tofluidOunces(12.9)
+	func testConvertKnownMillilitresToFluidOunces_2() throws {
+		let result = Volume.Millilitres.toFluidOunces(12.9)
 		XCTAssertEqual(0.4540165, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTofluidOunces_3() throws {
-		let result = Volume.Millilitres.tofluidOunces(1009.0)
+	func testConvertKnownMillilitresToFluidOunces_3() throws {
+		let result = Volume.Millilitres.toFluidOunces(1009.0)
 		XCTAssertEqual(35.51184, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSTeaspoons_1() throws {
-		let result = Volume.Millilitres.touSTeaspoons(100.0)
+	func testConvertKnownMillilitresToUSTeaspoons_1() throws {
+		let result = Volume.Millilitres.toUSTeaspoons(100.0)
 		XCTAssertEqual(20.2884, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSTeaspoons_2() throws {
-		let result = Volume.Millilitres.touSTeaspoons(12.3)
+	func testConvertKnownMillilitresToUSTeaspoons_2() throws {
+		let result = Volume.Millilitres.toUSTeaspoons(12.3)
 		XCTAssertEqual(2.495476, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSTeaspoons_3() throws {
-		let result = Volume.Millilitres.touSTeaspoons(69.0)
+	func testConvertKnownMillilitresToUSTeaspoons_3() throws {
+		let result = Volume.Millilitres.toUSTeaspoons(69.0)
 		XCTAssertEqual(13.999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSTablespoons_1() throws {
-		let result = Volume.Millilitres.touSTablespoons(38.0)
+	func testConvertKnownMillilitresToUSTablespoons_1() throws {
+		let result = Volume.Millilitres.toUSTablespoons(38.0)
 		XCTAssertEqual(2.56987, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSTablespoons_2() throws {
-		let result = Volume.Millilitres.touSTablespoons(1023.0)
+	func testConvertKnownMillilitresToUSTablespoons_2() throws {
+		let result = Volume.Millilitres.toUSTablespoons(1023.0)
 		XCTAssertEqual(69.18349, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSTablespoons_3() throws {
-		let result = Volume.Millilitres.touSTablespoons(88.8)
+	func testConvertKnownMillilitresToUSTablespoons_3() throws {
+		let result = Volume.Millilitres.toUSTablespoons(88.8)
 		XCTAssertEqual(6.00537, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSQuarts_1() throws {
-		let result = Volume.Millilitres.touSQuarts(1009.0)
+	func testConvertKnownMillilitresToUSQuarts_1() throws {
+		let result = Volume.Millilitres.toUSQuarts(1009.0)
 		XCTAssertEqual(1.066198, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSQuarts_2() throws {
-		let result = Volume.Millilitres.touSQuarts(4567.0)
+	func testConvertKnownMillilitresToUSQuarts_2() throws {
+		let result = Volume.Millilitres.toUSQuarts(4567.0)
 		XCTAssertEqual(4.825895, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSQuarts_3() throws {
-		let result = Volume.Millilitres.touSQuarts(8009.0)
+	func testConvertKnownMillilitresToUSQuarts_3() throws {
+		let result = Volume.Millilitres.toUSQuarts(8009.0)
 		XCTAssertEqual(8.463016, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSPints_1() throws {
-		let result = Volume.Millilitres.touSPints(110.0)
+	func testConvertKnownMillilitresToUSPints_1() throws {
+		let result = Volume.Millilitres.toUSPints(110.0)
 		XCTAssertEqual(0.232471, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSPints_2() throws {
-		let result = Volume.Millilitres.touSPints(2032.0)
+	func testConvertKnownMillilitresToUSPints_2() throws {
+		let result = Volume.Millilitres.toUSPints(2032.0)
 		XCTAssertEqual(4.294381, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSPints_3() throws {
-		let result = Volume.Millilitres.touSPints(1000.9)
+	func testConvertKnownMillilitresToUSPints_3() throws {
+		let result = Volume.Millilitres.toUSPints(1000.9)
 		XCTAssertEqual(2.11527846, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSGallons_1() throws {
-		let result = Volume.Millilitres.touSGallons(5000.0)
+	func testConvertKnownMillilitresToUSGallons_1() throws {
+		let result = Volume.Millilitres.toUSGallons(5000.0)
 		XCTAssertEqual(1.32086, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSGallons_2() throws {
-		let result = Volume.Millilitres.touSGallons(123456.0)
+	func testConvertKnownMillilitresToUSGallons_2() throws {
+		let result = Volume.Millilitres.toUSGallons(123456.0)
 		XCTAssertEqual(32.6136249, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSGallons_3() throws {
-		let result = Volume.Millilitres.touSGallons(900.0)
+	func testConvertKnownMillilitresToUSGallons_3() throws {
+		let result = Volume.Millilitres.toUSGallons(900.0)
 		XCTAssertEqual(0.237755, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSFluidOunces_1() throws {
-		let result = Volume.Millilitres.touSFluidOunces(67.0)
+	func testConvertKnownMillilitresToUSFluidOunces_1() throws {
+		let result = Volume.Millilitres.toUSFluidOunces(67.0)
 		XCTAssertEqual(2.26554, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSFluidOunces_2() throws {
-		let result = Volume.Millilitres.touSFluidOunces(12.6)
+	func testConvertKnownMillilitresToUSFluidOunces_2() throws {
+		let result = Volume.Millilitres.toUSFluidOunces(12.6)
 		XCTAssertEqual(0.4260567, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSFluidOunces_3() throws {
-		let result = Volume.Millilitres.touSFluidOunces(11009.0)
+	func testConvertKnownMillilitresToUSFluidOunces_3() throws {
+		let result = Volume.Millilitres.toUSFluidOunces(11009.0)
 		XCTAssertEqual(372.25858, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSCups_1() throws {
-		let result = Volume.Millilitres.touSCups(348.0)
+	func testConvertKnownMillilitresToUSCups_1() throws {
+		let result = Volume.Millilitres.toUSCups(348.0)
 		XCTAssertEqual(1.47091, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSCups_2() throws {
-		let result = Volume.Millilitres.touSCups(12.9)
+	func testConvertKnownMillilitresToUSCups_2() throws {
+		let result = Volume.Millilitres.toUSCups(12.9)
 		XCTAssertEqual(0.05452511, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownMillilitresTouSCups_3() throws {
-		let result = Volume.Millilitres.touSCups(700.0)
+	func testConvertKnownMillilitresToUSCups_3() throws {
+		let result = Volume.Millilitres.toUSCups(700.0)
 		XCTAssertEqual(2.95873, result, accuracy: 0.01)
 	}
 
 }
 
 final class PintsTests: XCTestCase {
-	func testConvertKnownPintsTomillilitres_1() throws {
-		let result = Volume.Pints.tomillilitres(0.7)
+	func testConvertKnownPintsToMillilitres_1() throws {
+		let result = Volume.Pints.toMillilitres(0.7)
 		XCTAssertEqual(397.783, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTomillilitres_2() throws {
-		let result = Volume.Pints.tomillilitres(5.6)
+	func testConvertKnownPintsToMillilitres_2() throws {
+		let result = Volume.Pints.toMillilitres(5.6)
 		XCTAssertEqual(3182.26, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTomillilitres_3() throws {
-		let result = Volume.Pints.tomillilitres(6.0)
+	func testConvertKnownPintsToMillilitres_3() throws {
+		let result = Volume.Pints.toMillilitres(6.0)
 		XCTAssertEqual(3409.57, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTolitres_1() throws {
-		let result = Volume.Pints.tolitres(6.0)
+	func testConvertKnownPintsToLitres_1() throws {
+		let result = Volume.Pints.toLitres(6.0)
 		XCTAssertEqual(3.40957, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTolitres_2() throws {
-		let result = Volume.Pints.tolitres(0.123)
+	func testConvertKnownPintsToLitres_2() throws {
+		let result = Volume.Pints.toLitres(0.123)
 		XCTAssertEqual(0.069896134, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTolitres_3() throws {
-		let result = Volume.Pints.tolitres(45.9)
+	func testConvertKnownPintsToLitres_3() throws {
+		let result = Volume.Pints.toLitres(45.9)
 		XCTAssertEqual(26.08319, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTokilolitres_1() throws {
-		let result = Volume.Pints.tokilolitres(456.0)
+	func testConvertKnownPintsToKilolitres_1() throws {
+		let result = Volume.Pints.toKilolitres(456.0)
 		XCTAssertEqual(0.259127, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTokilolitres_2() throws {
-		let result = Volume.Pints.tokilolitres(10450.0)
+	func testConvertKnownPintsToKilolitres_2() throws {
+		let result = Volume.Pints.toKilolitres(10450.0)
 		XCTAssertEqual(5.9383301, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTokilolitres_3() throws {
-		let result = Volume.Pints.tokilolitres(9000.9)
+	func testConvertKnownPintsToKilolitres_3() throws {
+		let result = Volume.Pints.toKilolitres(9000.9)
 		XCTAssertEqual(5.11486269, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsToteaspoons_1() throws {
-		let result = Volume.Pints.toteaspoons(5.0)
+	func testConvertKnownPintsToTeaspoons_1() throws {
+		let result = Volume.Pints.toTeaspoons(5.0)
 		XCTAssertEqual(480.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsToteaspoons_2() throws {
-		let result = Volume.Pints.toteaspoons(0.3)
+	func testConvertKnownPintsToTeaspoons_2() throws {
+		let result = Volume.Pints.toTeaspoons(0.3)
 		XCTAssertEqual(28.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsToteaspoons_3() throws {
-		let result = Volume.Pints.toteaspoons(190.0)
+	func testConvertKnownPintsToTeaspoons_3() throws {
+		let result = Volume.Pints.toTeaspoons(190.0)
 		XCTAssertEqual(18240.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTotablespoons_1() throws {
-		let result = Volume.Pints.totablespoons(187.0)
+	func testConvertKnownPintsToTablespoons_1() throws {
+		let result = Volume.Pints.toTablespoons(187.0)
 		XCTAssertEqual(5984.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTotablespoons_2() throws {
-		let result = Volume.Pints.totablespoons(54.5)
+	func testConvertKnownPintsToTablespoons_2() throws {
+		let result = Volume.Pints.toTablespoons(54.5)
 		XCTAssertEqual(1743.999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTotablespoons_3() throws {
-		let result = Volume.Pints.totablespoons(0.33)
+	func testConvertKnownPintsToTablespoons_3() throws {
+		let result = Volume.Pints.toTablespoons(0.33)
 		XCTAssertEqual(10.56, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsToquarts_1() throws {
-		let result = Volume.Pints.toquarts(5.6)
+	func testConvertKnownPintsToQuarts_1() throws {
+		let result = Volume.Pints.toQuarts(5.6)
 		XCTAssertEqual(2.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsToquarts_2() throws {
-		let result = Volume.Pints.toquarts(109.0)
+	func testConvertKnownPintsToQuarts_2() throws {
+		let result = Volume.Pints.toQuarts(109.0)
 		XCTAssertEqual(54.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsToquarts_3() throws {
-		let result = Volume.Pints.toquarts(0.3)
+	func testConvertKnownPintsToQuarts_3() throws {
+		let result = Volume.Pints.toQuarts(0.3)
 		XCTAssertEqual(0.15, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTogallons_1() throws {
-		let result = Volume.Pints.togallons(0.3)
+	func testConvertKnownPintsToGallons_1() throws {
+		let result = Volume.Pints.toGallons(0.3)
 		XCTAssertEqual(0.0375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTogallons_2() throws {
-		let result = Volume.Pints.togallons(800.0)
+	func testConvertKnownPintsToGallons_2() throws {
+		let result = Volume.Pints.toGallons(800.0)
 		XCTAssertEqual(100.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTogallons_3() throws {
-		let result = Volume.Pints.togallons(1.5)
+	func testConvertKnownPintsToGallons_3() throws {
+		let result = Volume.Pints.toGallons(1.5)
 		XCTAssertEqual(0.1875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTofluidOunces_1() throws {
-		let result = Volume.Pints.tofluidOunces(1.5)
+	func testConvertKnownPintsToFluidOunces_1() throws {
+		let result = Volume.Pints.toFluidOunces(1.5)
 		XCTAssertEqual(30.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTofluidOunces_2() throws {
-		let result = Volume.Pints.tofluidOunces(789.0)
+	func testConvertKnownPintsToFluidOunces_2() throws {
+		let result = Volume.Pints.toFluidOunces(789.0)
 		XCTAssertEqual(15780.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTofluidOunces_3() throws {
-		let result = Volume.Pints.tofluidOunces(1020.8)
+	func testConvertKnownPintsToFluidOunces_3() throws {
+		let result = Volume.Pints.toFluidOunces(1020.8)
 		XCTAssertEqual(20416.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSTeaspoons_1() throws {
-		let result = Volume.Pints.touSTeaspoons(1020.8)
+	func testConvertKnownPintsToUSTeaspoons_1() throws {
+		let result = Volume.Pints.toUSTeaspoons(1020.8)
 		XCTAssertEqual(117689.298303295, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSTeaspoons_2() throws {
-		let result = Volume.Pints.touSTeaspoons(0.4)
+	func testConvertKnownPintsToUSTeaspoons_2() throws {
+		let result = Volume.Pints.toUSTeaspoons(0.4)
 		XCTAssertEqual(46.1165, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSTeaspoons_3() throws {
-		let result = Volume.Pints.touSTeaspoons(104.0)
+	func testConvertKnownPintsToUSTeaspoons_3() throws {
+		let result = Volume.Pints.toUSTeaspoons(104.0)
 		XCTAssertEqual(11990.2890120912, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSTablespoons_1() throws {
-		let result = Volume.Pints.touSTablespoons(104.0)
+	func testConvertKnownPintsToUSTablespoons_1() throws {
+		let result = Volume.Pints.toUSTablespoons(104.0)
 		XCTAssertEqual(3996.76, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSTablespoons_2() throws {
-		let result = Volume.Pints.touSTablespoons(5.6)
+	func testConvertKnownPintsToUSTablespoons_2() throws {
+		let result = Volume.Pints.toUSTablespoons(5.6)
 		XCTAssertEqual(215.21, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSTablespoons_3() throws {
-		let result = Volume.Pints.touSTablespoons(0.4)
+	func testConvertKnownPintsToUSTablespoons_3() throws {
+		let result = Volume.Pints.toUSTablespoons(0.4)
 		XCTAssertEqual(15.3722, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSQuarts_1() throws {
-		let result = Volume.Pints.touSQuarts(0.55)
+	func testConvertKnownPintsToUSQuarts_1() throws {
+		let result = Volume.Pints.toUSQuarts(0.55)
 		XCTAssertEqual(0.3302612, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSQuarts_2() throws {
-		let result = Volume.Pints.touSQuarts(80.6)
+	func testConvertKnownPintsToUSQuarts_2() throws {
+		let result = Volume.Pints.toUSQuarts(80.6)
 		XCTAssertEqual(48.39828, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSQuarts_3() throws {
-		let result = Volume.Pints.touSQuarts(12.0)
+	func testConvertKnownPintsToUSQuarts_3() throws {
+		let result = Volume.Pints.toUSQuarts(12.0)
 		XCTAssertEqual(7.2057, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSPints_1() throws {
-		let result = Volume.Pints.touSPints(12.0)
+	func testConvertKnownPintsToUSPints_1() throws {
+		let result = Volume.Pints.toUSPints(12.0)
 		XCTAssertEqual(14.4114, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSPints_2() throws {
-		let result = Volume.Pints.touSPints(4.7)
+	func testConvertKnownPintsToUSPints_2() throws {
+		let result = Volume.Pints.toUSPints(4.7)
 		XCTAssertEqual(5.64446, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSPints_3() throws {
-		let result = Volume.Pints.touSPints(0.44)
+	func testConvertKnownPintsToUSPints_3() throws {
+		let result = Volume.Pints.toUSPints(0.44)
 		XCTAssertEqual(0.528418, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSGallons_1() throws {
-		let result = Volume.Pints.touSGallons(1.2)
+	func testConvertKnownPintsToUSGallons_1() throws {
+		let result = Volume.Pints.toUSGallons(1.2)
 		XCTAssertEqual(0.180142, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSGallons_2() throws {
-		let result = Volume.Pints.touSGallons(9000.0)
+	func testConvertKnownPintsToUSGallons_2() throws {
+		let result = Volume.Pints.toUSGallons(9000.0)
 		XCTAssertEqual(1351.069, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSGallons_3() throws {
-		let result = Volume.Pints.touSGallons(108.4)
+	func testConvertKnownPintsToUSGallons_3() throws {
+		let result = Volume.Pints.toUSGallons(108.4)
 		XCTAssertEqual(16.272871, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSFluidOunces_1() throws {
-		let result = Volume.Pints.touSFluidOunces(108.0)
+	func testConvertKnownPintsToUSFluidOunces_1() throws {
+		let result = Volume.Pints.toUSFluidOunces(108.0)
 		XCTAssertEqual(2075.24, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSFluidOunces_2() throws {
-		let result = Volume.Pints.touSFluidOunces(23.4)
+	func testConvertKnownPintsToUSFluidOunces_2() throws {
+		let result = Volume.Pints.toUSFluidOunces(23.4)
 		XCTAssertEqual(449.6357, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSFluidOunces_3() throws {
-		let result = Volume.Pints.touSFluidOunces(8.65)
+	func testConvertKnownPintsToUSFluidOunces_3() throws {
+		let result = Volume.Pints.toUSFluidOunces(8.65)
 		XCTAssertEqual(166.2115, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSCups_1() throws {
-		let result = Volume.Pints.touSCups(23.0)
+	func testConvertKnownPintsToUSCups_1() throws {
+		let result = Volume.Pints.toUSCups(23.0)
 		XCTAssertEqual(55.2437, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSCups_2() throws {
-		let result = Volume.Pints.touSCups(3.0)
+	func testConvertKnownPintsToUSCups_2() throws {
+		let result = Volume.Pints.toUSCups(3.0)
 		XCTAssertEqual(7.2057, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPintsTouSCups_3() throws {
-		let result = Volume.Pints.touSCups(50.6)
+	func testConvertKnownPintsToUSCups_3() throws {
+		let result = Volume.Pints.toUSCups(50.6)
 		XCTAssertEqual(121.5361, result, accuracy: 0.01)
 	}
 
 }
 
 final class QuartsTests: XCTestCase {
-	func testConvertKnownQuartsTomillilitres_1() throws {
-		let result = Volume.Quarts.tomillilitres(1.4)
+	func testConvertKnownQuartsToMillilitres_1() throws {
+		let result = Volume.Quarts.toMillilitres(1.4)
 		XCTAssertEqual(1591.13, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTomillilitres_2() throws {
-		let result = Volume.Quarts.tomillilitres(800.0)
+	func testConvertKnownQuartsToMillilitres_2() throws {
+		let result = Volume.Quarts.toMillilitres(800.0)
 		XCTAssertEqual(909218.37579999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTomillilitres_3() throws {
-		let result = Volume.Quarts.tomillilitres(0.7)
+	func testConvertKnownQuartsToMillilitres_3() throws {
+		let result = Volume.Quarts.toMillilitres(0.7)
 		XCTAssertEqual(795.566, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTolitres_1() throws {
-		let result = Volume.Quarts.tolitres(675.0)
+	func testConvertKnownQuartsToLitres_1() throws {
+		let result = Volume.Quarts.toLitres(675.0)
 		XCTAssertEqual(767.153, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTolitres_2() throws {
-		let result = Volume.Quarts.tolitres(45.8)
+	func testConvertKnownQuartsToLitres_2() throws {
+		let result = Volume.Quarts.toLitres(45.8)
 		XCTAssertEqual(52.05273, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTolitres_3() throws {
-		let result = Volume.Quarts.tolitres(0.8)
+	func testConvertKnownQuartsToLitres_3() throws {
+		let result = Volume.Quarts.toLitres(0.8)
 		XCTAssertEqual(0.909218, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTokilolitres_1() throws {
-		let result = Volume.Quarts.tokilolitres(8009.0)
+	func testConvertKnownQuartsToKilolitres_1() throws {
+		let result = Volume.Quarts.toKilolitres(8009.0)
 		XCTAssertEqual(9.102409, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTokilolitres_2() throws {
-		let result = Volume.Quarts.tokilolitres(12345.0)
+	func testConvertKnownQuartsToKilolitres_2() throws {
+		let result = Volume.Quarts.toKilolitres(12345.0)
 		XCTAssertEqual(14.03037, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTokilolitres_3() throws {
-		let result = Volume.Quarts.tokilolitres(601.0)
+	func testConvertKnownQuartsToKilolitres_3() throws {
+		let result = Volume.Quarts.toKilolitres(601.0)
 		XCTAssertEqual(0.68305, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsToteaspoons_1() throws {
-		let result = Volume.Quarts.toteaspoons(6.0)
+	func testConvertKnownQuartsToTeaspoons_1() throws {
+		let result = Volume.Quarts.toTeaspoons(6.0)
 		XCTAssertEqual(1152.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsToteaspoons_2() throws {
-		let result = Volume.Quarts.toteaspoons(0.9)
+	func testConvertKnownQuartsToTeaspoons_2() throws {
+		let result = Volume.Quarts.toTeaspoons(0.9)
 		XCTAssertEqual(172.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsToteaspoons_3() throws {
-		let result = Volume.Quarts.toteaspoons(0.03)
+	func testConvertKnownQuartsToTeaspoons_3() throws {
+		let result = Volume.Quarts.toTeaspoons(0.03)
 		XCTAssertEqual(5.759998, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTotablespoons_1() throws {
-		let result = Volume.Quarts.totablespoons(5.9)
+	func testConvertKnownQuartsToTablespoons_1() throws {
+		let result = Volume.Quarts.toTablespoons(5.9)
 		XCTAssertEqual(377.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTotablespoons_2() throws {
-		let result = Volume.Quarts.totablespoons(0.34)
+	func testConvertKnownQuartsToTablespoons_2() throws {
+		let result = Volume.Quarts.toTablespoons(0.34)
 		XCTAssertEqual(21.75999, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTotablespoons_3() throws {
-		let result = Volume.Quarts.totablespoons(2.9)
+	func testConvertKnownQuartsToTablespoons_3() throws {
+		let result = Volume.Quarts.toTablespoons(2.9)
 		XCTAssertEqual(185.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTopints_1() throws {
-		let result = Volume.Quarts.topints(4.5)
+	func testConvertKnownQuartsToPints_1() throws {
+		let result = Volume.Quarts.toPints(4.5)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTopints_2() throws {
-		let result = Volume.Quarts.topints(102.8)
+	func testConvertKnownQuartsToPints_2() throws {
+		let result = Volume.Quarts.toPints(102.8)
 		XCTAssertEqual(205.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTopints_3() throws {
-		let result = Volume.Quarts.topints(0.46)
+	func testConvertKnownQuartsToPints_3() throws {
+		let result = Volume.Quarts.toPints(0.46)
 		XCTAssertEqual(0.92, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTogallons_1() throws {
-		let result = Volume.Quarts.togallons(0.46)
+	func testConvertKnownQuartsToGallons_1() throws {
+		let result = Volume.Quarts.toGallons(0.46)
 		XCTAssertEqual(0.115, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTogallons_2() throws {
-		let result = Volume.Quarts.togallons(190.0)
+	func testConvertKnownQuartsToGallons_2() throws {
+		let result = Volume.Quarts.toGallons(190.0)
 		XCTAssertEqual(47.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTogallons_3() throws {
-		let result = Volume.Quarts.togallons(67.6)
+	func testConvertKnownQuartsToGallons_3() throws {
+		let result = Volume.Quarts.toGallons(67.6)
 		XCTAssertEqual(16.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTofluidOunces_1() throws {
-		let result = Volume.Quarts.tofluidOunces(67.6)
+	func testConvertKnownQuartsToFluidOunces_1() throws {
+		let result = Volume.Quarts.toFluidOunces(67.6)
 		XCTAssertEqual(2704.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTofluidOunces_2() throws {
-		let result = Volume.Quarts.tofluidOunces(1009.0)
+	func testConvertKnownQuartsToFluidOunces_2() throws {
+		let result = Volume.Quarts.toFluidOunces(1009.0)
 		XCTAssertEqual(40360.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTofluidOunces_3() throws {
-		let result = Volume.Quarts.tofluidOunces(6.2)
+	func testConvertKnownQuartsToFluidOunces_3() throws {
+		let result = Volume.Quarts.toFluidOunces(6.2)
 		XCTAssertEqual(248.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSTeaspoons_1() throws {
-		let result = Volume.Quarts.touSTeaspoons(6.2)
+	func testConvertKnownQuartsToUSTeaspoons_1() throws {
+		let result = Volume.Quarts.toUSTeaspoons(6.2)
 		XCTAssertEqual(1429.61, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSTeaspoons_2() throws {
-		let result = Volume.Quarts.touSTeaspoons(0.7)
+	func testConvertKnownQuartsToUSTeaspoons_2() throws {
+		let result = Volume.Quarts.toUSTeaspoons(0.7)
 		XCTAssertEqual(161.408, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSTeaspoons_3() throws {
-		let result = Volume.Quarts.touSTeaspoons(80.3)
+	func testConvertKnownQuartsToUSTeaspoons_3() throws {
+		let result = Volume.Quarts.toUSTeaspoons(80.3)
 		XCTAssertEqual(18515.77, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSTablespoons_1() throws {
-		let result = Volume.Quarts.touSTablespoons(80.0)
+	func testConvertKnownQuartsToUSTablespoons_1() throws {
+		let result = Volume.Quarts.toUSTablespoons(80.0)
 		XCTAssertEqual(6148.86, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSTablespoons_2() throws {
-		let result = Volume.Quarts.touSTablespoons(5.7)
+	func testConvertKnownQuartsToUSTablespoons_2() throws {
+		let result = Volume.Quarts.toUSTablespoons(5.7)
 		XCTAssertEqual(438.107, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSTablespoons_3() throws {
-		let result = Volume.Quarts.touSTablespoons(0.44)
+	func testConvertKnownQuartsToUSTablespoons_3() throws {
+		let result = Volume.Quarts.toUSTablespoons(0.44)
 		XCTAssertEqual(33.81875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSQuarts_1() throws {
-		let result = Volume.Quarts.touSQuarts(0.44)
+	func testConvertKnownQuartsToUSQuarts_1() throws {
+		let result = Volume.Quarts.toUSQuarts(0.44)
 		XCTAssertEqual(0.528418, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSQuarts_2() throws {
-		let result = Volume.Quarts.touSQuarts(12.7)
+	func testConvertKnownQuartsToUSQuarts_2() throws {
+		let result = Volume.Quarts.toUSQuarts(12.7)
 		XCTAssertEqual(15.25206, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSQuarts_3() throws {
-		let result = Volume.Quarts.touSQuarts(109.0)
+	func testConvertKnownQuartsToUSQuarts_3() throws {
+		let result = Volume.Quarts.toUSQuarts(109.0)
 		XCTAssertEqual(130.904, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSPints_1() throws {
-		let result = Volume.Quarts.touSPints(18.0)
+	func testConvertKnownQuartsToUSPints_1() throws {
+		let result = Volume.Quarts.toUSPints(18.0)
 		XCTAssertEqual(43.2342, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSPints_2() throws {
-		let result = Volume.Quarts.touSPints(2.5)
+	func testConvertKnownQuartsToUSPints_2() throws {
+		let result = Volume.Quarts.toUSPints(2.5)
 		XCTAssertEqual(6.00475, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSPints_3() throws {
-		let result = Volume.Quarts.touSPints(0.4)
+	func testConvertKnownQuartsToUSPints_3() throws {
+		let result = Volume.Quarts.toUSPints(0.4)
 		XCTAssertEqual(0.96076, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSGallons_1() throws {
-		let result = Volume.Quarts.touSGallons(4.8)
+	func testConvertKnownQuartsToUSGallons_1() throws {
+		let result = Volume.Quarts.toUSGallons(4.8)
 		XCTAssertEqual(1.44114, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSGallons_2() throws {
-		let result = Volume.Quarts.touSGallons(0.3)
+	func testConvertKnownQuartsToUSGallons_2() throws {
+		let result = Volume.Quarts.toUSGallons(0.3)
 		XCTAssertEqual(0.0900712, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSGallons_3() throws {
-		let result = Volume.Quarts.touSGallons(1.5)
+	func testConvertKnownQuartsToUSGallons_3() throws {
+		let result = Volume.Quarts.toUSGallons(1.5)
 		XCTAssertEqual(0.450356, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSFluidOunces_1() throws {
-		let result = Volume.Quarts.touSFluidOunces(6.0)
+	func testConvertKnownQuartsToUSFluidOunces_1() throws {
+		let result = Volume.Quarts.toUSFluidOunces(6.0)
 		XCTAssertEqual(230.582, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSFluidOunces_2() throws {
-		let result = Volume.Quarts.touSFluidOunces(0.46)
+	func testConvertKnownQuartsToUSFluidOunces_2() throws {
+		let result = Volume.Quarts.toUSFluidOunces(0.46)
 		XCTAssertEqual(17.67798, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSFluidOunces_3() throws {
-		let result = Volume.Quarts.touSFluidOunces(2.0)
+	func testConvertKnownQuartsToUSFluidOunces_3() throws {
+		let result = Volume.Quarts.toUSFluidOunces(2.0)
 		XCTAssertEqual(76.8608, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSCups_1() throws {
-		let result = Volume.Quarts.touSCups(2.0)
+	func testConvertKnownQuartsToUSCups_1() throws {
+		let result = Volume.Quarts.toUSCups(2.0)
 		XCTAssertEqual(9.6076, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSCups_2() throws {
-		let result = Volume.Quarts.touSCups(800.9)
+	func testConvertKnownQuartsToUSCups_2() throws {
+		let result = Volume.Quarts.toUSCups(800.9)
 		XCTAssertEqual(3847.3632, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownQuartsTouSCups_3() throws {
-		let result = Volume.Quarts.touSCups(0.23)
+	func testConvertKnownQuartsToUSCups_3() throws {
+		let result = Volume.Quarts.toUSCups(0.23)
 		XCTAssertEqual(1.104874, result, accuracy: 0.01)
 	}
 
 }
 
 final class TablespoonsTests: XCTestCase {
-	func testConvertKnownTablespoonsTomillilitres_1() throws {
-		let result = Volume.Tablespoons.tomillilitres(2.7)
+	func testConvertKnownTablespoonsToMillilitres_1() throws {
+		let result = Volume.Tablespoons.toMillilitres(2.7)
 		XCTAssertEqual(47.9471, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTomillilitres_2() throws {
-		let result = Volume.Tablespoons.tomillilitres(0.65)
+	func testConvertKnownTablespoonsToMillilitres_2() throws {
+		let result = Volume.Tablespoons.toMillilitres(0.65)
 		XCTAssertEqual(11.54281, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTomillilitres_3() throws {
-		let result = Volume.Tablespoons.tomillilitres(80.1)
+	func testConvertKnownTablespoonsToMillilitres_3() throws {
+		let result = Volume.Tablespoons.toMillilitres(80.1)
 		XCTAssertEqual(1422.43, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTolitres_1() throws {
-		let result = Volume.Tablespoons.tolitres(55.0)
+	func testConvertKnownTablespoonsToLitres_1() throws {
+		let result = Volume.Tablespoons.toLitres(55.0)
 		XCTAssertEqual(0.976699, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTolitres_2() throws {
-		let result = Volume.Tablespoons.tolitres(190.0)
+	func testConvertKnownTablespoonsToLitres_2() throws {
+		let result = Volume.Tablespoons.toLitres(190.0)
 		XCTAssertEqual(3.37405, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTolitres_3() throws {
-		let result = Volume.Tablespoons.tolitres(4000.0)
+	func testConvertKnownTablespoonsToLitres_3() throws {
+		let result = Volume.Tablespoons.toLitres(4000.0)
 		XCTAssertEqual(71.0397889, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTokilolitres_1() throws {
-		let result = Volume.Tablespoons.tokilolitres(10000.0)
+	func testConvertKnownTablespoonsToKilolitres_1() throws {
+		let result = Volume.Tablespoons.toKilolitres(10000.0)
 		XCTAssertEqual(0.1775817, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTokilolitres_2() throws {
-		let result = Volume.Tablespoons.tokilolitres(98765.0)
+	func testConvertKnownTablespoonsToKilolitres_2() throws {
+		let result = Volume.Tablespoons.toKilolitres(98765.0)
 		XCTAssertEqual(1.7538858, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTokilolitres_3() throws {
-		let result = Volume.Tablespoons.tokilolitres(666999.0)
+	func testConvertKnownTablespoonsToKilolitres_3() throws {
+		let result = Volume.Tablespoons.toKilolitres(666999.0)
 		XCTAssertEqual(11.8446826, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsToteaspoons_1() throws {
-		let result = Volume.Tablespoons.toteaspoons(12.0)
+	func testConvertKnownTablespoonsToTeaspoons_1() throws {
+		let result = Volume.Tablespoons.toTeaspoons(12.0)
 		XCTAssertEqual(36.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsToteaspoons_2() throws {
-		let result = Volume.Tablespoons.toteaspoons(0.24)
+	func testConvertKnownTablespoonsToTeaspoons_2() throws {
+		let result = Volume.Tablespoons.toTeaspoons(0.24)
 		XCTAssertEqual(0.72, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsToteaspoons_3() throws {
-		let result = Volume.Tablespoons.toteaspoons(19.9)
+	func testConvertKnownTablespoonsToTeaspoons_3() throws {
+		let result = Volume.Tablespoons.toTeaspoons(19.9)
 		XCTAssertEqual(59.7, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsToquarts_1() throws {
-		let result = Volume.Tablespoons.toquarts(190.0)
+	func testConvertKnownTablespoonsToQuarts_1() throws {
+		let result = Volume.Tablespoons.toQuarts(190.0)
 		XCTAssertEqual(2.96875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsToquarts_2() throws {
-		let result = Volume.Tablespoons.toquarts(9.0)
+	func testConvertKnownTablespoonsToQuarts_2() throws {
+		let result = Volume.Tablespoons.toQuarts(9.0)
 		XCTAssertEqual(0.140625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsToquarts_3() throws {
-		let result = Volume.Tablespoons.toquarts(3.7)
+	func testConvertKnownTablespoonsToQuarts_3() throws {
+		let result = Volume.Tablespoons.toQuarts(3.7)
 		XCTAssertEqual(0.0578125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTopints_1() throws {
-		let result = Volume.Tablespoons.topints(4.7)
+	func testConvertKnownTablespoonsToPints_1() throws {
+		let result = Volume.Tablespoons.toPints(4.7)
 		XCTAssertEqual(0.146875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTopints_2() throws {
-		let result = Volume.Tablespoons.topints(190.0)
+	func testConvertKnownTablespoonsToPints_2() throws {
+		let result = Volume.Tablespoons.toPints(190.0)
 		XCTAssertEqual(5.9375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTopints_3() throws {
-		let result = Volume.Tablespoons.topints(1090.9)
+	func testConvertKnownTablespoonsToPints_3() throws {
+		let result = Volume.Tablespoons.toPints(1090.9)
 		XCTAssertEqual(34.0906391, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTogallons_1() throws {
-		let result = Volume.Tablespoons.togallons(8000.0)
+	func testConvertKnownTablespoonsToGallons_1() throws {
+		let result = Volume.Tablespoons.toGallons(8000.0)
 		XCTAssertEqual(31.25001, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTogallons_2() throws {
-		let result = Volume.Tablespoons.togallons(54.0)
+	func testConvertKnownTablespoonsToGallons_2() throws {
+		let result = Volume.Tablespoons.toGallons(54.0)
 		XCTAssertEqual(0.210938, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTogallons_3() throws {
-		let result = Volume.Tablespoons.togallons(99.3)
+	func testConvertKnownTablespoonsToGallons_3() throws {
+		let result = Volume.Tablespoons.toGallons(99.3)
 		XCTAssertEqual(0.3878908, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTofluidOunces_1() throws {
-		let result = Volume.Tablespoons.tofluidOunces(80.8)
+	func testConvertKnownTablespoonsToFluidOunces_1() throws {
+		let result = Volume.Tablespoons.toFluidOunces(80.8)
 		XCTAssertEqual(50.50002, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTofluidOunces_2() throws {
-		let result = Volume.Tablespoons.tofluidOunces(9009.0)
+	func testConvertKnownTablespoonsToFluidOunces_2() throws {
+		let result = Volume.Tablespoons.toFluidOunces(9009.0)
 		XCTAssertEqual(5630.627, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTofluidOunces_3() throws {
-		let result = Volume.Tablespoons.tofluidOunces(12.6)
+	func testConvertKnownTablespoonsToFluidOunces_3() throws {
+		let result = Volume.Tablespoons.toFluidOunces(12.6)
 		XCTAssertEqual(7.875003, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSTeaspoons_1() throws {
-		let result = Volume.Tablespoons.touSTeaspoons(12.0)
+	func testConvertKnownTablespoonsToUSTeaspoons_1() throws {
+		let result = Volume.Tablespoons.toUSTeaspoons(12.0)
 		XCTAssertEqual(43.2342, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSTeaspoons_2() throws {
-		let result = Volume.Tablespoons.touSTeaspoons(0.6)
+	func testConvertKnownTablespoonsToUSTeaspoons_2() throws {
+		let result = Volume.Tablespoons.toUSTeaspoons(0.6)
 		XCTAssertEqual(2.16171, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSTeaspoons_3() throws {
-		let result = Volume.Tablespoons.touSTeaspoons(52.9)
+	func testConvertKnownTablespoonsToUSTeaspoons_3() throws {
+		let result = Volume.Tablespoons.toUSTeaspoons(52.9)
 		XCTAssertEqual(190.5909, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSTablespoons_1() throws {
-		let result = Volume.Tablespoons.touSTablespoons(67.0)
+	func testConvertKnownTablespoonsToUSTablespoons_1() throws {
+		let result = Volume.Tablespoons.toUSTablespoons(67.0)
 		XCTAssertEqual(80.4637, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSTablespoons_2() throws {
-		let result = Volume.Tablespoons.touSTablespoons(5.8)
+	func testConvertKnownTablespoonsToUSTablespoons_2() throws {
+		let result = Volume.Tablespoons.toUSTablespoons(5.8)
 		XCTAssertEqual(6.96551, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSTablespoons_3() throws {
-		let result = Volume.Tablespoons.touSTablespoons(0.23)
+	func testConvertKnownTablespoonsToUSTablespoons_3() throws {
+		let result = Volume.Tablespoons.toUSTablespoons(0.23)
 		XCTAssertEqual(0.2762186, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSQuarts_1() throws {
-		let result = Volume.Tablespoons.touSQuarts(54.0)
+	func testConvertKnownTablespoonsToUSQuarts_1() throws {
+		let result = Volume.Tablespoons.toUSQuarts(54.0)
 		XCTAssertEqual(1.0133, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSQuarts_2() throws {
-		let result = Volume.Tablespoons.touSQuarts(1005.9)
+	func testConvertKnownTablespoonsToUSQuarts_2() throws {
+		let result = Volume.Tablespoons.toUSQuarts(1005.9)
 		XCTAssertEqual(18.875563, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSQuarts_3() throws {
-		let result = Volume.Tablespoons.touSQuarts(0.9)
+	func testConvertKnownTablespoonsToUSQuarts_3() throws {
+		let result = Volume.Tablespoons.toUSQuarts(0.9)
 		XCTAssertEqual(0.0168884, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSPints_1() throws {
-		let result = Volume.Tablespoons.touSPints(34.0)
+	func testConvertKnownTablespoonsToUSPints_1() throws {
+		let result = Volume.Tablespoons.toUSPints(34.0)
 		XCTAssertEqual(1.27601, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSPints_2() throws {
-		let result = Volume.Tablespoons.touSPints(109.3)
+	func testConvertKnownTablespoonsToUSPints_2() throws {
+		let result = Volume.Tablespoons.toUSPints(109.3)
 		XCTAssertEqual(4.1019963, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSPints_3() throws {
-		let result = Volume.Tablespoons.touSPints(190.0)
+	func testConvertKnownTablespoonsToUSPints_3() throws {
+		let result = Volume.Tablespoons.toUSPints(190.0)
 		XCTAssertEqual(7.13064, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSGallons_1() throws {
-		let result = Volume.Tablespoons.touSGallons(900.0)
+	func testConvertKnownTablespoonsToUSGallons_1() throws {
+		let result = Volume.Tablespoons.toUSGallons(900.0)
 		XCTAssertEqual(4.22209, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSGallons_2() throws {
-		let result = Volume.Tablespoons.touSGallons(2.8)
+	func testConvertKnownTablespoonsToUSGallons_2() throws {
+		let result = Volume.Tablespoons.toUSGallons(2.8)
 		XCTAssertEqual(0.0131354, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSGallons_3() throws {
-		let result = Volume.Tablespoons.touSGallons(1469.0)
+	func testConvertKnownTablespoonsToUSGallons_3() throws {
+		let result = Volume.Tablespoons.toUSGallons(1469.0)
 		XCTAssertEqual(6.891391, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSFluidOunces_1() throws {
-		let result = Volume.Tablespoons.touSFluidOunces(1009.0)
+	func testConvertKnownTablespoonsToUSFluidOunces_1() throws {
+		let result = Volume.Tablespoons.toUSFluidOunces(1009.0)
 		XCTAssertEqual(605.8795, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSFluidOunces_2() throws {
-		let result = Volume.Tablespoons.touSFluidOunces(8.2)
+	func testConvertKnownTablespoonsToUSFluidOunces_2() throws {
+		let result = Volume.Tablespoons.toUSFluidOunces(8.2)
 		XCTAssertEqual(4.9239, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSFluidOunces_3() throws {
-		let result = Volume.Tablespoons.touSFluidOunces(190.5)
+	func testConvertKnownTablespoonsToUSFluidOunces_3() throws {
+		let result = Volume.Tablespoons.toUSFluidOunces(190.5)
 		XCTAssertEqual(114.39053, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSCups_1() throws {
-		let result = Volume.Tablespoons.touSCups(109.0)
+	func testConvertKnownTablespoonsToUSCups_1() throws {
+		let result = Volume.Tablespoons.toUSCups(109.0)
 		XCTAssertEqual(8.18147, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSCups_2() throws {
-		let result = Volume.Tablespoons.touSCups(3.4)
+	func testConvertKnownTablespoonsToUSCups_2() throws {
+		let result = Volume.Tablespoons.toUSCups(3.4)
 		XCTAssertEqual(0.255202, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTablespoonsTouSCups_3() throws {
-		let result = Volume.Tablespoons.touSCups(1000.0)
+	func testConvertKnownTablespoonsToUSCups_3() throws {
+		let result = Volume.Tablespoons.toUSCups(1000.0)
 		XCTAssertEqual(75.0594, result, accuracy: 0.01)
 	}
 
 }
 
 final class TeaspoonsTests: XCTestCase {
-	func testConvertKnownTeaspoonsTomillilitres_1() throws {
-		let result = Volume.Teaspoons.tomillilitres(0.6)
+	func testConvertKnownTeaspoonsToMillilitres_1() throws {
+		let result = Volume.Teaspoons.toMillilitres(0.6)
 		XCTAssertEqual(3.55163, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTomillilitres_2() throws {
-		let result = Volume.Teaspoons.tomillilitres(1.3)
+	func testConvertKnownTeaspoonsToMillilitres_2() throws {
+		let result = Volume.Teaspoons.toMillilitres(1.3)
 		XCTAssertEqual(7.69521, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTomillilitres_3() throws {
-		let result = Volume.Teaspoons.tomillilitres(0.07)
+	func testConvertKnownTeaspoonsToMillilitres_3() throws {
+		let result = Volume.Teaspoons.toMillilitres(0.07)
 		XCTAssertEqual(0.4143573, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTolitres_1() throws {
-		let result = Volume.Teaspoons.tolitres(32.0)
+	func testConvertKnownTeaspoonsToLitres_1() throws {
+		let result = Volume.Teaspoons.toLitres(32.0)
 		XCTAssertEqual(0.18942, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTolitres_2() throws {
-		let result = Volume.Teaspoons.tolitres(180.0)
+	func testConvertKnownTeaspoonsToLitres_2() throws {
+		let result = Volume.Teaspoons.toLitres(180.0)
 		XCTAssertEqual(1.06549, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTolitres_3() throws {
-		let result = Volume.Teaspoons.tolitres(4567.0)
+	func testConvertKnownTeaspoonsToLitres_3() throws {
+		let result = Volume.Teaspoons.toLitres(4567.0)
 		XCTAssertEqual(27.03386, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTokilolitres_1() throws {
-		let result = Volume.Teaspoons.tokilolitres(236511.0)
+	func testConvertKnownTeaspoonsToKilolitres_1() throws {
+		let result = Volume.Teaspoons.toKilolitres(236511.0)
 		XCTAssertEqual(1.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTokilolitres_2() throws {
-		let result = Volume.Teaspoons.tokilolitres(33787.3)
+	func testConvertKnownTeaspoonsToKilolitres_2() throws {
+		let result = Volume.Teaspoons.toKilolitres(33787.3)
 		XCTAssertEqual(0.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTokilolitres_3() throws {
-		let result = Volume.Teaspoons.tokilolitres(1689.363)
+	func testConvertKnownTeaspoonsToKilolitres_3() throws {
+		let result = Volume.Teaspoons.toKilolitres(1689.363)
 		XCTAssertEqual(0.01, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTotablespoons_1() throws {
-		let result = Volume.Teaspoons.totablespoons(12.0)
+	func testConvertKnownTeaspoonsToTablespoons_1() throws {
+		let result = Volume.Teaspoons.toTablespoons(12.0)
 		XCTAssertEqual(4.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTotablespoons_2() throws {
-		let result = Volume.Teaspoons.totablespoons(900.8)
+	func testConvertKnownTeaspoonsToTablespoons_2() throws {
+		let result = Volume.Teaspoons.toTablespoons(900.8)
 		XCTAssertEqual(300.26667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTotablespoons_3() throws {
-		let result = Volume.Teaspoons.totablespoons(1.23)
+	func testConvertKnownTeaspoonsToTablespoons_3() throws {
+		let result = Volume.Teaspoons.toTablespoons(1.23)
 		XCTAssertEqual(0.41, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsToquarts_1() throws {
-		let result = Volume.Teaspoons.toquarts(109.0)
+	func testConvertKnownTeaspoonsToQuarts_1() throws {
+		let result = Volume.Teaspoons.toQuarts(109.0)
 		XCTAssertEqual(0.567709, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsToquarts_2() throws {
-		let result = Volume.Teaspoons.toquarts(4500.0)
+	func testConvertKnownTeaspoonsToQuarts_2() throws {
+		let result = Volume.Teaspoons.toQuarts(4500.0)
 		XCTAssertEqual(23.43751, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsToquarts_3() throws {
-		let result = Volume.Teaspoons.toquarts(89.0)
+	func testConvertKnownTeaspoonsToQuarts_3() throws {
+		let result = Volume.Teaspoons.toQuarts(89.0)
 		XCTAssertEqual(0.463542, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTopints_1() throws {
-		let result = Volume.Teaspoons.topints(678.0)
+	func testConvertKnownTeaspoonsToPints_1() throws {
+		let result = Volume.Teaspoons.toPints(678.0)
 		XCTAssertEqual(7.0625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTopints_2() throws {
-		let result = Volume.Teaspoons.topints(109.0)
+	func testConvertKnownTeaspoonsToPints_2() throws {
+		let result = Volume.Teaspoons.toPints(109.0)
 		XCTAssertEqual(1.13542, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTopints_3() throws {
-		let result = Volume.Teaspoons.topints(12.5)
+	func testConvertKnownTeaspoonsToPints_3() throws {
+		let result = Volume.Teaspoons.toPints(12.5)
 		XCTAssertEqual(0.1302084, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTogallons_1() throws {
-		let result = Volume.Teaspoons.togallons(190.0)
+	func testConvertKnownTeaspoonsToGallons_1() throws {
+		let result = Volume.Teaspoons.toGallons(190.0)
 		XCTAssertEqual(0.247396, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTogallons_2() throws {
-		let result = Volume.Teaspoons.togallons(8090.0)
+	func testConvertKnownTeaspoonsToGallons_2() throws {
+		let result = Volume.Teaspoons.toGallons(8090.0)
 		XCTAssertEqual(10.53386, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTogallons_3() throws {
-		let result = Volume.Teaspoons.togallons(238.9)
+	func testConvertKnownTeaspoonsToGallons_3() throws {
+		let result = Volume.Teaspoons.toGallons(238.9)
 		XCTAssertEqual(0.31106784, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTofluidOunces_1() throws {
-		let result = Volume.Teaspoons.tofluidOunces(109.0)
+	func testConvertKnownTeaspoonsToFluidOunces_1() throws {
+		let result = Volume.Teaspoons.toFluidOunces(109.0)
 		XCTAssertEqual(22.7083, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTofluidOunces_2() throws {
-		let result = Volume.Teaspoons.tofluidOunces(55.7)
+	func testConvertKnownTeaspoonsToFluidOunces_2() throws {
+		let result = Volume.Teaspoons.toFluidOunces(55.7)
 		XCTAssertEqual(11.60417, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTofluidOunces_3() throws {
-		let result = Volume.Teaspoons.tofluidOunces(609.0)
+	func testConvertKnownTeaspoonsToFluidOunces_3() throws {
+		let result = Volume.Teaspoons.toFluidOunces(609.0)
 		XCTAssertEqual(126.875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSTeaspoons_1() throws {
-		let result = Volume.Teaspoons.touSTeaspoons(90.0)
+	func testConvertKnownTeaspoonsToUSTeaspoons_1() throws {
+		let result = Volume.Teaspoons.toUSTeaspoons(90.0)
 		XCTAssertEqual(108.086, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSTeaspoons_2() throws {
-		let result = Volume.Teaspoons.touSTeaspoons(1.45)
+	func testConvertKnownTeaspoonsToUSTeaspoons_2() throws {
+		let result = Volume.Teaspoons.toUSTeaspoons(1.45)
 		XCTAssertEqual(1.741379, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSTeaspoons_3() throws {
-		let result = Volume.Teaspoons.touSTeaspoons(80.1)
+	func testConvertKnownTeaspoonsToUSTeaspoons_3() throws {
+		let result = Volume.Teaspoons.toUSTeaspoons(80.1)
 		XCTAssertEqual(96.19616, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSTablespoons_1() throws {
-		let result = Volume.Teaspoons.touSTablespoons(56.0)
+	func testConvertKnownTeaspoonsToUSTablespoons_1() throws {
+		let result = Volume.Teaspoons.toUSTablespoons(56.0)
 		XCTAssertEqual(22.4177, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSTablespoons_2() throws {
-		let result = Volume.Teaspoons.touSTablespoons(7.0)
+	func testConvertKnownTeaspoonsToUSTablespoons_2() throws {
+		let result = Volume.Teaspoons.toUSTablespoons(7.0)
 		XCTAssertEqual(2.80222, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSTablespoons_3() throws {
-		let result = Volume.Teaspoons.touSTablespoons(109.0)
+	func testConvertKnownTeaspoonsToUSTablespoons_3() throws {
+		let result = Volume.Teaspoons.toUSTablespoons(109.0)
 		XCTAssertEqual(43.6345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSQuarts_1() throws {
-		let result = Volume.Teaspoons.touSQuarts(199.0)
+	func testConvertKnownTeaspoonsToUSQuarts_1() throws {
+		let result = Volume.Teaspoons.toUSQuarts(199.0)
 		XCTAssertEqual(1.24474, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSQuarts_2() throws {
-		let result = Volume.Teaspoons.touSQuarts(5.9)
+	func testConvertKnownTeaspoonsToUSQuarts_2() throws {
+		let result = Volume.Teaspoons.toUSQuarts(5.9)
 		XCTAssertEqual(0.0369042, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSQuarts_3() throws {
-		let result = Volume.Teaspoons.touSQuarts(23.0)
+	func testConvertKnownTeaspoonsToUSQuarts_3() throws {
+		let result = Volume.Teaspoons.toUSQuarts(23.0)
 		XCTAssertEqual(0.143864, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSPints_1() throws {
-		let result = Volume.Teaspoons.touSPints(106.0)
+	func testConvertKnownTeaspoonsToUSPints_1() throws {
+		let result = Volume.Teaspoons.toUSPints(106.0)
 		XCTAssertEqual(1.32605, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSPints_2() throws {
-		let result = Volume.Teaspoons.touSPints(34.0)
+	func testConvertKnownTeaspoonsToUSPints_2() throws {
+		let result = Volume.Teaspoons.toUSPints(34.0)
 		XCTAssertEqual(0.425337, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSPints_3() throws {
-		let result = Volume.Teaspoons.touSPints(6.21)
+	func testConvertKnownTeaspoonsToUSPints_3() throws {
+		let result = Volume.Teaspoons.toUSPints(6.21)
 		XCTAssertEqual(0.07656059, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSGallons_1() throws {
-		let result = Volume.Teaspoons.touSGallons(900.0)
+	func testConvertKnownTeaspoonsToUSGallons_1() throws {
+		let result = Volume.Teaspoons.toUSGallons(900.0)
 		XCTAssertEqual(1.40736, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSGallons_2() throws {
-		let result = Volume.Teaspoons.touSGallons(1234.6)
+	func testConvertKnownTeaspoonsToUSGallons_2() throws {
+		let result = Volume.Teaspoons.toUSGallons(1234.6)
 		XCTAssertEqual(1.93059035, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSGallons_3() throws {
-		let result = Volume.Teaspoons.touSGallons(88.0)
+	func testConvertKnownTeaspoonsToUSGallons_3() throws {
+		let result = Volume.Teaspoons.toUSGallons(88.0)
 		XCTAssertEqual(0.137609, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSFluidOunces_1() throws {
-		let result = Volume.Teaspoons.touSFluidOunces(56.0)
+	func testConvertKnownTeaspoonsToUSFluidOunces_1() throws {
+		let result = Volume.Teaspoons.toUSFluidOunces(56.0)
 		XCTAssertEqual(11.2089, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSFluidOunces_2() throws {
-		let result = Volume.Teaspoons.touSFluidOunces(2.9)
+	func testConvertKnownTeaspoonsToUSFluidOunces_2() throws {
+		let result = Volume.Teaspoons.toUSFluidOunces(2.9)
 		XCTAssertEqual(0.580459, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSFluidOunces_3() throws {
-		let result = Volume.Teaspoons.touSFluidOunces(1020.0)
+	func testConvertKnownTeaspoonsToUSFluidOunces_3() throws {
+		let result = Volume.Teaspoons.toUSFluidOunces(1020.0)
 		XCTAssertEqual(204.1616, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSCups_1() throws {
-		let result = Volume.Teaspoons.touSCups(8000.0)
+	func testConvertKnownTeaspoonsToUSCups_1() throws {
+		let result = Volume.Teaspoons.toUSCups(8000.0)
 		XCTAssertEqual(200.1584, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSCups_2() throws {
-		let result = Volume.Teaspoons.touSCups(34.0)
+	func testConvertKnownTeaspoonsToUSCups_2() throws {
+		let result = Volume.Teaspoons.toUSCups(34.0)
 		XCTAssertEqual(0.850673, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTeaspoonsTouSCups_3() throws {
-		let result = Volume.Teaspoons.touSCups(109.9)
+	func testConvertKnownTeaspoonsToUSCups_3() throws {
+		let result = Volume.Teaspoons.toUSCups(109.9)
 		XCTAssertEqual(2.7496761, result, accuracy: 0.01)
 	}
 
 }
 
 final class USCupsTests: XCTestCase {
-	func testConvertKnownUSCupsTomillilitres_1() throws {
-		let result = Volume.USCups.tomillilitres(11.0)
+	func testConvertKnownUSCupsToMillilitres_1() throws {
+		let result = Volume.USCups.toMillilitres(11.0)
 		XCTAssertEqual(2602.47, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTomillilitres_2() throws {
-		let result = Volume.USCups.tomillilitres(109.0)
+	func testConvertKnownUSCupsToMillilitres_2() throws {
+		let result = Volume.USCups.toMillilitres(109.0)
 		XCTAssertEqual(25788.1177, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTomillilitres_3() throws {
-		let result = Volume.USCups.tomillilitres(4.5)
+	func testConvertKnownUSCupsToMillilitres_3() throws {
+		let result = Volume.USCups.toMillilitres(4.5)
 		XCTAssertEqual(1064.65, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTolitres_1() throws {
-		let result = Volume.USCups.tolitres(56.0)
+	func testConvertKnownUSCupsToLitres_1() throws {
+		let result = Volume.USCups.toLitres(56.0)
 		XCTAssertEqual(13.2489, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTolitres_2() throws {
-		let result = Volume.USCups.tolitres(4.1)
+	func testConvertKnownUSCupsToLitres_2() throws {
+		let result = Volume.USCups.toLitres(4.1)
 		XCTAssertEqual(0.970012, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTolitres_3() throws {
-		let result = Volume.USCups.tolitres(399.0)
+	func testConvertKnownUSCupsToLitres_3() throws {
+		let result = Volume.USCups.toLitres(399.0)
 		XCTAssertEqual(94.3987, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTokilolitres_1() throws {
-		let result = Volume.USCups.tokilolitres(67.0)
+	func testConvertKnownUSCupsToKilolitres_1() throws {
+		let result = Volume.USCups.toKilolitres(67.0)
 		XCTAssertEqual(0.0158514, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTokilolitres_2() throws {
-		let result = Volume.USCups.tokilolitres(1009.7)
+	func testConvertKnownUSCupsToKilolitres_2() throws {
+		let result = Volume.USCups.toKilolitres(1009.7)
 		XCTAssertEqual(0.238883142, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTokilolitres_3() throws {
-		let result = Volume.USCups.tokilolitres(918273.0)
+	func testConvertKnownUSCupsToKilolitres_3() throws {
+		let result = Volume.USCups.toKilolitres(918273.0)
 		XCTAssertEqual(217.25259, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsToteaspoons_1() throws {
-		let result = Volume.USCups.toteaspoons(4.0)
+	func testConvertKnownUSCupsToTeaspoons_1() throws {
+		let result = Volume.USCups.toTeaspoons(4.0)
 		XCTAssertEqual(159.873, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsToteaspoons_2() throws {
-		let result = Volume.USCups.toteaspoons(0.2)
+	func testConvertKnownUSCupsToTeaspoons_2() throws {
+		let result = Volume.USCups.toTeaspoons(0.2)
 		XCTAssertEqual(7.99367, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsToteaspoons_3() throws {
-		let result = Volume.USCups.toteaspoons(6.12)
+	func testConvertKnownUSCupsToTeaspoons_3() throws {
+		let result = Volume.USCups.toTeaspoons(6.12)
 		XCTAssertEqual(244.6063, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTotablespoons_1() throws {
-		let result = Volume.USCups.totablespoons(4.3)
+	func testConvertKnownUSCupsToTablespoons_1() throws {
+		let result = Volume.USCups.toTablespoons(4.3)
 		XCTAssertEqual(57.288, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTotablespoons_2() throws {
-		let result = Volume.USCups.totablespoons(120.6)
+	func testConvertKnownUSCupsToTablespoons_2() throws {
+		let result = Volume.USCups.toTablespoons(120.6)
 		XCTAssertEqual(1606.7274, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTotablespoons_3() throws {
-		let result = Volume.USCups.totablespoons(0.66)
+	func testConvertKnownUSCupsToTablespoons_3() throws {
+		let result = Volume.USCups.toTablespoons(0.66)
 		XCTAssertEqual(8.793036, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsToquarts_1() throws {
-		let result = Volume.USCups.toquarts(1009.0)
+	func testConvertKnownUSCupsToQuarts_1() throws {
+		let result = Volume.USCups.toQuarts(1009.0)
 		XCTAssertEqual(210.0421, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsToquarts_2() throws {
-		let result = Volume.USCups.toquarts(66.98)
+	func testConvertKnownUSCupsToQuarts_2() throws {
+		let result = Volume.USCups.toQuarts(66.98)
 		XCTAssertEqual(13.943129, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsToquarts_3() throws {
-		let result = Volume.USCups.toquarts(0.123)
+	func testConvertKnownUSCupsToQuarts_3() throws {
+		let result = Volume.USCups.toQuarts(0.123)
 		XCTAssertEqual(0.025604731, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTopints_1() throws {
-		let result = Volume.USCups.topints(5.0)
+	func testConvertKnownUSCupsToPints_1() throws {
+		let result = Volume.USCups.toPints(5.0)
 		XCTAssertEqual(2.08169, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTopints_2() throws {
-		let result = Volume.USCups.topints(0.43)
+	func testConvertKnownUSCupsToPints_2() throws {
+		let result = Volume.USCups.toPints(0.43)
 		XCTAssertEqual(0.1790249, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTopints_3() throws {
-		let result = Volume.USCups.topints(800.4)
+	func testConvertKnownUSCupsToPints_3() throws {
+		let result = Volume.USCups.toPints(800.4)
 		XCTAssertEqual(333.23621, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTogallons_1() throws {
-		let result = Volume.USCups.togallons(56.0)
+	func testConvertKnownUSCupsToGallons_1() throws {
+		let result = Volume.USCups.toGallons(56.0)
 		XCTAssertEqual(2.91436, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTogallons_2() throws {
-		let result = Volume.USCups.togallons(104.12)
+	func testConvertKnownUSCupsToGallons_2() throws {
+		let result = Volume.USCups.toGallons(104.12)
 		XCTAssertEqual(5.41862726, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTogallons_3() throws {
-		let result = Volume.USCups.togallons(6.1)
+	func testConvertKnownUSCupsToGallons_3() throws {
+		let result = Volume.USCups.toGallons(6.1)
 		XCTAssertEqual(0.317457, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTofluidOunces_1() throws {
-		let result = Volume.USCups.tofluidOunces(55.0)
+	func testConvertKnownUSCupsToFluidOunces_1() throws {
+		let result = Volume.USCups.toFluidOunces(55.0)
 		XCTAssertEqual(457.971, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTofluidOunces_2() throws {
-		let result = Volume.USCups.tofluidOunces(0.4)
+	func testConvertKnownUSCupsToFluidOunces_2() throws {
+		let result = Volume.USCups.toFluidOunces(0.4)
 		XCTAssertEqual(3.3307, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTofluidOunces_3() throws {
-		let result = Volume.USCups.tofluidOunces(88.4)
+	func testConvertKnownUSCupsToFluidOunces_3() throws {
+		let result = Volume.USCups.toFluidOunces(88.4)
 		XCTAssertEqual(736.084, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSTeaspoons_1() throws {
-		let result = Volume.USCups.touSTeaspoons(12.0)
+	func testConvertKnownUSCupsToUSTeaspoons_1() throws {
+		let result = Volume.USCups.toUSTeaspoons(12.0)
 		XCTAssertEqual(576.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSTeaspoons_2() throws {
-		let result = Volume.USCups.touSTeaspoons(5.12)
+	func testConvertKnownUSCupsToUSTeaspoons_2() throws {
+		let result = Volume.USCups.toUSTeaspoons(5.12)
 		XCTAssertEqual(245.7601, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSTeaspoons_3() throws {
-		let result = Volume.USCups.touSTeaspoons(6701.0)
+	func testConvertKnownUSCupsToUSTeaspoons_3() throws {
+		let result = Volume.USCups.toUSTeaspoons(6701.0)
 		XCTAssertEqual(321648.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSTablespoons_1() throws {
-		let result = Volume.USCups.touSTablespoons(677.0)
+	func testConvertKnownUSCupsToUSTablespoons_1() throws {
+		let result = Volume.USCups.toUSTablespoons(677.0)
 		XCTAssertEqual(10832.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSTablespoons_2() throws {
-		let result = Volume.USCups.touSTablespoons(1.9)
+	func testConvertKnownUSCupsToUSTablespoons_2() throws {
+		let result = Volume.USCups.toUSTablespoons(1.9)
 		XCTAssertEqual(30.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSTablespoons_3() throws {
-		let result = Volume.USCups.touSTablespoons(800.8)
+	func testConvertKnownUSCupsToUSTablespoons_3() throws {
+		let result = Volume.USCups.toUSTablespoons(800.8)
 		XCTAssertEqual(12812.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSQuarts_1() throws {
-		let result = Volume.USCups.touSQuarts(800.8)
+	func testConvertKnownUSCupsToUSQuarts_1() throws {
+		let result = Volume.USCups.toUSQuarts(800.8)
 		XCTAssertEqual(200.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSQuarts_2() throws {
-		let result = Volume.USCups.touSQuarts(4.84)
+	func testConvertKnownUSCupsToUSQuarts_2() throws {
+		let result = Volume.USCups.toUSQuarts(4.84)
 		XCTAssertEqual(1.21, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSQuarts_3() throws {
-		let result = Volume.USCups.touSQuarts(0.99)
+	func testConvertKnownUSCupsToUSQuarts_3() throws {
+		let result = Volume.USCups.toUSQuarts(0.99)
 		XCTAssertEqual(0.2475, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSPints_1() throws {
-		let result = Volume.USCups.touSPints(0.99)
+	func testConvertKnownUSCupsToUSPints_1() throws {
+		let result = Volume.USCups.toUSPints(0.99)
 		XCTAssertEqual(0.495, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSPints_2() throws {
-		let result = Volume.USCups.touSPints(358.9)
+	func testConvertKnownUSCupsToUSPints_2() throws {
+		let result = Volume.USCups.toUSPints(358.9)
 		XCTAssertEqual(179.45, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSPints_3() throws {
-		let result = Volume.USCups.touSPints(1000.0)
+	func testConvertKnownUSCupsToUSPints_3() throws {
+		let result = Volume.USCups.toUSPints(1000.0)
 		XCTAssertEqual(500.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSGallons_1() throws {
-		let result = Volume.USCups.touSGallons(1000.0)
+	func testConvertKnownUSCupsToUSGallons_1() throws {
+		let result = Volume.USCups.toUSGallons(1000.0)
 		XCTAssertEqual(62.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSGallons_2() throws {
-		let result = Volume.USCups.touSGallons(0.78)
+	func testConvertKnownUSCupsToUSGallons_2() throws {
+		let result = Volume.USCups.toUSGallons(0.78)
 		XCTAssertEqual(0.04875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSGallons_3() throws {
-		let result = Volume.USCups.touSGallons(123.123)
+	func testConvertKnownUSCupsToUSGallons_3() throws {
+		let result = Volume.USCups.toUSGallons(123.123)
 		XCTAssertEqual(7.6951875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSFluidOunces_1() throws {
-		let result = Volume.USCups.touSFluidOunces(123.123)
+	func testConvertKnownUSCupsToUSFluidOunces_1() throws {
+		let result = Volume.USCups.toUSFluidOunces(123.123)
 		XCTAssertEqual(984.984, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSFluidOunces_2() throws {
-		let result = Volume.USCups.touSFluidOunces(4.0)
+	func testConvertKnownUSCupsToUSFluidOunces_2() throws {
+		let result = Volume.USCups.toUSFluidOunces(4.0)
 		XCTAssertEqual(32.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSCupsTouSFluidOunces_3() throws {
-		let result = Volume.USCups.touSFluidOunces(0.9)
+	func testConvertKnownUSCupsToUSFluidOunces_3() throws {
+		let result = Volume.USCups.toUSFluidOunces(0.9)
 		XCTAssertEqual(7.2, result, accuracy: 0.01)
 	}
 
 }
 
 final class USFluidOuncesTests: XCTestCase {
-	func testConvertKnownUSFluidOuncesTomillilitres_1() throws {
-		let result = Volume.USFluidOunces.tomillilitres(0.98)
+	func testConvertKnownUSFluidOuncesToMillilitres_1() throws {
+		let result = Volume.USFluidOunces.toMillilitres(0.98)
 		XCTAssertEqual(28.98206, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTomillilitres_2() throws {
-		let result = Volume.USFluidOunces.tomillilitres(8.2)
+	func testConvertKnownUSFluidOuncesToMillilitres_2() throws {
+		let result = Volume.USFluidOunces.toMillilitres(8.2)
 		XCTAssertEqual(242.503, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTomillilitres_3() throws {
-		let result = Volume.USFluidOunces.tomillilitres(100.3)
+	func testConvertKnownUSFluidOuncesToMillilitres_3() throws {
+		let result = Volume.USFluidOunces.toMillilitres(100.3)
 		XCTAssertEqual(2966.225, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTolitres_1() throws {
-		let result = Volume.USFluidOunces.tolitres(12.0)
+	func testConvertKnownUSFluidOuncesToLitres_1() throws {
+		let result = Volume.USFluidOunces.toLitres(12.0)
 		XCTAssertEqual(0.354882, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTolitres_2() throws {
-		let result = Volume.USFluidOunces.tolitres(150.6)
+	func testConvertKnownUSFluidOuncesToLitres_2() throws {
+		let result = Volume.USFluidOunces.toLitres(150.6)
 		XCTAssertEqual(4.4537736, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTolitres_3() throws {
-		let result = Volume.USFluidOunces.tolitres(5.9)
+	func testConvertKnownUSFluidOuncesToLitres_3() throws {
+		let result = Volume.USFluidOunces.toLitres(5.9)
 		XCTAssertEqual(0.174484, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTokilolitres_1() throws {
-		let result = Volume.USFluidOunces.tokilolitres(34.0)
+	func testConvertKnownUSFluidOuncesToKilolitres_1() throws {
+		let result = Volume.USFluidOunces.toKilolitres(34.0)
 		XCTAssertEqual(0.0010055, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTokilolitres_2() throws {
-		let result = Volume.USFluidOunces.tokilolitres(109.1)
+	func testConvertKnownUSFluidOuncesToKilolitres_2() throws {
+		let result = Volume.USFluidOunces.toKilolitres(109.1)
 		XCTAssertEqual(0.0032264721, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTokilolitres_3() throws {
-		let result = Volume.USFluidOunces.tokilolitres(45678.0)
+	func testConvertKnownUSFluidOuncesToKilolitres_3() throws {
+		let result = Volume.USFluidOunces.toKilolitres(45678.0)
 		XCTAssertEqual(1.3508597, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesToteaspoons_1() throws {
-		let result = Volume.USFluidOunces.toteaspoons(4.0)
+	func testConvertKnownUSFluidOuncesToTeaspoons_1() throws {
+		let result = Volume.USFluidOunces.toTeaspoons(4.0)
 		XCTAssertEqual(19.9842, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesToteaspoons_2() throws {
-		let result = Volume.USFluidOunces.toteaspoons(0.12)
+	func testConvertKnownUSFluidOuncesToTeaspoons_2() throws {
+		let result = Volume.USFluidOunces.toTeaspoons(0.12)
 		XCTAssertEqual(0.5995252, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesToteaspoons_3() throws {
-		let result = Volume.USFluidOunces.toteaspoons(2.99)
+	func testConvertKnownUSFluidOuncesToTeaspoons_3() throws {
+		let result = Volume.USFluidOunces.toTeaspoons(2.99)
 		XCTAssertEqual(14.93817, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTotablespoons_1() throws {
-		let result = Volume.USFluidOunces.totablespoons(800.0)
+	func testConvertKnownUSFluidOuncesToTablespoons_1() throws {
+		let result = Volume.USFluidOunces.toTablespoons(800.0)
 		XCTAssertEqual(1332.28, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTotablespoons_2() throws {
-		let result = Volume.USFluidOunces.totablespoons(0.02)
+	func testConvertKnownUSFluidOuncesToTablespoons_2() throws {
+		let result = Volume.USFluidOunces.toTablespoons(0.02)
 		XCTAssertEqual(0.03330695, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTotablespoons_3() throws {
-		let result = Volume.USFluidOunces.totablespoons(2.7)
+	func testConvertKnownUSFluidOuncesToTablespoons_3() throws {
+		let result = Volume.USFluidOunces.toTablespoons(2.7)
 		XCTAssertEqual(4.49644, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesToquarts_1() throws {
-		let result = Volume.USFluidOunces.toquarts(3.5)
+	func testConvertKnownUSFluidOuncesToQuarts_1() throws {
+		let result = Volume.USFluidOunces.toQuarts(3.5)
 		XCTAssertEqual(0.0910737, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesToquarts_2() throws {
-		let result = Volume.USFluidOunces.toquarts(0.76)
+	func testConvertKnownUSFluidOuncesToQuarts_2() throws {
+		let result = Volume.USFluidOunces.toQuarts(0.76)
 		XCTAssertEqual(0.01977601, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesToquarts_3() throws {
-		let result = Volume.USFluidOunces.toquarts(2.0)
+	func testConvertKnownUSFluidOuncesToQuarts_3() throws {
+		let result = Volume.USFluidOunces.toQuarts(2.0)
 		XCTAssertEqual(0.0520421, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTopints_1() throws {
-		let result = Volume.USFluidOunces.topints(12.0)
+	func testConvertKnownUSFluidOuncesToPints_1() throws {
+		let result = Volume.USFluidOunces.toPints(12.0)
 		XCTAssertEqual(0.624506, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTopints_2() throws {
-		let result = Volume.USFluidOunces.topints(0.4)
+	func testConvertKnownUSFluidOuncesToPints_2() throws {
+		let result = Volume.USFluidOunces.toPints(0.4)
 		XCTAssertEqual(0.0208169, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTopints_3() throws {
-		let result = Volume.USFluidOunces.topints(1.99)
+	func testConvertKnownUSFluidOuncesToPints_3() throws {
+		let result = Volume.USFluidOunces.toPints(1.99)
 		XCTAssertEqual(0.1035639, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTogallons_1() throws {
-		let result = Volume.USFluidOunces.togallons(3.0)
+	func testConvertKnownUSFluidOuncesToGallons_1() throws {
+		let result = Volume.USFluidOunces.toGallons(3.0)
 		XCTAssertEqual(0.0195158, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTogallons_2() throws {
-		let result = Volume.USFluidOunces.togallons(100.5)
+	func testConvertKnownUSFluidOuncesToGallons_2() throws {
+		let result = Volume.USFluidOunces.toGallons(100.5)
 		XCTAssertEqual(0.65377934, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTogallons_3() throws {
-		let result = Volume.USFluidOunces.togallons(0.9)
+	func testConvertKnownUSFluidOuncesToGallons_3() throws {
+		let result = Volume.USFluidOunces.toGallons(0.9)
 		XCTAssertEqual(0.00585474, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTofluidOunces_1() throws {
-		let result = Volume.USFluidOunces.tofluidOunces(0.6)
+	func testConvertKnownUSFluidOuncesToFluidOunces_1() throws {
+		let result = Volume.USFluidOunces.toFluidOunces(0.6)
 		XCTAssertEqual(0.624506, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTofluidOunces_2() throws {
-		let result = Volume.USFluidOunces.tofluidOunces(123.0)
+	func testConvertKnownUSFluidOuncesToFluidOunces_2() throws {
+		let result = Volume.USFluidOunces.toFluidOunces(123.0)
 		XCTAssertEqual(128.024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTofluidOunces_3() throws {
-		let result = Volume.USFluidOunces.tofluidOunces(8009.0)
+	func testConvertKnownUSFluidOuncesToFluidOunces_3() throws {
+		let result = Volume.USFluidOunces.toFluidOunces(8009.0)
 		XCTAssertEqual(8336.109, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSTeaspoons_1() throws {
-		let result = Volume.USFluidOunces.touSTeaspoons(45.0)
+	func testConvertKnownUSFluidOuncesToUSTeaspoons_1() throws {
+		let result = Volume.USFluidOunces.toUSTeaspoons(45.0)
 		XCTAssertEqual(270.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSTeaspoons_2() throws {
-		let result = Volume.USFluidOunces.touSTeaspoons(1.5)
+	func testConvertKnownUSFluidOuncesToUSTeaspoons_2() throws {
+		let result = Volume.USFluidOunces.toUSTeaspoons(1.5)
 		XCTAssertEqual(9.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSTeaspoons_3() throws {
-		let result = Volume.USFluidOunces.touSTeaspoons(400.8)
+	func testConvertKnownUSFluidOuncesToUSTeaspoons_3() throws {
+		let result = Volume.USFluidOunces.toUSTeaspoons(400.8)
 		XCTAssertEqual(2404.8008, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSTablespoons_1() throws {
-		let result = Volume.USFluidOunces.touSTablespoons(4.0)
+	func testConvertKnownUSFluidOuncesToUSTablespoons_1() throws {
+		let result = Volume.USFluidOunces.toUSTablespoons(4.0)
 		XCTAssertEqual(8.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSTablespoons_2() throws {
-		let result = Volume.USFluidOunces.touSTablespoons(170.2)
+	func testConvertKnownUSFluidOuncesToUSTablespoons_2() throws {
+		let result = Volume.USFluidOunces.toUSTablespoons(170.2)
 		XCTAssertEqual(340.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSTablespoons_3() throws {
-		let result = Volume.USFluidOunces.touSTablespoons(8811.0)
+	func testConvertKnownUSFluidOuncesToUSTablespoons_3() throws {
+		let result = Volume.USFluidOunces.toUSTablespoons(8811.0)
 		XCTAssertEqual(17622.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSQuarts_1() throws {
-		let result = Volume.USFluidOunces.touSQuarts(8811.0)
+	func testConvertKnownUSFluidOuncesToUSQuarts_1() throws {
+		let result = Volume.USFluidOunces.toUSQuarts(8811.0)
 		XCTAssertEqual(275.3438, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSQuarts_2() throws {
-		let result = Volume.USFluidOunces.touSQuarts(4.2)
+	func testConvertKnownUSFluidOuncesToUSQuarts_2() throws {
+		let result = Volume.USFluidOunces.toUSQuarts(4.2)
 		XCTAssertEqual(0.13125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSQuarts_3() throws {
-		let result = Volume.USFluidOunces.touSQuarts(109.0)
+	func testConvertKnownUSFluidOuncesToUSQuarts_3() throws {
+		let result = Volume.USFluidOunces.toUSQuarts(109.0)
 		XCTAssertEqual(3.40625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSPints_1() throws {
-		let result = Volume.USFluidOunces.touSPints(109.0)
+	func testConvertKnownUSFluidOuncesToUSPints_1() throws {
+		let result = Volume.USFluidOunces.toUSPints(109.0)
 		XCTAssertEqual(6.8125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSPints_2() throws {
-		let result = Volume.USFluidOunces.touSPints(77.09)
+	func testConvertKnownUSFluidOuncesToUSPints_2() throws {
+		let result = Volume.USFluidOunces.toUSPints(77.09)
 		XCTAssertEqual(4.818125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSPints_3() throws {
-		let result = Volume.USFluidOunces.touSPints(180.4)
+	func testConvertKnownUSFluidOuncesToUSPints_3() throws {
+		let result = Volume.USFluidOunces.toUSPints(180.4)
 		XCTAssertEqual(11.275, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSGallons_1() throws {
-		let result = Volume.USFluidOunces.touSGallons(45.0)
+	func testConvertKnownUSFluidOuncesToUSGallons_1() throws {
+		let result = Volume.USFluidOunces.toUSGallons(45.0)
 		XCTAssertEqual(0.351563, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSGallons_2() throws {
-		let result = Volume.USFluidOunces.touSGallons(1.8)
+	func testConvertKnownUSFluidOuncesToUSGallons_2() throws {
+		let result = Volume.USFluidOunces.toUSGallons(1.8)
 		XCTAssertEqual(0.0140625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSGallons_3() throws {
-		let result = Volume.USFluidOunces.touSGallons(778.9)
+	func testConvertKnownUSFluidOuncesToUSGallons_3() throws {
+		let result = Volume.USFluidOunces.toUSGallons(778.9)
 		XCTAssertEqual(6.0851562, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSCups_1() throws {
-		let result = Volume.USFluidOunces.touSCups(45.0)
+	func testConvertKnownUSFluidOuncesToUSCups_1() throws {
+		let result = Volume.USFluidOunces.toUSCups(45.0)
 		XCTAssertEqual(5.625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSCups_2() throws {
-		let result = Volume.USFluidOunces.touSCups(66.9)
+	func testConvertKnownUSFluidOuncesToUSCups_2() throws {
+		let result = Volume.USFluidOunces.toUSCups(66.9)
 		XCTAssertEqual(8.3625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSFluidOuncesTouSCups_3() throws {
-		let result = Volume.USFluidOunces.touSCups(0.29)
+	func testConvertKnownUSFluidOuncesToUSCups_3() throws {
+		let result = Volume.USFluidOunces.toUSCups(0.29)
 		XCTAssertEqual(0.03625, result, accuracy: 0.01)
 	}
 
 }
 
 final class USGallonsTests: XCTestCase {
-	func testConvertKnownUSGallonsTomillilitres_1() throws {
-		let result = Volume.USGallons.tomillilitres(2.0)
+	func testConvertKnownUSGallonsToMillilitres_1() throws {
+		let result = Volume.USGallons.toMillilitres(2.0)
 		XCTAssertEqual(7570.82, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTomillilitres_2() throws {
-		let result = Volume.USGallons.tomillilitres(0.1)
+	func testConvertKnownUSGallonsToMillilitres_2() throws {
+		let result = Volume.USGallons.toMillilitres(0.1)
 		XCTAssertEqual(378.541, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTomillilitres_3() throws {
-		let result = Volume.USGallons.tomillilitres(56.0)
+	func testConvertKnownUSGallonsToMillilitres_3() throws {
+		let result = Volume.USGallons.toMillilitres(56.0)
 		XCTAssertEqual(211983.0599039, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTolitres_1() throws {
-		let result = Volume.USGallons.tolitres(56.0)
+	func testConvertKnownUSGallonsToLitres_1() throws {
+		let result = Volume.USGallons.toLitres(56.0)
 		XCTAssertEqual(211.983, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTolitres_2() throws {
-		let result = Volume.USGallons.tolitres(5.1)
+	func testConvertKnownUSGallonsToLitres_2() throws {
+		let result = Volume.USGallons.toLitres(5.1)
 		XCTAssertEqual(19.3056, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTolitres_3() throws {
-		let result = Volume.USGallons.tolitres(2.5)
+	func testConvertKnownUSGallonsToLitres_3() throws {
+		let result = Volume.USGallons.toLitres(2.5)
 		XCTAssertEqual(9.46353, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTokilolitres_1() throws {
-		let result = Volume.USGallons.tokilolitres(111.0)
+	func testConvertKnownUSGallonsToKilolitres_1() throws {
+		let result = Volume.USGallons.toKilolitres(111.0)
 		XCTAssertEqual(0.420181, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTokilolitres_2() throws {
-		let result = Volume.USGallons.tokilolitres(9090.0)
+	func testConvertKnownUSGallonsToKilolitres_2() throws {
+		let result = Volume.USGallons.toKilolitres(9090.0)
 		XCTAssertEqual(34.40939, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTokilolitres_3() throws {
-		let result = Volume.USGallons.tokilolitres(12345.0)
+	func testConvertKnownUSGallonsToKilolitres_3() throws {
+		let result = Volume.USGallons.toKilolitres(12345.0)
 		XCTAssertEqual(46.730908, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsToteaspoons_1() throws {
-		let result = Volume.USGallons.toteaspoons(5.0)
+	func testConvertKnownUSGallonsToTeaspoons_1() throws {
+		let result = Volume.USGallons.toTeaspoons(5.0)
 		XCTAssertEqual(3197.47, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsToteaspoons_2() throws {
-		let result = Volume.USGallons.toteaspoons(0.4)
+	func testConvertKnownUSGallonsToTeaspoons_2() throws {
+		let result = Volume.USGallons.toTeaspoons(0.4)
 		XCTAssertEqual(255.797, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsToteaspoons_3() throws {
-		let result = Volume.USGallons.toteaspoons(8000.0)
+	func testConvertKnownUSGallonsToTeaspoons_3() throws {
+		let result = Volume.USGallons.toTeaspoons(8000.0)
 		XCTAssertEqual(5115948.07582550, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTotablespoons_1() throws {
-		let result = Volume.USGallons.totablespoons(79.0)
+	func testConvertKnownUSGallonsToTablespoons_1() throws {
+		let result = Volume.USGallons.toTablespoons(79.0)
 		XCTAssertEqual(16840.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTotablespoons_2() throws {
-		let result = Volume.USGallons.totablespoons(12.67)
+	func testConvertKnownUSGallonsToTablespoons_2() throws {
+		let result = Volume.USGallons.toTablespoons(12.67)
 		XCTAssertEqual(2700.7943, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTotablespoons_3() throws {
-		let result = Volume.USGallons.totablespoons(55.1)
+	func testConvertKnownUSGallonsToTablespoons_3() throws {
+		let result = Volume.USGallons.toTablespoons(55.1)
 		XCTAssertEqual(11745.36, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsToquarts_1() throws {
-		let result = Volume.USGallons.toquarts(54.0)
+	func testConvertKnownUSGallonsToQuarts_1() throws {
+		let result = Volume.USGallons.toQuarts(54.0)
 		XCTAssertEqual(179.858, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsToquarts_2() throws {
-		let result = Volume.USGallons.toquarts(2.9)
+	func testConvertKnownUSGallonsToQuarts_2() throws {
+		let result = Volume.USGallons.toQuarts(2.9)
 		XCTAssertEqual(9.65902, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsToquarts_3() throws {
-		let result = Volume.USGallons.toquarts(0.2)
+	func testConvertKnownUSGallonsToQuarts_3() throws {
+		let result = Volume.USGallons.toQuarts(0.2)
 		XCTAssertEqual(0.666139, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTopints_1() throws {
-		let result = Volume.USGallons.topints(2.0)
+	func testConvertKnownUSGallonsToPints_1() throws {
+		let result = Volume.USGallons.toPints(2.0)
 		XCTAssertEqual(13.3228, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTopints_2() throws {
-		let result = Volume.USGallons.topints(0.12)
+	func testConvertKnownUSGallonsToPints_2() throws {
+		let result = Volume.USGallons.toPints(0.12)
 		XCTAssertEqual(0.7993672, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTopints_3() throws {
-		let result = Volume.USGallons.topints(500.0)
+	func testConvertKnownUSGallonsToPints_3() throws {
+		let result = Volume.USGallons.toPints(500.0)
 		XCTAssertEqual(3330.7, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTogallons_1() throws {
-		let result = Volume.USGallons.togallons(23.0)
+	func testConvertKnownUSGallonsToGallons_1() throws {
+		let result = Volume.USGallons.toGallons(23.0)
 		XCTAssertEqual(19.1515, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTogallons_2() throws {
-		let result = Volume.USGallons.togallons(8.2)
+	func testConvertKnownUSGallonsToGallons_2() throws {
+		let result = Volume.USGallons.toGallons(8.2)
 		XCTAssertEqual(6.82793, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTogallons_3() throws {
-		let result = Volume.USGallons.togallons(1.09)
+	func testConvertKnownUSGallonsToGallons_3() throws {
+		let result = Volume.USGallons.toGallons(1.09)
 		XCTAssertEqual(0.9076149, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTofluidOunces_1() throws {
-		let result = Volume.USGallons.tofluidOunces(1.09)
+	func testConvertKnownUSGallonsToFluidOunces_1() throws {
+		let result = Volume.USGallons.toFluidOunces(1.09)
 		XCTAssertEqual(145.2184, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTofluidOunces_2() throws {
-		let result = Volume.USGallons.tofluidOunces(34.0)
+	func testConvertKnownUSGallonsToFluidOunces_2() throws {
+		let result = Volume.USGallons.toFluidOunces(34.0)
 		XCTAssertEqual(4529.75, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTofluidOunces_3() throws {
-		let result = Volume.USGallons.tofluidOunces(666.0)
+	func testConvertKnownUSGallonsToFluidOunces_3() throws {
+		let result = Volume.USGallons.toFluidOunces(666.0)
 		XCTAssertEqual(88729.724440098, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSTeaspoons_1() throws {
-		let result = Volume.USGallons.touSTeaspoons(4.0)
+	func testConvertKnownUSGallonsToUSTeaspoons_1() throws {
+		let result = Volume.USGallons.toUSTeaspoons(4.0)
 		XCTAssertEqual(3072.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSTeaspoons_2() throws {
-		let result = Volume.USGallons.touSTeaspoons(1.28)
+	func testConvertKnownUSGallonsToUSTeaspoons_2() throws {
+		let result = Volume.USGallons.toUSTeaspoons(1.28)
 		XCTAssertEqual(983.0403, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSTeaspoons_3() throws {
-		let result = Volume.USGallons.touSTeaspoons(6.99)
+	func testConvertKnownUSGallonsToUSTeaspoons_3() throws {
+		let result = Volume.USGallons.toUSTeaspoons(6.99)
 		XCTAssertEqual(5368.322, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSTablespoons_1() throws {
-		let result = Volume.USGallons.touSTablespoons(34.0)
+	func testConvertKnownUSGallonsToUSTablespoons_1() throws {
+		let result = Volume.USGallons.toUSTablespoons(34.0)
 		XCTAssertEqual(8704.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSTablespoons_2() throws {
-		let result = Volume.USGallons.touSTablespoons(8.4)
+	func testConvertKnownUSGallonsToUSTablespoons_2() throws {
+		let result = Volume.USGallons.toUSTablespoons(8.4)
 		XCTAssertEqual(2150.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSTablespoons_3() throws {
-		let result = Volume.USGallons.touSTablespoons(0.091)
+	func testConvertKnownUSGallonsToUSTablespoons_3() throws {
+		let result = Volume.USGallons.toUSTablespoons(0.091)
 		XCTAssertEqual(23.296, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSQuarts_1() throws {
-		let result = Volume.USGallons.touSQuarts(0.091)
+	func testConvertKnownUSGallonsToUSQuarts_1() throws {
+		let result = Volume.USGallons.toUSQuarts(0.091)
 		XCTAssertEqual(0.364, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSQuarts_2() throws {
-		let result = Volume.USGallons.touSQuarts(23.0)
+	func testConvertKnownUSGallonsToUSQuarts_2() throws {
+		let result = Volume.USGallons.toUSQuarts(23.0)
 		XCTAssertEqual(92.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSQuarts_3() throws {
-		let result = Volume.USGallons.touSQuarts(1000.8)
+	func testConvertKnownUSGallonsToUSQuarts_3() throws {
+		let result = Volume.USGallons.toUSQuarts(1000.8)
 		XCTAssertEqual(4003.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSPints_1() throws {
-		let result = Volume.USGallons.touSPints(1000.8)
+	func testConvertKnownUSGallonsToUSPints_1() throws {
+		let result = Volume.USGallons.toUSPints(1000.8)
 		XCTAssertEqual(8006.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSPints_2() throws {
-		let result = Volume.USGallons.touSPints(23.6)
+	func testConvertKnownUSGallonsToUSPints_2() throws {
+		let result = Volume.USGallons.toUSPints(23.6)
 		XCTAssertEqual(188.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSPints_3() throws {
-		let result = Volume.USGallons.touSPints(0.71)
+	func testConvertKnownUSGallonsToUSPints_3() throws {
+		let result = Volume.USGallons.toUSPints(0.71)
 		XCTAssertEqual(5.68, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSFluidOunces_1() throws {
-		let result = Volume.USGallons.touSFluidOunces(0.71)
+	func testConvertKnownUSGallonsToUSFluidOunces_1() throws {
+		let result = Volume.USGallons.toUSFluidOunces(0.71)
 		XCTAssertEqual(90.88, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSFluidOunces_2() throws {
-		let result = Volume.USGallons.touSFluidOunces(83.2)
+	func testConvertKnownUSGallonsToUSFluidOunces_2() throws {
+		let result = Volume.USGallons.toUSFluidOunces(83.2)
 		XCTAssertEqual(10649.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSFluidOunces_3() throws {
-		let result = Volume.USGallons.touSFluidOunces(777.0)
+	func testConvertKnownUSGallonsToUSFluidOunces_3() throws {
+		let result = Volume.USGallons.toUSFluidOunces(777.0)
 		XCTAssertEqual(99456.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSCups_1() throws {
-		let result = Volume.USGallons.touSCups(777.0)
+	func testConvertKnownUSGallonsToUSCups_1() throws {
+		let result = Volume.USGallons.toUSCups(777.0)
 		XCTAssertEqual(12432.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSCups_2() throws {
-		let result = Volume.USGallons.touSCups(5.71)
+	func testConvertKnownUSGallonsToUSCups_2() throws {
+		let result = Volume.USGallons.toUSCups(5.71)
 		XCTAssertEqual(91.36, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSGallonsTouSCups_3() throws {
-		let result = Volume.USGallons.touSCups(0.98)
+	func testConvertKnownUSGallonsToUSCups_3() throws {
+		let result = Volume.USGallons.toUSCups(0.98)
 		XCTAssertEqual(15.68, result, accuracy: 0.01)
 	}
 
 }
 
 final class USPintsTests: XCTestCase {
-	func testConvertKnownUSPintsTomillilitres_1() throws {
-		let result = Volume.USPints.tomillilitres(0.66)
+	func testConvertKnownUSPintsToMillilitres_1() throws {
+		let result = Volume.USPints.toMillilitres(0.66)
 		XCTAssertEqual(312.2965, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTomillilitres_2() throws {
-		let result = Volume.USPints.tomillilitres(9.1)
+	func testConvertKnownUSPintsToMillilitres_2() throws {
+		let result = Volume.USPints.toMillilitres(9.1)
 		XCTAssertEqual(4305.91, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTomillilitres_3() throws {
-		let result = Volume.USPints.tomillilitres(0.8)
+	func testConvertKnownUSPintsToMillilitres_3() throws {
+		let result = Volume.USPints.toMillilitres(0.8)
 		XCTAssertEqual(378.541, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTolitres_1() throws {
-		let result = Volume.USPints.tolitres(1.5)
+	func testConvertKnownUSPintsToLitres_1() throws {
+		let result = Volume.USPints.toLitres(1.5)
 		XCTAssertEqual(0.709765, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTolitres_2() throws {
-		let result = Volume.USPints.tolitres(0.6)
+	func testConvertKnownUSPintsToLitres_2() throws {
+		let result = Volume.USPints.toLitres(0.6)
 		XCTAssertEqual(0.283906, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTolitres_3() throws {
-		let result = Volume.USPints.tolitres(1367.0)
+	func testConvertKnownUSPintsToLitres_3() throws {
+		let result = Volume.USPints.toLitres(1367.0)
 		XCTAssertEqual(646.8322, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTokilolitres_1() throws {
-		let result = Volume.USPints.tokilolitres(1900.0)
+	func testConvertKnownUSPintsToKilolitres_1() throws {
+		let result = Volume.USPints.toKilolitres(1900.0)
 		XCTAssertEqual(0.8990353, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTokilolitres_2() throws {
-		let result = Volume.USPints.tokilolitres(8888.0)
+	func testConvertKnownUSPintsToKilolitres_2() throws {
+		let result = Volume.USPints.toKilolitres(8888.0)
 		XCTAssertEqual(4.205592, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTokilolitres_3() throws {
-		let result = Volume.USPints.tokilolitres(123456.0)
+	func testConvertKnownUSPintsToKilolitres_3() throws {
+		let result = Volume.USPints.toKilolitres(123456.0)
 		XCTAssertEqual(58.4164747, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsToteaspoons_1() throws {
-		let result = Volume.USPints.toteaspoons(6.0)
+	func testConvertKnownUSPintsToTeaspoons_1() throws {
+		let result = Volume.USPints.toTeaspoons(6.0)
 		XCTAssertEqual(479.62, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsToteaspoons_2() throws {
-		let result = Volume.USPints.toteaspoons(0.08)
+	func testConvertKnownUSPintsToTeaspoons_2() throws {
+		let result = Volume.USPints.toTeaspoons(0.08)
 		XCTAssertEqual(6.394935, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsToteaspoons_3() throws {
-		let result = Volume.USPints.toteaspoons(3.1)
+	func testConvertKnownUSPintsToTeaspoons_3() throws {
+		let result = Volume.USPints.toTeaspoons(3.1)
 		XCTAssertEqual(247.804, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTotablespoons_1() throws {
-		let result = Volume.USPints.totablespoons(2.0)
+	func testConvertKnownUSPintsToTablespoons_1() throws {
+		let result = Volume.USPints.toTablespoons(2.0)
 		XCTAssertEqual(53.2911, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTotablespoons_2() throws {
-		let result = Volume.USPints.totablespoons(0.09)
+	func testConvertKnownUSPintsToTablespoons_2() throws {
+		let result = Volume.USPints.toTablespoons(0.09)
 		XCTAssertEqual(2.398101, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTotablespoons_3() throws {
-		let result = Volume.USPints.totablespoons(1678.0)
+	func testConvertKnownUSPintsToTablespoons_3() throws {
+		let result = Volume.USPints.toTablespoons(1678.0)
 		XCTAssertEqual(44711.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsToquarts_1() throws {
-		let result = Volume.USPints.toquarts(12.0)
+	func testConvertKnownUSPintsToQuarts_1() throws {
+		let result = Volume.USPints.toQuarts(12.0)
 		XCTAssertEqual(4.99605, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsToquarts_2() throws {
-		let result = Volume.USPints.toquarts(503.8)
+	func testConvertKnownUSPintsToQuarts_2() throws {
+		let result = Volume.USPints.toQuarts(503.8)
 		XCTAssertEqual(209.75063, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsToquarts_3() throws {
-		let result = Volume.USPints.toquarts(0.65)
+	func testConvertKnownUSPintsToQuarts_3() throws {
+		let result = Volume.USPints.toQuarts(0.65)
 		XCTAssertEqual(0.2706191, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTopints_1() throws {
-		let result = Volume.USPints.topints(0.9)
+	func testConvertKnownUSPintsToPints_1() throws {
+		let result = Volume.USPints.toPints(0.9)
 		XCTAssertEqual(0.749407, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTopints_2() throws {
-		let result = Volume.USPints.topints(102.0)
+	func testConvertKnownUSPintsToPints_2() throws {
+		let result = Volume.USPints.toPints(102.0)
 		XCTAssertEqual(84.9328, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTopints_3() throws {
-		let result = Volume.USPints.topints(8000.7)
+	func testConvertKnownUSPintsToPints_3() throws {
+		let result = Volume.USPints.toPints(8000.7)
 		XCTAssertEqual(6661.97635, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTogallons_1() throws {
-		let result = Volume.USPints.togallons(80.0)
+	func testConvertKnownUSPintsToGallons_1() throws {
+		let result = Volume.USPints.toGallons(80.0)
 		XCTAssertEqual(8.32674, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTogallons_2() throws {
-		let result = Volume.USPints.togallons(6.2)
+	func testConvertKnownUSPintsToGallons_2() throws {
+		let result = Volume.USPints.toGallons(6.2)
 		XCTAssertEqual(0.645322, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTogallons_3() throws {
-		let result = Volume.USPints.togallons(0.7)
+	func testConvertKnownUSPintsToGallons_3() throws {
+		let result = Volume.USPints.toGallons(0.7)
 		XCTAssertEqual(0.072859, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTofluidOunces_1() throws {
-		let result = Volume.USPints.tofluidOunces(12.0)
+	func testConvertKnownUSPintsToFluidOunces_1() throws {
+		let result = Volume.USPints.toFluidOunces(12.0)
 		XCTAssertEqual(199.842, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTofluidOunces_2() throws {
-		let result = Volume.USPints.tofluidOunces(9.7)
+	func testConvertKnownUSPintsToFluidOunces_2() throws {
+		let result = Volume.USPints.toFluidOunces(9.7)
 		XCTAssertEqual(161.539, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTofluidOunces_3() throws {
-		let result = Volume.USPints.tofluidOunces(124.0)
+	func testConvertKnownUSPintsToFluidOunces_3() throws {
+		let result = Volume.USPints.toFluidOunces(124.0)
 		XCTAssertEqual(2065.03, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSTeaspoons_1() throws {
-		let result = Volume.USPints.touSTeaspoons(4.0)
+	func testConvertKnownUSPintsToUSTeaspoons_1() throws {
+		let result = Volume.USPints.toUSTeaspoons(4.0)
 		XCTAssertEqual(384.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSTeaspoons_2() throws {
-		let result = Volume.USPints.touSTeaspoons(2.5)
+	func testConvertKnownUSPintsToUSTeaspoons_2() throws {
+		let result = Volume.USPints.toUSTeaspoons(2.5)
 		XCTAssertEqual(240.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSTeaspoons_3() throws {
-		let result = Volume.USPints.touSTeaspoons(8001.9)
+	func testConvertKnownUSPintsToUSTeaspoons_3() throws {
+		let result = Volume.USPints.toUSTeaspoons(8001.9)
 		XCTAssertEqual(768182.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSTablespoons_1() throws {
-		let result = Volume.USPints.touSTablespoons(80.0)
+	func testConvertKnownUSPintsToUSTablespoons_1() throws {
+		let result = Volume.USPints.toUSTablespoons(80.0)
 		XCTAssertEqual(2560.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSTablespoons_2() throws {
-		let result = Volume.USPints.touSTablespoons(12.7)
+	func testConvertKnownUSPintsToUSTablespoons_2() throws {
+		let result = Volume.USPints.toUSTablespoons(12.7)
 		XCTAssertEqual(406.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSTablespoons_3() throws {
-		let result = Volume.USPints.touSTablespoons(0.6)
+	func testConvertKnownUSPintsToUSTablespoons_3() throws {
+		let result = Volume.USPints.toUSTablespoons(0.6)
 		XCTAssertEqual(19.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSQuarts_1() throws {
-		let result = Volume.USPints.touSQuarts(0.6)
+	func testConvertKnownUSPintsToUSQuarts_1() throws {
+		let result = Volume.USPints.toUSQuarts(0.6)
 		XCTAssertEqual(0.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSQuarts_2() throws {
-		let result = Volume.USPints.touSQuarts(10090.0)
+	func testConvertKnownUSPintsToUSQuarts_2() throws {
+		let result = Volume.USPints.toUSQuarts(10090.0)
 		XCTAssertEqual(5045.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSQuarts_3() throws {
-		let result = Volume.USPints.touSQuarts(4.56)
+	func testConvertKnownUSPintsToUSQuarts_3() throws {
+		let result = Volume.USPints.toUSQuarts(4.56)
 		XCTAssertEqual(2.28, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSGallons_1() throws {
-		let result = Volume.USPints.touSGallons(4.56)
+	func testConvertKnownUSPintsToUSGallons_1() throws {
+		let result = Volume.USPints.toUSGallons(4.56)
 		XCTAssertEqual(0.57, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSGallons_2() throws {
-		let result = Volume.USPints.touSGallons(9000.0)
+	func testConvertKnownUSPintsToUSGallons_2() throws {
+		let result = Volume.USPints.toUSGallons(9000.0)
 		XCTAssertEqual(1125.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSGallons_3() throws {
-		let result = Volume.USPints.touSGallons(47.2)
+	func testConvertKnownUSPintsToUSGallons_3() throws {
+		let result = Volume.USPints.toUSGallons(47.2)
 		XCTAssertEqual(5.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSFluidOunces_1() throws {
-		let result = Volume.USPints.touSFluidOunces(47.2)
+	func testConvertKnownUSPintsToUSFluidOunces_1() throws {
+		let result = Volume.USPints.toUSFluidOunces(47.2)
 		XCTAssertEqual(755.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSFluidOunces_2() throws {
-		let result = Volume.USPints.touSFluidOunces(1001.0)
+	func testConvertKnownUSPintsToUSFluidOunces_2() throws {
+		let result = Volume.USPints.toUSFluidOunces(1001.0)
 		XCTAssertEqual(16016.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSFluidOunces_3() throws {
-		let result = Volume.USPints.touSFluidOunces(23.9)
+	func testConvertKnownUSPintsToUSFluidOunces_3() throws {
+		let result = Volume.USPints.toUSFluidOunces(23.9)
 		XCTAssertEqual(382.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSCups_1() throws {
-		let result = Volume.USPints.touSCups(23.9)
+	func testConvertKnownUSPintsToUSCups_1() throws {
+		let result = Volume.USPints.toUSCups(23.9)
 		XCTAssertEqual(47.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSCups_2() throws {
-		let result = Volume.USPints.touSCups(1009.0)
+	func testConvertKnownUSPintsToUSCups_2() throws {
+		let result = Volume.USPints.toUSCups(1009.0)
 		XCTAssertEqual(2018.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSPintsTouSCups_3() throws {
-		let result = Volume.USPints.touSCups(45.9)
+	func testConvertKnownUSPintsToUSCups_3() throws {
+		let result = Volume.USPints.toUSCups(45.9)
 		XCTAssertEqual(91.8, result, accuracy: 0.01)
 	}
 
 }
 
 final class USQuartsTests: XCTestCase {
-	func testConvertKnownUSQuartsTomillilitres_1() throws {
-		let result = Volume.USQuarts.tomillilitres(9000.0)
+	func testConvertKnownUSQuartsToMillilitres_1() throws {
+		let result = Volume.USQuarts.toMillilitres(9000.0)
 		XCTAssertEqual(8517176.51400, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTomillilitres_2() throws {
-		let result = Volume.USQuarts.tomillilitres(5.0)
+	func testConvertKnownUSQuartsToMillilitres_2() throws {
+		let result = Volume.USQuarts.toMillilitres(5.0)
 		XCTAssertEqual(4731.76, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTomillilitres_3() throws {
-		let result = Volume.USQuarts.tomillilitres(0.7)
+	func testConvertKnownUSQuartsToMillilitres_3() throws {
+		let result = Volume.USQuarts.toMillilitres(0.7)
 		XCTAssertEqual(662.447, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTolitres_1() throws {
-		let result = Volume.USQuarts.tolitres(9.0)
+	func testConvertKnownUSQuartsToLitres_1() throws {
+		let result = Volume.USQuarts.toLitres(9.0)
 		XCTAssertEqual(8.51718, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTolitres_2() throws {
-		let result = Volume.USQuarts.tolitres(1024.0)
+	func testConvertKnownUSQuartsToLitres_2() throws {
+		let result = Volume.USQuarts.toLitres(1024.0)
 		XCTAssertEqual(969.0654, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTolitres_3() throws {
-		let result = Volume.USQuarts.tolitres(0.8)
+	func testConvertKnownUSQuartsToLitres_3() throws {
+		let result = Volume.USQuarts.toLitres(0.8)
 		XCTAssertEqual(0.757082, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTokilolitres_1() throws {
-		let result = Volume.USQuarts.tokilolitres(1000.0)
+	func testConvertKnownUSQuartsToKilolitres_1() throws {
+		let result = Volume.USQuarts.toKilolitres(1000.0)
 		XCTAssertEqual(0.946353, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTokilolitres_2() throws {
-		let result = Volume.USQuarts.tokilolitres(6789.0)
+	func testConvertKnownUSQuartsToKilolitres_2() throws {
+		let result = Volume.USQuarts.toKilolitres(6789.0)
 		XCTAssertEqual(6.42479, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTokilolitres_3() throws {
-		let result = Volume.USQuarts.tokilolitres(45.0)
+	func testConvertKnownUSQuartsToKilolitres_3() throws {
+		let result = Volume.USQuarts.toKilolitres(45.0)
 		XCTAssertEqual(0.0425859, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsToteaspoons_1() throws {
-		let result = Volume.USQuarts.toteaspoons(45.0)
+	func testConvertKnownUSQuartsToTeaspoons_1() throws {
+		let result = Volume.USQuarts.toTeaspoons(45.0)
 		XCTAssertEqual(7194.3, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsToteaspoons_2() throws {
-		let result = Volume.USQuarts.toteaspoons(6.5)
+	func testConvertKnownUSQuartsToTeaspoons_2() throws {
+		let result = Volume.USQuarts.toTeaspoons(6.5)
 		XCTAssertEqual(1039.18, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsToteaspoons_3() throws {
-		let result = Volume.USQuarts.toteaspoons(0.9)
+	func testConvertKnownUSQuartsToTeaspoons_3() throws {
+		let result = Volume.USQuarts.toTeaspoons(0.9)
 		XCTAssertEqual(143.886, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTotablespoons_1() throws {
-		let result = Volume.USQuarts.totablespoons(6.0)
+	func testConvertKnownUSQuartsToTablespoons_1() throws {
+		let result = Volume.USQuarts.toTablespoons(6.0)
 		XCTAssertEqual(319.747, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTotablespoons_2() throws {
-		let result = Volume.USQuarts.totablespoons(89.4)
+	func testConvertKnownUSQuartsToTablespoons_2() throws {
+		let result = Volume.USQuarts.toTablespoons(89.4)
 		XCTAssertEqual(4764.227, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTotablespoons_3() throws {
-		let result = Volume.USQuarts.totablespoons(4.67)
+	func testConvertKnownUSQuartsToTablespoons_3() throws {
+		let result = Volume.USQuarts.toTablespoons(4.67)
 		XCTAssertEqual(248.8696, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsToquarts_1() throws {
-		let result = Volume.USQuarts.toquarts(4.6)
+	func testConvertKnownUSQuartsToQuarts_1() throws {
+		let result = Volume.USQuarts.toQuarts(4.6)
 		XCTAssertEqual(3.8303, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsToquarts_2() throws {
-		let result = Volume.USQuarts.toquarts(0.9)
+	func testConvertKnownUSQuartsToQuarts_2() throws {
+		let result = Volume.USQuarts.toQuarts(0.9)
 		XCTAssertEqual(0.749407, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsToquarts_3() throws {
-		let result = Volume.USQuarts.toquarts(134.0)
+	func testConvertKnownUSQuartsToQuarts_3() throws {
+		let result = Volume.USQuarts.toQuarts(134.0)
 		XCTAssertEqual(111.578, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTopints_1() throws {
-		let result = Volume.USQuarts.topints(123.0)
+	func testConvertKnownUSQuartsToPints_1() throws {
+		let result = Volume.USQuarts.toPints(123.0)
 		XCTAssertEqual(204.838, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTopints_2() throws {
-		let result = Volume.USQuarts.topints(1090.9)
+	func testConvertKnownUSQuartsToPints_2() throws {
+		let result = Volume.USQuarts.toPints(1090.9)
 		XCTAssertEqual(1816.72854, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTopints_3() throws {
-		let result = Volume.USQuarts.topints(56.0)
+	func testConvertKnownUSQuartsToPints_3() throws {
+		let result = Volume.USQuarts.toPints(56.0)
 		XCTAssertEqual(93.2595, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTogallons_1() throws {
-		let result = Volume.USQuarts.togallons(56.0)
+	func testConvertKnownUSQuartsToGallons_1() throws {
+		let result = Volume.USQuarts.toGallons(56.0)
 		XCTAssertEqual(11.6574, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTogallons_2() throws {
-		let result = Volume.USQuarts.togallons(7.12)
+	func testConvertKnownUSQuartsToGallons_2() throws {
+		let result = Volume.USQuarts.toGallons(7.12)
 		XCTAssertEqual(1.48216, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTogallons_3() throws {
-		let result = Volume.USQuarts.togallons(800.0)
+	func testConvertKnownUSQuartsToGallons_3() throws {
+		let result = Volume.USQuarts.toGallons(800.0)
 		XCTAssertEqual(166.535, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTofluidOunces_1() throws {
-		let result = Volume.USQuarts.tofluidOunces(800.0)
+	func testConvertKnownUSQuartsToFluidOunces_1() throws {
+		let result = Volume.USQuarts.toFluidOunces(800.0)
 		XCTAssertEqual(26645.56289492, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTofluidOunces_2() throws {
-		let result = Volume.USQuarts.tofluidOunces(6.8)
+	func testConvertKnownUSQuartsToFluidOunces_2() throws {
+		let result = Volume.USQuarts.toFluidOunces(6.8)
 		XCTAssertEqual(226.487, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTofluidOunces_3() throws {
-		let result = Volume.USQuarts.tofluidOunces(0.9)
+	func testConvertKnownUSQuartsToFluidOunces_3() throws {
+		let result = Volume.USQuarts.toFluidOunces(0.9)
 		XCTAssertEqual(29.9763, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSTeaspoons_1() throws {
-		let result = Volume.USQuarts.touSTeaspoons(3.0)
+	func testConvertKnownUSQuartsToUSTeaspoons_1() throws {
+		let result = Volume.USQuarts.toUSTeaspoons(3.0)
 		XCTAssertEqual(576.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSTeaspoons_2() throws {
-		let result = Volume.USQuarts.touSTeaspoons(0.12)
+	func testConvertKnownUSQuartsToUSTeaspoons_2() throws {
+		let result = Volume.USQuarts.toUSTeaspoons(0.12)
 		XCTAssertEqual(23.04001, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSTeaspoons_3() throws {
-		let result = Volume.USQuarts.touSTeaspoons(4.5)
+	func testConvertKnownUSQuartsToUSTeaspoons_3() throws {
+		let result = Volume.USQuarts.toUSTeaspoons(4.5)
 		XCTAssertEqual(864.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSTablespoons_1() throws {
-		let result = Volume.USQuarts.touSTablespoons(4.5)
+	func testConvertKnownUSQuartsToUSTablespoons_1() throws {
+		let result = Volume.USQuarts.toUSTablespoons(4.5)
 		XCTAssertEqual(288.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSTablespoons_2() throws {
-		let result = Volume.USQuarts.touSTablespoons(0.777)
+	func testConvertKnownUSQuartsToUSTablespoons_2() throws {
+		let result = Volume.USQuarts.toUSTablespoons(0.777)
 		XCTAssertEqual(49.728, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSTablespoons_3() throws {
-		let result = Volume.USQuarts.touSTablespoons(1.8)
+	func testConvertKnownUSQuartsToUSTablespoons_3() throws {
+		let result = Volume.USQuarts.toUSTablespoons(1.8)
 		XCTAssertEqual(115.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSPints_1() throws {
-		let result = Volume.USQuarts.touSPints(1.8)
+	func testConvertKnownUSQuartsToUSPints_1() throws {
+		let result = Volume.USQuarts.toUSPints(1.8)
 		XCTAssertEqual(3.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSPints_2() throws {
-		let result = Volume.USQuarts.touSPints(900.0)
+	func testConvertKnownUSQuartsToUSPints_2() throws {
+		let result = Volume.USQuarts.toUSPints(900.0)
 		XCTAssertEqual(1800.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSPints_3() throws {
-		let result = Volume.USQuarts.touSPints(12.45)
+	func testConvertKnownUSQuartsToUSPints_3() throws {
+		let result = Volume.USQuarts.toUSPints(12.45)
 		XCTAssertEqual(24.9, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSGallons_1() throws {
-		let result = Volume.USQuarts.touSGallons(12.45)
+	func testConvertKnownUSQuartsToUSGallons_1() throws {
+		let result = Volume.USQuarts.toUSGallons(12.45)
 		XCTAssertEqual(3.1125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSGallons_2() throws {
-		let result = Volume.USQuarts.touSGallons(0.8)
+	func testConvertKnownUSQuartsToUSGallons_2() throws {
+		let result = Volume.USQuarts.toUSGallons(0.8)
 		XCTAssertEqual(0.2, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSGallons_3() throws {
-		let result = Volume.USQuarts.touSGallons(100.9)
+	func testConvertKnownUSQuartsToUSGallons_3() throws {
+		let result = Volume.USQuarts.toUSGallons(100.9)
 		XCTAssertEqual(25.225, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSFluidOunces_1() throws {
-		let result = Volume.USQuarts.touSFluidOunces(100.9)
+	func testConvertKnownUSQuartsToUSFluidOunces_1() throws {
+		let result = Volume.USQuarts.toUSFluidOunces(100.9)
 		XCTAssertEqual(3228.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSFluidOunces_2() throws {
-		let result = Volume.USQuarts.touSFluidOunces(12345.0)
+	func testConvertKnownUSQuartsToUSFluidOunces_2() throws {
+		let result = Volume.USQuarts.toUSFluidOunces(12345.0)
 		XCTAssertEqual(395040.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSFluidOunces_3() throws {
-		let result = Volume.USQuarts.touSFluidOunces(8.7)
+	func testConvertKnownUSQuartsToUSFluidOunces_3() throws {
+		let result = Volume.USQuarts.toUSFluidOunces(8.7)
 		XCTAssertEqual(278.4, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSCups_1() throws {
-		let result = Volume.USQuarts.touSCups(8.7)
+	func testConvertKnownUSQuartsToUSCups_1() throws {
+		let result = Volume.USQuarts.toUSCups(8.7)
 		XCTAssertEqual(34.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSCups_2() throws {
-		let result = Volume.USQuarts.touSCups(123.9)
+	func testConvertKnownUSQuartsToUSCups_2() throws {
+		let result = Volume.USQuarts.toUSCups(123.9)
 		XCTAssertEqual(495.6, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSQuartsTouSCups_3() throws {
-		let result = Volume.USQuarts.touSCups(0.66)
+	func testConvertKnownUSQuartsToUSCups_3() throws {
+		let result = Volume.USQuarts.toUSCups(0.66)
 		XCTAssertEqual(2.64, result, accuracy: 0.01)
 	}
 
 }
 
 final class USTablespoonsTests: XCTestCase {
-	func testConvertKnownUSTablespoonsTomillilitres_1() throws {
-		let result = Volume.USTablespoons.tomillilitres(12.0)
+	func testConvertKnownUSTablespoonsToMillilitres_1() throws {
+		let result = Volume.USTablespoons.toMillilitres(12.0)
 		XCTAssertEqual(177.441, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTomillilitres_2() throws {
-		let result = Volume.USTablespoons.tomillilitres(0.8)
+	func testConvertKnownUSTablespoonsToMillilitres_2() throws {
+		let result = Volume.USTablespoons.toMillilitres(0.8)
 		XCTAssertEqual(11.8294, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTomillilitres_3() throws {
-		let result = Volume.USTablespoons.tomillilitres(4500.0)
+	func testConvertKnownUSTablespoonsToMillilitres_3() throws {
+		let result = Volume.USTablespoons.toMillilitres(4500.0)
 		XCTAssertEqual(66540.44, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTolitres_1() throws {
-		let result = Volume.USTablespoons.tolitres(567.0)
+	func testConvertKnownUSTablespoonsToLitres_1() throws {
+		let result = Volume.USTablespoons.toLitres(567.0)
 		XCTAssertEqual(8.3841, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTolitres_2() throws {
-		let result = Volume.USTablespoons.tolitres(80.9)
+	func testConvertKnownUSTablespoonsToLitres_2() throws {
+		let result = Volume.USTablespoons.toLitres(80.9)
 		XCTAssertEqual(1.196249, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTolitres_3() throws {
-		let result = Volume.USTablespoons.tolitres(10000.0)
+	func testConvertKnownUSTablespoonsToLitres_3() throws {
+		let result = Volume.USTablespoons.toLitres(10000.0)
 		XCTAssertEqual(147.8676, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTokilolitres_1() throws {
-		let result = Volume.USTablespoons.tokilolitres(9900.0)
+	func testConvertKnownUSTablespoonsToKilolitres_1() throws {
+		let result = Volume.USTablespoons.toKilolitres(9900.0)
 		XCTAssertEqual(0.146389, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTokilolitres_2() throws {
-		let result = Volume.USTablespoons.tokilolitres(123456.0)
+	func testConvertKnownUSTablespoonsToKilolitres_2() throws {
+		let result = Volume.USTablespoons.toKilolitres(123456.0)
 		XCTAssertEqual(1.82551483, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTokilolitres_3() throws {
-		let result = Volume.USTablespoons.tokilolitres(18009.0)
+	func testConvertKnownUSTablespoonsToKilolitres_3() throws {
+		let result = Volume.USTablespoons.toKilolitres(18009.0)
 		XCTAssertEqual(0.26629485, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsToteaspoons_1() throws {
-		let result = Volume.USTablespoons.toteaspoons(14.0)
+	func testConvertKnownUSTablespoonsToTeaspoons_1() throws {
+		let result = Volume.USTablespoons.toTeaspoons(14.0)
 		XCTAssertEqual(34.9723, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsToteaspoons_2() throws {
-		let result = Volume.USTablespoons.toteaspoons(0.9)
+	func testConvertKnownUSTablespoonsToTeaspoons_2() throws {
+		let result = Volume.USTablespoons.toTeaspoons(0.9)
 		XCTAssertEqual(2.24822, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsToteaspoons_3() throws {
-		let result = Volume.USTablespoons.toteaspoons(180.0)
+	func testConvertKnownUSTablespoonsToTeaspoons_3() throws {
+		let result = Volume.USTablespoons.toTeaspoons(180.0)
 		XCTAssertEqual(449.644, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTotablespoons_1() throws {
-		let result = Volume.USTablespoons.totablespoons(109.0)
+	func testConvertKnownUSTablespoonsToTablespoons_1() throws {
+		let result = Volume.USTablespoons.toTablespoons(109.0)
 		XCTAssertEqual(90.7614, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTotablespoons_2() throws {
-		let result = Volume.USTablespoons.totablespoons(89.0)
+	func testConvertKnownUSTablespoonsToTablespoons_2() throws {
+		let result = Volume.USTablespoons.toTablespoons(89.0)
 		XCTAssertEqual(74.108, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTotablespoons_3() throws {
-		let result = Volume.USTablespoons.totablespoons(5.2)
+	func testConvertKnownUSTablespoonsToTablespoons_3() throws {
+		let result = Volume.USTablespoons.toTablespoons(5.2)
 		XCTAssertEqual(4.3299, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsToquarts_1() throws {
-		let result = Volume.USTablespoons.toquarts(345.0)
+	func testConvertKnownUSTablespoonsToQuarts_1() throws {
+		let result = Volume.USTablespoons.toQuarts(345.0)
 		XCTAssertEqual(4.48863, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsToquarts_2() throws {
-		let result = Volume.USTablespoons.toquarts(89.9)
+	func testConvertKnownUSTablespoonsToQuarts_2() throws {
+		let result = Volume.USTablespoons.toQuarts(89.9)
 		XCTAssertEqual(1.169647, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsToquarts_3() throws {
-		let result = Volume.USTablespoons.toquarts(12.88)
+	func testConvertKnownUSTablespoonsToQuarts_3() throws {
+		let result = Volume.USTablespoons.toQuarts(12.88)
 		XCTAssertEqual(0.16757568, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTopints_1() throws {
-		let result = Volume.USTablespoons.topints(12.0)
+	func testConvertKnownUSTablespoonsToPints_1() throws {
+		let result = Volume.USTablespoons.toPints(12.0)
 		XCTAssertEqual(0.312253, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTopints_2() throws {
-		let result = Volume.USTablespoons.topints(809.7)
+	func testConvertKnownUSTablespoonsToPints_2() throws {
+		let result = Volume.USTablespoons.toPints(809.7)
 		XCTAssertEqual(21.069259, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTopints_3() throws {
-		let result = Volume.USTablespoons.topints(0.4)
+	func testConvertKnownUSTablespoonsToPints_3() throws {
+		let result = Volume.USTablespoons.toPints(0.4)
 		XCTAssertEqual(0.0104084, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTogallons_1() throws {
-		let result = Volume.USTablespoons.togallons(400.0)
+	func testConvertKnownUSTablespoonsToGallons_1() throws {
+		let result = Volume.USTablespoons.toGallons(400.0)
 		XCTAssertEqual(1.30105, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTogallons_2() throws {
-		let result = Volume.USTablespoons.togallons(1200.9)
+	func testConvertKnownUSTablespoonsToGallons_2() throws {
+		let result = Volume.USTablespoons.toGallons(1200.9)
 		XCTAssertEqual(3.90608761, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTogallons_3() throws {
-		let result = Volume.USTablespoons.togallons(8.0)
+	func testConvertKnownUSTablespoonsToGallons_3() throws {
+		let result = Volume.USTablespoons.toGallons(8.0)
 		XCTAssertEqual(0.0260211, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTofluidOunces_1() throws {
-		let result = Volume.USTablespoons.tofluidOunces(4.0)
+	func testConvertKnownUSTablespoonsToFluidOunces_1() throws {
+		let result = Volume.USTablespoons.toFluidOunces(4.0)
 		XCTAssertEqual(2.08169, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTofluidOunces_2() throws {
-		let result = Volume.USTablespoons.tofluidOunces(50.9)
+	func testConvertKnownUSTablespoonsToFluidOunces_2() throws {
+		let result = Volume.USTablespoons.toFluidOunces(50.9)
 		XCTAssertEqual(26.48945, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTofluidOunces_3() throws {
-		let result = Volume.USTablespoons.tofluidOunces(123.0)
+	func testConvertKnownUSTablespoonsToFluidOunces_3() throws {
+		let result = Volume.USTablespoons.toFluidOunces(123.0)
 		XCTAssertEqual(64.0118, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSTeaspoons_1() throws {
-		let result = Volume.USTablespoons.touSTeaspoons(90.0)
+	func testConvertKnownUSTablespoonsToUSTeaspoons_1() throws {
+		let result = Volume.USTablespoons.toUSTeaspoons(90.0)
 		XCTAssertEqual(270.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSTeaspoons_2() throws {
-		let result = Volume.USTablespoons.touSTeaspoons(4.5)
+	func testConvertKnownUSTablespoonsToUSTeaspoons_2() throws {
+		let result = Volume.USTablespoons.toUSTeaspoons(4.5)
 		XCTAssertEqual(13.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSTeaspoons_3() throws {
-		let result = Volume.USTablespoons.touSTeaspoons(4608.0)
+	func testConvertKnownUSTablespoonsToUSTeaspoons_3() throws {
+		let result = Volume.USTablespoons.toUSTeaspoons(4608.0)
 		XCTAssertEqual(13824.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSQuarts_1() throws {
-		let result = Volume.USTablespoons.touSQuarts(456.0)
+	func testConvertKnownUSTablespoonsToUSQuarts_1() throws {
+		let result = Volume.USTablespoons.toUSQuarts(456.0)
 		XCTAssertEqual(7.125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSQuarts_2() throws {
-		let result = Volume.USTablespoons.touSQuarts(7.12)
+	func testConvertKnownUSTablespoonsToUSQuarts_2() throws {
+		let result = Volume.USTablespoons.toUSQuarts(7.12)
 		XCTAssertEqual(0.11125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSQuarts_3() throws {
-		let result = Volume.USTablespoons.touSQuarts(194.9)
+	func testConvertKnownUSTablespoonsToUSQuarts_3() throws {
+		let result = Volume.USTablespoons.toUSQuarts(194.9)
 		XCTAssertEqual(3.0453125, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSPints_1() throws {
-		let result = Volume.USTablespoons.touSPints(194.9)
+	func testConvertKnownUSTablespoonsToUSPints_1() throws {
+		let result = Volume.USTablespoons.toUSPints(194.9)
 		XCTAssertEqual(6.090625, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSPints_2() throws {
-		let result = Volume.USTablespoons.touSPints(2000.0)
+	func testConvertKnownUSTablespoonsToUSPints_2() throws {
+		let result = Volume.USTablespoons.toUSPints(2000.0)
 		XCTAssertEqual(62.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSPints_3() throws {
-		let result = Volume.USTablespoons.touSPints(18.7)
+	func testConvertKnownUSTablespoonsToUSPints_3() throws {
+		let result = Volume.USTablespoons.toUSPints(18.7)
 		XCTAssertEqual(0.584375, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSGallons_1() throws {
-		let result = Volume.USTablespoons.touSGallons(18.7)
+	func testConvertKnownUSTablespoonsToUSGallons_1() throws {
+		let result = Volume.USTablespoons.toUSGallons(18.7)
 		XCTAssertEqual(0.07304687, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSGallons_2() throws {
-		let result = Volume.USTablespoons.touSGallons(1900.0)
+	func testConvertKnownUSTablespoonsToUSGallons_2() throws {
+		let result = Volume.USTablespoons.toUSGallons(1900.0)
 		XCTAssertEqual(7.421875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSGallons_3() throws {
-		let result = Volume.USTablespoons.touSGallons(12345.0)
+	func testConvertKnownUSTablespoonsToUSGallons_3() throws {
+		let result = Volume.USTablespoons.toUSGallons(12345.0)
 		XCTAssertEqual(48.222656, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSFluidOunces_1() throws {
-		let result = Volume.USTablespoons.touSFluidOunces(1234.0)
+	func testConvertKnownUSTablespoonsToUSFluidOunces_1() throws {
+		let result = Volume.USTablespoons.toUSFluidOunces(1234.0)
 		XCTAssertEqual(617.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSFluidOunces_2() throws {
-		let result = Volume.USTablespoons.touSFluidOunces(89.3)
+	func testConvertKnownUSTablespoonsToUSFluidOunces_2() throws {
+		let result = Volume.USTablespoons.toUSFluidOunces(89.3)
 		XCTAssertEqual(44.65, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSFluidOunces_3() throws {
-		let result = Volume.USTablespoons.touSFluidOunces(90.99)
+	func testConvertKnownUSTablespoonsToUSFluidOunces_3() throws {
+		let result = Volume.USTablespoons.toUSFluidOunces(90.99)
 		XCTAssertEqual(45.495, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSCups_1() throws {
-		let result = Volume.USTablespoons.touSCups(90.99)
+	func testConvertKnownUSTablespoonsToUSCups_1() throws {
+		let result = Volume.USTablespoons.toUSCups(90.99)
 		XCTAssertEqual(5.686875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSCups_2() throws {
-		let result = Volume.USTablespoons.touSCups(1230.0)
+	func testConvertKnownUSTablespoonsToUSCups_2() throws {
+		let result = Volume.USTablespoons.toUSCups(1230.0)
 		XCTAssertEqual(76.875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTablespoonsTouSCups_3() throws {
-		let result = Volume.USTablespoons.touSCups(9000.9)
+	func testConvertKnownUSTablespoonsToUSCups_3() throws {
+		let result = Volume.USTablespoons.toUSCups(9000.9)
 		XCTAssertEqual(562.55625, result, accuracy: 0.01)
 	}
 
 }
 
 final class USTeaspoonsTests: XCTestCase {
-	func testConvertKnownUSTeaspoonsTomillilitres_1() throws {
-		let result = Volume.USTeaspoons.tomillilitres(6.9)
+	func testConvertKnownUSTeaspoonsToMillilitres_1() throws {
+		let result = Volume.USTeaspoons.toMillilitres(6.9)
 		XCTAssertEqual(34.0095, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTomillilitres_2() throws {
-		let result = Volume.USTeaspoons.tomillilitres(1.6)
+	func testConvertKnownUSTeaspoonsToMillilitres_2() throws {
+		let result = Volume.USTeaspoons.toMillilitres(1.6)
 		XCTAssertEqual(7.88627, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTomillilitres_3() throws {
-		let result = Volume.USTeaspoons.tomillilitres(800.0)
+	func testConvertKnownUSTeaspoonsToMillilitres_3() throws {
+		let result = Volume.USTeaspoons.toMillilitres(800.0)
 		XCTAssertEqual(3943.14, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTolitres_1() throws {
-		let result = Volume.USTeaspoons.tolitres(7.0)
+	func testConvertKnownUSTeaspoonsToLitres_1() throws {
+		let result = Volume.USTeaspoons.toLitres(7.0)
 		XCTAssertEqual(0.0345024, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTolitres_2() throws {
-		let result = Volume.USTeaspoons.tolitres(90.0)
+	func testConvertKnownUSTeaspoonsToLitres_2() throws {
+		let result = Volume.USTeaspoons.toLitres(90.0)
 		XCTAssertEqual(0.443603, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTolitres_3() throws {
-		let result = Volume.USTeaspoons.tolitres(56.7)
+	func testConvertKnownUSTeaspoonsToLitres_3() throws {
+		let result = Volume.USTeaspoons.toLitres(56.7)
 		XCTAssertEqual(0.2794698, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTokilolitres_1() throws {
-		let result = Volume.USTeaspoons.tokilolitres(10009000.0)
+	func testConvertKnownUSTeaspoonsToKilolitres_1() throws {
+		let result = Volume.USTeaspoons.toKilolitres(10009000.0)
 		XCTAssertEqual(49.33356028, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTokilolitres_2() throws {
-		let result = Volume.USTeaspoons.tokilolitres(1234567.8)
+	func testConvertKnownUSTeaspoonsToKilolitres_2() throws {
+		let result = Volume.USTeaspoons.toKilolitres(1234567.8)
 		XCTAssertEqual(6.08508592078, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTokilolitres_3() throws {
-		let result = Volume.USTeaspoons.tokilolitres(9800.0)
+	func testConvertKnownUSTeaspoonsToKilolitres_3() throws {
+		let result = Volume.USTeaspoons.toKilolitres(9800.0)
 		XCTAssertEqual(0.04830342, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsToteaspoons_1() throws {
-		let result = Volume.USTeaspoons.toteaspoons(122.0)
+	func testConvertKnownUSTeaspoonsToTeaspoons_1() throws {
+		let result = Volume.USTeaspoons.toTeaspoons(122.0)
 		XCTAssertEqual(101.586, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsToteaspoons_2() throws {
-		let result = Volume.USTeaspoons.toteaspoons(89.2)
+	func testConvertKnownUSTeaspoonsToTeaspoons_2() throws {
+		let result = Volume.USTeaspoons.toTeaspoons(89.2)
 		XCTAssertEqual(74.27448, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsToteaspoons_3() throws {
-		let result = Volume.USTeaspoons.toteaspoons(900.0)
+	func testConvertKnownUSTeaspoonsToTeaspoons_3() throws {
+		let result = Volume.USTeaspoons.toTeaspoons(900.0)
 		XCTAssertEqual(749.406, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTotablespoons_1() throws {
-		let result = Volume.USTeaspoons.totablespoons(500.0)
+	func testConvertKnownUSTeaspoonsToTablespoons_1() throws {
+		let result = Volume.USTeaspoons.toTablespoons(500.0)
 		XCTAssertEqual(138.779, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTotablespoons_2() throws {
-		let result = Volume.USTeaspoons.totablespoons(12.34)
+	func testConvertKnownUSTeaspoonsToTablespoons_2() throws {
+		let result = Volume.USTeaspoons.toTablespoons(12.34)
 		XCTAssertEqual(3.425064, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTotablespoons_3() throws {
-		let result = Volume.USTeaspoons.totablespoons(667.0)
+	func testConvertKnownUSTeaspoonsToTablespoons_3() throws {
+		let result = Volume.USTeaspoons.toTablespoons(667.0)
 		XCTAssertEqual(185.131, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsToquarts_1() throws {
-		let result = Volume.USTeaspoons.toquarts(78.0)
+	func testConvertKnownUSTeaspoonsToQuarts_1() throws {
+		let result = Volume.USTeaspoons.toQuarts(78.0)
 		XCTAssertEqual(0.338274, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsToquarts_2() throws {
-		let result = Volume.USTeaspoons.toquarts(900.1)
+	func testConvertKnownUSTeaspoonsToQuarts_2() throws {
+		let result = Volume.USTeaspoons.toQuarts(900.1)
 		XCTAssertEqual(3.9035927, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsToquarts_3() throws {
-		let result = Volume.USTeaspoons.toquarts(116.9)
+	func testConvertKnownUSTeaspoonsToQuarts_3() throws {
+		let result = Volume.USTeaspoons.toQuarts(116.9)
 		XCTAssertEqual(0.50697698, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTopints_1() throws {
-		let result = Volume.USTeaspoons.topints(116.0)
+	func testConvertKnownUSTeaspoonsToPints_1() throws {
+		let result = Volume.USTeaspoons.toPints(116.0)
 		XCTAssertEqual(1.00615, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTopints_2() throws {
-		let result = Volume.USTeaspoons.topints(59.5)
+	func testConvertKnownUSTeaspoonsToPints_2() throws {
+		let result = Volume.USTeaspoons.toPints(59.5)
 		XCTAssertEqual(0.5160844, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTopints_3() throws {
-		let result = Volume.USTeaspoons.topints(1900.0)
+	func testConvertKnownUSTeaspoonsToPints_3() throws {
+		let result = Volume.USTeaspoons.toPints(1900.0)
 		XCTAssertEqual(16.48, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTogallons_1() throws {
-		let result = Volume.USTeaspoons.togallons(199.0)
+	func testConvertKnownUSTeaspoonsToGallons_1() throws {
+		let result = Volume.USTeaspoons.toGallons(199.0)
 		XCTAssertEqual(0.215758, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTogallons_2() throws {
-		let result = Volume.USTeaspoons.togallons(12345.0)
+	func testConvertKnownUSTeaspoonsToGallons_2() throws {
+		let result = Volume.USTeaspoons.toGallons(12345.0)
 		XCTAssertEqual(13.384583, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTogallons_3() throws {
-		let result = Volume.USTeaspoons.togallons(90001.0)
+	func testConvertKnownUSTeaspoonsToGallons_3() throws {
+		let result = Volume.USTeaspoons.toGallons(90001.0)
 		XCTAssertEqual(97.580059, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTofluidOunces_1() throws {
-		let result = Volume.USTeaspoons.tofluidOunces(123.0)
+	func testConvertKnownUSTeaspoonsToFluidOunces_1() throws {
+		let result = Volume.USTeaspoons.toFluidOunces(123.0)
 		XCTAssertEqual(21.3373, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTofluidOunces_2() throws {
-		let result = Volume.USTeaspoons.tofluidOunces(89.0)
+	func testConvertKnownUSTeaspoonsToFluidOunces_2() throws {
+		let result = Volume.USTeaspoons.toFluidOunces(89.0)
 		XCTAssertEqual(15.4392, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTofluidOunces_3() throws {
-		let result = Volume.USTeaspoons.tofluidOunces(1009.0)
+	func testConvertKnownUSTeaspoonsToFluidOunces_3() throws {
+		let result = Volume.USTeaspoons.toFluidOunces(1009.0)
 		XCTAssertEqual(175.035, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSTablespoons_1() throws {
-		let result = Volume.USTeaspoons.touSTablespoons(190.0)
+	func testConvertKnownUSTeaspoonsToUSTablespoons_1() throws {
+		let result = Volume.USTeaspoons.toUSTablespoons(190.0)
 		XCTAssertEqual(63.3333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSTablespoons_2() throws {
-		let result = Volume.USTeaspoons.touSTablespoons(5.6)
+	func testConvertKnownUSTeaspoonsToUSTablespoons_2() throws {
+		let result = Volume.USTeaspoons.toUSTablespoons(5.6)
 		XCTAssertEqual(1.86667, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSTablespoons_3() throws {
-		let result = Volume.USTeaspoons.touSTablespoons(0.7)
+	func testConvertKnownUSTeaspoonsToUSTablespoons_3() throws {
+		let result = Volume.USTeaspoons.toUSTablespoons(0.7)
 		XCTAssertEqual(0.233333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSQuarts_1() throws {
-		let result = Volume.USTeaspoons.touSQuarts(100.4)
+	func testConvertKnownUSTeaspoonsToUSQuarts_1() throws {
+		let result = Volume.USTeaspoons.toUSQuarts(100.4)
 		XCTAssertEqual(0.5229165, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSQuarts_2() throws {
-		let result = Volume.USTeaspoons.touSQuarts(9000.0)
+	func testConvertKnownUSTeaspoonsToUSQuarts_2() throws {
+		let result = Volume.USTeaspoons.toUSQuarts(9000.0)
 		XCTAssertEqual(46.87498, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSQuarts_3() throws {
-		let result = Volume.USTeaspoons.touSQuarts(1234.0)
+	func testConvertKnownUSTeaspoonsToUSQuarts_3() throws {
+		let result = Volume.USTeaspoons.toUSQuarts(1234.0)
 		XCTAssertEqual(6.427081, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSPints_1() throws {
-		let result = Volume.USTeaspoons.touSPints(109.0)
+	func testConvertKnownUSTeaspoonsToUSPints_1() throws {
+		let result = Volume.USTeaspoons.toUSPints(109.0)
 		XCTAssertEqual(1.13542, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSPints_2() throws {
-		let result = Volume.USTeaspoons.touSPints(3400.0)
+	func testConvertKnownUSTeaspoonsToUSPints_2() throws {
+		let result = Volume.USTeaspoons.toUSPints(3400.0)
 		XCTAssertEqual(35.41666, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSPints_3() throws {
-		let result = Volume.USTeaspoons.touSPints(10.7)
+	func testConvertKnownUSTeaspoonsToUSPints_3() throws {
+		let result = Volume.USTeaspoons.toUSPints(10.7)
 		XCTAssertEqual(0.1114583, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSGallons_1() throws {
-		let result = Volume.USTeaspoons.touSGallons(109.0)
+	func testConvertKnownUSTeaspoonsToUSGallons_1() throws {
+		let result = Volume.USTeaspoons.toUSGallons(109.0)
 		XCTAssertEqual(0.141927, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSGallons_2() throws {
-		let result = Volume.USTeaspoons.touSGallons(9876.0)
+	func testConvertKnownUSTeaspoonsToUSGallons_2() throws {
+		let result = Volume.USTeaspoons.toUSGallons(9876.0)
 		XCTAssertEqual(12.85937, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSGallons_3() throws {
-		let result = Volume.USTeaspoons.touSGallons(10900.0)
+	func testConvertKnownUSTeaspoonsToUSGallons_3() throws {
+		let result = Volume.USTeaspoons.toUSGallons(10900.0)
 		XCTAssertEqual(14.192704, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSFluidOunces_1() throws {
-		let result = Volume.USTeaspoons.touSFluidOunces(180.0)
+	func testConvertKnownUSTeaspoonsToUSFluidOunces_1() throws {
+		let result = Volume.USTeaspoons.toUSFluidOunces(180.0)
 		XCTAssertEqual(30.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSFluidOunces_2() throws {
-		let result = Volume.USTeaspoons.touSFluidOunces(5.6)
+	func testConvertKnownUSTeaspoonsToUSFluidOunces_2() throws {
+		let result = Volume.USTeaspoons.toUSFluidOunces(5.6)
 		XCTAssertEqual(0.933333, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSFluidOunces_3() throws {
-		let result = Volume.USTeaspoons.touSFluidOunces(900.5)
+	func testConvertKnownUSTeaspoonsToUSFluidOunces_3() throws {
+		let result = Volume.USTeaspoons.toUSFluidOunces(900.5)
 		XCTAssertEqual(150.08328, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSCups_1() throws {
-		let result = Volume.USTeaspoons.touSCups(90.0)
+	func testConvertKnownUSTeaspoonsToUSCups_1() throws {
+		let result = Volume.USTeaspoons.toUSCups(90.0)
 		XCTAssertEqual(1.875, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSCups_2() throws {
-		let result = Volume.USTeaspoons.touSCups(4500.8)
+	func testConvertKnownUSTeaspoonsToUSCups_2() throws {
+		let result = Volume.USTeaspoons.toUSCups(4500.8)
 		XCTAssertEqual(93.7666363, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownUSTeaspoonsTouSCups_3() throws {
-		let result = Volume.USTeaspoons.touSCups(0.9)
+	func testConvertKnownUSTeaspoonsToUSCups_3() throws {
+		let result = Volume.USTeaspoons.toUSCups(0.9)
 		XCTAssertEqual(0.01875, result, accuracy: 0.01)
 	}
 

@@ -8,315 +8,315 @@ import XCTest
 @testable import SwiftUnits
 
 final class AtmospheresTests: XCTestCase {
-	func testConvertKnownAtmospheresTobars_1() throws {
-		let result = Pressure.Atmospheres.tobars(6.0)
+	func testConvertKnownAtmospheresToBars_1() throws {
+		let result = Pressure.Atmospheres.toBars(6.0)
 		XCTAssertEqual(6.0795, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTobars_2() throws {
-		let result = Pressure.Atmospheres.tobars(1.2)
+	func testConvertKnownAtmospheresToBars_2() throws {
+		let result = Pressure.Atmospheres.toBars(1.2)
 		XCTAssertEqual(1.2159, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTobars_3() throws {
-		let result = Pressure.Atmospheres.tobars(0.8)
+	func testConvertKnownAtmospheresToBars_3() throws {
+		let result = Pressure.Atmospheres.toBars(0.8)
 		XCTAssertEqual(0.8106, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTopascals_1() throws {
-		let result = Pressure.Atmospheres.topascals(0.8)
+	func testConvertKnownAtmospheresToPascals_1() throws {
+		let result = Pressure.Atmospheres.toPascals(0.8)
 		XCTAssertEqual(81060.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTopascals_2() throws {
-		let result = Pressure.Atmospheres.topascals(1.2)
+	func testConvertKnownAtmospheresToPascals_2() throws {
+		let result = Pressure.Atmospheres.toPascals(1.2)
 		XCTAssertEqual(121590.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTopascals_3() throws {
-		let result = Pressure.Atmospheres.topascals(0.45)
+	func testConvertKnownAtmospheresToPascals_3() throws {
+		let result = Pressure.Atmospheres.toPascals(0.45)
 		XCTAssertEqual(45596.25, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTotorrs_1() throws {
-		let result = Pressure.Atmospheres.totorrs(0.45)
+	func testConvertKnownAtmospheresToTorrs_1() throws {
+		let result = Pressure.Atmospheres.toTorrs(0.45)
 		XCTAssertEqual(342.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTotorrs_2() throws {
-		let result = Pressure.Atmospheres.totorrs(1.2)
+	func testConvertKnownAtmospheresToTorrs_2() throws {
+		let result = Pressure.Atmospheres.toTorrs(1.2)
 		XCTAssertEqual(912.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTotorrs_3() throws {
-		let result = Pressure.Atmospheres.totorrs(6.0)
+	func testConvertKnownAtmospheresToTorrs_3() throws {
+		let result = Pressure.Atmospheres.toTorrs(6.0)
 		XCTAssertEqual(4560.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTopsi_1() throws {
-		let result = Pressure.Atmospheres.topsi(6.0)
+	func testConvertKnownAtmospheresToPsi_1() throws {
+		let result = Pressure.Atmospheres.toPsi(6.0)
 		XCTAssertEqual(88.1757, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTopsi_2() throws {
-		let result = Pressure.Atmospheres.topsi(0.4)
+	func testConvertKnownAtmospheresToPsi_2() throws {
+		let result = Pressure.Atmospheres.toPsi(0.4)
 		XCTAssertEqual(5.87838, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownAtmospheresTopsi_3() throws {
-		let result = Pressure.Atmospheres.topsi(1.2)
+	func testConvertKnownAtmospheresToPsi_3() throws {
+		let result = Pressure.Atmospheres.toPsi(1.2)
 		XCTAssertEqual(17.6351, result, accuracy: 0.01)
 	}
 
 }
 
 final class BarsTests: XCTestCase {
-	func testConvertKnownBarsToatmospheres_1() throws {
-		let result = Pressure.Bars.toatmospheres(800.0)
+	func testConvertKnownBarsToAtmospheres_1() throws {
+		let result = Pressure.Bars.toAtmospheres(800.0)
 		XCTAssertEqual(789.539, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsToatmospheres_2() throws {
-		let result = Pressure.Bars.toatmospheres(123.0)
+	func testConvertKnownBarsToAtmospheres_2() throws {
+		let result = Pressure.Bars.toAtmospheres(123.0)
 		XCTAssertEqual(121.392, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsToatmospheres_3() throws {
-		let result = Pressure.Bars.toatmospheres(89.0)
+	func testConvertKnownBarsToAtmospheres_3() throws {
+		let result = Pressure.Bars.toAtmospheres(89.0)
 		XCTAssertEqual(87.8362, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTopascals_1() throws {
-		let result = Pressure.Bars.topascals(0.89)
+	func testConvertKnownBarsToPascals_1() throws {
+		let result = Pressure.Bars.toPascals(0.89)
 		XCTAssertEqual(89000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTopascals_2() throws {
-		let result = Pressure.Bars.topascals(0.01)
+	func testConvertKnownBarsToPascals_2() throws {
+		let result = Pressure.Bars.toPascals(0.01)
 		XCTAssertEqual(1000.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTopascals_3() throws {
-		let result = Pressure.Bars.topascals(0.123)
+	func testConvertKnownBarsToPascals_3() throws {
+		let result = Pressure.Bars.toPascals(0.123)
 		XCTAssertEqual(12300.0, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTotorrs_1() throws {
-		let result = Pressure.Bars.totorrs(0.123)
+	func testConvertKnownBarsToTorrs_1() throws {
+		let result = Pressure.Bars.toTorrs(0.123)
 		XCTAssertEqual(92.257587, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTotorrs_2() throws {
-		let result = Pressure.Bars.totorrs(2.0)
+	func testConvertKnownBarsToTorrs_2() throws {
+		let result = Pressure.Bars.toTorrs(2.0)
 		XCTAssertEqual(1500.12, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTotorrs_3() throws {
-		let result = Pressure.Bars.totorrs(8.9)
+	func testConvertKnownBarsToTorrs_3() throws {
+		let result = Pressure.Bars.toTorrs(8.9)
 		XCTAssertEqual(6675.55, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTopsi_1() throws {
-		let result = Pressure.Bars.topsi(8.1)
+	func testConvertKnownBarsToPsi_1() throws {
+		let result = Pressure.Bars.toPsi(8.1)
 		XCTAssertEqual(117.481, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTopsi_2() throws {
-		let result = Pressure.Bars.topsi(1001.0)
+	func testConvertKnownBarsToPsi_2() throws {
+		let result = Pressure.Bars.toPsi(1001.0)
 		XCTAssertEqual(14518.29290, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownBarsTopsi_3() throws {
-		let result = Pressure.Bars.topsi(6.0)
+	func testConvertKnownBarsToPsi_3() throws {
+		let result = Pressure.Bars.toPsi(6.0)
 		XCTAssertEqual(87.0226, result, accuracy: 0.01)
 	}
 
 }
 
 final class PascalsTests: XCTestCase {
-	func testConvertKnownPascalsToatmospheres_1() throws {
-		let result = Pressure.Pascals.toatmospheres(90000.0)
+	func testConvertKnownPascalsToAtmospheres_1() throws {
+		let result = Pressure.Pascals.toAtmospheres(90000.0)
 		XCTAssertEqual(0.88823094, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsToatmospheres_2() throws {
-		let result = Pressure.Pascals.toatmospheres(1234567.0)
+	func testConvertKnownPascalsToAtmospheres_2() throws {
+		let result = Pressure.Pascals.toAtmospheres(1234567.0)
 		XCTAssertEqual(12.18422897, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsToatmospheres_3() throws {
-		let result = Pressure.Pascals.toatmospheres(204060.0)
+	func testConvertKnownPascalsToAtmospheres_3() throws {
+		let result = Pressure.Pascals.toAtmospheres(204060.0)
 		XCTAssertEqual(2.01391562, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTobars_1() throws {
-		let result = Pressure.Pascals.tobars(10000.0)
+	func testConvertKnownPascalsToBars_1() throws {
+		let result = Pressure.Pascals.toBars(10000.0)
 		XCTAssertEqual(0.1, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTobars_2() throws {
-		let result = Pressure.Pascals.tobars(12345.0)
+	func testConvertKnownPascalsToBars_2() throws {
+		let result = Pressure.Pascals.toBars(12345.0)
 		XCTAssertEqual(0.12345, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTobars_3() throws {
-		let result = Pressure.Pascals.tobars(80000.0)
+	func testConvertKnownPascalsToBars_3() throws {
+		let result = Pressure.Pascals.toBars(80000.0)
 		XCTAssertEqual(0.8, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTotorrs_1() throws {
-		let result = Pressure.Pascals.totorrs(80000.0)
+	func testConvertKnownPascalsToTorrs_1() throws {
+		let result = Pressure.Pascals.toTorrs(80000.0)
 		XCTAssertEqual(600.04935, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTotorrs_2() throws {
-		let result = Pressure.Pascals.totorrs(1234.0)
+	func testConvertKnownPascalsToTorrs_2() throws {
+		let result = Pressure.Pascals.toTorrs(1234.0)
 		XCTAssertEqual(9.255761, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTotorrs_3() throws {
-		let result = Pressure.Pascals.totorrs(80.0)
+	func testConvertKnownPascalsToTorrs_3() throws {
+		let result = Pressure.Pascals.toTorrs(80.0)
 		XCTAssertEqual(0.600049, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTopsi_1() throws {
-		let result = Pressure.Pascals.topsi(800.0)
+	func testConvertKnownPascalsToPsi_1() throws {
+		let result = Pressure.Pascals.toPsi(800.0)
 		XCTAssertEqual(0.11603, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTopsi_2() throws {
-		let result = Pressure.Pascals.topsi(8670.0)
+	func testConvertKnownPascalsToPsi_2() throws {
+		let result = Pressure.Pascals.toPsi(8670.0)
 		XCTAssertEqual(1.257477, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPascalsTopsi_3() throws {
-		let result = Pressure.Pascals.topsi(1000.0)
+	func testConvertKnownPascalsToPsi_3() throws {
+		let result = Pressure.Pascals.toPsi(1000.0)
 		XCTAssertEqual(0.145038, result, accuracy: 0.01)
 	}
 
 }
 
 final class PsiTests: XCTestCase {
-	func testConvertKnownPsiTobars_1() throws {
-		let result = Pressure.Psi.tobars(900.0)
+	func testConvertKnownPsiToBars_1() throws {
+		let result = Pressure.Psi.toBars(900.0)
 		XCTAssertEqual(62.0528, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTobars_2() throws {
-		let result = Pressure.Psi.tobars(134.0)
+	func testConvertKnownPsiToBars_2() throws {
+		let result = Pressure.Psi.toBars(134.0)
 		XCTAssertEqual(9.23897, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTobars_3() throws {
-		let result = Pressure.Psi.tobars(111.2)
+	func testConvertKnownPsiToBars_3() throws {
+		let result = Pressure.Psi.toBars(111.2)
 		XCTAssertEqual(7.6669701, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTopascals_1() throws {
-		let result = Pressure.Psi.topascals(0.9)
+	func testConvertKnownPsiToPascals_1() throws {
+		let result = Pressure.Psi.toPascals(0.9)
 		XCTAssertEqual(6205.28, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTopascals_2() throws {
-		let result = Pressure.Psi.topascals(0.03)
+	func testConvertKnownPsiToPascals_2() throws {
+		let result = Pressure.Psi.toPascals(0.03)
 		XCTAssertEqual(206.8427, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTopascals_3() throws {
-		let result = Pressure.Psi.topascals(2.0)
+	func testConvertKnownPsiToPascals_3() throws {
+		let result = Pressure.Psi.toPascals(2.0)
 		XCTAssertEqual(13789.5, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiToatmospheres_1() throws {
-		let result = Pressure.Psi.toatmospheres(2.0)
+	func testConvertKnownPsiToAtmospheres_1() throws {
+		let result = Pressure.Psi.toAtmospheres(2.0)
 		XCTAssertEqual(0.136092, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiToatmospheres_2() throws {
-		let result = Pressure.Psi.toatmospheres(109.0)
+	func testConvertKnownPsiToAtmospheres_2() throws {
+		let result = Pressure.Psi.toAtmospheres(109.0)
 		XCTAssertEqual(7.41701, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiToatmospheres_3() throws {
-		let result = Pressure.Psi.toatmospheres(8.0)
+	func testConvertKnownPsiToAtmospheres_3() throws {
+		let result = Pressure.Psi.toAtmospheres(8.0)
 		XCTAssertEqual(0.544368, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTotorrs_1() throws {
-		let result = Pressure.Psi.totorrs(6.0)
+	func testConvertKnownPsiToTorrs_1() throws {
+		let result = Pressure.Psi.toTorrs(6.0)
 		XCTAssertEqual(310.29, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTotorrs_2() throws {
-		let result = Pressure.Psi.totorrs(3.4)
+	func testConvertKnownPsiToTorrs_2() throws {
+		let result = Pressure.Psi.toTorrs(3.4)
 		XCTAssertEqual(175.831, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownPsiTotorrs_3() throws {
-		let result = Pressure.Psi.totorrs(0.5)
+	func testConvertKnownPsiToTorrs_3() throws {
+		let result = Pressure.Psi.toTorrs(0.5)
 		XCTAssertEqual(25.8575, result, accuracy: 0.01)
 	}
 
 }
 
 final class TorrsTests: XCTestCase {
-	func testConvertKnownTorrsTobars_1() throws {
-		let result = Pressure.Torrs.tobars(100.0)
+	func testConvertKnownTorrsToBars_1() throws {
+		let result = Pressure.Torrs.toBars(100.0)
 		XCTAssertEqual(0.133322, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTobars_2() throws {
-		let result = Pressure.Torrs.tobars(9000.1)
+	func testConvertKnownTorrsToBars_2() throws {
+		let result = Pressure.Torrs.toBars(9000.1)
 		XCTAssertEqual(11.9991465, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTobars_3() throws {
-		let result = Pressure.Torrs.tobars(1234.0)
+	func testConvertKnownTorrsToBars_3() throws {
+		let result = Pressure.Torrs.toBars(1234.0)
 		XCTAssertEqual(1.645198, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTopascals_1() throws {
-		let result = Pressure.Torrs.topascals(190.0)
+	func testConvertKnownTorrsToPascals_1() throws {
+		let result = Pressure.Torrs.toPascals(190.0)
 		XCTAssertEqual(25331.2499, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTopascals_2() throws {
-		let result = Pressure.Torrs.topascals(6.5)
+	func testConvertKnownTorrsToPascals_2() throws {
+		let result = Pressure.Torrs.toPascals(6.5)
 		XCTAssertEqual(866.595, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTopascals_3() throws {
-		let result = Pressure.Torrs.topascals(3.4)
+	func testConvertKnownTorrsToPascals_3() throws {
+		let result = Pressure.Torrs.toPascals(3.4)
 		XCTAssertEqual(453.296, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsToatmospheres_1() throws {
-		let result = Pressure.Torrs.toatmospheres(5678.0)
+	func testConvertKnownTorrsToAtmospheres_1() throws {
+		let result = Pressure.Torrs.toAtmospheres(5678.0)
 		XCTAssertEqual(7.471053, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsToatmospheres_2() throws {
-		let result = Pressure.Torrs.toatmospheres(100.0)
+	func testConvertKnownTorrsToAtmospheres_2() throws {
+		let result = Pressure.Torrs.toAtmospheres(100.0)
 		XCTAssertEqual(0.131579, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsToatmospheres_3() throws {
-		let result = Pressure.Torrs.toatmospheres(4509.0)
+	func testConvertKnownTorrsToAtmospheres_3() throws {
+		let result = Pressure.Torrs.toAtmospheres(4509.0)
 		XCTAssertEqual(5.932895, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTopsi_1() throws {
-		let result = Pressure.Torrs.topsi(4500.0)
+	func testConvertKnownTorrsToPsi_1() throws {
+		let result = Pressure.Torrs.toPsi(4500.0)
 		XCTAssertEqual(87.01549, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTopsi_2() throws {
-		let result = Pressure.Torrs.topsi(1234.0)
+	func testConvertKnownTorrsToPsi_2() throws {
+		let result = Pressure.Torrs.toPsi(1234.0)
 		XCTAssertEqual(23.86158, result, accuracy: 0.01)
 	}
 
-	func testConvertKnownTorrsTopsi_3() throws {
-		let result = Pressure.Torrs.topsi(900.0)
+	func testConvertKnownTorrsToPsi_3() throws {
+		let result = Pressure.Torrs.toPsi(900.0)
 		XCTAssertEqual(17.4031, result, accuracy: 0.01)
 	}
 
