@@ -5,6 +5,9 @@
 [![GitHub Releases](https://img.shields.io/github/release/putridparrot/SwiftUnits.svg)](https://github.com/putridparrot/SwiftUnits/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/putridparrot/SwiftUnits.svg)](https://github.com/putridparrot/SwiftUnits/issues)
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fputridparrot%2FSwiftUnits%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/putridparrot/SwiftUnits) 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fputridparrot%2FSwiftUnits%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/putridparrot/SwiftUnits)
+
 ### This is still a WiP as I learn more around the preferered way of using Swift
 
 The main aim for this project is to produce conversion functions for the various units of measurement (listed below). The code and the unit tests
