@@ -11,6 +11,21 @@ final class CenturiesTests: XCTestCase {
 }
 
 final class DaysTests: XCTestCase {
+	func testConvertKnownDaysToMilliseconds_1() throws {
+		let result = Time.Days.toMilliseconds(0.0009)
+		XCTAssertEqual(77760.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownDaysToMilliseconds_2() throws {
+		let result = Time.Days.toMilliseconds(0.03)
+		XCTAssertEqual(2592000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownDaysToMilliseconds_3() throws {
+		let result = Time.Days.toMilliseconds(0.006)
+		XCTAssertEqual(518400.0, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownDaysToSeconds_1() throws {
 		let result = Time.Days.toSeconds(1.4)
 		XCTAssertEqual(120960.0, result, accuracy: 0.01)
@@ -107,6 +122,21 @@ final class DecadesTests: XCTestCase {
 }
 
 final class HoursTests: XCTestCase {
+	func testConvertKnownHoursToMilliseconds_1() throws {
+		let result = Time.Hours.toMilliseconds(0.006)
+		XCTAssertEqual(21600.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownHoursToMilliseconds_2() throws {
+		let result = Time.Hours.toMilliseconds(0.09)
+		XCTAssertEqual(324000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownHoursToMilliseconds_3() throws {
+		let result = Time.Hours.toMilliseconds(0.007)
+		XCTAssertEqual(25200.0, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownHoursToSeconds_1() throws {
 		let result = Time.Hours.toSeconds(12.0)
 		XCTAssertEqual(43200.0, result, accuracy: 0.01)
@@ -199,7 +229,133 @@ final class HoursTests: XCTestCase {
 
 }
 
+final class MicrosecondsTests: XCTestCase {
+}
+
+final class MillisecondsTests: XCTestCase {
+	func testConvertKnownMillisecondsToSeconds_1() throws {
+		let result = Time.Milliseconds.toSeconds(8.0)
+		XCTAssertEqual(0.008, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToSeconds_2() throws {
+		let result = Time.Milliseconds.toSeconds(780.0)
+		XCTAssertEqual(0.78, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToSeconds_3() throws {
+		let result = Time.Milliseconds.toSeconds(900.0)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToMinutes_1() throws {
+		let result = Time.Milliseconds.toMinutes(900.0)
+		XCTAssertEqual(0.015, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToMinutes_2() throws {
+		let result = Time.Milliseconds.toMinutes(67000.0)
+		XCTAssertEqual(1.1166667, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToMinutes_3() throws {
+		let result = Time.Milliseconds.toMinutes(1234567.0)
+		XCTAssertEqual(20.57611667, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToHours_1() throws {
+		let result = Time.Milliseconds.toHours(1234567.0)
+		XCTAssertEqual(0.3429352778, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToHours_2() throws {
+		let result = Time.Milliseconds.toHours(100900.0)
+		XCTAssertEqual(0.0280277778, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToHours_3() throws {
+		let result = Time.Milliseconds.toHours(46000.0)
+		XCTAssertEqual(0.012777778, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToDays_1() throws {
+		let result = Time.Milliseconds.toDays(9000000.0)
+		XCTAssertEqual(0.1041666667, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToDays_2() throws {
+		let result = Time.Milliseconds.toDays(123456789.0)
+		XCTAssertEqual(1.42889802083, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToDays_3() throws {
+		let result = Time.Milliseconds.toDays(89008900.0)
+		XCTAssertEqual(1.0301956019, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToWeeks_1() throws {
+		let result = Time.Milliseconds.toWeeks(89008900.0)
+		XCTAssertEqual(0.14717080026, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToWeeks_2() throws {
+		let result = Time.Milliseconds.toWeeks(1234567890.0)
+		XCTAssertEqual(2.041282886905, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToWeeks_3() throws {
+		let result = Time.Milliseconds.toWeeks(100200300.0)
+		XCTAssertEqual(0.165675099206, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToMonths_1() throws {
+		let result = Time.Milliseconds.toMonths(100200300400.0)
+		XCTAssertEqual(38.102653412154631, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToMonths_2() throws {
+		let result = Time.Milliseconds.toMonths(90001000.0)
+		XCTAssertEqual(0.034246918329, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToMonths_3() throws {
+		let result = Time.Milliseconds.toMonths(8888888888.0)
+		XCTAssertEqual(3.382374104552, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToYears_1() throws {
+		let result = Time.Milliseconds.toYears(8888888888.0)
+		XCTAssertEqual(0.28167767558793383, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToYears_2() throws {
+		let result = Time.Milliseconds.toYears(123456789123.0)
+		XCTAssertEqual(3.9121899074093087, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillisecondsToYears_3() throws {
+		let result = Time.Milliseconds.toYears(900080007000.0)
+		XCTAssertEqual(28.522399977032002, result, accuracy: 0.01)
+	}
+
+}
+
 final class MinutesTests: XCTestCase {
+	func testConvertKnownMinutesToMilliseconds_1() throws {
+		let result = Time.Minutes.toMilliseconds(0.007)
+		XCTAssertEqual(420.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMinutesToMilliseconds_2() throws {
+		let result = Time.Minutes.toMilliseconds(0.8)
+		XCTAssertEqual(48000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMinutesToMilliseconds_3() throws {
+		let result = Time.Minutes.toMilliseconds(9.0)
+		XCTAssertEqual(540000.0, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownMinutesToSeconds_1() throws {
 		let result = Time.Minutes.toSeconds(90.0)
 		XCTAssertEqual(5400.0, result, accuracy: 0.01)
@@ -293,6 +449,21 @@ final class MinutesTests: XCTestCase {
 }
 
 final class MonthsTests: XCTestCase {
+	func testConvertKnownMonthsToMilliseconds_1() throws {
+		let result = Time.Months.toMilliseconds(0.00034)
+		XCTAssertEqual(894113.64, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMonthsToMilliseconds_2() throws {
+		let result = Time.Months.toMilliseconds(0.001)
+		XCTAssertEqual(2629746.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMonthsToMilliseconds_3() throws {
+		let result = Time.Months.toMilliseconds(0.006)
+		XCTAssertEqual(15778476.0, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownMonthsToSeconds_1() throws {
 		let result = Time.Months.toSeconds(0.03)
 		XCTAssertEqual(78840.00, result, accuracy: 0.01)
@@ -385,7 +556,100 @@ final class MonthsTests: XCTestCase {
 
 }
 
+final class NanosecondsTests: XCTestCase {
+	func testConvertKnownNanosecondsToMicroseconds_1() throws {
+		let result = Time.Nanoseconds.toMicroseconds(1234.0)
+		XCTAssertEqual(1.234, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMicroseconds_2() throws {
+		let result = Time.Nanoseconds.toMicroseconds(90.9)
+		XCTAssertEqual(0.0909, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMicroseconds_3() throws {
+		let result = Time.Nanoseconds.toMicroseconds(70000.0)
+		XCTAssertEqual(70.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMilliseconds_1() throws {
+		let result = Time.Nanoseconds.toMilliseconds(70000.0)
+		XCTAssertEqual(0.07, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMilliseconds_2() throws {
+		let result = Time.Nanoseconds.toMilliseconds(123456.0)
+		XCTAssertEqual(0.123456, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMilliseconds_3() throws {
+		let result = Time.Nanoseconds.toMilliseconds(900900.0)
+		XCTAssertEqual(0.9009, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToSeconds_1() throws {
+		let result = Time.Nanoseconds.toSeconds(900000000.0)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToSeconds_2() throws {
+		let result = Time.Nanoseconds.toSeconds(123456789.0)
+		XCTAssertEqual(0.123456789, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToSeconds_3() throws {
+		let result = Time.Nanoseconds.toSeconds(800400700.0)
+		XCTAssertEqual(0.8004007, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMinutes_1() throws {
+		let result = Time.Nanoseconds.toMinutes(1234567890.0)
+		XCTAssertEqual(0.0205761315, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMinutes_2() throws {
+		let result = Time.Nanoseconds.toMinutes(800400700.0)
+		XCTAssertEqual(0.0133400116667, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToMinutes_3() throws {
+		let result = Time.Nanoseconds.toMinutes(800100800.0)
+		XCTAssertEqual(0.0133350133333, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToHours_1() throws {
+		let result = Time.Nanoseconds.toHours(1234567890123.0)
+		XCTAssertEqual(0.3429355250341667, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToHours_2() throws {
+		let result = Time.Nanoseconds.toHours(900800700600.0)
+		XCTAssertEqual(0.250222416833333, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownNanosecondsToHours_3() throws {
+		let result = Time.Nanoseconds.toHours(66677788999.0)
+		XCTAssertEqual(0.018521608055278, result, accuracy: 0.01)
+	}
+
+}
+
 final class SecondsTests: XCTestCase {
+	func testConvertKnownSecondsToMilliseconds_1() throws {
+		let result = Time.Seconds.toMilliseconds(9.0)
+		XCTAssertEqual(9000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownSecondsToMilliseconds_2() throws {
+		let result = Time.Seconds.toMilliseconds(3.1)
+		XCTAssertEqual(3100.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownSecondsToMilliseconds_3() throws {
+		let result = Time.Seconds.toMilliseconds(0.9)
+		XCTAssertEqual(900.0, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownSecondsToMinutes_1() throws {
 		let result = Time.Seconds.toMinutes(100.0)
 		XCTAssertEqual(1.66667, result, accuracy: 0.01)
@@ -479,6 +743,21 @@ final class SecondsTests: XCTestCase {
 }
 
 final class WeeksTests: XCTestCase {
+	func testConvertKnownWeeksToMilliseconds_1() throws {
+		let result = Time.Weeks.toMilliseconds(0.001)
+		XCTAssertEqual(604800.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownWeeksToMilliseconds_2() throws {
+		let result = Time.Weeks.toMilliseconds(0.005)
+		XCTAssertEqual(3024000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownWeeksToMilliseconds_3() throws {
+		let result = Time.Weeks.toMilliseconds(0.0009)
+		XCTAssertEqual(544320.0, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownWeeksToSeconds_1() throws {
 		let result = Time.Weeks.toSeconds(0.1)
 		XCTAssertEqual(60480.0, result, accuracy: 0.01)
@@ -572,6 +851,21 @@ final class WeeksTests: XCTestCase {
 }
 
 final class YearsTests: XCTestCase {
+	func testConvertKnownYearsToMilliseconds_1() throws {
+		let result = Time.Years.toMilliseconds(0.001)
+		XCTAssertEqual(31556952.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownYearsToMilliseconds_2() throws {
+		let result = Time.Years.toMilliseconds(0.0009)
+		XCTAssertEqual(28401256.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownYearsToMilliseconds_3() throws {
+		let result = Time.Years.toMilliseconds(0.00034)
+		XCTAssertEqual(10729363.680000002, result, accuracy: 0.01)
+	}
+
 	func testConvertKnownYearsToSeconds_1() throws {
 		let result = Time.Years.toSeconds(0.06)
 		XCTAssertEqual(1892160.0, result, accuracy: 0.01)

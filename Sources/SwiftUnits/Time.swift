@@ -10,6 +10,15 @@ public final class Time {
 	public final class Centuries {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 3.154e+18;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 3.154e+15;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 3.154e+12;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 3.154e+9;
 		}
@@ -39,6 +48,15 @@ public final class Time {
 	public final class Days {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 8.64e+13;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 8.64e+10;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 8.64e+7;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 86400.0;
 		}
@@ -68,6 +86,15 @@ public final class Time {
 	public final class Decades {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 3.154e+17;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 3.154e+14;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 3.154e+11;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 3.154e+8;
 		}
@@ -97,6 +124,15 @@ public final class Time {
 	public final class Hours {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 3.6e+12;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 3.6e+9;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 3.6e+6;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 3600.0;
 		}
@@ -123,9 +159,94 @@ public final class Time {
 		}
 	}
 
+	public final class Microseconds {
+		@available(*, unavailable) private init() {}
+
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 1000.0;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value / 1000.0;
+		}
+		public static func toSeconds(_ value : Double) -> Double {
+			return value / 1e+6;
+		}
+		public static func toMinutes(_ value : Double) -> Double {
+			return value / 6e+7;
+		}
+		public static func toHours(_ value : Double) -> Double {
+			return value / 3.6e+9;
+		}
+		public static func toDays(_ value : Double) -> Double {
+			return value / 8.64e+10;
+		}
+		public static func toWeeks(_ value : Double) -> Double {
+			return value / 6.048e+11;
+		}
+		public static func toMonths(_ value : Double) -> Double {
+			return value / 2629746000000.0;
+		}
+		public static func toYears(_ value : Double) -> Double {
+			return value / 3.154e+13;
+		}
+		public static func toDecades(_ value : Double) -> Double {
+			return value / 3.154e+14;
+		}
+		public static func toCenturies(_ value : Double) -> Double {
+			return value / 3.154e+15;
+		}
+	}
+
+	public final class Milliseconds {
+		@available(*, unavailable) private init() {}
+
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 1e+6;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 1000.0;
+		}
+		public static func toSeconds(_ value : Double) -> Double {
+			return value / 1000.0;
+		}
+		public static func toMinutes(_ value : Double) -> Double {
+			return value / 60000.0;
+		}
+		public static func toHours(_ value : Double) -> Double {
+			return value / 3.6e+6;
+		}
+		public static func toDays(_ value : Double) -> Double {
+			return value / 8.64e+7;
+		}
+		public static func toWeeks(_ value : Double) -> Double {
+			return value / 6.048e+8;
+		}
+		public static func toMonths(_ value : Double) -> Double {
+			return value / 2629746000.0;
+		}
+		public static func toYears(_ value : Double) -> Double {
+			return value / 31556952000.0;
+		}
+		public static func toDecades(_ value : Double) -> Double {
+			return value / 3.154e+11;
+		}
+		public static func toCenturies(_ value : Double) -> Double {
+			return value / 3.154e+12;
+		}
+	}
+
 	public final class Minutes {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 6e+10;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 6e+7;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 60000.0;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 60.0;
 		}
@@ -155,6 +276,15 @@ public final class Time {
 	public final class Months {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 2629746000000000.0;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 2629746000000.0;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 2629746000.0;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 2.628e+6;
 		}
@@ -181,9 +311,56 @@ public final class Time {
 		}
 	}
 
+	public final class Nanoseconds {
+		@available(*, unavailable) private init() {}
+
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value / 1000.0;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value / 1e+6;
+		}
+		public static func toSeconds(_ value : Double) -> Double {
+			return value / 1e+9;
+		}
+		public static func toMinutes(_ value : Double) -> Double {
+			return value / 6e+10;
+		}
+		public static func toHours(_ value : Double) -> Double {
+			return value / 3.6e+12;
+		}
+		public static func toDays(_ value : Double) -> Double {
+			return value / 8.64e+13;
+		}
+		public static func toWeeks(_ value : Double) -> Double {
+			return value / 6.048e+14;
+		}
+		public static func toMonths(_ value : Double) -> Double {
+			return value / 2629746000000000.0;
+		}
+		public static func toYears(_ value : Double) -> Double {
+			return value / 3.154e+16;
+		}
+		public static func toDecades(_ value : Double) -> Double {
+			return value / 3.154e+17;
+		}
+		public static func toCenturies(_ value : Double) -> Double {
+			return value / 3.154e+18;
+		}
+	}
+
 	public final class Seconds {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 1e+9;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 1e+6;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 1000.0;
+		}
 		public static func toMinutes(_ value : Double) -> Double {
 			return value / 60.0;
 		}
@@ -213,6 +390,15 @@ public final class Time {
 	public final class Weeks {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 6.048e+14;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 6.048e+11;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 6.048e+8;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 604800.0;
 		}
@@ -242,6 +428,15 @@ public final class Time {
 	public final class Years {
 		@available(*, unavailable) private init() {}
 
+		public static func toNanoseconds(_ value : Double) -> Double {
+			return value * 3.154e+16;
+		}
+		public static func toMicroseconds(_ value : Double) -> Double {
+			return value * 3.154e+13;
+		}
+		public static func toMilliseconds(_ value : Double) -> Double {
+			return value * 31556952000.0;
+		}
 		public static func toSeconds(_ value : Double) -> Double {
 			return value * 3.1536e+7;
 		}
