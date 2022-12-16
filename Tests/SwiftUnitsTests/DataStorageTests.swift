@@ -599,7 +599,7 @@ final class KibibitsTests: XCTestCase {
 
 	func testConvertKnownKibibitsToTerabytes_3() throws {
 		let result = DataStorage.Kibibits.toTerabytes(9000000.0)
-		XCTAssertEqual(0.009216, result, accuracy: 0.01)
+		XCTAssertEqual(0.001152, result, accuracy: 0.01)
 	}
 
 	func testConvertKnownKibibitsToMebibits_1() throws {

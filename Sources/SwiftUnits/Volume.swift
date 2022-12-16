@@ -7,6 +7,192 @@
 public final class Volume {
 	@available(*, unavailable) private init() {}
 
+	public final class CubicFeet {
+		@available(*, unavailable) private init() {}
+
+		public static func toMillilitres(_ value : Double) -> Double {
+			return value * 28316.8;
+		}
+		public static func toLitres(_ value : Double) -> Double {
+			return value * 28.3168;
+		}
+		public static func toKilolitres(_ value : Double) -> Double {
+			return value / 35.3147;
+		}
+		public static func toTeaspoons(_ value : Double) -> Double {
+			return value * 4783.74;
+		}
+		public static func toTablespoons(_ value : Double) -> Double {
+			return value * 1594.58;
+		}
+		public static func toQuarts(_ value : Double) -> Double {
+			return value * 24.9153;
+		}
+		public static func toPints(_ value : Double) -> Double {
+			return value * 49.8307;
+		}
+		public static func toGallons(_ value : Double) -> Double {
+			return value * 6.22884;
+		}
+		public static func toFluidOunces(_ value : Double) -> Double {
+			return value * 996.614;
+		}
+		public static func toUSTeaspoons(_ value : Double) -> Double {
+			return value * 5745.04;
+		}
+		public static func toUSTablespoons(_ value : Double) -> Double {
+			return value * 1915.01;
+		}
+		public static func toUSQuarts(_ value : Double) -> Double {
+			return value * 29.9221;
+		}
+		public static func toUSPints(_ value : Double) -> Double {
+			return value * 59.8442;
+		}
+		public static func toUSGallons(_ value : Double) -> Double {
+			return value * 7.48052;
+		}
+		public static func toUSFluidOunces(_ value : Double) -> Double {
+			return value * 957.506;
+		}
+		public static func toUSCups(_ value : Double) -> Double {
+			return value * 117.987;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 35.3147;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 1728.0;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 5.61458;
+		}
+	}
+
+	public final class CubicInches {
+		@available(*, unavailable) private init() {}
+
+		public static func toMillilitres(_ value : Double) -> Double {
+			return value * 16.3871;
+		}
+		public static func toLitres(_ value : Double) -> Double {
+			return value / 61.0237;
+		}
+		public static func toKilolitres(_ value : Double) -> Double {
+			return value / 61023.7;
+		}
+		public static func toTeaspoons(_ value : Double) -> Double {
+			return value * 2.76837;
+		}
+		public static func toTablespoons(_ value : Double) -> Double {
+			return value / 1.08367;
+		}
+		public static func toQuarts(_ value : Double) -> Double {
+			return value / 69.3549;
+		}
+		public static func toPints(_ value : Double) -> Double {
+			return value / 34.6774;
+		}
+		public static func toGallons(_ value : Double) -> Double {
+			return value / 277.419;
+		}
+		public static func toFluidOunces(_ value : Double) -> Double {
+			return value / 1.73387;
+		}
+		public static func toUSTeaspoons(_ value : Double) -> Double {
+			return value * 3.32468;
+		}
+		public static func toUSTablespoons(_ value : Double) -> Double {
+			return value * 1.10823;
+		}
+		public static func toUSQuarts(_ value : Double) -> Double {
+			return value / 57.75;
+		}
+		public static func toUSPints(_ value : Double) -> Double {
+			return value / 28.875;
+		}
+		public static func toUSGallons(_ value : Double) -> Double {
+			return value / 231.0;
+		}
+		public static func toUSFluidOunces(_ value : Double) -> Double {
+			return value / 1.80469;
+		}
+		public static func toUSCups(_ value : Double) -> Double {
+			return value / 14.6457;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 61023.7;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 1728.0;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 9702.0;
+		}
+	}
+
+	public final class CubicMetres {
+		@available(*, unavailable) private init() {}
+
+		public static func toMillilitres(_ value : Double) -> Double {
+			return value * 1000000.0;
+		}
+		public static func toLitres(_ value : Double) -> Double {
+			return value * 1000.0;
+		}
+		public static func toKilolitres(_ value : Double) -> Double {
+			return value * 1.0;
+		}
+		public static func toTeaspoons(_ value : Double) -> Double {
+			return value * 168936.0;
+		}
+		public static func toTablespoons(_ value : Double) -> Double {
+			return value * 56312.1;
+		}
+		public static func toQuarts(_ value : Double) -> Double {
+			return value * 879.877;
+		}
+		public static func toPints(_ value : Double) -> Double {
+			return value * 1759.75;
+		}
+		public static func toGallons(_ value : Double) -> Double {
+			return value * 219.969;
+		}
+		public static func toFluidOunces(_ value : Double) -> Double {
+			return value * 35195.1;
+		}
+		public static func toUSTeaspoons(_ value : Double) -> Double {
+			return value * 202884.0;
+		}
+		public static func toUSTablespoons(_ value : Double) -> Double {
+			return value * 67628.0;
+		}
+		public static func toUSQuarts(_ value : Double) -> Double {
+			return value * 1056.69;
+		}
+		public static func toUSPints(_ value : Double) -> Double {
+			return value * 2113.38;
+		}
+		public static func toUSGallons(_ value : Double) -> Double {
+			return value * 264.172;
+		}
+		public static func toUSFluidOunces(_ value : Double) -> Double {
+			return value * 33814.0;
+		}
+		public static func toUSCups(_ value : Double) -> Double {
+			return value * 4166.67;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value * 35.3147;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 61023.7;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value * 6.28981;
+		}
+	}
+
 	public final class FluidOunces {
 		@available(*, unavailable) private init() {}
 
@@ -54,6 +240,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 8.3267384046639071232;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 35195.1;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 996.614;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 1.73387;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 5595.57;
 		}
 	}
 
@@ -105,6 +303,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 0.052042115029149417472;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 219.969;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 6.22884;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 277.419;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 34.9723;
+		}
 	}
 
 	public final class Kilolitres {
@@ -154,6 +364,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 0.000236588236499999989;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value * 1.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value * 35.3147;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 61023.7;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value * 6.28981;
 		}
 	}
 
@@ -205,6 +427,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 0.23658823649999998976;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 1000.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 28.3168;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 61.0237;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 158.987;
+		}
 	}
 
 	public final class Millilitres {
@@ -254,6 +488,80 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 236.58823649999998976;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 1000000.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 28316.8;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value / 16.3871;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 158987.0;
+		}
+	}
+
+	public final class OilBarrels {
+		@available(*, unavailable) private init() {}
+
+		public static func toMillilitres(_ value : Double) -> Double {
+			return value * 158987.0;
+		}
+		public static func toLitres(_ value : Double) -> Double {
+			return value * 158.987;
+		}
+		public static func toKilolitres(_ value : Double) -> Double {
+			return value / 6.28981;
+		}
+		public static func toTeaspoons(_ value : Double) -> Double {
+			return value * 26858.7;
+		}
+		public static func toTablespoons(_ value : Double) -> Double {
+			return value * 8952.91;
+		}
+		public static func toQuarts(_ value : Double) -> Double {
+			return value * 139.889;
+		}
+		public static func toPints(_ value : Double) -> Double {
+			return value * 279.779;
+		}
+		public static func toGallons(_ value : Double) -> Double {
+			return value * 34.9723;
+		}
+		public static func toFluidOunces(_ value : Double) -> Double {
+			return value * 5595.57;
+		}
+		public static func toUSTeaspoons(_ value : Double) -> Double {
+			return value * 32256.0;
+		}
+		public static func toUSTablespoons(_ value : Double) -> Double {
+			return value * 10752.0;
+		}
+		public static func toUSQuarts(_ value : Double) -> Double {
+			return value * 168.0;
+		}
+		public static func toUSPints(_ value : Double) -> Double {
+			return value * 336.0;
+		}
+		public static func toUSGallons(_ value : Double) -> Double {
+			return value * 42.0;
+		}
+		public static func toUSFluidOunces(_ value : Double) -> Double {
+			return value * 5376.0;
+		}
+		public static func toUSCups(_ value : Double) -> Double {
+			return value * 662.447;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 6.28981;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value * 5.61458;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 9702.0;
 		}
 	}
 
@@ -305,6 +613,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 0.41633692023319535616;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 1759.75;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 49.8307;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 34.6774;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 279.779;
+		}
 	}
 
 	public final class Quarts {
@@ -354,6 +674,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 0.20816846011659767808;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 879.877;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 24.9153;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 69.3549;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 139.889;
 		}
 	}
 
@@ -405,6 +737,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 13.322781447462250496;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 56312.1;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 1594.58;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 1.08367;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 8952.91;
+		}
 	}
 
 	public final class Teaspoons {
@@ -454,6 +798,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 39.968344342386753536;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 168936.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 4783.74;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value / 2.76837;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 26858.7;
 		}
 	}
 
@@ -505,6 +861,18 @@ public final class Volume {
 		public static func toUSFluidOunces(_ value : Double) -> Double {
 			return value * 8.0;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 4166.67;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 117.987;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 14.6457;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 662.447;
+		}
 	}
 
 	public final class USFluidOunces {
@@ -554,6 +922,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 8.0;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 33814.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 957.506;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 1.80469;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 5376.0;
 		}
 	}
 
@@ -605,6 +985,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value * 16.0;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 264.172;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 7.48052;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 231.0;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 42.0;
+		}
 	}
 
 	public final class USPints {
@@ -654,6 +1046,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value * 2.0;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 2113.38;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 59.8442;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 28.875;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 336.0;
 		}
 	}
 
@@ -705,6 +1109,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value * 4.0;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 1056.69;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 29.9221;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value * 57.75;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 168.0;
+		}
 	}
 
 	public final class USTablespoons {
@@ -755,6 +1171,18 @@ public final class Volume {
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 16.0;
 		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 67628.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 1915.01;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value / 1.10823;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 10752.0;
+		}
 	}
 
 	public final class USTeaspoons {
@@ -804,6 +1232,18 @@ public final class Volume {
 		}
 		public static func toUSCups(_ value : Double) -> Double {
 			return value / 48.0;
+		}
+		public static func toCubicMetres(_ value : Double) -> Double {
+			return value / 202884.0;
+		}
+		public static func toCubicFeet(_ value : Double) -> Double {
+			return value / 5745.04;
+		}
+		public static func toCubicInches(_ value : Double) -> Double {
+			return value / 3.32468;
+		}
+		public static func toOilBarrels(_ value : Double) -> Double {
+			return value / 32256.0;
 		}
 	}
 }

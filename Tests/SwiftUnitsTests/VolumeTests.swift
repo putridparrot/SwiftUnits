@@ -7,6 +7,870 @@
 import XCTest
 @testable import SwiftUnits
 
+final class CubicFeetTests: XCTestCase {
+	func testConvertKnownCubicFeetToMillilitres_1() throws {
+		let result = Volume.CubicFeet.toMillilitres(0.08)
+		XCTAssertEqual(2265.348, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToMillilitres_2() throws {
+		let result = Volume.CubicFeet.toMillilitres(6.0)
+		XCTAssertEqual(169900.79, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToMillilitres_3() throws {
+		let result = Volume.CubicFeet.toMillilitres(0.2393275)
+		XCTAssertEqual(6776.988, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToLitres_1() throws {
+		let result = Volume.CubicFeet.toLitres(0.3)
+		XCTAssertEqual(8.49505, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToLitres_2() throws {
+		let result = Volume.CubicFeet.toLitres(6.0)
+		XCTAssertEqual(169.901, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToLitres_3() throws {
+		let result = Volume.CubicFeet.toLitres(56.0)
+		XCTAssertEqual(1585.74, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToKilolitres_1() throws {
+		let result = Volume.CubicFeet.toKilolitres(300.0)
+		XCTAssertEqual(8.49505, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToKilolitres_2() throws {
+		let result = Volume.CubicFeet.toKilolitres(141.259)
+		XCTAssertEqual(4.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToKilolitres_3() throws {
+		let result = Volume.CubicFeet.toKilolitres(111.0)
+		XCTAssertEqual(3.14317, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToTeaspoons_1() throws {
+		let result = Volume.CubicFeet.toTeaspoons(0.3)
+		XCTAssertEqual(1435.12, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToTeaspoons_2() throws {
+		let result = Volume.CubicFeet.toTeaspoons(4.0)
+		XCTAssertEqual(19134.95, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToTeaspoons_3() throws {
+		let result = Volume.CubicFeet.toTeaspoons(67.0)
+		XCTAssertEqual(320510.579, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToTablespoons_1() throws {
+		let result = Volume.CubicFeet.toTablespoons(0.7)
+		XCTAssertEqual(1116.21, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToTablespoons_2() throws {
+		let result = Volume.CubicFeet.toTablespoons(1.1)
+		XCTAssertEqual(1754.04, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToTablespoons_3() throws {
+		let result = Volume.CubicFeet.toTablespoons(0.494174)
+		XCTAssertEqual(788.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToQuarts_1() throws {
+		let result = Volume.CubicFeet.toQuarts(0.6)
+		XCTAssertEqual(14.9492, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToQuarts_2() throws {
+		let result = Volume.CubicFeet.toQuarts(0.20068)
+		XCTAssertEqual(5.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToQuarts_3() throws {
+		let result = Volume.CubicFeet.toQuarts(0.301019)
+		XCTAssertEqual(7.5, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToPints_1() throws {
+		let result = Volume.CubicFeet.toPints(0.6)
+		XCTAssertEqual(29.8984, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToPints_2() throws {
+		let result = Volume.CubicFeet.toPints(0.88299)
+		XCTAssertEqual(44.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToPints_3() throws {
+		let result = Volume.CubicFeet.toPints(18.0612)
+		XCTAssertEqual(900.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToGallons_1() throws {
+		let result = Volume.CubicFeet.toGallons(3.0)
+		XCTAssertEqual(18.6865, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToGallons_2() throws {
+		let result = Volume.CubicFeet.toGallons(2.08707)
+		XCTAssertEqual(13.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToGallons_3() throws {
+		let result = Volume.CubicFeet.toGallons(14.1278)
+		XCTAssertEqual(88.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToFluidOunces_1() throws {
+		let result = Volume.CubicFeet.toFluidOunces(14.0)
+		XCTAssertEqual(13952.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToFluidOunces_2() throws {
+		let result = Volume.CubicFeet.toFluidOunces(7.0)
+		XCTAssertEqual(6976.3, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToFluidOunces_3() throws {
+		let result = Volume.CubicFeet.toFluidOunces(0.34777769)
+		XCTAssertEqual(346.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSTeaspoons_1() throws {
+		let result = Volume.CubicFeet.toUSTeaspoons(5.0)
+		XCTAssertEqual(28725.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSTeaspoons_2() throws {
+		let result = Volume.CubicFeet.toUSTeaspoons(0.4)
+		XCTAssertEqual(2298.02, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSTeaspoons_3() throws {
+		let result = Volume.CubicFeet.toUSTeaspoons(9.2)
+		XCTAssertEqual(52854.3679, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSTablespoons_1() throws {
+		let result = Volume.CubicFeet.toUSTablespoons(1.4)
+		XCTAssertEqual(2681.02, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSTablespoons_2() throws {
+		let result = Volume.CubicFeet.toUSTablespoons(4.0)
+		XCTAssertEqual(7660.04, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSTablespoons_3() throws {
+		let result = Volume.CubicFeet.toUSTablespoons(0.6443821)
+		XCTAssertEqual(1234.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSQuarts_1() throws {
+		let result = Volume.CubicFeet.toUSQuarts(6.0)
+		XCTAssertEqual(179.532, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSQuarts_2() throws {
+		let result = Volume.CubicFeet.toUSQuarts(12.0)
+		XCTAssertEqual(359.065, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSQuarts_3() throws {
+		let result = Volume.CubicFeet.toUSQuarts(25.9674)
+		XCTAssertEqual(777.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSPints_1() throws {
+		let result = Volume.CubicFeet.toUSPints(6.9)
+		XCTAssertEqual(412.925, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSPints_2() throws {
+		let result = Volume.CubicFeet.toUSPints(23.0)
+		XCTAssertEqual(1376.42, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSPints_3() throws {
+		let result = Volume.CubicFeet.toUSPints(14.8385)
+		XCTAssertEqual(888.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSGallons_1() throws {
+		let result = Volume.CubicFeet.toUSGallons(77.0)
+		XCTAssertEqual(576.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSGallons_2() throws {
+		let result = Volume.CubicFeet.toUSGallons(45.0)
+		XCTAssertEqual(336.623, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSGallons_3() throws {
+		let result = Volume.CubicFeet.toUSGallons(4.0)
+		XCTAssertEqual(29.9221, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSFluidOunces_1() throws {
+		let result = Volume.CubicFeet.toUSFluidOunces(20.0)
+		XCTAssertEqual(19150.119, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSFluidOunces_2() throws {
+		let result = Volume.CubicFeet.toUSFluidOunces(0.359266)
+		XCTAssertEqual(344.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSFluidOunces_3() throws {
+		let result = Volume.CubicFeet.toUSFluidOunces(0.699734)
+		XCTAssertEqual(670.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSCups_1() throws {
+		let result = Volume.CubicFeet.toUSCups(77.0)
+		XCTAssertEqual(9084.99, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSCups_2() throws {
+		let result = Volume.CubicFeet.toUSCups(8.0)
+		XCTAssertEqual(943.895, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToUSCups_3() throws {
+		let result = Volume.CubicFeet.toUSCups(4.79714)
+		XCTAssertEqual(566.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToCubicMetres_1() throws {
+		let result = Volume.CubicFeet.toCubicMetres(28.2517)
+		XCTAssertEqual(0.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToCubicMetres_2() throws {
+		let result = Volume.CubicFeet.toCubicMetres(45.0)
+		XCTAssertEqual(1.27426, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToCubicMetres_3() throws {
+		let result = Volume.CubicFeet.toCubicMetres(2719.23)
+		XCTAssertEqual(77.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToCubicInches_1() throws {
+		let result = Volume.CubicFeet.toCubicInches(6.8)
+		XCTAssertEqual(11750.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToCubicInches_2() throws {
+		let result = Volume.CubicFeet.toCubicInches(5666.0)
+		XCTAssertEqual(9790848.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToCubicInches_3() throws {
+		let result = Volume.CubicFeet.toCubicInches(0.7)
+		XCTAssertEqual(1209.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToOilBarrels_1() throws {
+		let result = Volume.CubicFeet.toOilBarrels(67.0)
+		XCTAssertEqual(11.9332, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToOilBarrels_2() throws {
+		let result = Volume.CubicFeet.toOilBarrels(44.0)
+		XCTAssertEqual(7.83673, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicFeetToOilBarrels_3() throws {
+		let result = Volume.CubicFeet.toOilBarrels(67.375)
+		XCTAssertEqual(12.0, result, accuracy: 0.01)
+	}
+
+}
+
+final class CubicInchesTests: XCTestCase {
+	func testConvertKnownCubicInchesToMillilitres_1() throws {
+		let result = Volume.CubicInches.toMillilitres(3.9)
+		XCTAssertEqual(63.9095, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToMillilitres_2() throws {
+		let result = Volume.CubicInches.toMillilitres(4.0)
+		XCTAssertEqual(65.5483, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToMillilitres_3() throws {
+		let result = Volume.CubicInches.toMillilitres(5.37009)
+		XCTAssertEqual(88.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToLitres_1() throws {
+		let result = Volume.CubicInches.toLitres(560.0)
+		XCTAssertEqual(9.17676, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToLitres_2() throws {
+		let result = Volume.CubicInches.toLitres(555.0)
+		XCTAssertEqual(9.09482, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToLitres_3() throws {
+		let result = Volume.CubicInches.toLitres(7444.9)
+		XCTAssertEqual(122.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToKilolitres_1() throws {
+		let result = Volume.CubicInches.toKilolitres(560.0)
+		XCTAssertEqual(0.009176, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToKilolitres_2() throws {
+		let result = Volume.CubicInches.toKilolitres(5555.0)
+		XCTAssertEqual(0.09103014, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToKilolitres_3() throws {
+		let result = Volume.CubicInches.toKilolitres(100000.0)
+		XCTAssertEqual(1.6387064, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToTeaspoons_1() throws {
+		let result = Volume.CubicInches.toTeaspoons(5.0)
+		XCTAssertEqual(13.8419, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToTeaspoons_2() throws {
+		let result = Volume.CubicInches.toTeaspoons(6.0)
+		XCTAssertEqual(16.6102, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToTeaspoons_3() throws {
+		let result = Volume.CubicInches.toTeaspoons(11.5591)
+		XCTAssertEqual(32.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToTablespoons_1() throws {
+		let result = Volume.CubicInches.toTablespoons(34.0)
+		XCTAssertEqual(31.3749, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToTablespoons_2() throws {
+		let result = Volume.CubicInches.toTablespoons(11.9204)
+		XCTAssertEqual(11.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToTablespoons_3() throws {
+		let result = Volume.CubicInches.toTablespoons(99.0)
+		XCTAssertEqual(91.3562246, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToQuarts_1() throws {
+		let result = Volume.CubicInches.toQuarts(800.0)
+		XCTAssertEqual(11.5349, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToQuarts_2() throws {
+		let result = Volume.CubicInches.toQuarts(77.0)
+		XCTAssertEqual(1.11023, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToQuarts_3() throws {
+		let result = Volume.CubicInches.toQuarts(4577.42)
+		XCTAssertEqual(66.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToPints_1() throws {
+		let result = Volume.CubicInches.toPints(89.5)
+		XCTAssertEqual(2.58093, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToPints_2() throws {
+		let result = Volume.CubicInches.toPints(23095.2)
+		XCTAssertEqual(666.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToPints_3() throws {
+		let result = Volume.CubicInches.toPints(2670.16)
+		XCTAssertEqual(77.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToGallons_1() throws {
+		let result = Volume.CubicInches.toGallons(900.0)
+		XCTAssertEqual(3.24419, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToGallons_2() throws {
+		let result = Volume.CubicInches.toGallons(666.0)
+		XCTAssertEqual(2.4007, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToGallons_3() throws {
+		let result = Volume.CubicInches.toGallons(21361.3)
+		XCTAssertEqual(77.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToFluidOunces_1() throws {
+		let result = Volume.CubicInches.toFluidOunces(77.0)
+		XCTAssertEqual(44.4093, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToFluidOunces_2() throws {
+		let result = Volume.CubicInches.toFluidOunces(55.0)
+		XCTAssertEqual(31.7209, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToFluidOunces_3() throws {
+		let result = Volume.CubicInches.toFluidOunces(27.7419)
+		XCTAssertEqual(16.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSTeaspoons_1() throws {
+		let result = Volume.CubicInches.toUSTeaspoons(678.0)
+		XCTAssertEqual(2254.13, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSTeaspoons_2() throws {
+		let result = Volume.CubicInches.toUSTeaspoons(55.0)
+		XCTAssertEqual(182.857, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSTeaspoons_3() throws {
+		let result = Volume.CubicInches.toUSTeaspoons(26.4687)
+		XCTAssertEqual(88.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSTablespoons_1() throws {
+		let result = Volume.CubicInches.toUSTablespoons(66.0)
+		XCTAssertEqual(73.1429, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSTablespoons_2() throws {
+		let result = Volume.CubicInches.toUSTablespoons(55.0)
+		XCTAssertEqual(60.9524, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSTablespoons_3() throws {
+		let result = Volume.CubicInches.toUSTablespoons(10.8281)
+		XCTAssertEqual(12.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSQuarts_1() throws {
+		let result = Volume.CubicInches.toUSQuarts(345.0)
+		XCTAssertEqual(5.97403, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSQuarts_2() throws {
+		let result = Volume.CubicInches.toUSQuarts(33.0)
+		XCTAssertEqual(0.571429, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSQuarts_3() throws {
+		let result = Volume.CubicInches.toUSQuarts(3176.25)
+		XCTAssertEqual(55.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSPints_1() throws {
+		let result = Volume.CubicInches.toUSPints(89.0)
+		XCTAssertEqual(3.08225, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSPints_2() throws {
+		let result = Volume.CubicInches.toUSPints(3176.25)
+		XCTAssertEqual(110.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSPints_3() throws {
+		let result = Volume.CubicInches.toUSPints(462.0)
+		XCTAssertEqual(16.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSGallons_1() throws {
+		let result = Volume.CubicInches.toUSGallons(600.0)
+		XCTAssertEqual(2.5974, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSGallons_2() throws {
+		let result = Volume.CubicInches.toUSGallons(462.0)
+		XCTAssertEqual(2.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSGallons_3() throws {
+		let result = Volume.CubicInches.toUSGallons(899.0)
+		XCTAssertEqual(3.89177, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSFluidOunces_1() throws {
+		let result = Volume.CubicInches.toUSFluidOunces(900.0)
+		XCTAssertEqual(498.700607, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSFluidOunces_2() throws {
+		let result = Volume.CubicInches.toUSFluidOunces(777.0)
+		XCTAssertEqual(430.544858, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSFluidOunces_3() throws {
+		let result = Volume.CubicInches.toUSFluidOunces(178.664)
+		XCTAssertEqual(98.99982822, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSCups_1() throws {
+		let result = Volume.CubicInches.toUSCups(7.0)
+		XCTAssertEqual(0.477956, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSCups_2() throws {
+		let result = Volume.CubicInches.toUSCups(77.0)
+		XCTAssertEqual(5.25752, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToUSCups_3() throws {
+		let result = Volume.CubicInches.toUSCups(123.0)
+		XCTAssertEqual(8.39837, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToCubicMetres_1() throws {
+		let result = Volume.CubicInches.toCubicMetres(24409.5)
+		XCTAssertEqual(0.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToCubicMetres_2() throws {
+		let result = Volume.CubicInches.toCubicMetres(7777.0)
+		XCTAssertEqual(0.1274422, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToCubicMetres_3() throws {
+		let result = Volume.CubicInches.toCubicMetres(366142.0)
+		XCTAssertEqual(6.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToCubicFeet_1() throws {
+		let result = Volume.CubicInches.toCubicFeet(11750.4)
+		XCTAssertEqual(6.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToCubicFeet_2() throws {
+		let result = Volume.CubicInches.toCubicFeet(57024.0)
+		XCTAssertEqual(33.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToCubicFeet_3() throws {
+		let result = Volume.CubicInches.toCubicFeet(1234.0)
+		XCTAssertEqual(0.7141204, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToOilBarrels_1() throws {
+		let result = Volume.CubicInches.toOilBarrels(90000.0)
+		XCTAssertEqual(9.2764378, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToOilBarrels_2() throws {
+		let result = Volume.CubicInches.toOilBarrels(8888.0)
+		XCTAssertEqual(0.9160998, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicInchesToOilBarrels_3() throws {
+		let result = Volume.CubicInches.toOilBarrels(11642.4)
+		XCTAssertEqual(1.2, result, accuracy: 0.01)
+	}
+
+}
+
+final class CubicMetresTests: XCTestCase {
+	func testConvertKnownCubicMetresToMillilitres_1() throws {
+		let result = Volume.CubicMetres.toMillilitres(0.01)
+		XCTAssertEqual(10000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToMillilitres_2() throws {
+		let result = Volume.CubicMetres.toMillilitres(0.2306735)
+		XCTAssertEqual(230673.5, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToMillilitres_3() throws {
+		let result = Volume.CubicMetres.toMillilitres(0.009)
+		XCTAssertEqual(9000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToLitres_1() throws {
+		let result = Volume.CubicMetres.toLitres(0.1)
+		XCTAssertEqual(100.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToLitres_2() throws {
+		let result = Volume.CubicMetres.toLitres(0.009)
+		XCTAssertEqual(9.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToLitres_3() throws {
+		let result = Volume.CubicMetres.toLitres(0.08989)
+		XCTAssertEqual(89.89, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToKilolitres_1() throws {
+		let result = Volume.CubicMetres.toKilolitres(0.9)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToKilolitres_2() throws {
+		let result = Volume.CubicMetres.toKilolitres(100.9)
+		XCTAssertEqual(100.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToKilolitres_3() throws {
+		let result = Volume.CubicMetres.toKilolitres(666.9)
+		XCTAssertEqual(666.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToTeaspoons_1() throws {
+		let result = Volume.CubicMetres.toTeaspoons(0.1)
+		XCTAssertEqual(16893.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToTeaspoons_2() throws {
+		let result = Volume.CubicMetres.toTeaspoons(3.0)
+		XCTAssertEqual(506808.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToTeaspoons_3() throws {
+		let result = Volume.CubicMetres.toTeaspoons(0.91)
+		XCTAssertEqual(153731.76, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToTablespoons_1() throws {
+		let result = Volume.CubicMetres.toTablespoons(0.9)
+		XCTAssertEqual(50680.8899, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToTablespoons_2() throws {
+		let result = Volume.CubicMetres.toTablespoons(0.1)
+		XCTAssertEqual(5631.21, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToTablespoons_3() throws {
+		let result = Volume.CubicMetres.toTablespoons(9.0)
+		XCTAssertEqual(506808.89, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToQuarts_1() throws {
+		let result = Volume.CubicMetres.toQuarts(0.8)
+		XCTAssertEqual(703.902, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToQuarts_2() throws {
+		let result = Volume.CubicMetres.toQuarts(0.4)
+		XCTAssertEqual(351.951, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToQuarts_3() throws {
+		let result = Volume.CubicMetres.toQuarts(6.0)
+		XCTAssertEqual(5279.26, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToPints_1() throws {
+		let result = Volume.CubicMetres.toPints(0.7)
+		XCTAssertEqual(1231.83, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToPints_2() throws {
+		let result = Volume.CubicMetres.toPints(4.5)
+		XCTAssertEqual(7918.875, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToPints_3() throws {
+		let result = Volume.CubicMetres.toPints(0.06)
+		XCTAssertEqual(105.5852, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToGallons_1() throws {
+		let result = Volume.CubicMetres.toGallons(0.2)
+		XCTAssertEqual(43.9938, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToGallons_2() throws {
+		let result = Volume.CubicMetres.toGallons(0.4)
+		XCTAssertEqual(87.9877, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToGallons_3() throws {
+		let result = Volume.CubicMetres.toGallons(0.0272765)
+		XCTAssertEqual(6.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToFluidOunces_1() throws {
+		let result = Volume.CubicMetres.toFluidOunces(0.7)
+		XCTAssertEqual(24636.569, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToFluidOunces_2() throws {
+		let result = Volume.CubicMetres.toFluidOunces(0.09)
+		XCTAssertEqual(3167.557, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToFluidOunces_3() throws {
+		let result = Volume.CubicMetres.toFluidOunces(4.0)
+		XCTAssertEqual(140780.399, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSTeaspoons_1() throws {
+		let result = Volume.CubicMetres.toUSTeaspoons(0.5)
+		XCTAssertEqual(101442.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSTeaspoons_2() throws {
+		let result = Volume.CubicMetres.toUSTeaspoons(2.0)
+		XCTAssertEqual(405768.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSTeaspoons_3() throws {
+		let result = Volume.CubicMetres.toUSTeaspoons(0.3)
+		XCTAssertEqual(60865.199, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSTablespoons_1() throws {
+		let result = Volume.CubicMetres.toUSTablespoons(0.2)
+		XCTAssertEqual(13525.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSTablespoons_2() throws {
+		let result = Volume.CubicMetres.toUSTablespoons(0.9)
+		XCTAssertEqual(60865.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSTablespoons_3() throws {
+		let result = Volume.CubicMetres.toUSTablespoons(2.0)
+		XCTAssertEqual(135256.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSQuarts_1() throws {
+		let result = Volume.CubicMetres.toUSQuarts(0.2)
+		XCTAssertEqual(211.338, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSQuarts_2() throws {
+		let result = Volume.CubicMetres.toUSQuarts(4.0)
+		XCTAssertEqual(4226.76, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSQuarts_3() throws {
+		let result = Volume.CubicMetres.toUSQuarts(0.851718)
+		XCTAssertEqual(900.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSPints_1() throws {
+		let result = Volume.CubicMetres.toUSPints(0.4)
+		XCTAssertEqual(845.351, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSPints_2() throws {
+		let result = Volume.CubicMetres.toUSPints(7.0)
+		XCTAssertEqual(14793.66, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSPints_3() throws {
+		let result = Volume.CubicMetres.toUSPints(6.0)
+		XCTAssertEqual(12680.280, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSGallons_1() throws {
+		let result = Volume.CubicMetres.toUSGallons(0.7)
+		XCTAssertEqual(184.92, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSGallons_2() throws {
+		let result = Volume.CubicMetres.toUSGallons(0.851718)
+		XCTAssertEqual(225.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSGallons_3() throws {
+		let result = Volume.CubicMetres.toUSGallons(0.02)
+		XCTAssertEqual(5.283441, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSFluidOunces_1() throws {
+		let result = Volume.CubicMetres.toUSFluidOunces(0.9)
+		XCTAssertEqual(30432.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSFluidOunces_2() throws {
+		let result = Volume.CubicMetres.toUSFluidOunces(0.3)
+		XCTAssertEqual(10144.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSFluidOunces_3() throws {
+		let result = Volume.CubicMetres.toUSFluidOunces(3.3)
+		XCTAssertEqual(111586.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSCups_1() throws {
+		let result = Volume.CubicMetres.toUSCups(7.0)
+		XCTAssertEqual(29166.7, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSCups_2() throws {
+		let result = Volume.CubicMetres.toUSCups(11.0)
+		XCTAssertEqual(45833.37, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToUSCups_3() throws {
+		let result = Volume.CubicMetres.toUSCups(66.0)
+		XCTAssertEqual(275000.22, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToCubicFeet_1() throws {
+		let result = Volume.CubicMetres.toCubicFeet(0.8)
+		XCTAssertEqual(28.2517, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToCubicFeet_2() throws {
+		let result = Volume.CubicMetres.toCubicFeet(5.0)
+		XCTAssertEqual(176.573, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToCubicFeet_3() throws {
+		let result = Volume.CubicMetres.toCubicFeet(12.12)
+		XCTAssertEqual(428.014163, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToCubicInches_1() throws {
+		let result = Volume.CubicMetres.toCubicInches(0.4)
+		XCTAssertEqual(24409.48, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToCubicInches_2() throws {
+		let result = Volume.CubicMetres.toCubicInches(3.0)
+		XCTAssertEqual(183071.099, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToCubicInches_3() throws {
+		let result = Volume.CubicMetres.toCubicInches(0.99)
+		XCTAssertEqual(60413.4629, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToOilBarrels_1() throws {
+		let result = Volume.CubicMetres.toOilBarrels(0.09)
+		XCTAssertEqual(0.566083, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToOilBarrels_2() throws {
+		let result = Volume.CubicMetres.toOilBarrels(5.0)
+		XCTAssertEqual(31.4491, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCubicMetresToOilBarrels_3() throws {
+		let result = Volume.CubicMetres.toOilBarrels(1.2)
+		XCTAssertEqual(7.547772, result, accuracy: 0.01)
+	}
+
+}
+
 final class FluidOuncesTests: XCTestCase {
 	func testConvertKnownFluidOuncesToMillilitres_1() throws {
 		let result = Volume.FluidOunces.toMillilitres(12.0)
@@ -231,6 +1095,66 @@ final class FluidOuncesTests: XCTestCase {
 	func testConvertKnownFluidOuncesToUSCups_3() throws {
 		let result = Volume.FluidOunces.toUSCups(6.9)
 		XCTAssertEqual(0.828655, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicMetres_1() throws {
+		let result = Volume.FluidOunces.toCubicMetres(316756.0)
+		XCTAssertEqual(9.00000284, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicMetres_2() throws {
+		let result = Volume.FluidOunces.toCubicMetres(8000.0)
+		XCTAssertEqual(0.2273043690, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicMetres_3() throws {
+		let result = Volume.FluidOunces.toCubicMetres(123456.0)
+		XCTAssertEqual(3.5077610, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicFeet_1() throws {
+		let result = Volume.FluidOunces.toCubicFeet(888.0)
+		XCTAssertEqual(0.891017, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicFeet_2() throws {
+		let result = Volume.FluidOunces.toCubicFeet(100900.0)
+		XCTAssertEqual(101.242841, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicFeet_3() throws {
+		let result = Volume.FluidOunces.toCubicFeet(678.0)
+		XCTAssertEqual(0.680304, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicInches_1() throws {
+		let result = Volume.FluidOunces.toCubicInches(7.0)
+		XCTAssertEqual(12.1371, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicInches_2() throws {
+		let result = Volume.FluidOunces.toCubicInches(900.0)
+		XCTAssertEqual(1560.48, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToCubicInches_3() throws {
+		let result = Volume.FluidOunces.toCubicInches(6.0)
+		XCTAssertEqual(10.4032, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToOilBarrels_1() throws {
+		let result = Volume.FluidOunces.toOilBarrels(430859.0)
+		XCTAssertEqual(77.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToOilBarrels_2() throws {
+		let result = Volume.FluidOunces.toOilBarrels(777.0)
+		XCTAssertEqual(0.13886, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFluidOuncesToOilBarrels_3() throws {
+		let result = Volume.FluidOunces.toOilBarrels(1234.0)
+		XCTAssertEqual(0.2205316, result, accuracy: 0.01)
 	}
 
 }
@@ -461,6 +1385,66 @@ final class GallonsTests: XCTestCase {
 		XCTAssertEqual(17101.534007630, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownGallonsToCubicMetres_1() throws {
+		let result = Volume.Gallons.toCubicMetres(9898.62)
+		XCTAssertEqual(45.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicMetres_2() throws {
+		let result = Volume.Gallons.toCubicMetres(12345.0)
+		XCTAssertEqual(56.121481, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicMetres_3() throws {
+		let result = Volume.Gallons.toCubicMetres(80.0)
+		XCTAssertEqual(0.363687, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicFeet_1() throws {
+		let result = Volume.Gallons.toCubicFeet(55.0)
+		XCTAssertEqual(8.8299, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicFeet_2() throws {
+		let result = Volume.Gallons.toCubicFeet(90.5)
+		XCTAssertEqual(14.5292, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicFeet_3() throws {
+		let result = Volume.Gallons.toCubicFeet(123.0)
+		XCTAssertEqual(19.7469, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicInches_1() throws {
+		let result = Volume.Gallons.toCubicInches(66.0)
+		XCTAssertEqual(18309.6539, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicInches_2() throws {
+		let result = Volume.Gallons.toCubicInches(2.4007)
+		XCTAssertEqual(666.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToCubicInches_3() throws {
+		let result = Volume.Gallons.toCubicInches(77.0)
+		XCTAssertEqual(21361.2629, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToOilBarrels_1() throws {
+		let result = Volume.Gallons.toOilBarrels(174.862)
+		XCTAssertEqual(5.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToOilBarrels_2() throws {
+		let result = Volume.Gallons.toOilBarrels(19409.6)
+		XCTAssertEqual(555.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownGallonsToOilBarrels_3() throws {
+		let result = Volume.Gallons.toOilBarrels(24.4806)
+		XCTAssertEqual(0.7, result, accuracy: 0.01)
+	}
+
 }
 
 final class KilolitresTests: XCTestCase {
@@ -687,6 +1671,66 @@ final class KilolitresTests: XCTestCase {
 	func testConvertKnownKilolitresToUSCups_3() throws {
 		let result = Volume.Kilolitres.toUSCups(6.2)
 		XCTAssertEqual(26205.86759392, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicMetres_1() throws {
+		let result = Volume.Kilolitres.toCubicMetres(1000.0)
+		XCTAssertEqual(1000.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicMetres_2() throws {
+		let result = Volume.Kilolitres.toCubicMetres(0.9)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicMetres_3() throws {
+		let result = Volume.Kilolitres.toCubicMetres(6.09)
+		XCTAssertEqual(6.09, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicFeet_1() throws {
+		let result = Volume.Kilolitres.toCubicFeet(0.0566337)
+		XCTAssertEqual(2.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicFeet_2() throws {
+		let result = Volume.Kilolitres.toCubicFeet(7.9)
+		XCTAssertEqual(278.986, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicFeet_3() throws {
+		let result = Volume.Kilolitres.toCubicFeet(88.0)
+		XCTAssertEqual(3107.69, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicInches_1() throws {
+		let result = Volume.Kilolitres.toCubicInches(6.0)
+		XCTAssertEqual(366142.19999, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicInches_2() throws {
+		let result = Volume.Kilolitres.toCubicInches(0.1)
+		XCTAssertEqual(6102.37, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToCubicInches_3() throws {
+		let result = Volume.Kilolitres.toCubicInches(0.8)
+		XCTAssertEqual(48818.959, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToOilBarrels_1() throws {
+		let result = Volume.Kilolitres.toOilBarrels(0.476962)
+		XCTAssertEqual(3.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToOilBarrels_2() throws {
+		let result = Volume.Kilolitres.toOilBarrels(4.0)
+		XCTAssertEqual(25.1592, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKilolitresToOilBarrels_3() throws {
+		let result = Volume.Kilolitres.toOilBarrels(6.0)
+		XCTAssertEqual(37.7389, result, accuracy: 0.01)
 	}
 
 }
@@ -917,6 +1961,66 @@ final class LitresTests: XCTestCase {
 		XCTAssertEqual(302.6355, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownLitresToCubicMetres_1() throws {
+		let result = Volume.Litres.toCubicMetres(400.5)
+		XCTAssertEqual(0.4005, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicMetres_2() throws {
+		let result = Volume.Litres.toCubicMetres(900.0)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicMetres_3() throws {
+		let result = Volume.Litres.toCubicMetres(6090.0)
+		XCTAssertEqual(6.09, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicFeet_1() throws {
+		let result = Volume.Litres.toCubicFeet(5.0)
+		XCTAssertEqual(0.176573, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicFeet_2() throws {
+		let result = Volume.Litres.toCubicFeet(84.9505)
+		XCTAssertEqual(3.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicFeet_3() throws {
+		let result = Volume.Litres.toCubicFeet(6.0)
+		XCTAssertEqual(0.211888, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicInches_1() throws {
+		let result = Volume.Litres.toCubicInches(666.0)
+		XCTAssertEqual(40641.7842, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicInches_2() throws {
+		let result = Volume.Litres.toCubicInches(788.0)
+		XCTAssertEqual(48086.675599, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToCubicInches_3() throws {
+		let result = Volume.Litres.toCubicInches(4.0)
+		XCTAssertEqual(244.095, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToOilBarrels_1() throws {
+		let result = Volume.Litres.toOilBarrels(8744.3)
+		XCTAssertEqual(55.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToOilBarrels_2() throws {
+		let result = Volume.Litres.toOilBarrels(1234.0)
+		XCTAssertEqual(7.761626, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownLitresToOilBarrels_3() throws {
+		let result = Volume.Litres.toOilBarrels(953.924)
+		XCTAssertEqual(6.0, result, accuracy: 0.01)
+	}
+
 }
 
 final class MillilitresTests: XCTestCase {
@@ -1143,6 +2247,354 @@ final class MillilitresTests: XCTestCase {
 	func testConvertKnownMillilitresToUSCups_3() throws {
 		let result = Volume.Millilitres.toUSCups(700.0)
 		XCTAssertEqual(2.95873, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicMetres_1() throws {
+		let result = Volume.Millilitres.toCubicMetres(9999999.0)
+		XCTAssertEqual(9.999999, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicMetres_2() throws {
+		let result = Volume.Millilitres.toCubicMetres(123456.0)
+		XCTAssertEqual(0.123456, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicMetres_3() throws {
+		let result = Volume.Millilitres.toCubicMetres(400500.0)
+		XCTAssertEqual(0.4005, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicFeet_1() throws {
+		let result = Volume.Millilitres.toCubicFeet(254852.0)
+		XCTAssertEqual(9.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicFeet_2() throws {
+		let result = Volume.Millilitres.toCubicFeet(6000.0)
+		XCTAssertEqual(0.211888, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicFeet_3() throws {
+		let result = Volume.Millilitres.toCubicFeet(70792.1)
+		XCTAssertEqual(2.5, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicInches_1() throws {
+		let result = Volume.Millilitres.toCubicInches(777.0)
+		XCTAssertEqual(47.4154, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicInches_2() throws {
+		let result = Volume.Millilitres.toCubicInches(98.3224)
+		XCTAssertEqual(5.999987, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToCubicInches_3() throws {
+		let result = Volume.Millilitres.toCubicInches(12.0)
+		XCTAssertEqual(0.732285, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToOilBarrels_1() throws {
+		let result = Volume.Millilitres.toOilBarrels(47696.2)
+		XCTAssertEqual(0.3, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToOilBarrels_2() throws {
+		let result = Volume.Millilitres.toOilBarrels(143089.0)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownMillilitresToOilBarrels_3() throws {
+		let result = Volume.Millilitres.toOilBarrels(317.97459)
+		XCTAssertEqual(0.002, result, accuracy: 0.01)
+	}
+
+}
+
+final class OilBarrelsTests: XCTestCase {
+	func testConvertKnownOilBarrelsToMillilitres_1() throws {
+		let result = Volume.OilBarrels.toMillilitres(0.8)
+		XCTAssertEqual(127189.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToMillilitres_2() throws {
+		let result = Volume.OilBarrels.toMillilitres(6.0)
+		XCTAssertEqual(953922.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToMillilitres_3() throws {
+		let result = Volume.OilBarrels.toMillilitres(0.06289182)
+		XCTAssertEqual(9998.981786, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToLitres_1() throws {
+		let result = Volume.OilBarrels.toLitres(12.0)
+		XCTAssertEqual(1907.85, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToLitres_2() throws {
+		let result = Volume.OilBarrels.toLitres(6.0)
+		XCTAssertEqual(953.924, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToLitres_3() throws {
+		let result = Volume.OilBarrels.toLitres(77.0)
+		XCTAssertEqual(12242.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToKilolitres_1() throws {
+		let result = Volume.OilBarrels.toKilolitres(12.0)
+		XCTAssertEqual(1.90785, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToKilolitres_2() throws {
+		let result = Volume.OilBarrels.toKilolitres(8.0)
+		XCTAssertEqual(1.2719, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToKilolitres_3() throws {
+		let result = Volume.OilBarrels.toKilolitres(77.0)
+		XCTAssertEqual(12.242, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToTeaspoons_1() throws {
+		let result = Volume.OilBarrels.toTeaspoons(0.6)
+		XCTAssertEqual(16115.219, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToTeaspoons_2() throws {
+		let result = Volume.OilBarrels.toTeaspoons(4.0)
+		XCTAssertEqual(107434.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToTeaspoons_3() throws {
+		let result = Volume.OilBarrels.toTeaspoons(6.7)
+		XCTAssertEqual(179953.29, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToTablespoons_1() throws {
+		let result = Volume.OilBarrels.toTablespoons(0.7)
+		XCTAssertEqual(6267.04, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToTablespoons_2() throws {
+		let result = Volume.OilBarrels.toTablespoons(8.0)
+		XCTAssertEqual(71623.279, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToTablespoons_3() throws {
+		let result = Volume.OilBarrels.toTablespoons(10.052487)
+		XCTAssertEqual(89999.011387, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToQuarts_1() throws {
+		let result = Volume.OilBarrels.toQuarts(88.0)
+		XCTAssertEqual(12310.232, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToQuarts_2() throws {
+		let result = Volume.OilBarrels.toQuarts(12.0)
+		XCTAssertEqual(1678.67, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToQuarts_3() throws {
+		let result = Volume.OilBarrels.toQuarts(6.0)
+		XCTAssertEqual(839.336, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToPints_1() throws {
+		let result = Volume.OilBarrels.toPints(8.0)
+		XCTAssertEqual(2238.23, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToPints_2() throws {
+		let result = Volume.OilBarrels.toPints(6.0)
+		XCTAssertEqual(1678.67, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToPints_3() throws {
+		let result = Volume.OilBarrels.toPints(0.275218)
+		XCTAssertEqual(77.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToGallons_1() throws {
+		let result = Volume.OilBarrels.toGallons(4.0)
+		XCTAssertEqual(139.889, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToGallons_2() throws {
+		let result = Volume.OilBarrels.toGallons(6.0)
+		XCTAssertEqual(209.834, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToGallons_3() throws {
+		let result = Volume.OilBarrels.toGallons(18.0)
+		XCTAssertEqual(629.502, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToFluidOunces_1() throws {
+		let result = Volume.OilBarrels.toFluidOunces(0.5)
+		XCTAssertEqual(2797.79, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToFluidOunces_2() throws {
+		let result = Volume.OilBarrels.toFluidOunces(6.0)
+		XCTAssertEqual(33573.4199, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToFluidOunces_3() throws {
+		let result = Volume.OilBarrels.toFluidOunces(77.0)
+		XCTAssertEqual(430858.889, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSTeaspoons_1() throws {
+		let result = Volume.OilBarrels.toUSTeaspoons(0.3)
+		XCTAssertEqual(9676.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSTeaspoons_2() throws {
+		let result = Volume.OilBarrels.toUSTeaspoons(7.0)
+		XCTAssertEqual(225792.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSTeaspoons_3() throws {
+		let result = Volume.OilBarrels.toUSTeaspoons(1.5)
+		XCTAssertEqual(48384.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSTablespoons_1() throws {
+		let result = Volume.OilBarrels.toUSTablespoons(0.2)
+		XCTAssertEqual(2150.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSTablespoons_2() throws {
+		let result = Volume.OilBarrels.toUSTablespoons(6.0)
+		XCTAssertEqual(64512.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSTablespoons_3() throws {
+		let result = Volume.OilBarrels.toUSTablespoons(77.0)
+		XCTAssertEqual(827904.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSQuarts_1() throws {
+		let result = Volume.OilBarrels.toUSQuarts(4.5)
+		XCTAssertEqual(756.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSQuarts_2() throws {
+		let result = Volume.OilBarrels.toUSQuarts(77.0)
+		XCTAssertEqual(12936.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSQuarts_3() throws {
+		let result = Volume.OilBarrels.toUSQuarts(0.7)
+		XCTAssertEqual(117.6, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSPints_1() throws {
+		let result = Volume.OilBarrels.toUSPints(7.8)
+		XCTAssertEqual(2620.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSPints_2() throws {
+		let result = Volume.OilBarrels.toUSPints(0.7)
+		XCTAssertEqual(235.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSPints_3() throws {
+		let result = Volume.OilBarrels.toUSPints(3.0)
+		XCTAssertEqual(1008.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSGallons_1() throws {
+		let result = Volume.OilBarrels.toUSGallons(78.0)
+		XCTAssertEqual(3276.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSGallons_2() throws {
+		let result = Volume.OilBarrels.toUSGallons(3.0)
+		XCTAssertEqual(126.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSGallons_3() throws {
+		let result = Volume.OilBarrels.toUSGallons(777.0)
+		XCTAssertEqual(32634.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSFluidOunces_1() throws {
+		let result = Volume.OilBarrels.toUSFluidOunces(4.9)
+		XCTAssertEqual(26342.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSFluidOunces_2() throws {
+		let result = Volume.OilBarrels.toUSFluidOunces(0.4)
+		XCTAssertEqual(2150.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSFluidOunces_3() throws {
+		let result = Volume.OilBarrels.toUSFluidOunces(3.0)
+		XCTAssertEqual(16128.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSCups_1() throws {
+		let result = Volume.OilBarrels.toUSCups(55.0)
+		XCTAssertEqual(36434.5849, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSCups_2() throws {
+		let result = Volume.OilBarrels.toUSCups(0.686847)
+		XCTAssertEqual(455.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToUSCups_3() throws {
+		let result = Volume.OilBarrels.toUSCups(9.2)
+		XCTAssertEqual(6094.51, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicMetres_1() throws {
+		let result = Volume.OilBarrels.toCubicMetres(7.0)
+		XCTAssertEqual(1.1129112, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicMetres_2() throws {
+		let result = Volume.OilBarrels.toCubicMetres(3.0)
+		XCTAssertEqual(0.476962, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicMetres_3() throws {
+		let result = Volume.OilBarrels.toCubicMetres(78.0)
+		XCTAssertEqual(12.401, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicFeet_1() throws {
+		let result = Volume.OilBarrels.toCubicFeet(88.0)
+		XCTAssertEqual(494.083, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicFeet_2() throws {
+		let result = Volume.OilBarrels.toCubicFeet(3.0)
+		XCTAssertEqual(16.8438, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicFeet_3() throws {
+		let result = Volume.OilBarrels.toCubicFeet(11.0)
+		XCTAssertEqual(61.7604, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicInches_1() throws {
+		let result = Volume.OilBarrels.toCubicInches(100.4)
+		XCTAssertEqual(974080.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicInches_2() throws {
+		let result = Volume.OilBarrels.toCubicInches(5.0)
+		XCTAssertEqual(48510.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownOilBarrelsToCubicInches_3() throws {
+		let result = Volume.OilBarrels.toCubicInches(66.0)
+		XCTAssertEqual(640332.0, result, accuracy: 0.01)
 	}
 
 }
@@ -1373,6 +2825,66 @@ final class PintsTests: XCTestCase {
 		XCTAssertEqual(121.5361, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownPintsToCubicMetres_1() throws {
+		let result = Volume.Pints.toCubicMetres(21117.0)
+		XCTAssertEqual(12.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicMetres_2() throws {
+		let result = Volume.Pints.toCubicMetres(14078.0)
+		XCTAssertEqual(8.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicMetres_3() throws {
+		let result = Volume.Pints.toCubicMetres(9999.0)
+		XCTAssertEqual(5.682044, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicFeet_1() throws {
+		let result = Volume.Pints.toCubicFeet(44.0)
+		XCTAssertEqual(0.88299, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicFeet_2() throws {
+		let result = Volume.Pints.toCubicFeet(1234.0)
+		XCTAssertEqual(24.76386, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicFeet_3() throws {
+		let result = Volume.Pints.toCubicFeet(8000.0)
+		XCTAssertEqual(160.5436, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicInches_1() throws {
+		let result = Volume.Pints.toCubicInches(5.0)
+		XCTAssertEqual(173.387, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicInches_2() throws {
+		let result = Volume.Pints.toCubicInches(777.0)
+		XCTAssertEqual(26944.33979, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToCubicInches_3() throws {
+		let result = Volume.Pints.toCubicInches(35.58511)
+		XCTAssertEqual(1234.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToOilBarrels_1() throws {
+		let result = Volume.Pints.toOilBarrels(1398.89)
+		XCTAssertEqual(5.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToOilBarrels_2() throws {
+		let result = Volume.Pints.toOilBarrels(122.0)
+		XCTAssertEqual(0.436059, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownPintsToOilBarrels_3() throws {
+		let result = Volume.Pints.toOilBarrels(559.557)
+		XCTAssertEqual(2.0, result, accuracy: 0.01)
+	}
+
 }
 
 final class QuartsTests: XCTestCase {
@@ -1599,6 +3111,66 @@ final class QuartsTests: XCTestCase {
 	func testConvertKnownQuartsToUSCups_3() throws {
 		let result = Volume.Quarts.toUSCups(0.23)
 		XCTAssertEqual(1.104874, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicMetres_1() throws {
+		let result = Volume.Quarts.toCubicMetres(7918.89)
+		XCTAssertEqual(9.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicMetres_2() throws {
+		let result = Volume.Quarts.toCubicMetres(1200.0)
+		XCTAssertEqual(1.363827, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicMetres_3() throws {
+		let result = Volume.Quarts.toCubicMetres(8000.0)
+		XCTAssertEqual(9.09218, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicFeet_1() throws {
+		let result = Volume.Quarts.toCubicFeet(20.0)
+		XCTAssertEqual(0.802718, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicFeet_2() throws {
+		let result = Volume.Quarts.toCubicFeet(800.0)
+		XCTAssertEqual(32.1087, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicFeet_3() throws {
+		let result = Volume.Quarts.toCubicFeet(67.0)
+		XCTAssertEqual(2.68911, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicInches_1() throws {
+		let result = Volume.Quarts.toCubicInches(777.0)
+		XCTAssertEqual(53888.75729, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicInches_2() throws {
+		let result = Volume.Quarts.toCubicInches(8.16093)
+		XCTAssertEqual(566.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToCubicInches_3() throws {
+		let result = Volume.Quarts.toCubicInches(76.0)
+		XCTAssertEqual(5270.97, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToOilBarrels_1() throws {
+		let result = Volume.Quarts.toOilBarrels(839.336)
+		XCTAssertEqual(6.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToOilBarrels_2() throws {
+		let result = Volume.Quarts.toOilBarrels(41.9668)
+		XCTAssertEqual(0.3, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownQuartsToOilBarrels_3() throws {
+		let result = Volume.Quarts.toOilBarrels(22.0)
+		XCTAssertEqual(0.157267, result, accuracy: 0.01)
 	}
 
 }
@@ -1829,6 +3401,66 @@ final class TablespoonsTests: XCTestCase {
 		XCTAssertEqual(75.0594, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownTablespoonsToCubicMetres_1() throws {
+		let result = Volume.Tablespoons.toCubicMetres(10000.0)
+		XCTAssertEqual(0.1775817, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicMetres_2() throws {
+		let result = Volume.Tablespoons.toCubicMetres(3378.726)
+		XCTAssertEqual(0.059999995422, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicMetres_3() throws {
+		let result = Volume.Tablespoons.toCubicMetres(800009.0)
+		XCTAssertEqual(14.2066969, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicFeet_1() throws {
+		let result = Volume.Tablespoons.toCubicFeet(780.0)
+		XCTAssertEqual(0.489157, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicFeet_2() throws {
+		let result = Volume.Tablespoons.toCubicFeet(6378.32)
+		XCTAssertEqual(4.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicFeet_3() throws {
+		let result = Volume.Tablespoons.toCubicFeet(8451.28)
+		XCTAssertEqual(5.3, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicInches_1() throws {
+		let result = Volume.Tablespoons.toCubicInches(66.0)
+		XCTAssertEqual(71.5222, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicInches_2() throws {
+		let result = Volume.Tablespoons.toCubicInches(123.0)
+		XCTAssertEqual(133.291, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToCubicInches_3() throws {
+		let result = Volume.Tablespoons.toCubicInches(56.0)
+		XCTAssertEqual(60.6855, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToOilBarrels_1() throws {
+		let result = Volume.Tablespoons.toOilBarrels(44764.5)
+		XCTAssertEqual(5.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToOilBarrels_2() throws {
+		let result = Volume.Tablespoons.toOilBarrels(12222.0)
+		XCTAssertEqual(1.3651429, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTablespoonsToOilBarrels_3() throws {
+		let result = Volume.Tablespoons.toOilBarrels(800.0)
+		XCTAssertEqual(0.0893564, result, accuracy: 0.01)
+	}
+
 }
 
 final class TeaspoonsTests: XCTestCase {
@@ -2009,7 +3641,7 @@ final class TeaspoonsTests: XCTestCase {
 
 	func testConvertKnownTeaspoonsToUSPints_3() throws {
 		let result = Volume.Teaspoons.toUSPints(6.21)
-		XCTAssertEqual(0.07656059, result, accuracy: 0.01)
+		XCTAssertEqual(0.07768648, result, accuracy: 0.01)
 	}
 
 	func testConvertKnownTeaspoonsToUSGallons_1() throws {
@@ -2055,6 +3687,66 @@ final class TeaspoonsTests: XCTestCase {
 	func testConvertKnownTeaspoonsToUSCups_3() throws {
 		let result = Volume.Teaspoons.toUSCups(109.9)
 		XCTAssertEqual(2.7496761, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicMetres_1() throws {
+		let result = Volume.Teaspoons.toCubicMetres(152043.0)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicMetres_2() throws {
+		let result = Volume.Teaspoons.toCubicMetres(3378.726)
+		XCTAssertEqual(0.02, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicMetres_3() throws {
+		let result = Volume.Teaspoons.toCubicMetres(8000.0)
+		XCTAssertEqual(0.04735512, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicFeet_1() throws {
+		let result = Volume.Teaspoons.toCubicFeet(600.0)
+		XCTAssertEqual(0.125425, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicFeet_2() throws {
+		let result = Volume.Teaspoons.toCubicFeet(1234.0)
+		XCTAssertEqual(0.257957, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicFeet_3() throws {
+		let result = Volume.Teaspoons.toCubicFeet(880.0)
+		XCTAssertEqual(0.183956, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicInches_1() throws {
+		let result = Volume.Teaspoons.toCubicInches(8.0)
+		XCTAssertEqual(2.88979, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicInches_2() throws {
+		let result = Volume.Teaspoons.toCubicInches(12.0)
+		XCTAssertEqual(4.33468, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToCubicInches_3() throws {
+		let result = Volume.Teaspoons.toCubicInches(666.0)
+		XCTAssertEqual(240.575, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToOilBarrels_1() throws {
+		let result = Volume.Teaspoons.toOilBarrels(10743.5)
+		XCTAssertEqual(0.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToOilBarrels_2() throws {
+		let result = Volume.Teaspoons.toOilBarrels(107435.0)
+		XCTAssertEqual(4.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownTeaspoonsToOilBarrels_3() throws {
+		let result = Volume.Teaspoons.toOilBarrels(134294.0)
+		XCTAssertEqual(5.0, result, accuracy: 0.01)
 	}
 
 }
@@ -2285,6 +3977,66 @@ final class USCupsTests: XCTestCase {
 		XCTAssertEqual(7.2, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownUSCupsToCubicMetres_1() throws {
+		let result = Volume.USCups.toCubicMetres(4555.0)
+		XCTAssertEqual(1.0932, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicMetres_2() throws {
+		let result = Volume.USCups.toCubicMetres(100900.0)
+		XCTAssertEqual(24.216, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicMetres_3() throws {
+		let result = Volume.USCups.toCubicMetres(7800.0)
+		XCTAssertEqual(1.872, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicFeet_1() throws {
+		let result = Volume.USCups.toCubicFeet(88.0)
+		XCTAssertEqual(0.745846, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicFeet_2() throws {
+		let result = Volume.USCups.toCubicFeet(471.947)
+		XCTAssertEqual(4.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicFeet_3() throws {
+		let result = Volume.USCups.toCubicFeet(123.0)
+		XCTAssertEqual(1.04249, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicInches_1() throws {
+		let result = Volume.USCups.toCubicInches(6.0)
+		XCTAssertEqual(87.8742, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicInches_2() throws {
+		let result = Volume.USCups.toCubicInches(2.3)
+		XCTAssertEqual(33.6851, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToCubicInches_3() throws {
+		let result = Volume.USCups.toCubicInches(0.9)
+		XCTAssertEqual(13.1811, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToOilBarrels_1() throws {
+		let result = Volume.USCups.toOilBarrels(43721.5)
+		XCTAssertEqual(66.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToOilBarrels_2() throws {
+		let result = Volume.USCups.toOilBarrels(1111.0)
+		XCTAssertEqual(1.677115, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSCupsToOilBarrels_3() throws {
+		let result = Volume.USCups.toOilBarrels(3312.24)
+		XCTAssertEqual(5.0, result, accuracy: 0.01)
+	}
+
 }
 
 final class USFluidOuncesTests: XCTestCase {
@@ -2511,6 +4263,66 @@ final class USFluidOuncesTests: XCTestCase {
 	func testConvertKnownUSFluidOuncesToUSCups_3() throws {
 		let result = Volume.USFluidOunces.toUSCups(0.29)
 		XCTAssertEqual(0.03625, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicMetres_1() throws {
+		let result = Volume.USFluidOunces.toCubicMetres(800900.0)
+		XCTAssertEqual(23.6854398, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicMetres_2() throws {
+		let result = Volume.USFluidOunces.toCubicMetres(789.0)
+		XCTAssertEqual(0.0233335, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicMetres_3() throws {
+		let result = Volume.USFluidOunces.toCubicMetres(100100.0)
+		XCTAssertEqual(2.96031031, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicFeet_1() throws {
+		let result = Volume.USFluidOunces.toCubicFeet(344.0)
+		XCTAssertEqual(0.359266, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicFeet_2() throws {
+		let result = Volume.USFluidOunces.toCubicFeet(8009.0)
+		XCTAssertEqual(8.364434, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicFeet_3() throws {
+		let result = Volume.USFluidOunces.toCubicFeet(3830.03)
+		XCTAssertEqual(4.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicInches_1() throws {
+		let result = Volume.USFluidOunces.toCubicInches(66.0)
+		XCTAssertEqual(119.109, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicInches_2() throws {
+		let result = Volume.USFluidOunces.toCubicInches(900.0)
+		XCTAssertEqual(1624.22, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToCubicInches_3() throws {
+		let result = Volume.USFluidOunces.toCubicInches(8.0)
+		XCTAssertEqual(14.4375, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToOilBarrels_1() throws {
+		let result = Volume.USFluidOunces.toOilBarrels(32256.0)
+		XCTAssertEqual(6.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToOilBarrels_2() throws {
+		let result = Volume.USFluidOunces.toOilBarrels(1899.0)
+		XCTAssertEqual(0.3532366, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSFluidOuncesToOilBarrels_3() throws {
+		let result = Volume.USFluidOunces.toOilBarrels(6988.8)
+		XCTAssertEqual(1.3, result, accuracy: 0.01)
 	}
 
 }
@@ -2741,6 +4553,66 @@ final class USGallonsTests: XCTestCase {
 		XCTAssertEqual(15.68, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownUSGallonsToCubicMetres_1() throws {
+		let result = Volume.USGallons.toCubicMetres(1849.2)
+		XCTAssertEqual(7.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicMetres_2() throws {
+		let result = Volume.USGallons.toCubicMetres(87.0)
+		XCTAssertEqual(0.329331, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicMetres_3() throws {
+		let result = Volume.USGallons.toCubicMetres(123456.0)
+		XCTAssertEqual(467.331797, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicFeet_1() throws {
+		let result = Volume.USGallons.toCubicFeet(6.0)
+		XCTAssertEqual(0.802083, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicFeet_2() throws {
+		let result = Volume.USGallons.toCubicFeet(24.0)
+		XCTAssertEqual(3.20833, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicFeet_3() throws {
+		let result = Volume.USGallons.toCubicFeet(5.0)
+		XCTAssertEqual(0.668403, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicInches_1() throws {
+		let result = Volume.USGallons.toCubicInches(6.0)
+		XCTAssertEqual(1386.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicInches_2() throws {
+		let result = Volume.USGallons.toCubicInches(190.0)
+		XCTAssertEqual(43890.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToCubicInches_3() throws {
+		let result = Volume.USGallons.toCubicInches(55.0)
+		XCTAssertEqual(12705.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToOilBarrels_1() throws {
+		let result = Volume.USGallons.toOilBarrels(966.0)
+		XCTAssertEqual(23.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToOilBarrels_2() throws {
+		let result = Volume.USGallons.toOilBarrels(1234.0)
+		XCTAssertEqual(29.38095, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSGallonsToOilBarrels_3() throws {
+		let result = Volume.USGallons.toOilBarrels(16.8)
+		XCTAssertEqual(0.4, result, accuracy: 0.01)
+	}
+
 }
 
 final class USPintsTests: XCTestCase {
@@ -2967,6 +4839,66 @@ final class USPintsTests: XCTestCase {
 	func testConvertKnownUSPintsToUSCups_3() throws {
 		let result = Volume.USPints.toUSCups(45.9)
 		XCTAssertEqual(91.8, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicMetres_1() throws {
+		let result = Volume.USPints.toCubicMetres(14793.6)
+		XCTAssertEqual(7.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicMetres_2() throws {
+		let result = Volume.USPints.toCubicMetres(700.0)
+		XCTAssertEqual(0.331224, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicMetres_3() throws {
+		let result = Volume.USPints.toCubicMetres(123456.0)
+		XCTAssertEqual(58.4164747, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicFeet_1() throws {
+		let result = Volume.USPints.toCubicFeet(66.0)
+		XCTAssertEqual(1.10286, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicFeet_2() throws {
+		let result = Volume.USPints.toCubicFeet(2692.99)
+		XCTAssertEqual(45.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicFeet_3() throws {
+		let result = Volume.USPints.toCubicFeet(123.0)
+		XCTAssertEqual(2.05534, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicInches_1() throws {
+		let result = Volume.USPints.toCubicInches(66.0)
+		XCTAssertEqual(1905.75, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicInches_2() throws {
+		let result = Volume.USPints.toCubicInches(900.0)
+		XCTAssertEqual(25987.5, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToCubicInches_3() throws {
+		let result = Volume.USPints.toCubicInches(6.7)
+		XCTAssertEqual(193.463, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToOilBarrels_1() throws {
+		let result = Volume.USPints.toOilBarrels(223776.0)
+		XCTAssertEqual(666.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToOilBarrels_2() throws {
+		let result = Volume.USPints.toOilBarrels(1234.0)
+		XCTAssertEqual(3.672619, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSPintsToOilBarrels_3() throws {
+		let result = Volume.USPints.toOilBarrels(302.4)
+		XCTAssertEqual(0.9, result, accuracy: 0.01)
 	}
 
 }
@@ -3197,6 +5129,66 @@ final class USQuartsTests: XCTestCase {
 		XCTAssertEqual(2.64, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownUSQuartsToCubicMetres_1() throws {
+		let result = Volume.USQuarts.toCubicMetres(8453.51)
+		XCTAssertEqual(8.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicMetres_2() throws {
+		let result = Volume.USQuarts.toCubicMetres(5000.0)
+		XCTAssertEqual(4.731765, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicMetres_3() throws {
+		let result = Volume.USQuarts.toCubicMetres(123456.0)
+		XCTAssertEqual(116.832949, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicFeet_1() throws {
+		let result = Volume.USQuarts.toCubicFeet(44.0)
+		XCTAssertEqual(1.47049, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicFeet_2() throws {
+		let result = Volume.USQuarts.toCubicFeet(2663.06)
+		XCTAssertEqual(89.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicFeet_3() throws {
+		let result = Volume.USQuarts.toCubicFeet(444.0)
+		XCTAssertEqual(14.8385, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicInches_1() throws {
+		let result = Volume.USQuarts.toCubicInches(44.0)
+		XCTAssertEqual(2541.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicInches_2() throws {
+		let result = Volume.USQuarts.toCubicInches(800.0)
+		XCTAssertEqual(46200.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToCubicInches_3() throws {
+		let result = Volume.USQuarts.toCubicInches(6.0)
+		XCTAssertEqual(346.5, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToOilBarrels_1() throws {
+		let result = Volume.USQuarts.toOilBarrels(9240.0)
+		XCTAssertEqual(55.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToOilBarrels_2() throws {
+		let result = Volume.USQuarts.toOilBarrels(1344.0)
+		XCTAssertEqual(8.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSQuartsToOilBarrels_3() throws {
+		let result = Volume.USQuarts.toOilBarrels(207312.0)
+		XCTAssertEqual(1234.0, result, accuracy: 0.01)
+	}
+
 }
 
 final class USTablespoonsTests: XCTestCase {
@@ -3425,6 +5417,66 @@ final class USTablespoonsTests: XCTestCase {
 		XCTAssertEqual(562.55625, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownUSTablespoonsToCubicMetres_1() throws {
+		let result = Volume.USTablespoons.toCubicMetres(541024.0)
+		XCTAssertEqual(8.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicMetres_2() throws {
+		let result = Volume.USTablespoons.toCubicMetres(10200.0)
+		XCTAssertEqual(0.150825, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicMetres_3() throws {
+		let result = Volume.USTablespoons.toCubicMetres(123456.0)
+		XCTAssertEqual(1.82551483, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicFeet_1() throws {
+		let result = Volume.USTablespoons.toCubicFeet(66.0)
+		XCTAssertEqual(0.0344645, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicFeet_2() throws {
+		let result = Volume.USTablespoons.toCubicFeet(7660.05)
+		XCTAssertEqual(4.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicFeet_3() throws {
+		let result = Volume.USTablespoons.toCubicFeet(1234.0)
+		XCTAssertEqual(0.6443821, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicInches_1() throws {
+		let result = Volume.USTablespoons.toCubicInches(900.0)
+		XCTAssertEqual(812.109, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicInches_2() throws {
+		let result = Volume.USTablespoons.toCubicInches(10.0)
+		XCTAssertEqual(9.02344, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToCubicInches_3() throws {
+		let result = Volume.USTablespoons.toCubicInches(4.0)
+		XCTAssertEqual(3.60938, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToOilBarrels_1() throws {
+		let result = Volume.USTablespoons.toOilBarrels(591360.0)
+		XCTAssertEqual(55.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToOilBarrels_2() throws {
+		let result = Volume.USTablespoons.toOilBarrels(4300.8)
+		XCTAssertEqual(0.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTablespoonsToOilBarrels_3() throws {
+		let result = Volume.USTablespoons.toOilBarrels(34406.4)
+		XCTAssertEqual(3.2, result, accuracy: 0.01)
+	}
+
 }
 
 final class USTeaspoonsTests: XCTestCase {
@@ -3651,6 +5703,66 @@ final class USTeaspoonsTests: XCTestCase {
 	func testConvertKnownUSTeaspoonsToUSCups_3() throws {
 		let result = Volume.USTeaspoons.toUSCups(0.9)
 		XCTAssertEqual(0.01875, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicMetres_1() throws {
+		let result = Volume.USTeaspoons.toCubicMetres(405768.0)
+		XCTAssertEqual(2.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicMetres_2() throws {
+		let result = Volume.USTeaspoons.toCubicMetres(80808.0)
+		XCTAssertEqual(0.39829617, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicMetres_3() throws {
+		let result = Volume.USTeaspoons.toCubicMetres(123456.0)
+		XCTAssertEqual(0.608504748, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicFeet_1() throws {
+		let result = Volume.USTeaspoons.toCubicFeet(2000.0)
+		XCTAssertEqual(0.3481263, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicFeet_2() throws {
+		let result = Volume.USTeaspoons.toCubicFeet(6894.05)
+		XCTAssertEqual(1.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicFeet_3() throws {
+		let result = Volume.USTeaspoons.toCubicFeet(12345.0)
+		XCTAssertEqual(2.1488098, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicInches_1() throws {
+		let result = Volume.USTeaspoons.toCubicInches(23.2727)
+		XCTAssertEqual(7.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicInches_2() throws {
+		let result = Volume.USTeaspoons.toCubicInches(219.429)
+		XCTAssertEqual(66.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToCubicInches_3() throws {
+		let result = Volume.USTeaspoons.toCubicInches(39.8961)
+		XCTAssertEqual(12.0, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToOilBarrels_1() throws {
+		let result = Volume.USTeaspoons.toOilBarrels(103219.0)
+		XCTAssertEqual(3.2, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToOilBarrels_2() throws {
+		let result = Volume.USTeaspoons.toOilBarrels(6666.0)
+		XCTAssertEqual(0.2066592, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownUSTeaspoonsToOilBarrels_3() throws {
+		let result = Volume.USTeaspoons.toOilBarrels(64512.0)
+		XCTAssertEqual(2.0, result, accuracy: 0.01)
 	}
 
 }

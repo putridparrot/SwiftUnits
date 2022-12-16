@@ -599,7 +599,7 @@ final class KibibitsPerSecondTests: XCTestCase {
 
 	func testConvertKnownKibibitsPerSecondToTeraBytesPerSecond_3() throws {
 		let result = DataTransferRate.KibibitsPerSecond.toTeraBytesPerSecond(9000000.0)
-		XCTAssertEqual(0.009216, result, accuracy: 0.01)
+		XCTAssertEqual(0.001152, result, accuracy: 0.01)
 	}
 
 	func testConvertKnownKibibitsPerSecondToMebibitsPerSecond_1() throws {
