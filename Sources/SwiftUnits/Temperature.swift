@@ -19,6 +19,9 @@ public final class Temperature {
 		public static func toRankine(_ value : Double) -> Double {
 			return value * 9.0/5.0 + 491.67;
 		}
+		public static func toReaumur(_ value : Double) -> Double {
+			return value / 1.25;
+		}
 	}
 
 	public final class Fahrenheit {
@@ -32,6 +35,9 @@ public final class Temperature {
 		}
 		public static func toRankine(_ value : Double) -> Double {
 			return value + 459.67;
+		}
+		public static func toReaumur(_ value : Double) -> Double {
+			return (value - 32.0) / 2.25;
 		}
 	}
 
@@ -47,6 +53,9 @@ public final class Temperature {
 		public static func toRankine(_ value : Double) -> Double {
 			return value * 1.8;
 		}
+		public static func toReaumur(_ value : Double) -> Double {
+			return (value - 273.15) / 1.25;
+		}
 	}
 
 	public final class Rankine {
@@ -60,6 +69,26 @@ public final class Temperature {
 		}
 		public static func toKelvin(_ value : Double) -> Double {
 			return value / 1.8;
+		}
+		public static func toReaumur(_ value : Double) -> Double {
+			return (value - 491.67) / 2.25;
+		}
+	}
+
+	public final class Reaumur {
+		@available(*, unavailable) private init() {}
+
+		public static func toKelvin(_ value : Double) -> Double {
+			return value * 1.25 + 273.15;
+		}
+		public static func toCelsius(_ value : Double) -> Double {
+			return value * 1.25;
+		}
+		public static func toFahrenheit(_ value : Double) -> Double {
+			return value * 2.25 + 32.0;
+		}
+		public static func toRankine(_ value : Double) -> Double {
+			return value * 2.25 + 491.67;
 		}
 	}
 }

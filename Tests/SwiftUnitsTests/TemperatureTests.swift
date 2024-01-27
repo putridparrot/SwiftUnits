@@ -53,6 +53,21 @@ final class CelsiusTests: XCTestCase {
 		XCTAssertEqual(486.27, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownCelsiusToReaumur_1() throws {
+		let result = Temperature.Celsius.toReaumur(123.0)
+		XCTAssertEqual(98.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCelsiusToReaumur_2() throws {
+		let result = Temperature.Celsius.toReaumur(15.67)
+		XCTAssertEqual(12.536, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownCelsiusToReaumur_3() throws {
+		let result = Temperature.Celsius.toReaumur(87.0)
+		XCTAssertEqual(69.6, result, accuracy: 0.01)
+	}
+
 }
 
 final class FahrenheitTests: XCTestCase {
@@ -99,6 +114,21 @@ final class FahrenheitTests: XCTestCase {
 	func testConvertKnownFahrenheitToRankine_3() throws {
 		let result = Temperature.Fahrenheit.toRankine(0.2)
 		XCTAssertEqual(459.87, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFahrenheitToReaumur_1() throws {
+		let result = Temperature.Fahrenheit.toReaumur(67.0)
+		XCTAssertEqual(15.555555556, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFahrenheitToReaumur_2() throws {
+		let result = Temperature.Fahrenheit.toReaumur(1.6)
+		XCTAssertEqual(-13.511111111, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownFahrenheitToReaumur_3() throws {
+		let result = Temperature.Fahrenheit.toReaumur(900.0)
+		XCTAssertEqual(385.77777778, result, accuracy: 0.01)
 	}
 
 }
@@ -149,6 +179,21 @@ final class KelvinTests: XCTestCase {
 		XCTAssertEqual(1.44, result, accuracy: 0.01)
 	}
 
+	func testConvertKnownKelvinToReaumur_1() throws {
+		let result = Temperature.Kelvin.toReaumur(900.0)
+		XCTAssertEqual(501.48, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKelvinToReaumur_2() throws {
+		let result = Temperature.Kelvin.toReaumur(1.3)
+		XCTAssertEqual(-217.48, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownKelvinToReaumur_3() throws {
+		let result = Temperature.Kelvin.toReaumur(60.0)
+		XCTAssertEqual(-170.52, result, accuracy: 0.01)
+	}
+
 }
 
 final class RankineTests: XCTestCase {
@@ -195,6 +240,84 @@ final class RankineTests: XCTestCase {
 	func testConvertKnownRankineToKelvin_3() throws {
 		let result = Temperature.Rankine.toKelvin(23.0)
 		XCTAssertEqual(12.777777778, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownRankineToReaumur_1() throws {
+		let result = Temperature.Rankine.toReaumur(900.0)
+		XCTAssertEqual(181.48, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownRankineToReaumur_2() throws {
+		let result = Temperature.Rankine.toReaumur(34.9)
+		XCTAssertEqual(-203.00888889, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownRankineToReaumur_3() throws {
+		let result = Temperature.Rankine.toReaumur(0.7)
+		XCTAssertEqual(-218.20888889, result, accuracy: 0.01)
+	}
+
+}
+
+final class ReaumurTests: XCTestCase {
+	func testConvertKnownReaumurToKelvin_1() throws {
+		let result = Temperature.Reaumur.toKelvin(128.0)
+		XCTAssertEqual(433.15, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToKelvin_2() throws {
+		let result = Temperature.Reaumur.toKelvin(7.4)
+		XCTAssertEqual(282.4, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToKelvin_3() throws {
+		let result = Temperature.Reaumur.toKelvin(1.5)
+		XCTAssertEqual(275.025, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToCelsius_1() throws {
+		let result = Temperature.Reaumur.toCelsius(1.5)
+		XCTAssertEqual(1.875, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToCelsius_2() throws {
+		let result = Temperature.Reaumur.toCelsius(23.9)
+		XCTAssertEqual(29.875, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToCelsius_3() throws {
+		let result = Temperature.Reaumur.toCelsius(0.3)
+		XCTAssertEqual(0.375, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToFahrenheit_1() throws {
+		let result = Temperature.Reaumur.toFahrenheit(0.3)
+		XCTAssertEqual(32.675, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToFahrenheit_2() throws {
+		let result = Temperature.Reaumur.toFahrenheit(87.0)
+		XCTAssertEqual(227.75, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToFahrenheit_3() throws {
+		let result = Temperature.Reaumur.toFahrenheit(34.1)
+		XCTAssertEqual(108.725, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToRankine_1() throws {
+		let result = Temperature.Reaumur.toRankine(34.1)
+		XCTAssertEqual(568.395, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToRankine_2() throws {
+		let result = Temperature.Reaumur.toRankine(10.6)
+		XCTAssertEqual(515.52, result, accuracy: 0.01)
+	}
+
+	func testConvertKnownReaumurToRankine_3() throws {
+		let result = Temperature.Reaumur.toRankine(1.9)
+		XCTAssertEqual(495.945, result, accuracy: 0.01)
 	}
 
 }

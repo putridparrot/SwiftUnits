@@ -1,0 +1,4 @@
+{
+    "image": "swift",
+    "forwardPorts": [3000]
+  }
